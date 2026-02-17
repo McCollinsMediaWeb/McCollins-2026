@@ -4423,4 +4423,19 @@ body.lightmode .cta-service-banner::before{
 .HeaderBoxFlex{
     display: flex;
     justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+}
+.MenuClick{
+    background-image: url(../../../public/assets/images/menu.png);
+    width: 31px;
+    height: 23px;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.CallLink{
+    position: relative;
+    color: #fff;
+    padding: 12px 25px;
+    padding-left: 45px;
 }

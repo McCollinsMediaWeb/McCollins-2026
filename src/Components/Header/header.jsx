@@ -7,12 +7,12 @@ function Navbar() {
     const { isDropdownActive } = useNav();
 
     return (
-        <div className="navbar-wrapper FixedHeader">
+        <div className="FixedHeader">
             <div className="container">
                 <div className="HeaderBox">
                     <div className="HeaderBoxFlex">
                         <div className="HeaderBoxLeft">
-                            
+                            <div className="MenuClick">&nbsp;</div>
                         </div>
                         <div className="HeaderBoxMiddle">
                             <NavLink className="navbar-brand" to="/">
@@ -24,7 +24,9 @@ function Navbar() {
                             </NavLink>
                         </div>
                         <div className="HeaderBoxRight">
-                            Ijas
+                            <a href="#" className="CallLink btn btn-accent">
+                                Let's Talk
+                            </a>
                         </div>
                     </div>
                 </div>
