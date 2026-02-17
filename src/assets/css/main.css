@@ -4436,6 +4436,15 @@ body.lightmode .cta-service-banner::before{
 .CallLink{
     position: relative;
     color: #fff;
-    padding: 12px 25px;
-    padding-left: 45px;
+    padding: 12px 30px;
+    padding-left: 55px;
+}
+.CallLink::before{
+    content: "";
+    background-image: url(../../../public/assets/images/call.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
 }
