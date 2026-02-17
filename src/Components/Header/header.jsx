@@ -12,16 +12,16 @@ function Navbar() {
                 <div className="HeaderBox">
                     <div className="HeaderBoxFlex">
                         <div className="HeaderBoxLeft">
+                            
+                        </div>
+                        <div className="HeaderBoxMiddle">
                             <NavLink className="navbar-brand" to="/">
                                 <img
-                                    src="/assets/images/marko-logo.png"
+                                    src="/assets/images/mcmain.png"
                                     className="site-logo img-fluid"
                                     alt="Logo"
                                 />
                             </NavLink>
-                        </div>
-                        <div className="HeaderBoxMiddle">
-                            Ijas
                         </div>
                         <div className="HeaderBoxRight">
                             Ijas
