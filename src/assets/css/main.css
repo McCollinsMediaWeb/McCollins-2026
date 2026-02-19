@@ -4433,6 +4433,27 @@ body.lightmode .cta-service-banner::before{
     background-size: 100% 100%;
     display: inline-block;
 }
+.HamberMenuIcon{
+    width: 32px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.HamberMenuLine{
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+.HamberMenuIcon .HamberMenuLine:last-child{
+    margin-bottom: 0;
+}
+.HamberMenuIcon .HamberMenuLine:nth-child(even){
+    width: 70%;
+}
+.HamberMenuIcon:hover .HamberMenuLine{
+    background-color: #3875FD;
+}
 .CallLink{
     position: relative;
     color: #fff;

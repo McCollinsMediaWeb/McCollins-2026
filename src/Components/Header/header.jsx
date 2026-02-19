@@ -12,7 +12,12 @@ function Navbar() {
                 <div className="HeaderBox">
                     <div className="HeaderBoxFlex">
                         <div className="HeaderBoxLeft">
-                            <div className="MenuClick">&nbsp;</div>
+                            <div className="HamberMenuIcon">
+                                <div className="HamberMenuLine"></div>
+                                <div className="HamberMenuLine"></div>
+                                <div className="HamberMenuLine"></div>
+                            </div>
+                           
                         </div>
                         <div className="HeaderBoxMiddle">
                             <NavLink className="navbar-brand" to="/">
