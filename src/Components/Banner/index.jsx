@@ -7,7 +7,7 @@ function BannerHomeSection() {
     const playerRef = useRef(null);
     const videoContainerRef = useRef(null);
 
-   
+
 
     return (
         <div className="section-banner">
@@ -16,18 +16,23 @@ function BannerHomeSection() {
                     ref={videoContainerRef}
                     className="keep-dark"
                 >
-                    <div id="banner-video-background" className="HeroBannerBacckground"></div>
-                    <div className="hero-container position-relative">
-                        <div className="d-flex flex-column gspace-2">
+                    <div className="HeroBanner">
+                        <img
+                            src="/assets/images/mcmain.jpg"
+                            className="mainBannerimage width-full"
+                            alt="MainBanner"
+                        />
+                    </div>
+                    <div className="HeroBannerContent">
+                        <div className="container">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <h1 className="title-heading-banner">
-                                  Market with <br/> Digital Mastery
+                                    Market with <br /> Digital Mastery
                                 </h1>
                             </AnimateOnScroll>
-                            
                         </div>
                     </div>
-                </div>  
+                </div>
             </AnimateOnScroll>
         </div>
     );

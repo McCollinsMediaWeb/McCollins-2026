@@ -19,12 +19,13 @@ function HomePage(){
         <>
             <HeadTitle title="Home - Marko - Digital Marketing Agency" />
             <BannerHomeSection />
+             <ServiceSection />
             <ExpertiseSection />
             <PartnershipSection />
             <ChooseUsSection />
             <GuideBannerSection />
             <ModalVideoSection />
-            <ServiceSection />
+           
             <CaseStudiesSection noPadding={true} />
             <TestimonialSection />
             <DigitalProcessSection />
