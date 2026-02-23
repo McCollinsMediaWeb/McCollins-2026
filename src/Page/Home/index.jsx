@@ -19,8 +19,9 @@ function HomePage(){
         <>
             <HeadTitle title="Home - Marko - Digital Marketing Agency" />
             <BannerHomeSection />
-             <ServiceSection />
             <ExpertiseSection />
+             <ServiceSection />
+            
             <PartnershipSection />
             <ChooseUsSection />
             <GuideBannerSection />

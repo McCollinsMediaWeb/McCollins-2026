@@ -4485,3 +4485,13 @@ background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
 }
+.site-logo{
+    min-width: 210px;
+}
+.HomeButtonWrap1{
+    max-width: 300px;
+    margin-top: 20px;
+}
+.HeroBannerSbText1{
+    margin-bottom: 20px;
+}
