@@ -13,25 +13,50 @@ function BlogCard({ blog }) {
                     className="card card-blog"
                     onClick={handleClick}
                 >
-                    <div className="blog-image">
-                        <img src={blog.image} alt="Blog" />
+                    <div className="blog-image" style={{ maxHeight: "300px" }}>
+                        <img src={blog.photo ?? "/assets/images/blog1.jpg"} alt="Blog" />
                     </div>
                     <div className="card-body">
                         <div className="d-flex flex-row gspace-2">
                             <div className="d-flex flex-row gspace-1 align-items-center">
                                 <i className="fa-solid fa-calendar accent-color"></i>
-                                <span className="meta-data">{blog.date}</span>
+                                <span className="meta-data">
+                                    {new Date(blog.date).toLocaleDateString("en-US", {
+                                        year: "numeric",
+                                        month: "long",
+                                        day: "numeric",
+                                    })}
+                                </span>
                             </div>
                             <div className="d-flex flex-row gspace-1 align-items-center">
                                 <i className="fa-solid fa-folder accent-color"></i>
-                                <span className="meta-data">{blog.category}</span>
+                                <span className="meta-data"
+                                    style={{
+                                        display: "-webkit-box",
+                                        WebkitLineClamp: 1,
+                                        WebkitBoxOrient: "vertical",
+                                        overflow: "hidden",
+                                        maxWidth: "250px"
+                                    }}>{blog.category}</span>
                             </div>
                         </div>
-                        <a href={blog.link} className="blog-link">
+                        <a href={blog.link} style={{
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                        }} className="blog-link">
                             {blog.title}
                         </a>
-                        <p>{blog.excerpt}</p>
-                        <a href={blog.link} className="read-more">
+                        <p style={{
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                        }}>
+                            {blog.shortContent}
+                        </p>
+                        <a href={`/blog/${blog.blogUrl}`} className="read-more">
                             Read More
                         </a>
                     </div>

@@ -1,0 +1,43 @@
+.blog-content {
+    line-height: 1.9;
+    font-size: 17px;
+    color: #e6e6e6;
+}
+
+.blog-content p {
+    margin-bottom: 18px;
+    color: white;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+    color: #ffffff;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.blog-content h2 {
+    font-size: 23px;
+}
+
+.blog-content ul {
+    padding-left: 22px;
+    margin-bottom: 18px;
+    list-style: disc;
+}
+
+.blog-content li {
+    margin-bottom: 8px;
+}
+
+.blog-content a {
+    color: #4da3ff;
+    text-decoration: underline;
+}
+
+/* MOST IMPORTANT — override draft inline styles */
+.blog-content span[style] {
+    color: inherit !important;
+}

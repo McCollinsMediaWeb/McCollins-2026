@@ -13,25 +13,27 @@ import BlogPage from "./Page/Blog";
 import ContactPage from "./Page/Contact";
 import SingleServicePage from "./Page/SingleService";
 import SinglePostPage from "./Page/SinglePost";
+import SingleBlog from "./Page/Blog/SingleBlog";
 
-function AppRouter(){
+function AppRouter() {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />}/>
-            <Route path="about" element={<AboutPage />}/>
-            <Route path="service" element={<ServicePage />}/>
-            <Route path="single_services" element={<SingleServicePage />}/>
-            <Route path="case_studies" element={<CaseStudiesPage />}/>
-            <Route path="team" element={<TeamPage />}/>
-            <Route path="partnership" element={<PartnershipPage />}/>      
-            <Route path="pricing" element={<PricingPage />}/>
-            <Route path="Testimonial" element={<TestimonialPage />}/>
-            <Route path="faq" element={<FaqPage />}/>
-            <Route path="blog" element={<BlogPage />}/>
-            <Route path="single_post" element={<SinglePostPage />}/>
-            <Route path="contact" element={<ContactPage />}/>
-            <Route path="404_page" element={<NotFoundPage />}/>
-            <Route path="*" element={<NotFoundPage />}/>
+            <Route path="/" element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="service" element={<ServicePage />} />
+            <Route path="single_services" element={<SingleServicePage />} />
+            <Route path="case_studies" element={<CaseStudiesPage />} />
+            <Route path="team" element={<TeamPage />} />
+            <Route path="partnership" element={<PartnershipPage />} />
+            <Route path="pricing" element={<PricingPage />} />
+            <Route path="Testimonial" element={<TestimonialPage />} />
+            <Route path="faq" element={<FaqPage />} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<SingleBlog />} />
+            <Route path="single_post" element={<SinglePostPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="404_page" element={<NotFoundPage />} />
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
 }

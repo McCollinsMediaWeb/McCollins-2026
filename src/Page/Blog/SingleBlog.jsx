@@ -1,14 +1,63 @@
-import React from "react";
+import { useParams } from "react-router-dom";
 import { blogs } from "../../Data/BlogPostData";
+import RecentBlogs from "../../Components/Blog/RecentBlogs";
+import { useEffect, useState } from "react";
+import draftToHtml from "draftjs-to-html";
+import "./SingleBlog.css";
 
-const BlogPostSection = () => {
+export default function SingleBlog() {
+    const { slug } = useParams();
+
+    const [htmlContent, setHtmlContent] = useState("");
+    const [blog, setBlog] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+
+    useEffect(() => {
+        const fetchBlog = async () => {
+            try {
+                const res = await fetch(`http://localhost:8000/api/blogs/${slug}`);
+
+                if (!res.ok) {
+                    throw new Error("Blog not found");
+                }
+
+                const data = await res.json();
+                setBlog(data);
+            } catch (err) {
+                console.error(err);
+                setError(true);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchBlog();
+    }, [slug]);
+
+    useEffect(() => {
+        if (!blog?.content) return;
+
+        try {
+            const raw = JSON.parse(blog.content);
+            const html = draftToHtml(raw);
+            setHtmlContent(html);
+        } catch (e) {
+            console.error("Content parse failed", e);
+        }
+    }, [blog]);
+
+
+    if (loading) return <h2 style={{ padding: "80px" }}>Loading...</h2>;
+    if (error || !blog) return <h2 style={{ padding: "80px" }}>Blog Not Found</h2>;
+
     return (
         <div className="section">
             <div className="hero-container">
                 <div className="row row-cols-lg-2 row-cols-1 grid-spacer-5">
                     <div className="col col-lg-4 order-2 order-lg-1">
                         <div className="d-flex flex-column flex-md-row flex-lg-column gspace-5">
-                            <div className="card recent-post">
+                            {/* <div className="card recent-post">
                                 <h4>Recent Blog</h4>
                                 {blogs.map((blog) => (
                                     <div
@@ -33,8 +82,9 @@ const BlogPostSection = () => {
                                         </div>
                                     </div>
                                 ))}
-                            </div>
-                            <div className="cta-service-banner">
+                            </div> */}
+                            <RecentBlogs />
+                            {/* <div className="cta-service-banner">
                                 <div className="spacer"></div>
                                 <h3 className="title-heading">Transform Your Business with Marko!</h3>
                                 <p>
@@ -44,45 +94,51 @@ const BlogPostSection = () => {
                                     <a href="about">Read More</a>
                                     <i className="fa-solid fa-circle-arrow-right"></i>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col col-lg-8 order-1 order-lg-2">
                         <div className="d-flex flex-column gspace-2">
                             <div className="post-image">
                                 <img
-                                    src="/assets/images/dummy-img-600x400.jpg"
+                                    // src="/assets/images/dummy-img-600x400.jpg"
+                                    src={blog.photo ?? "/assets/images/blog1.jpg"}
                                     alt="Recent Post"
                                     className="img-fluid"
                                 />
                             </div>
-                            <h3>How to Grow Your Digital Business</h3>
+                            <h3>{blog.title}</h3>
                             <div className="underline-muted-full"></div>
                             <div className="d-flex flex-row align-items-center justify-content-between">
                                 <div className="d-flex flex-row align-items-center gspace-2">
                                     <div className="d-flex flex-row gspace-1 align-items-center">
                                         <i className="fa-solid fa-calendar accent-color"></i>
-                                        <span className="meta-data-post">March 27, 2025</span>
+                                        <span className="meta-data-post">{new Date(blog.date).toLocaleDateString("en-US", {
+                                            year: "numeric",
+                                            month: "long",
+                                            day: "numeric",
+                                        })}</span>
                                     </div>
                                     <div className="d-flex flex-row gspace-1 align-items-center">
                                         <i className="fa-solid fa-folder accent-color"></i>
-                                        <span className="meta-data-post">SEO</span>
+                                        <span className="meta-data-post">{blog.category}</span>
                                     </div>
                                 </div>
                                 <div className="d-flex flex-row gspace-1 align-items-center">
                                     <i className="fa-solid fa-user accent-color"></i>
-                                    <span className="meta-data">Fox Creation</span>
+                                    <span className="meta-data">{blog.author}</span>
                                 </div>
                             </div>
 
                             <div>
-                                <p>
-                                    In today's fast-paced digital landscape, growing a business online requires more than just a website and a few ads.
-                                    To achieve sustainable growth, digital businesses must implement a well-rounded strategy that includes brand positioning,
-                                    performance marketing, and customer retention. In this post, we'll explore actionable growth strategies to help your digital
-                                    business scale successfully.
-                                </p>
-                                <p>
+                                {/* <p>
+                                    {blog.content}
+                                </p> */}
+                                <div
+                                    className="blog-content"
+                                    dangerouslySetInnerHTML={{ __html: htmlContent }}
+                                />
+                                {/* <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis ac odio et efficitur. Proin velit neque, sollicitudin
                                     nec purus eu, suscipit feugiat tellus. Mauris non iaculis nulla. Curabitur placerat nulla sodales, consequat nunc nec, consectetur
                                     ante. Aenean et enim eu orci dapibus maximus ut non ex. Sed eu pharetra orci, sed consequat nisi. Praesent porta ipsum id erat
@@ -90,9 +146,9 @@ const BlogPostSection = () => {
                                     Nullam a tristique lacus, sit amet fringilla turpis. Pellentesque tempor, diam sed consectetur fermentum, leo turpis lobortis mi,
                                     eu gravida lorem mauris ut est. Donec pellentesque nisl vel purus condimentum posuere. Nulla laoreet arcu non convallis lobortis.
                                     Aenean in lacus nec magna tincidunt faucibus vel sit amet risus.
-                                </p>
+                                </p> */}
                             </div>
-                            <div className="quote-container">
+                            {/* <div className="quote-container">
                                 <div>
                                     <div className="icon-wrapper">
                                         <div className="icon-box">
@@ -108,13 +164,13 @@ const BlogPostSection = () => {
                                     <h5>Adam Malik</h5>
                                     <p className="quote-description">User Malik</p>
                                 </div>
-                            </div>
-                            <p>
+                            </div> */}
+                            {/* <p>
                                 Pellentesque ac velit libero. Phasellus sed elit sit amet diam ultricies dapibus. Curabitur pretium, eros ut posuere finibus, sem
                                 mauris accumsan nulla, nec elementum metus turpis at nibh. Phasellus commodo lobortis semper. Fusce velit augue, efficitur id elit
                                 ut, volutpat feugiat est. Cras ac mi orci. Maecenas nibh neque, faucibus sed lacus nec, elementum tempor dui. Fusce porta nunc vitae
                                 finibus dapibus. In vulputate nisl id mollis fringilla.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -122,5 +178,3 @@ const BlogPostSection = () => {
         </div>
     );
 };
-
-export default BlogPostSection;
