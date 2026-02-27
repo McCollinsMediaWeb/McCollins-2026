@@ -4467,11 +4467,12 @@ body.lightmode .cta-service-banner::before{
 .CallLink::before{
     content: "";
     background-image: url(../../../public/assets/images/call.png);
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     left: 20px;
-    top: 10px;
+    top: 15px;
+    background-size: 100% 100%;
 }
 .ScrollInitiated .FixedHeader{
 background-color: rgba(0, 0, 0, 0.5);

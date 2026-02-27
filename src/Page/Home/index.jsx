@@ -17,12 +17,13 @@ import BlogSection from "../../Components/Blog/blog";
 function HomePage(){
     return(
         <>
-            <HeadTitle title="Home - Marko - Digital Marketing Agency" />
+            <HeadTitle title="McCollins Media - Home" />
             <BannerHomeSection />
             <ExpertiseSection />
+            <PartnershipSection />
              <ServiceSection />
             
-            <PartnershipSection />
+            
             <ChooseUsSection />
             <GuideBannerSection />
             <ModalVideoSection />
@@ -30,7 +31,7 @@ function HomePage(){
             <CaseStudiesSection noPadding={true} />
             <TestimonialSection />
             <DigitalProcessSection />
-            <PricingPlanSection />
+            
             <NewsletterSection />
             <BlogSection />
         </>
