@@ -4507,7 +4507,7 @@ background-color: rgba(0, 0, 0, 0.5);
     z-index: 55;
 }
 .MegamenuHeader{
-    padding: 25px 0px;
+    padding: 20px 0px;
     background-color: rgba(56, 117, 253, 0.9);
 }
 .HdMenuFlex{
@@ -4534,4 +4534,9 @@ background-color: rgba(0, 0, 0, 0.5);
 .MegaMenuMiddle{
     padding: 50px 0px;
     color: #fff;
+}
+.MegLnkTp1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
 }

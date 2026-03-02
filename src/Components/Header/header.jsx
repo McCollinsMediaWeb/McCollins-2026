@@ -65,7 +65,7 @@ function Navbar() {
                                 <NavLink className="navbar-brand" to="/">
                                     <img
                                         src="/assets/images/mcmain.png"
-                                        className="site-logo img-fluid"
+                                        className="img-fluid"
                                         alt="Logo"
                                     />
                                 </NavLink>
@@ -81,7 +81,17 @@ function Navbar() {
 
                 </div>
                 <div className="MegaMenuMiddle">
-                    <div className="container">Ijas</div>
+                    <div className="container">
+                        <div className="MenuItems">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="">
+                                        <NavLink className="MegLnkTp1" to="/">Home</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
