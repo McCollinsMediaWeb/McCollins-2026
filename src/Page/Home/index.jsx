@@ -19,7 +19,7 @@ function HomePage(){
         <>
             <HeadTitle title="McCollins Media - Home" />
             <BannerHomeSection />
-            <ExpertiseSection />
+            {/* <ExpertiseSection />
             <PartnershipSection />
              <ServiceSection />
             
@@ -33,7 +33,7 @@ function HomePage(){
             <DigitalProcessSection />
             
             <NewsletterSection />
-            <BlogSection />
+            <BlogSection /> */}
         </>
     );
 }
