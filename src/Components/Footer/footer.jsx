@@ -13,9 +13,13 @@ const Footer = () => {
                                     <div className="logo-container-footer">
                                     <img src="/assets/images/mcmain.png" alt="Logo" className="site-logo img-fluid" />
                                     </div>
-                                    <h4>Driving Digital Growth with Innovation & Strategy</h4>
+                                    <h4>Elevate Your Brand in the
+Digital World.</h4>
                                     <p>
-                                    Lorem ipsum dolor si consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+                                    Elevate Your Brand in the
+Digital World.Elevate Your Brand in the
+Digital World.Elevate Your Brand in the
+Digital World.
                                     </p>
                                 </div>
                             </div>
@@ -27,7 +31,7 @@ const Footer = () => {
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/about">About Us</a></li>
                                         <li><a href="/service">Service</a></li>
-                                        <li><a href="/case_studies">Case Studies</a></li>
+                                        <li><a href="/case_studies">Industry</a></li>
                                         <li><a href="/blog">Blog</a></li>
                                         <li><a href="/contact">Contact Us</a></li>
                                     </ul>
@@ -38,12 +42,13 @@ const Footer = () => {
                                 <div className="footer-services-container">
                                     <h5>Services</h5>
                                     <ul className="footer-list">
+                                        <li><a href="/single_services">Website Development</a></li>
                                         <li><a href="/single_services">Social Media Marketing</a></li>
-                                        <li><a href="/single_services">SEO Optimization</a></li>
-                                        <li><a href="/single_services">PPC Advertising</a></li>
-                                        <li><a href="/single_services">Content Marketing</a></li>
-                                        <li><a href="/single_services">Branding Strategy</a></li>
-                                        <li><a href="/single_services">Email Marketing</a></li>
+                                        <li><a href="/single_services">Google Ads</a></li>
+                                        <li><a href="/single_services">Search Engine Optimization</a></li>
+                                        <li><a href="/single_services">Film Production</a></li>
+                                        <li><a href="/single_services">Brand Development</a></li>
+                                        <li><a href="/single_services">Perfomance Marketing</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,31 +57,38 @@ const Footer = () => {
                                 <div className="footer-contact-container">
                                     <h5>Contact Info</h5>
                                     <ul className="contact-list">
-                                        <li>hello@markoagency.com</li>
-                                        <li>+1 234 567 890</li>
-                                        <li>123 Digital Street, New York, USA</li>
+                                        <li>Email: info@mccollinsmedia.com</li>
+                                        <li>Phone: +971 55 956 4135</li>
+                                        <li>Addresss:
+G04, Loft Office 2, Entrance C,
+Dubai Media City, Dubai</li>
                                     </ul>
                                     <div className="d-flex flex-column gspace-1">
                                         <h5>Social Media</h5>
                                         <div className="social-container">
                                             <div className="social-item-wrapper">
-                                                <a href="https://facebook.com" className="social-item">
-                                                    <i className="fa-brands fa-facebook"></i>
+                                                <a href="https://www.tiktok.com/@mccollinsmedia" className="social-item">
+                                                    <i className="fa-brands fa-tiktok"></i>
                                                 </a>
                                             </div>
                                             <div className="social-item-wrapper">
-                                                <a href="https://youtube.com" className="social-item">
-                                                    <i className="fa-brands fa-youtube"></i>
-                                                </a>
-                                            </div>
-                                            <div className="social-item-wrapper">
-                                                <a href="https://instagram.com" className="social-item">
+                                                <a href="https://www.instagram.com/mccollinsmedia/?hl=en" className="social-item">
                                                     <i className="fa-brands fa-instagram"></i>
                                                 </a>
                                             </div>
                                             <div className="social-item-wrapper">
-                                                <a href="https://linkedin.com" className="social-item">
+                                                <a href="https://www.facebook.com/mccollinsmedia/" className="social-item">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                            </div>
+                                            <div className="social-item-wrapper">
+                                                <a href="https://www.linkedin.com/company/mccollins-media/" className="social-item">
                                                     <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                            <div className="social-item-wrapper">
+                                                <a href="https://wa.me/971559564135?text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media" className="social-item">
+                                                    <i className="fa-brands fa-whatsapp"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -89,7 +101,7 @@ const Footer = () => {
                     </div>
 
                     <div className="copyright-container">
-                        <span className="copyright">© 2025 Marko. Fox Creation All Rights Reserved.</span>
+                        <span className="copyright">© 2026 All Rights Reserved McCollins Media</span>
                         <div className="d-flex flex-row gspace-2">
                             <a href="#" className="legal-link">Terms of Service</a>
                             <a href="#" className="legal-link">Privacy Policy</a>

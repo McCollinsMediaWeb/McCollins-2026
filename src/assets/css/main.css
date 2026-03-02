@@ -1015,7 +1015,7 @@ body.lightmode .keep-dark .btn-accent {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-snug);
-    padding: 20px 30px 20px 30px;
+    padding: 15px 20px 15px 20px;
     color: var(--accent-color-2);
     text-decoration: none;
     align-self: center;
@@ -3549,8 +3549,8 @@ body.lightmode .newsletter-layout {
     background-color: var(--accent-color);
     color: var(--primary);
     font-size: var(--font-size-6xl);
-    width: 59px;
-    height: 59px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     display: flex;
@@ -4581,6 +4581,8 @@ body.lightmode .cta-service-banner::before {
 .MegaMenuFooter{
     padding: 20px 0px;
     background-color: rgba(56, 117, 253, 0.9);
+
+    
 }
 
 .HdMenuFlex {
@@ -4605,8 +4607,16 @@ body.lightmode .cta-service-banner::before {
 .HdT1 {
     font-size: 22px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: capitalize;
 }
+.HdT2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
 
 .MegaMenuMiddle {
     padding: 50px 0px;
@@ -4634,6 +4644,9 @@ body.lightmode .cta-service-banner::before {
     margin-bottom: 15px;
     padding-bottom: 5px;
     transition: 0.5s;
+}
+.LinkItem a.FontSmall{
+font-size: 18px;
 }
 .LinkItem a::after{
     content: "";
