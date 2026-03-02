@@ -4496,3 +4496,42 @@ background-color: rgba(0, 0, 0, 0.5);
 .HeroBannerSbText1{
     margin-bottom: 20px;
 }
+
+.MegaMenu{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 55;
+}
+.MegamenuHeader{
+    padding: 25px 0px;
+    background-color: rgba(56, 117, 253, 0.9);
+}
+.HdMenuFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CloseBtn{
+    width: 30px;
+    height: 30px;
+    background-image: url(../../../public/assets/images/close.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+     transition: transform 0.4s ease;
+}
+.CloseBtn:hover{
+     transform: rotate(90deg);
+}
+.HdT1{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+.MegaMenuMiddle{
+    padding: 50px 0px;
+    color: #fff;
+}
