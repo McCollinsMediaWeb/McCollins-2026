@@ -85,12 +85,32 @@ function Navbar() {
                         <div className="MenuItems">
                             <div className="row">
                                 <div className="col-md-4">
-                                    <div className="">
+                                    <div className="LinkItem">
                                         <NavLink className="MegLnkTp1" to="/">Home</NavLink>
                                     </div>
+                                    <div className="LinkItem">
+                                        <NavLink className="MegLnkTp1" to="/">About Us</NavLink>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <NavLink className="MegLnkTp1" to="/">Services</NavLink>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <NavLink className="MegLnkTp1" to="/">Industry</NavLink>
+                                    </div>  
+                                    <div className="LinkItem">
+                                        <NavLink className="MegLnkTp1" to="/">Blogs</NavLink>
+                                    </div> 
+                                    <div className="LinkItem">
+                                        <NavLink className="MegLnkTp1" to="/">Contact</NavLink>
+                                    </div> 
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="MegaMenuFooter">
+                    <div className="container">
+                        <div> ijas</div>
                     </div>
                 </div>
             </div>
