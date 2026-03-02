@@ -4570,8 +4570,11 @@ body.lightmode .cta-service-banner::before {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     left: 0;
-    top: 0;
+    top: -100%;
     z-index: 55;
+}
+.MenuActive .MegaMenu{
+    top: 0;
 }
 
 .MegamenuHeader ,
@@ -4624,4 +4627,23 @@ body.lightmode .cta-service-banner::before {
 .MegaMenuMiddle {
   overflow-y: auto;
   min-height: 0;
+}
+.LinkItem a{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+.LinkItem a::after{
+    content: "";
+    width: 80% ;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.LinkItem a:hover::after{
+width: 100%
 }

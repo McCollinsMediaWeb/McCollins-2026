@@ -1,10 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
 import ThemeSwitcher from "../Theme/themeswitch";
 import { useNav } from "../Context/NavContext";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+      const [menuOpen, setMenuOpen] = useState(false);
+      useEffect(() => {
+        if (menuOpen) {
+        document.body.classList.add("MenuActive");
+        } else {
+        document.body.classList.remove("MenuActive");
+        }
+
+        // Cleanup (important)
+        return () => {
+        document.body.classList.remove("MenuActive");
+        };
+    }, [menuOpen]);
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
@@ -32,7 +45,7 @@ function Navbar() {
                     <div className="HeaderBox">
                         <div className="HeaderBoxFlex">
                             <div className="HeaderBoxLeft">
-                                <div className="HamberMenuIcon">
+                                <div className="HamberMenuIcon" onClick={() => setMenuOpen(prev => !prev)}>
                                     <div className="HamberMenuLine"></div>
                                     <div className="HamberMenuLine"></div>
                                     <div className="HamberMenuLine"></div>
@@ -40,7 +53,7 @@ function Navbar() {
 
                             </div>
                             <div className="HeaderBoxMiddle">
-                                <NavLink className="navbar-brand" to="/">
+                                <NavLink className="navbar-brand" to="/" >
                                     <img
                                         src="/assets/images/mcmain.png"
                                         className="site-logo img-fluid"
@@ -62,7 +75,7 @@ function Navbar() {
                     <div className="container">
                         <div className="HdMenuFlex">
                             <div className="HdMenuLeft">
-                                <NavLink className="navbar-brand" to="/">
+                                <NavLink className="navbar-brand"  onClick={() => setMenuOpen(prev => !prev)}>
                                     <img
                                         src="/assets/images/mcmain.png"
                                         className="img-fluid"
@@ -74,7 +87,7 @@ function Navbar() {
                                 <div className="HdT1">Explore Menu</div>
                             </div>
                             <div className="HdMenuRight">
-                                <div className="CloseBtn">&nbsp;</div>
+                                <div className="CloseBtn" onClick={() => setMenuOpen(prev => !prev)}>&nbsp;</div>
                             </div>
                         </div>
                     </div>
