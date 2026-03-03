@@ -37,10 +37,32 @@ function Navbar() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+      const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 100) {
+        setIsScrolled(true);
+        document.body.classList.add("ScrollActivated");
+      } else {
+        setIsScrolled(false);
+        document.body.classList.remove("ScrollActivated");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.classList.remove("ScrollActivated");
+    };
+  }, []);
 
     return (
         <>
-            <div className="FixedHeader">
+            <div  className={`FixedHeader ${isScrolled ? "fixed" : ""}`}>
                 <div className="container">
                     <div className="HeaderBox">
                         <div className="HeaderBoxFlex">

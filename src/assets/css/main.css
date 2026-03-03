@@ -2310,7 +2310,7 @@ body.lightmode .card-partner {
 }
 
 .service-title {
-    color: var(--primary);
+    color: var(--accent-color);
     text-align: start;
 }
 
@@ -2563,23 +2563,23 @@ body.lightmode .case-studies-content::before {
     background-image: linear-gradient(180deg, var(--accent-color-7) 10%, var(--accent-color-3) 100%);
 }
 
-.case-studies-content.local-business {
-    background-image: url('/assets/images/dummy-img-600x400.jpg');
+.case-studies-content.oakberry {
+    background-image: url('/assets/images/oakberry.jpg');
     width: 56.2%;
 }
 
-.case-studies-content.saas-leads {
-    background-image: url('/assets/images/dummy-img-600x400.jpg');
+.case-studies-content.vossdubai {
+    background-image: url('/assets/images/voss.jpg');
     width: 42%;
 }
 
-.case-studies-content.ecommerce {
-    background-image: url('/assets/images/dummy-img-600x400.jpg');
+.case-studies-content.dubai-airport-freezone {
+    background-image: url('/assets/images/dubai.jpg');
     width: 42%;
 }
 
-.case-studies-content.startup-branding {
-    background-image: url('/assets/images/dummy-img-600x400.jpg');
+.case-studies-content.pioneer {
+    background-image: url('/assets/images/pioneer.jpg');
     width: 56.2%;
 }
 
@@ -3116,7 +3116,7 @@ body.lightmode .card-blog {
 /* ================== 35. Guide Components ================== */
 
 .guide-banner {
-    background-image: url('/assets/images/dummy-img-1920x900.jpg');
+    background-image: url('/assets/images/global.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3766,9 +3766,10 @@ body.lightmode .newsletter-layout {
     flex-direction: row;
     min-height: 150px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.chooseus-card-container {
+/* .chooseus-card-container {
     width: 50%;
     order: 1;
 }
@@ -3776,7 +3777,7 @@ body.lightmode .newsletter-layout {
 .chooseus-content-container {
     width: 50%;
     order: 2;
-}
+} */
 
 .chooseus-icon-wrapper {
     width: 100px;
@@ -3861,6 +3862,10 @@ body.lightmode .newsletter-layout {
 
 .chooseus-content p {
     margin-bottom: 14.4px;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;      /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .chooseus-img {
@@ -4477,6 +4482,9 @@ body.lightmode .cta-service-banner::before {
     z-index: 55;
     transition: 0.3s;
 }
+.FixedHeader.fixed{
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 .HeaderBoxFlex {
     display: flex;
@@ -4659,4 +4667,7 @@ font-size: 18px;
 }
 .LinkItem a:hover::after{
 width: 100%
+}
+.ServiceSection{
+    background-image: url(../../../public/assets/images/bg1.jpg);
 }

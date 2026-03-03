@@ -20,7 +20,7 @@ const DigitalProcessSection = () => {
                                                 <i className="fa-regular fa-circle-dot"></i>
                                                 <span>How it Work</span>
                                             </div>
-                                            <h2 className="title-heading">Simple Steps to Digital Success</h2>
+                                            <h2 className="title-heading">The McCollins Ascension Model</h2>
                                         </div>
                                     </AnimateOnScroll>
                                 </div>
@@ -42,7 +42,7 @@ const DigitalProcessSection = () => {
 
                             <div className="digital-process-steps-wrapper">
                                 <div className="digital-process-steps">
-                                    <div className="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                                    <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1">
                                     {digitalSteps.map((item, index) => (
                                         <DigitalStepCard
                                             key={index}

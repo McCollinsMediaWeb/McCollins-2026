@@ -7,7 +7,7 @@ function ServiceSection(){
 
     return(
         <>
-            <div className="section">
+            <div className="section ServiceSection">
                 <div className="hero-container">
                     <div className="d-flex flex-column justify-content-center text-center gspace-5">
                         <div className="d-flex flex-column justify-content-center text-center gspace-2">
@@ -20,7 +20,7 @@ function ServiceSection(){
 
                             <AnimateOnScroll animation="fadeInDown" speed="normal">
                                 <h2 className="title-heading heading-container heading-container-medium">
-                                    Digital Solutions That Drive Real Results
+                                    Digital Solutions<br/> That Drive Real Results
                                 </h2>
                             </AnimateOnScroll>
                         </div>

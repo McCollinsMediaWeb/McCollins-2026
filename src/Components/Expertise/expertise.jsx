@@ -48,11 +48,11 @@ function ExpertiseSection(){
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <h2 className="title-heading">
-                                    Data Driven Strategies, Measurable Results
+                                    Local Resonance , <br/>Global Perfomance
                                 </h2>
                             </AnimateOnScroll>
                             <p>
-                                At Marko, we specialize in crafting innovative digital marketing strategies that drive real business growth. Our expertise
+                                At McCollins Media, we specialize in crafting innovative digital marketing strategies that drive real business growth. Our expertise
                                 ensures your brand stays ahead in the competitive digital landscape.
                             </p>
                             <div className="d-flex flex-column flex-md-row gspace-2">

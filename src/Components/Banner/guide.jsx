@@ -11,7 +11,7 @@ function GuideBannerSection(){
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="guide-content">
                                 <div className="guide-video-container">
-                                    <VideoButton videoUrl="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1" />
+                                    <VideoButton videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
                                     <p>See How We Help Brands Grow</p>
                                 </div>
                                 <div className="d-flex flex-column gspace-2">

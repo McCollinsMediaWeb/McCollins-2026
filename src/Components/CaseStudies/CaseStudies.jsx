@@ -18,7 +18,7 @@ const CaseStudiesSection = ({ noPadding }) => {
                                             <i className="fa-regular fa-circle-dot"></i>
                                             <span>Case Studies</span>
                                         </div>
-                                        <h2 className="title-heading">See How We Help Businesses Thrive</h2>
+                                        <h2 className="title-heading">Witness the impact of globally fluent digital strategies</h2>
                                     </div>
                                 </AnimateOnScroll>
                             </div>

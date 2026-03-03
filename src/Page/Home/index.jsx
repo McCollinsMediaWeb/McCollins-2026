@@ -19,21 +19,21 @@ function HomePage(){
         <>
             <HeadTitle title="McCollins Media - Home" />
             <BannerHomeSection />
-            {/* <ExpertiseSection />
+            <ExpertiseSection />
             <PartnershipSection />
              <ServiceSection />
+            <CaseStudiesSection  />
             
             
-            <ChooseUsSection />
             <GuideBannerSection />
             <ModalVideoSection />
            
-            <CaseStudiesSection noPadding={true} />
-            <TestimonialSection />
+            <ChooseUsSection />
+            {/* <TestimonialSection /> */}
             <DigitalProcessSection />
             
             <NewsletterSection />
-            <BlogSection /> */}
+            <BlogSection />
         </>
     );
 }
