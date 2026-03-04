@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-function InnerNew({ title, desktopImage, mobileImage }) {
+function InnerNew({ title,title2,title3, desktopImage, mobileImage }) {
 
     const playerRef = useRef(null);
     const videoContainerRef = useRef(null);
@@ -63,6 +63,8 @@ function InnerNew({ title, desktopImage, mobileImage }) {
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                     <h1 className="title-heading-banner" style={{ WebkitTextFillColor: "#fff" }}>
                                         {title}
+                                        <div>{title2}</div>
+                                        <div>{title3}</div>
                                     </h1>
                                 </AnimateOnScroll>
                             </div>
