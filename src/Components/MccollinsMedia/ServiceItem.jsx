@@ -1,0 +1,62 @@
+import React, { useEffect, useState } from "react";
+import VideoButton from "../Video/VideoButton";
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+
+function ServiceItem({ desktopImage, mobileImage, title, subtitle, Position }) {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkScreen = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkScreen();
+        window.addEventListener("resize", checkScreen);
+
+        return () => window.removeEventListener("resize", checkScreen);
+    }, []);
+
+    const containerClass = Position === "right" ? "alignRight" : "alignLeft";
+
+    return (
+        <div className="ServiceItemBox">
+
+            <div className="BannerImageBox">
+                {isMobile ? (
+                    <img src={mobileImage} alt="mobile view" />
+                ) : (
+                    <img src={desktopImage} alt="desktop view" />
+                )}
+            </div>
+
+            <div className="BannerBoxContent">
+                <div className={`container ${containerClass}`}>
+                    <AnimateOnScroll animation="fadeInUp">
+                        <div className="BannerBoxCn">
+                            <h2 className="title-heading">{title}</h2>
+
+                            <div className="title-heading-2">
+                                {subtitle}
+                            </div>
+
+                            <a href="#" className="btn btn-primary">
+
+                                <div className="btn-title">
+                                    <span>View Details</span>
+                                </div>
+
+                                <div className="icon-circle">
+                                    <i className="fa-solid fa-arrow-right"></i>
+                                </div>
+
+                            </a>
+                        </div>
+                    </AnimateOnScroll>
+                </div>
+            </div>
+
+        </div>
+    );
+}
+
+export default ServiceItem;
