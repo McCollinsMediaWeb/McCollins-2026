@@ -6,8 +6,8 @@ import ModalVideoSection from "../../Components/Video/video";
 import PricingPlanSection from "../../Components/Pricing/Pricing";
 import HeadTitle from "../../Components/Head/HeadTitle";
 
-function ServicePage(){
-    return(
+function ServicePage() {
+    return (
         <>
             <HeadTitle title="Services - Marko - Digital Marketing Agency" />
             <BannerInnerSection title="Our Services" currentPage="Services" />

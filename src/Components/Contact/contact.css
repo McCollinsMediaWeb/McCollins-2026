@@ -1,0 +1,78 @@
+/* CONTACT HEADING */
+.contact-heading {
+    font-size: clamp(22px, 2.2vw, 34px);
+    font-weight: 600;
+    color: #3876fc;
+    letter-spacing: 0.5px;
+}
+
+/* spacing inside each column */
+.contact-item {
+    position: relative;
+    padding: 30px 22px;
+}
+
+/* =========================
+   DESKTOP → Vertical divider
+   ========================= */
+@media (min-width: 768px) {
+
+    .contact-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 18%;
+        margin-right: 20px;
+        height: 70%;
+        width: 1px;
+        background-color: white;
+    }
+}
+
+/* =========================
+   MOBILE → Horizontal divider
+   ========================= */
+@media (max-width: 767px) {
+
+    .contact-item:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .contact-item {
+        padding: 26px 10px;
+    }
+}
+
+
+
+
+
+.custom-contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* .custom-contact-row>div {
+    padding: 0 20px;
+} */
+
+/* .custom-contact-row>div:not(:last-child) {
+    border-right: 1px solid #ffffff;
+} */
+
+@media (max-width: 768px) {
+    .custom-contact-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* .custom-contact-row>div:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    } */
+}

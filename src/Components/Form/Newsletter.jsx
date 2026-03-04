@@ -39,15 +39,36 @@ function NewsletterSection() {
 
     return (
         <div className="section">
-            <div className="hero-container">
+            <div className="hero-container" style={{ maxWidth: "1380px" }} >
                 <div className="newsletter-wrapper">
-                    <div className="newsletter-layout">
-                        <div className="spacer"></div>
+                    <style>
+                        {`
+                            .newsletter-wrapper::before{
+                                content:none !important;
+                                background:none !important;
+                            }
+                        `}
+                    </style>
+                    <div className="newsletter-layout" >
+                        <style>
+                            {`
+                                .newsletter-layout{
+                                    border:none !important;
+                                    background-image:none !important;
+                                    text-align:left !important;
+                                    align-items: normal !important;
+                                }
+                                .newsletter-layout::before {
+                                    background-image:none !important;
+                                }
+                            `}
+                        </style>
+                        {/* <div className="spacer"></div> */}
                         <div className="d-flex flex-column gspace-5 position-relative z-2">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="d-flex flex-column gspace-2">
-                                    <h3 className="title-heading">Stay Ahead in Digital Marketing</h3>
-                                    <p>
+                                    <h2 className="title-heading text-align-left" style={{ WebkitTextFillColor: "#ffffff" }} >Stay Ahead in Digital Marketing</h2>
+                                    <p className="text-align-left text-white" style={{ fontWeight: 200 }}>
                                         Get exclusive insights, trends, and strategies delivered straight to your inbox.
                                         Subscribe now!
                                     </p>
@@ -78,9 +99,11 @@ function NewsletterSection() {
                                     onSubmit={handleSubmit}
                                     className="needs-validation"
                                     noValidate
+                                    style={{ border: '1px solid #666', width: '100%' }}
                                 >
                                     <div className="input-container">
                                         <input
+                                            style={{ padding: '5px 20px 5px 20px' }}
                                             type="email"
                                             name="newsletter-email"
                                             id="newsletter-email"
@@ -94,11 +117,11 @@ function NewsletterSection() {
                                             <div className="error-text">{errorMessage}</div>
                                         )}
                                     </div>
-                                    <button className="btn btn-accent" type="submit">
+                                    <button className="btn btn-accent" type="submit" style={{ backgroundColor: '#3876fc', color: '#fff' }}>
                                         <span className="btn-title">
                                             <span>Subscribe</span>
                                         </span>
-                                        <span className="icon-circle">
+                                        <span className="icon-circle" style={{ backgroundColor: 'black', color: '#fff' }}>
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </button>

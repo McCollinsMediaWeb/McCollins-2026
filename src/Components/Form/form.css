@@ -1,0 +1,187 @@
+/* ======================================================
+   CONTACT FORM — UNDERLINE STYLE INPUTS
+====================================================== */
+
+#contactForm input,
+#contactForm textarea {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+
+    padding: 14px 0;
+    width: 100%;
+
+    outline: none !important;
+    box-shadow: none !important;
+
+    font-size: clamp(15px, 1.2vw, 18px);
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+/* focus state */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    background: transparent !important;
+    border-bottom: 1px solid #3876fc !important;
+    box-shadow: 0 6px 12px -10px rgba(56, 118, 252, .65);
+}
+
+/* placeholder */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #fff;
+    /* font-size: clamp(14px, 1.1vw, 17px); */
+    font-size: clamp(18px, 1.6vw, 24px) !important;
+}
+
+/* autofill fix (chrome/safari) */
+#contactForm input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* textarea */
+#contactForm textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+/* spacing */
+#contactForm .row {
+    margin-bottom: 18px;
+}
+
+
+
+/* ======================================================
+   SERVICES (CUSTOM CHECKBOXES)
+====================================================== */
+
+.services-group {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.services-title {
+    color: #fff;
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-weight: 500;
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 14px;
+}
+
+.message-title {
+    color: #fff;
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-weight: 500;
+}
+
+/* GRID LAYOUT */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 40px;
+    margin-top: 28px;
+}
+
+/* each option */
+.service-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: clamp(15px, 1.3vw, 18px) !important;
+    user-select: none;
+    transition: color .2s ease;
+}
+
+/* remove native checkbox */
+.service-option input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* square box */
+.checkmark {
+    width: clamp(16px, 1.2vw, 22px);
+    height: clamp(16px, 1.2vw, 22px);
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+/* inner indicator */
+.checkmark::after {
+    content: "";
+    width: clamp(5px, .6vw, 8px);
+    height: clamp(5px, .6vw, 8px);
+    background: #000;
+    transform: scale(0);
+    transition: transform .18s ease;
+}
+
+/* hover */
+.service-option:hover .checkmark {
+    border-color: #3876fc;
+}
+
+/* checked */
+.service-option input:checked+.checkmark {
+    background: #3876fc;
+    border-color: #3876fc;
+    box-shadow: 0 0 0 4px rgba(56, 118, 252, .18);
+}
+
+.service-option input:checked+.checkmark::after {
+    transform: scale(1);
+}
+
+/* highlight text when selected */
+.service-option:has(input:checked) {
+    color: #ffffff;
+}
+
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* tablet */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    #contactForm .row {
+        margin-bottom: 14px;
+    }
+
+    #contactForm textarea {
+        min-height: 70px;
+    }
+}
