@@ -4755,3 +4755,23 @@ color: #fff !important;
 .alignRight .btn{
     margin-left: auto;
 }
+.RowSt1 p{
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.RowSt1 .btn{
+    width: 300px;
+}
+.RowSt1 .btn-primary .btn-title span{
+color: #fff !important;
+}
+.RowSt1 .icon-circle{
+    background-color: var(--accent-color-4);
+}
+.BrandGrids .col-md-4{
+    margin-bottom: 20px;
+}
+.BrandGrids{
+    margin-top: 25px;
+}
