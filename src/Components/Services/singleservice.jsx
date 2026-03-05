@@ -73,6 +73,85 @@ const SingleServiceSection = () => {
                                     <p style={{ marginTop: '15px' }}>We design multi-stage, behavior-triggered workflows that deliver personalized content at the exact moment of intent, accelerating the transition from lead to loyal customer.</p>
                                 </div>
                             </div>
+
+
+                            <div className="row" >
+                                <div className="col-md-8 d-flex flex-column justify-content-center">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Omnichannel Synchronization
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <img
+                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                            </div>
+
+
+
+                            <div className="row" >
+                                <div className="col-md-8">
+                                    <img
+                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            CRM & Data Integration
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>Engineering seamless data pipelines between your digital platforms and CRM, providing a 360-degree view of consumer behavior and actionable business intelligence.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="row" >
+                                <div className="col-md-8 d-flex flex-column justify-content-center">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Predictive Audience Segmentation
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <img
+                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="row" >
+                                <div className="col-md-8">
+                                    <img
+                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Automated Lifecycle Management
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>From onboarding to re-engagement, we build persistent automation frameworks that maximize customer lifetime value (CLV) and reduce operational overhead.</p>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
