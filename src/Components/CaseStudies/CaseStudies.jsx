@@ -7,51 +7,47 @@ const CaseStudiesSection = ({ noPadding }) => {
 
     return (
         <div className={`section ${noPadding ? "p-0" : ""}`}>
-            <div className="hero-container">
+            <div className="hero-container" style={{ maxWidth: '1380px' }}>
                 <div className="case-studies-layout">
                     <div className="card card-case-studies">
-                        <div className="row row-cols-lg-2 row-cols-1 grid-spacer-5">
+                        <div className="row row-cols-1 grid-spacer-5">
                             <div className="col">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <div className="d-flex flex-column gspace-2">
+                                    <div className="d-flex flex-column gspace-1">
                                         <div className="sub-heading">
                                             <i className="fa-regular fa-circle-dot"></i>
                                             <span>Case Studies</span>
                                         </div>
-                                        <h2 className="title-heading">Witness the impact of globally fluent digital strategies</h2>
+                                        <h2 className="title-heading" style={{ WebkitTextFillColor: "#ffffff" }}>Featured Cases</h2>
                                     </div>
                                 </AnimateOnScroll>
-                            </div>
-                            <div className="col">
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <div className="d-flex flex-column h-100 justify-content-end gspace-2">
-                                        <p>We don't just talk about results—we deliver them. Here are some of our most impactful case studies showcasing how our digital marketing strategies drive success.</p>
-                                        <div className="link-wrapper">
-                                            <a href="./case_studies">More Case Studies</a>
-                                            <i className="fa-solid fa-circle-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </AnimateOnScroll>
+                                <p style={{ marginTop: "15px", fontWeight: 100 }}>Every brand in today's time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms.</p>
                             </div>
                         </div>
 
-                        {/* Cards */}
-                        <div className="d-flex flex-column gspace-2">
-                            <div className="d-flex flex-column flex-lg-row gspace-2">
-                                {caseStudiesData.slice(0, 2).map((item) => ( 
-                                    <CaseStudyCard key={item.id} {...item} />
-                                ))}
-                            </div>
-                            <div className="d-flex flex-column flex-lg-row gspace-2">
-                                {caseStudiesData.slice(2, 4).map((item) => (
-                                    <CaseStudyCard key={item.id} {...item} />
-                                ))}
-                            </div>
-                        </div>
+
                     </div>
-                    <div className="spacer"></div>
+                    {/* <div className="spacer"></div> */}
                 </div>
             </div>
+
+
+
+            {/* Cards */}
+            <div className="d-flex flex-column gspace-2">
+                <div className="d-flex flex-column flex-lg-row gspace-2">
+                    {caseStudiesData.slice(0, 2).map((item) => (
+                        <CaseStudyCard key={item.id} {...item} />
+                    ))}
+                </div>
+                <div className="d-flex flex-column flex-lg-row gspace-2">
+                    {caseStudiesData.slice(2, 4).map((item) => (
+                        <CaseStudyCard key={item.id} {...item} />
+                    ))}
+                </div>
+            </div>
+
+
         </div>
     );
 };

@@ -15,6 +15,7 @@ import SingleServicePage from "./Page/SingleService";
 import SinglePostPage from "./Page/SinglePost";
 import SingleBlog from "./Page/Blog/SingleBlog";
 import PerformanceMarketing from "./Page/PerformanceMarketing";
+import BrandDevelopment from "./Page/BrandDevelopment";
 
 function AppRouter() {
     return (
@@ -24,6 +25,7 @@ function AppRouter() {
             <Route path="service" element={<ServicePage />} />
             <Route path="single_services" element={<SingleServicePage />} />
             <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
+            <Route path="/service/brand-development" element={<BrandDevelopment />} />
             <Route path="case_studies" element={<CaseStudiesPage />} />
             <Route path="team" element={<TeamPage />} />
             <Route path="partnership" element={<PartnershipPage />} />
