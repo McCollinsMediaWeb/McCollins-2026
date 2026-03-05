@@ -10,7 +10,7 @@ import HeaderLayout from "../../Components/MccollinsMedia/HeaderLayout";
 import ServiceItem from "../../Components/MccollinsMedia/ServiceItem";
 import DigitalProcessSection from "../../Components/DigitalProcess/digitalstep";
 
-function ServicePage() {
+function BrandDevelopment() {
     return (
         <>
             <HeadTitle title="Services - McCollins Media" />
@@ -27,4 +27,4 @@ function ServicePage() {
     );
 }
 
-export default ServicePage;
+export default BrandDevelopment;

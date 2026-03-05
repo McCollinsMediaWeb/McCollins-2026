@@ -22,11 +22,13 @@ function ServiceItem({ desktopImage, mobileImage, title, subtitle, Position }) {
         <div className="ServiceItemBox">
 
             <div className="BannerImageBox">
+                <AnimateOnScroll animation="fadeInUp">
                 {isMobile ? (
                     <img src={mobileImage} alt="mobile view" />
                 ) : (
                     <img src={desktopImage} alt="desktop view" />
                 )}
+                </AnimateOnScroll>
             </div>
 
             <div className="BannerBoxContent">
