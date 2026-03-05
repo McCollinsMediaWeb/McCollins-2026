@@ -1,5 +1,5 @@
 import React from "react";
-import { caseStudiesData } from "../../Data/CaseStudiesData";
+import { caseStudiesData2 } from "../../Data/CaseStudiesData";
 import CaseStudyCard from "../Card/CaseStudiesCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
@@ -8,8 +8,8 @@ const CaseStudiesSection = ({ noPadding }) => {
     return (
         <div className={`section ${noPadding ? "p-0" : ""}`}>
             <div className="hero-container" style={{ maxWidth: '1380px' }}>
-                <div className="case-studies-layout">
-                    <div className="card card-case-studies">
+                <div className="case-studies-layout" style={{ padding: '0px', borderRadius: 'none' }}>
+                    <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px' }} >
                         <div className="row row-cols-1 grid-spacer-5">
                             <div className="col">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
@@ -34,17 +34,12 @@ const CaseStudiesSection = ({ noPadding }) => {
 
 
             {/* Cards */}
-            <div className="d-flex flex-column gspace-2">
-                <div className="d-flex flex-column flex-lg-row gspace-2">
-                    {caseStudiesData.slice(0, 2).map((item) => (
-                        <CaseStudyCard key={item.id} {...item} />
-                    ))}
-                </div>
-                <div className="d-flex flex-column flex-lg-row gspace-2">
-                    {caseStudiesData.slice(2, 4).map((item) => (
-                        <CaseStudyCard key={item.id} {...item} />
-                    ))}
-                </div>
+            <div className="row g-4" style={{ marginTop: "20px" }}>
+                {caseStudiesData2.map((item) => (
+                    <div key={item.id} className="col-12 col-md-6" style={{ paddingLeft: '0px', paddingRight: '0px', marginTop: '0px' }}>
+                        <CaseStudyCard {...item} />
+                    </div>
+                ))}
             </div>
 
 

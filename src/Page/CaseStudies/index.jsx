@@ -5,6 +5,7 @@ import CaseStudiesSection from "../../Components/CaseStudies/CaseStudies";
 import GuideBannerSection from "../../Components/Banner/guide";
 import ModalVideoSection from "../../Components/Video/video";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
+import NewsletterSection from "../../Components/Form/Newsletter";
 import InnerNew from "../../Components/Banner/InnerNew";
 
 function CaseStudiesPage() {
@@ -14,6 +15,7 @@ function CaseStudiesPage() {
             {/* <BannerInnerSection title="Case Studies" currentPage="Case Studies" /> */}
             <InnerNew desktopImage="/assets/images/servicemaindesk.jpg" mobileImage="/assets/images/servicemainmob.jpg" title="Case Studies" title2="" title3="" />
             <CaseStudiesSection />
+            <NewsletterSection />
             {/* <GuideBannerSection /> */}
             {/* <ModalVideoSection /> */}
             {/* <TestimonialSection /> */}
