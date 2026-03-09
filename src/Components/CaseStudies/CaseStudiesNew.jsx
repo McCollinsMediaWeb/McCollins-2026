@@ -8,9 +8,9 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
     return (
         <div className={`section ${noPadding ? "p-0" : ""}`}>
             <div className="hero-container" style={{ maxWidth: '1380px' }}>
-                <div className="case-studies-layout" style={{ padding: '0px', borderRadius: 'none' }}>
+                <div className=" case-studies-layout" style={{ padding: '0px', borderRadius: 'none' }}>
                     <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px' }} >
-                        <div className="row row-cols-1 grid-spacer-5">
+                        <div className=" row row-cols-1 grid-spacer-5">
                             <div className="col">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                     <div className="d-flex flex-column gspace-1">
@@ -34,7 +34,7 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
 
 
             {/* Cards */}
-            <div className="row g-4" style={{ marginTop: "20px" }}>
+            <div className="MainWeb row g-4" style={{ marginTop: "20px" }}>
                 {caseStudiesData2.map((item) => (
                     <div key={item.id} className="col-12 col-md-6" style={{ paddingLeft: '0px', paddingRight: '0px', marginTop: '0px' }}>
                         <CaseStudyCardNew {...item} />

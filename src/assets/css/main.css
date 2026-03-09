@@ -5011,3 +5011,18 @@ margin-top: 30px;
 .case-studies-content.felis-kitchen{
     background-image: url(../../../public/assets/images/felis.jpg);
 }
+.MainWeb .case-studies-content{
+    width: 100% !important;
+}
+.MainWeb  .case-studies-content.pioneer{
+    background-image: url(../../../public/assets/images/w1.jpg);
+}
+.MainWeb  .case-studies-content.dxb-hotel{
+background-image: url(../../../public/assets/images/w2.jpg);
+}
+.MainWeb  .case-studies-content.takmeel {
+background-image: url(../../../public/assets/images/w3.jpg);
+}
+.MainWeb  .case-studies-content.business-communication{
+background-image: url(../../../public/assets/images/w4.jpg);
+}
