@@ -4974,3 +4974,21 @@ margin-top: 30px;
     background-color: var(--accent-color-3);
     padding: 50px 0px;
 }
+.AbtParaBox{
+    margin-top: 30px;
+}
+.BoxItem1 h2{
+    width: 100%;
+}
+.AbtT1{
+    font-size: var(--font-size-6xl);
+  color: var(--accent-color);
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+.AbtT2{
+   color: #fff;
+   margin-bottom: 20px;
+}
+.AbtT3{
+}
