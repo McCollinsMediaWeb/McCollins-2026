@@ -85,7 +85,7 @@ function AboutPage() {
                                     <div className="AbtRowContent">
                                         <div className="AbtT1">Mastering Ecosystems. Delivering Results.</div>
                                         <div className="AbtT2">Managing the digital ecosystem for your
-brand with a result</div>
+                                            brand with a result</div>
                                         <div className="AbtT3">From Digital Media Buying, Campaign Development, Blogger Outreach Programs to Content Development, we do it all in-house.</div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ brand with a result</div>
                         </div>
                     </div>
                 </AnimateOnScroll>
-                
+
                 <AnimateOnScroll animation="fadeInUp">
                     <div className="AbtRow">
                         <div className="container">
@@ -108,7 +108,7 @@ brand with a result</div>
                                 <div className="col-md-4">
                                     <img className="width-full abtImage" src="/assets/images/abt2.jpg" />
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ brand with a result</div>
                                 <div className="col-md-4">
                                     <div className="AbtRowContent">
                                         <div className="AbtT1">Precision Lead
-Generation.</div>
+                                            Generation.</div>
                                         <div className="AbtT2">Implement performance based marketing, ensure lead generation</div>
                                         <div className="AbtT3">call to action to your website or mobile application. Get the phone ringing or increase the CTR for your campaigns. Get in touch now.</div>
                                     </div>

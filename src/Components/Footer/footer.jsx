@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,27 +29,29 @@ Digital World.
                                 <div className="footer-quick-links">
                                     <h5>Quick Links</h5>
                                     <ul className="footer-list">
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="/about">About Us</a></li>
-                                        <li><a href="/service">Service</a></li>
-                                        <li><a href="/case_studies">Industry</a></li>
-                                        <li><a href="/blog">Blog</a></li>
-                                        <li><a href="/contact">Contact Us</a></li>
+                                        <li><NavLink to="/">Home</NavLink></li>
+                                        <li><NavLink to="/about">About Us</NavLink></li>
+                                        <li><NavLink to="/service">Service</NavLink></li>
+                                        <li><NavLink to="/industry">Industry</NavLink></li>
+                                        <li><NavLink to="/blog">Blog</NavLink></li>
+                                        <li><NavLink to="/contact">Contact Us</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
+
 
                             <div className="col col-lg-3">
                                 <div className="footer-services-container">
                                     <h5>Services</h5>
                                     <ul className="footer-list">
-                                        <li><a href="/single_services">Website Development</a></li>
-                                        <li><a href="/single_services">Social Media Marketing</a></li>
-                                        <li><a href="/single_services">Google Ads</a></li>
-                                        <li><a href="/single_services">Search Engine Optimization</a></li>
-                                        <li><a href="/single_services">Film Production</a></li>
-                                        <li><a href="/single_services">Brand Development</a></li>
-                                        <li><a href="/single_services">Perfomance Marketing</a></li>
+                                        <li><NavLink to="/service/website-development">Website Development</NavLink></li>
+                                        <li><NavLink to="/service/social-media-marketing">Social Media Marketing</NavLink></li>
+                                        <li><NavLink to="/service/marketing-automations">Marketing Automation</NavLink></li>
+                                        <li><NavLink to="/service">Google Ads</NavLink></li>
+                                        <li><NavLink to="/service">Search Engine Optimization</NavLink></li>
+                                        <li><NavLink to="/service/content-production">Film Production</NavLink></li>
+                                        <li><NavLink to="/service/brand-development">Brand Development</NavLink></li>
+                                        <li><NavLink to="/service/performance-marketing">Perfomance Marketing</NavLink></li>
                                     </ul>
                                 </div>
                             </div>

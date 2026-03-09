@@ -170,22 +170,22 @@ function Navbar() {
                                 </div>
                                 <div className="col-md-4">
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
+                                        <NavLink className="MegLnkTp1" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/blog" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</NavLink>
                                     </div>
                                 </div>
                             </div>
