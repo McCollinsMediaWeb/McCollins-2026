@@ -141,7 +141,7 @@ function Navbar() {
                                 </div>
                                 <div className="col-md-4">
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/" onClick={() => setMenuOpen(prev => !prev)}>Services</NavLink>
+                                        <NavLink className="MegLnkTp1" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</NavLink>
                                     </div>
                                     <div className="LinkItem">
                                         <NavLink className="MegLnkTp1 FontSmall" to="/" onClick={() => setMenuOpen(prev => !prev)}>Website Development</NavLink>
@@ -159,7 +159,7 @@ function Navbar() {
                                         <NavLink className="MegLnkTp1 FontSmall" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>Film Production</NavLink>
                                     </div> 
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>Brand Development</NavLink>
+                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/brand-development" onClick={() => setMenuOpen(prev => !prev)}>Brand Development</NavLink>
                                     </div> 
                                     <div className="LinkItem">
                                         <NavLink className="MegLnkTp1 FontSmall" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>Perfomance Marketing</NavLink>
