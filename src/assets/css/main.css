@@ -4886,15 +4886,25 @@ margin-top: 30px;
     width: 100%;
 }
 .InImage{
-    margin-top: 25px;
+    border-radius: 25px;
 }
 .IndustryAreaWrap{
     margin-top: 35px;
 }
+.sectionboxT1{
+    padding: 45px 0px 30px 0px;
+}
 .InIt1{
     position: relative;
     padding-left: 60px;
+    margin-bottom: 30px;
 }
+.InIt1.right{
+    padding-left: 0;
+    padding-right: 60px;
+    text-align: right;
+}
+
 .InIt1::before{
     content: "";
     width: 45px;
@@ -4902,15 +4912,32 @@ margin-top: 30px;
     background-size: 100% 100%;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 3px;
+}
+.InIt1.right::before{
+    left: auto;
+    right: 0;
 }
 .InIt1.t1::before{
     background-image: url(../../../public/assets/images/ind1.png);
+}
+.InIt1.t2::before{
+    background-image: url(../../../public/assets/images/ind2.png);
+}
+.InIt1.t3::before{
+    background-image: url(../../../public/assets/images/ind3.png);
+}
+.InIt1.t4::before{
+    background-image: url(../../../public/assets/images/ind4.png);
+}
+.InIt1.t5::before{
+    background-image: url(../../../public/assets/images/ind5.png);
 }
 .StRp1{
     font-size: var(--font-size-6xl);
     color: var(--accent-color);
     margin-bottom: 25px;
+    line-height: 1.2;
 }
 .StRp2{
     margin-bottom: 25px;
@@ -4932,4 +4959,15 @@ margin-top: 30px;
   left: 0;
   top: 7px;
   background-size: 100% 100%;
+}
+.IndustryItem{
+    margin-bottom: 50px;
+}
+.FullScreenItem .StWrp1{
+    padding-left: 30px;
+
+}
+.FullScreenItem{
+    background-color: var(--accent-color-3);
+    padding: 50px 0px;
 }
