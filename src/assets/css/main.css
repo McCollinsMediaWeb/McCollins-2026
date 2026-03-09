@@ -3130,6 +3130,9 @@ body.lightmode .card-blog {
     position: relative;
     z-index: 1;
 }
+.guide-banner.bg2 {
+    background-image: url('/assets/images/videobg1.jpg');
+}
 
 .guide-banner::before {
     content: '';
@@ -4774,4 +4777,108 @@ color: #fff !important;
 }
 .BrandGrids{
     margin-top: 25px;
+}
+.UnBoxT1 h2{
+    display: block;
+}
+.UnBoxT1 p{
+    max-width: 80%;
+    margin: 15px auto;
+}
+.widthFull{
+    width: 100%;
+}
+.borderRadius5{
+    border-radius: 5px;
+}
+.GridBoxT1{
+    position: relative;
+    color: var(--accent-color);
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.GridBoxT1::before{
+    content: "";
+    background-image: url(../../../public/assets/images/txtarow.png);
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-size: 100% 100%;
+}
+.GridBoxT2{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+.GridBoxWrap{
+    margin-top: 35px;
+}
+.GridBoxes .GridBox:last-child{
+margin-top: 30px;
+}
+.CaseStudyBox{
+    position: relative;
+}
+.CaseStudyBox::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.CaseStudiesBoxes .btn{
+    border-radius: 0;
+}
+.CaseStudyBoxContent{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+}
+.csSt1{
+    position: relative;
+    padding-left: 35px;
+    font-weight: 500;
+}
+.csSt1::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.csSt1::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 5px;
+  top: 5px;
+}
+.csSt2{
+    margin: 15px 0px;
+}
+.LinkListItem{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
