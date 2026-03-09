@@ -4882,3 +4882,54 @@ margin-top: 30px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.CaseStudyBox img{
+    width: 100%;
+}
+.InImage{
+    margin-top: 25px;
+}
+.IndustryAreaWrap{
+    margin-top: 35px;
+}
+.InIt1{
+    position: relative;
+    padding-left: 60px;
+}
+.InIt1::before{
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.InIt1.t1::before{
+    background-image: url(../../../public/assets/images/ind1.png);
+}
+.StRp1{
+    font-size: var(--font-size-6xl);
+    color: var(--accent-color);
+    margin-bottom: 25px;
+}
+.StRp2{
+    margin-bottom: 25px;
+    font-size: var(--font-size-1xl);
+}
+.LnkLstBoxItem{
+    position: relative;
+    padding-left: 30px;
+    font-size: var(--font-size-3xl);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.LnkLstBoxItem::before {
+  content: "";
+  background-image: url(/public/assets/images/txtarow.png);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background-size: 100% 100%;
+}

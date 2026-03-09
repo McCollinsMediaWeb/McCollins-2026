@@ -130,7 +130,7 @@ function Navbar() {
                                         <NavLink className="MegLnkTp1" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</NavLink>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
+                                        <NavLink className="MegLnkTp1" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
                                     </div>  
                                     <div className="LinkItem">
                                         <NavLink className="MegLnkTp1" to="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</NavLink>

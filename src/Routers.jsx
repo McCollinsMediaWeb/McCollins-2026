@@ -25,7 +25,6 @@ function AppRouter() {
             <Route path="about" element={<AboutPage />} />
             <Route path="service" element={<ServicePage />} />
             <Route path="industry" element={<Industry />} />
-            
             <Route path="single_services" element={<SingleServicePage />} />
             <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
             <Route path="/service/brand-development" element={<BrandDevelopment />} />
