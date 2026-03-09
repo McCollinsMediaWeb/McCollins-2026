@@ -83,11 +83,17 @@ function Navbar() {
                                     />
                                 </NavLink>
                             </div>
-                            <div className="HeaderBoxRight">
-                                <a href="#" className="CallLink btn btn-accent">
-                                    Let's Talk
-                                </a>
+                            <div style={{ display: 'flex' }} >
+                                <div className="navbar-action-button">
+                                    <ThemeSwitcher />
+                                </div>
+                                <div className="HeaderBoxRight">
+                                    <a href="#" className="CallLink btn btn-accent">
+                                        Let's Talk
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

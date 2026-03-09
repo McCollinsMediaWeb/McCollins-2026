@@ -15,6 +15,7 @@ import MeetTheTeam from "../../Components/MccollinsMedia/MeetTheTeam";
 import GlobalCreative from "../../Components/MccollinsMedia/GlobalCreative";
 import CustomGuide from "../../Components/Banner/CustomGuide";
 import Awards from "../../Components/MccollinsMedia/Awards";
+import BehindTheScence from "../../Components/MccollinsMedia/BehindTheScence";
 
 function AboutPage() {
     return (
@@ -82,6 +83,7 @@ function AboutPage() {
             <MeetTheTeam />
 
             <Awards />
+            <BehindTheScence />
 
 
 

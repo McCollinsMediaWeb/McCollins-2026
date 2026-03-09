@@ -15,15 +15,15 @@ export default function ThemeSwitcher() {
         const updateLogos = () => {
             const siteLogos = document.querySelectorAll('.site-logo');
             const partnerLogos = document.querySelectorAll('.partner-logo');
-    
+
             if (lightMode) {
                 document.body.classList.add('lightmode');
                 localStorage.setItem('lightmode', 'active');
-    
+
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'assets/images/marko-logo-dark.png');
+                    logo.setAttribute('src', 'assets/images/mcmain.png');
                 });
-    
+
                 partnerLogos.forEach((img) => {
                     const src = img.getAttribute('src');
                     if (!src.includes('-dark')) {
@@ -33,35 +33,35 @@ export default function ThemeSwitcher() {
             } else {
                 document.body.classList.remove('lightmode');
                 localStorage.removeItem('lightmode');
-    
+
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'assets/images/marko-logo.png');
+                    logo.setAttribute('src', 'assets/images/mcmain.png');
                 });
-    
+
                 partnerLogos.forEach((img) => {
                     const src = img.getAttribute('src');
                     img.setAttribute('src', src.replace('-dark.png', '.png'));
                 });
             }
         };
-    
+
         updateLogos();
-    
+
         const observer = new MutationObserver(() => {
             updateLogos();
         });
-    
+
         observer.observe(document.body, {
             childList: true,
             subtree: true,
         });
-    
+
         return () => {
             observer.disconnect();
         };
     }, [lightMode]);
-    
-    
+
+
 
     const toggleMode = () => {
         setLightMode((prev) => !prev);
