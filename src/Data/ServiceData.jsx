@@ -48,3 +48,32 @@ export const services = [
         link: "single_services",
     },
 ];
+
+
+
+export const timeline = [
+    {
+        id: 1,
+        title: "1.Start",
+        subTitle: "Pre Production",
+        content: "Once you submit the brief and confirm the project with us, our team of account directors will do the rest. Plan, strategize, set deadlines, and moderate every task from script to finish.",
+        timeline: "Timeline: 2 - 3 Days",
+        speed: "slow",
+    },
+    {
+        id: 2,
+        title: "2.Collab",
+        subTitle: "Production",
+        content: "Once we finish the pre-production stage according to the approved plan, we proceed to shoot. Our crew will make sure that we have a seamless journey throughout out the shoot days.",
+        speed: "normal",
+        timeline: "Timeline: 1 - 2 Days",
+    },
+    {
+        id: 3,
+        title: "3.Approve",
+        subTitle: "Post Production",
+        content: "Share your feedback using our technology, which allows you to add comments directly on the video with real-time playback along with your colleagues anywhere in the world, creating faster approvals.",
+        speed: "fast",
+        timeline: "Timeline: 2 - 3 Days",
+    }
+];

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-function NewsletterSection() {
+function NewsletterSection({ btnColor = "#3876fc" }) {
 
     const [email, setEmail] = useState("");
     const [success, setSuccess] = useState(false);
@@ -117,7 +117,7 @@ function NewsletterSection() {
                                             <div className="error-text">{errorMessage}</div>
                                         )}
                                     </div>
-                                    <button className="btn btn-accent" type="submit" style={{ backgroundColor: '#3876fc', color: '#fff' }}>
+                                    <button className="btn btn-accent" type="submit" style={{ backgroundColor: btnColor, color: '#fff' }}>
                                         <span className="btn-title">
                                             <span>Subscribe</span>
                                         </span>

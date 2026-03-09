@@ -14,24 +14,24 @@ import PartnershipSection from "../../Components/Partnership/Partnership";
 import NewsletterSection from "../../Components/Form/Newsletter";
 import BlogSection from "../../Components/Blog/blog";
 
-function HomePage(){
-    return(
+function HomePage() {
+    return (
         <>
             <HeadTitle title="McCollins Media - Home" />
             <BannerHomeSection />
             <ExpertiseSection />
             <PartnershipSection />
-             <ServiceSection />
-            <CaseStudiesSection  />
-            
-            
+            <ServiceSection />
+            <CaseStudiesSection />
+
+
             <GuideBannerSection />
             <ModalVideoSection />
-           
+
             <ChooseUsSection />
             {/* <TestimonialSection /> */}
             <DigitalProcessSection />
-            
+
             <NewsletterSection />
             <BlogSection />
         </>

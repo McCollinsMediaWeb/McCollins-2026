@@ -71,3 +71,44 @@ export const caseStudiesData2 = [
 		size: "small",
 	},
 ];
+
+
+
+export const caseStudiesDataSocialMediaMarketing = [
+	{
+		id: 1,
+		title: "Doors Dubai",
+		description: "5x ROI on social media campaigns & 80% increase in engagement...",
+		tags: ["Social Media", "Social Media Marketing"],
+		category: "Hotel / Restaurant",
+		className: "doors-dubai",
+		size: "small",
+	},
+	{
+		id: 2,
+		title: "Marsaajmanmall",
+		description: "150% increase in qualified leads & 70% lower customer acquisition cost.",
+		tags: ["Social Media", "Social Media Marketing"],
+		category: "Hotel / Resort",
+		className: "marsaajmanmall",
+		size: "small",
+	},
+	{
+		id: 3,
+		title: "Oak Berry",
+		description: "3x increase in organic traffic & 2x revenue growth in 6 months...",
+		tags: ["Social Media", "Social Media Marketing"],
+		category: "F & B",
+		className: "oak-berry",
+		size: "small",
+	},
+	{
+		id: 4,
+		title: "Felis Kitchen",
+		description: "200% increase in brand mentions & 60% higher engagement rates...",
+		tags: ["Social Media", "Social Media Marketing"],
+		category: "F & B",
+		className: "felis-kitchen",
+		size: "small",
+	},
+];

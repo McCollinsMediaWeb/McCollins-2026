@@ -17,6 +17,10 @@ import SingleBlog from "./Page/Blog/SingleBlog";
 import PerformanceMarketing from "./Page/PerformanceMarketing";
 import BrandDevelopment from "./Page/BrandDevelopment";
 import Industry from "./Page/Industry";
+import MarketingAutomations from "./Page/MarketingAutomations";
+import ContentProduction from "./Page/ContentProduction";
+import WebsiteDevelopment from "./Page/WebsiteDevelopment";
+import SocialMediaMarketing from "./Page/SocialMediaMarketing";
 
 function AppRouter() {
     return (
@@ -26,8 +30,12 @@ function AppRouter() {
             <Route path="service" element={<ServicePage />} />
             <Route path="industry" element={<Industry />} />
             <Route path="single_services" element={<SingleServicePage />} />
-            <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
+            <Route path="/service/marketing-automations" element={<MarketingAutomations />} />
             <Route path="/service/brand-development" element={<BrandDevelopment />} />
+            <Route path="/service/content-production" element={<ContentProduction />} />
+            <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
+            <Route path="/service/website-development" element={<WebsiteDevelopment />} />
+            <Route path="/service/social-media-marketing" element={<SocialMediaMarketing />} />
             <Route path="case_studies" element={<CaseStudiesPage />} />
             <Route path="team" element={<TeamPage />} />
             <Route path="partnership" element={<PartnershipPage />} />
