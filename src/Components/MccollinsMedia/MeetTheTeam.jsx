@@ -241,7 +241,7 @@ const MeetTheTeam = () => {
                         <div ref={scrollRef} className="team-scroll">
 
                             <div style={{ ...cardStyle }} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/manjeet.webp" alt="" style={imgStyle} />
+                                <img src="/assets/images/mk.png" alt="" style={imgStyle} />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Meghna Kothari
                                 </h4>
@@ -261,7 +261,7 @@ const MeetTheTeam = () => {
                             </div>
 
                             <div style={cardStyle} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/manjeet.webp" alt="" style={imgStyle} />
+                                <img src="/assets/images/as.png" alt="" style={imgStyle} />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Ashar
                                 </h4>
