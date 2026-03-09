@@ -69,9 +69,9 @@ function BestSolutions() {
                                         </AnimateOnScroll>
                                     </div>
                                     <img
-                                        src="/assets/images/dummy-img-600x400.jpg"
+                                        src="/assets/images/pr1.jpg"
                                         alt="Expertise Image"
-                                        className="img-fluid"
+                                        className="img-fluid brdRadius"
                                     />
                                 </div>
                                 <div className="expertise-spacer"></div>

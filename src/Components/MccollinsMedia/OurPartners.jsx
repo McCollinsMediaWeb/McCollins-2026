@@ -17,19 +17,19 @@ function OurPartners() {
                         <p style={{ color: '#fff', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/costa-coffee.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/toshiba.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a1.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a2.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a3.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a4.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a5.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '5rem' }}>
-                        <img src="/assets/images/clients/damac.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/pioneer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
-                        <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a6.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a7.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a8.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a9.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/a10.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
                 </div>
             </div>

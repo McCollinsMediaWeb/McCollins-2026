@@ -2546,7 +2546,8 @@ body.lightmode .card-case-studies {
     content: '';
     position: absolute;
     background-color: var(--accent-transparent);
-    background-image: linear-gradient(180deg, var(--accent-color-5) 0%, var(--secondary) 100%);
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-image: linear-gradient(180deg, var(--accent-color-5) 0%, var(--secondary) 100%); */
     width: 100%;
     height: 100%;
     top: 0;
@@ -4994,4 +4995,19 @@ margin-top: 30px;
 }
 .AbtRows{
     padding-bottom: 50px;
+}
+.brdRadius{
+    border-radius: 20px;
+}
+.case-studies-content.doors-dubai{
+    background-image: url(../../../public/assets/images/door-dubai.png);
+}
+.case-studies-content.marsaajmanmall{
+    background-image: url(../../../public/assets/images/mras.jpg);
+}
+.case-studies-content.oak-berry{
+    background-image: url(../../../public/assets/images/oak.jpg);
+}
+.case-studies-content.felis-kitchen{
+    background-image: url(../../../public/assets/images/felis.jpg);
 }

@@ -12,7 +12,7 @@ function ContentProduction() {
             <HeadTitle title="Content Production - McCollins Media - Digital Marketing Agency" />
             <InnerNew desktopImage="/assets/images/s6.jpg" mobileImage="/assets/images/s6mob.jpg" title="Content" title2="Production" title3="" />
             <HeaderLayoutDynamic />
-            <ServiceItemContent desktopImage="/assets/images/s1.jpg" mobileImage="/assets/images/s1mob.jpg" title="Schedule Your Shoot" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
+            <ServiceItemContent desktopImage="/assets/images/cnt1.jpg" mobileImage="/assets/images/cnt1mob.jpg" title="Schedule Your Shoot" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
             <OurTimeline />
             <NewsletterSection btnColor="#e02f47" />
         </div>

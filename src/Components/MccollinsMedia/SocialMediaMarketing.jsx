@@ -53,7 +53,7 @@ function SocialMediaMarketingImageWithText() {
                             <div className="expertise-layout">
                                 <div className="d-flex flex-column">
                                     <img
-                                        src="/assets/images/dummy-img-600x800.jpg"
+                                        src="/assets/images/sc1.png"
                                         alt="Expertise Image"
                                         className="img-fluid"
                                     />

@@ -51,7 +51,7 @@ const FeaturedCaseStudies = () => {
                         </div>
                         <div className="col-md-4" >
                             <div style={{ display: 'flex' }} >
-                                <img src="/assets/images/dummy-img-400x400.jpg" alt="" />
+                                <img className="width-full brdRadius" src="/assets/images/cake.jpg" alt="" />
                             </div>
                             <div>
                                 <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >

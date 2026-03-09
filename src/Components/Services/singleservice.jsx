@@ -28,7 +28,7 @@ const SingleServiceSection = () => {
                             </div>
 
                             <img
-                                src="/assets/images/dummy-img-600x400.jpg"
+                                src="/assets/images/p1.jpg"
                                 alt="Service Image"
                                 className="single-service-img"
                                 style={{ marginTop: '40px', marginBottom: '70px' }}
@@ -59,7 +59,7 @@ const SingleServiceSection = () => {
                             <div className="row pt-5" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/p2.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -86,7 +86,7 @@ const SingleServiceSection = () => {
                                 </div>
                                 <div className="col-md-4">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/p3.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -98,7 +98,7 @@ const SingleServiceSection = () => {
                             <div className="row" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/p4.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -125,7 +125,7 @@ const SingleServiceSection = () => {
                                 </div>
                                 <div className="col-md-4">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/p5.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -135,7 +135,7 @@ const SingleServiceSection = () => {
                             <div className="row" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/p6.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />

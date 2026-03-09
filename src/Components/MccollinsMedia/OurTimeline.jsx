@@ -76,7 +76,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn1.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -102,7 +102,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn2.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -112,7 +112,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn3.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -138,7 +138,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn4.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -148,7 +148,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn5.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
@@ -174,7 +174,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-8">
                                     <img
-                                        src="/assets/images/dummy-img-1920x900.jpg"
+                                        src="/assets/images/cn6.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
                                     />
