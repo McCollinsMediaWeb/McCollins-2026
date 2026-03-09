@@ -11,16 +11,21 @@ import DigitalProcessSection from "../../Components/DigitalProcess/digitalstep";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
 import InnerNew from "../../Components/Banner/InnerNew";
 import AnimateOnScroll from "../../Components/Hooks/AnimateOnScroll";
+import MeetTheTeam from "../../Components/MccollinsMedia/MeetTheTeam";
+import GlobalCreative from "../../Components/MccollinsMedia/GlobalCreative";
+import CustomGuide from "../../Components/Banner/CustomGuide";
+import Awards from "../../Components/MccollinsMedia/Awards";
 
 function AboutPage() {
     return (
-        <>
+        <div style={{ backgroundColor: '#000', paddingBottom: '50px' }}>
             <HeadTitle title="About - McCollins Media" />
 
             <InnerNew desktopImage="/assets/images/abtdesk.jpg" mobileImage="/assets/images/abtmob.jpg" title="Strategically Rooted." title2="Creatively Fueled." title3="Insight Driven." />
+
             <AnimateOnScroll animation="fadeInUp">
                 <div>
-                    <div className="section HdLayt1">
+                    <div className="section HdLayt1" style={{ paddingBottom: '0px' }}>
                         <div className="container">
                             <div className="expertise-title">
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
@@ -32,16 +37,18 @@ function AboutPage() {
 
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
                                     <div className="row">
-                                        <div className="col-md-7">
-                                            <h2 className="title-heading">
-                                                Built on Strategy<br /> Defined by Insight
+                                        <div className="col-md-6">
+                                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff' }}>
+                                                Built on Strategy.<br /> Defined by Insight.
                                             </h2>
                                         </div>
-                                        <div className="col-md-5">
-                                            <div className="HdT1">A Voice For Your Brand</div>
-                                            <p>
-                                                Partnering With Ambitious Brands To Transform Cultural Intelligence Into Market-Leading Digital Influence.
-                                            </p>
+                                        <div className="col-md-6 d-flex align-items-end">
+                                            <div>
+                                                <div className="HdT1">A Voice For Your Brand</div>
+                                                <p>
+                                                    Partnering With Ambitious Brands To Transform Cultural Intelligence Into Market-Leading Digital Influence.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </AnimateOnScroll>
@@ -62,77 +69,19 @@ function AboutPage() {
                                 </div>
 
                             </div>
-                            <div className="section BoxItem1">
-                                <h2 className="title-heading text-center">
-                                    Where Strategic Precision Meets<br /> Global Creative Excellence.
-                                </h2>
-                            </div>
                         </div>
-
                     </div>
                 </div>
             </AnimateOnScroll>
 
-            <div className="AbtRows">
-                <AnimateOnScroll animation="fadeInUp">
-                    <div className="AbtRow">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-8">
-                                    <img className="width-full abtImage" src="/assets/images/abt1.jpg" />
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="AbtRowContent">
-                                        <div className="AbtT1">Mastering Ecosystems. Delivering Results.</div>
-                                        <div className="AbtT2">Managing the digital ecosystem for your
-                                            brand with a result</div>
-                                        <div className="AbtT3">From Digital Media Buying, Campaign Development, Blogger Outreach Programs to Content Development, we do it all in-house.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </AnimateOnScroll>
+            <GlobalCreative />
 
-                <AnimateOnScroll animation="fadeInUp">
-                    <div className="AbtRow">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-8">
-                                    <div className="AbtRowContent">
-                                        <div className="AbtT1">Web. Apps. Commerce.</div>
-                                        <div className="AbtT2">Be it a mobile application, website or an e-commerce platform,</div>
-                                        <div className="AbtT3">we create a product for your brand from the scratch. Create an exclusive product for your brand which can build a database over time!</div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <img className="width-full abtImage" src="/assets/images/abt2.jpg" />
-                                </div>
+            <CustomGuide />
+            <ModalVideoSection />
 
-                            </div>
-                        </div>
-                    </div>
-                </AnimateOnScroll>
-                <AnimateOnScroll animation="fadeInUp">
-                    <div className="AbtRow">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-8">
-                                    <img className="width-full abtImage" src="/assets/images/abt3.jpg" />
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="AbtRowContent">
-                                        <div className="AbtT1">Precision Lead
-                                            Generation.</div>
-                                        <div className="AbtT2">Implement performance based marketing, ensure lead generation</div>
-                                        <div className="AbtT3">call to action to your website or mobile application. Get the phone ringing or increase the CTR for your campaigns. Get in touch now.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </AnimateOnScroll>
-            </div>
+            <MeetTheTeam />
+
+            <Awards />
 
 
 
@@ -144,7 +93,7 @@ function AboutPage() {
             <TeamSection />
             <DigitalProcessSection />
             <TestimonialSection /> */}
-        </>
+        </div>
     );
 }
 

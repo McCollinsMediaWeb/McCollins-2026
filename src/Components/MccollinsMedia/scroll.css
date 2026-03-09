@@ -1,0 +1,45 @@
+/* .team-scroll {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.team-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.team-scroll {
+    scrollbar-width: none;
+}
+.team-scroll {
+    -ms-overflow-style: none;
+}
+
+
+.team-scroll {
+    scroll-snap-type: x mandatory;
+}
+
+.team-scroll>div {
+    scroll-snap-align: start;
+} */
+
+
+
+.team-scroll {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* hide scrollbar */
+.team-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.team-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
