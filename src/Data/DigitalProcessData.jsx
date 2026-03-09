@@ -79,3 +79,48 @@ export const contentProductionSteps = [
 		content: "Motion graphics designed to translate intricate value propostions into streamlined, high-impact visual communication.",
 	},
 ];
+
+
+
+export const webDevelopmentSteps = [
+	{
+		id: 1,
+		icon: "/assets/images/c1.png",
+		step: "01",
+		title: "Expert TEAM",
+		title2: "",
+		content: "Get your website designed and developed by a team of experts who will ensure that your site is perfect for your brand.",
+	},
+	{
+		id: 2,
+		icon: "/assets/images/c2.png",
+		step: "02",
+		title: "Technology ",
+		title2: "First",
+		content: "Choose from a wide range of customizable website features that will make your site unique.",
+	},
+	{
+		id: 3,
+		icon: "/assets/images/c3.png",
+		step: "03",
+		title: "Annual ",
+		title2: "Maintenance",
+		content: "Enjoy hassle-free website maintenance that will keep your site running smoothly.",
+	},
+	{
+		id: 4,
+		icon: "/assets/images/c4.png",
+		step: "04",
+		title: "SEO Friendly",
+		title2: "",
+		content: "Optimize your website for better search engine ranking with our cutting-edge SEO techniques.",
+	},
+	{
+		id: 5,
+		icon: "/assets/images/c5.png",
+		step: "05",
+		title: "Safe And ",
+		title2: "Secure",
+		content: "Keep your data safe and secure with our state-of-the-art security measures.",
+	},
+];
