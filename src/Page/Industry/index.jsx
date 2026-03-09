@@ -158,20 +158,20 @@ function Industry() {
                                 <div className="row align-items-center">
                                     <div className="col-md-6">
 
-                                        <img className="width-full InImage" src="/assets/images/ink1.jpg" />
+                                        <img className="width-full InImage" src="/assets/images/in6.jpg" />
                                     </div>
                                     <div className="col-md-6">
                                         <div className="StWrp1">
-                                            <h3 className="InIt1 t3">Food & Beverage</h3>
-                                            <div className="StRp1">Accelerating F&B market share by
-                                                bridging the gap between local flavor and global digital scale.</div>
+                                            <h3 className="InIt1 t6">B2B</h3>
+                                            <div className="StRp1">B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand.</div>
                                             <div className="StRp2">
-                                                the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same.
+                                                Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale.
                                             </div>
                                             <div className="LnkLstBox">
-                                                <div className="LnkLstBoxItem">High-Impact Sensory Storytelling</div>
-                                                <div className="LnkLstBoxItem">Strategic Market Penetration</div>
-                                                <div className="LnkLstBoxItem">Omnichannel Consumer Engagement</div>
+                                                <div className="LnkLstBoxItem">Account-Based Precision</div>
+                                                <div className="LnkLstBoxItem">Strategic Lead Nurturing</div>
+                                                <div className="LnkLstBoxItem">Authority-Driven Thought Leadership</div>
+                                                <div className="LnkLstBoxItem">Data-Backed Sales Alignment</div>
                                             </div>
                                         </div>
                                     </div>

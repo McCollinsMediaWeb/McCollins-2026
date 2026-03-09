@@ -4933,6 +4933,9 @@ margin-top: 30px;
 .InIt1.t5::before{
     background-image: url(../../../public/assets/images/ind5.png);
 }
+.InIt1.t6::before{
+    background-image: url(../../../public/assets/images/ind6.png);
+}
 .StRp1{
     font-size: var(--font-size-6xl);
     color: var(--accent-color);
@@ -4945,7 +4948,7 @@ margin-top: 30px;
 }
 .LnkLstBoxItem{
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
     font-size: var(--font-size-3xl);
     font-weight: 600;
     margin-bottom: 15px;
@@ -4957,7 +4960,7 @@ margin-top: 30px;
   width: 20px;
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 8px;
   background-size: 100% 100%;
 }
 .IndustryItem{
