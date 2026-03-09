@@ -93,6 +93,45 @@ brand with a result</div>
                         </div>
                     </div>
                 </AnimateOnScroll>
+                
+                <AnimateOnScroll animation="fadeInUp">
+                    <div className="AbtRow">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-md-8">
+                                    <div className="AbtRowContent">
+                                        <div className="AbtT1">Web. Apps. Commerce.</div>
+                                        <div className="AbtT2">Be it a mobile application, website or an e-commerce platform,</div>
+                                        <div className="AbtT3">we create a product for your brand from the scratch. Create an exclusive product for your brand which can build a database over time!</div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <img className="width-full abtImage" src="/assets/images/abt2.jpg" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </AnimateOnScroll>
+                <AnimateOnScroll animation="fadeInUp">
+                    <div className="AbtRow">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-md-8">
+                                    <img className="width-full abtImage" src="/assets/images/abt3.jpg" />
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="AbtRowContent">
+                                        <div className="AbtT1">Precision Lead
+Generation.</div>
+                                        <div className="AbtT2">Implement performance based marketing, ensure lead generation</div>
+                                        <div className="AbtT3">call to action to your website or mobile application. Get the phone ringing or increase the CTR for your campaigns. Get in touch now.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </AnimateOnScroll>
             </div>
 
 
