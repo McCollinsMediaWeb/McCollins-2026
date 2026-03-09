@@ -1,7 +1,7 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import CounterOnScroll from "../Hooks/CounterOnScroll";
-import BrandGrids from "./brandgrids";
+import BrandGrids from "./BrandGrids";
 
 function HeaderLayout1() {
 
@@ -40,7 +40,7 @@ function HeaderLayout1() {
 
                     </div>
                 </div>
-                <BrandGrids/>
+                <BrandGrids />
             </div>
 
         </>
