@@ -205,7 +205,7 @@ const MeetTheTeam = () => {
 
     return (
         <>
-            <div className="section pt-5 pb-0" style={{ backgroundColor: "#000" }}>
+            <div className="section pt-5 pb-0" style={{ backgroundColor: "var(--background-color)" }}>
                 <div className="hero-container">
 
                     {/* Section Title */}
@@ -214,7 +214,7 @@ const MeetTheTeam = () => {
                             <div className="single-service-title text-center" style={{ gap: "5px" }}>
 
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h2 className="title-heading" style={{ WebkitTextFillColor: "#ffffff" }}>
+                                    <h2 className="title-heading">
                                         Meet The Team
                                     </h2>
                                 </AnimateOnScroll>
@@ -245,7 +245,7 @@ const MeetTheTeam = () => {
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Meghna Kothari
                                 </h4>
-                                <h5 className="title-heading" style={{ WebkitTextFillColor: "#fff" }}>
+                                <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
                                     Director
                                 </h5>
                             </div>
@@ -255,7 +255,7 @@ const MeetTheTeam = () => {
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Manjeet
                                 </h4>
-                                <h5 className="title-heading" style={{ WebkitTextFillColor: "#fff" }}>
+                                <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
                                     Business Operation Director
                                 </h5>
                             </div>
@@ -265,7 +265,7 @@ const MeetTheTeam = () => {
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Ashar
                                 </h4>
-                                <h5 className="title-heading" style={{ WebkitTextFillColor: "#fff" }}>
+                                <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
                                     Studio Lead
                                 </h5>
                             </div>
@@ -275,7 +275,7 @@ const MeetTheTeam = () => {
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     George
                                 </h4>
-                                <h5 className="title-heading" style={{ WebkitTextFillColor: "#fff" }}>
+                                <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
                                     Account Manager
                                 </h5>
                             </div>
@@ -285,7 +285,7 @@ const MeetTheTeam = () => {
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Ijas
                                 </h4>
-                                <h5 className="title-heading" style={{ WebkitTextFillColor: "#fff" }}>
+                                <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
                                     Web Lead
                                 </h5>
                             </div>

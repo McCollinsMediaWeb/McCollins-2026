@@ -67,8 +67,8 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
                         <div className="d-flex flex-column gspace-5 position-relative z-2">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="d-flex flex-column gspace-2">
-                                    <h2 className="title-heading text-align-left" style={{ WebkitTextFillColor: "#ffffff" }} >Stay Ahead in Digital Marketing</h2>
-                                    <p className="text-align-left text-white" style={{ fontWeight: 200 }}>
+                                    <h2 className="title-heading text-align-left">Stay Ahead in Digital Marketing</h2>
+                                    <p className="text-align-left" style={{ fontWeight: 100 }}>
                                         Get exclusive insights, trends, and strategies delivered straight to your inbox.
                                         Subscribe now!
                                     </p>
@@ -117,11 +117,11 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
                                             <div className="error-text">{errorMessage}</div>
                                         )}
                                     </div>
-                                    <button className="btn btn-accent" type="submit" style={{ backgroundColor: btnColor, color: '#fff' }}>
+                                    <button className="btn btn-primary" type="submit">
                                         <span className="btn-title">
                                             <span>Subscribe</span>
                                         </span>
-                                        <span className="icon-circle" style={{ backgroundColor: 'black', color: '#fff' }}>
+                                        <span className="icon-circle">
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </button>

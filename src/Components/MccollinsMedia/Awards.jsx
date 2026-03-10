@@ -40,16 +40,16 @@ const awards = [
 const Awards = () => {
     return (
         <>
-            <div className="section pt-5 pb-5" style={{ backgroundColor: "#141414", paddingBottom: "80px" }}>
+            <div className="section pt-5" style={{ backgroundColor: 'var(--secondary-background-color)' }}>
                 <div className="hero-container" style={{ maxWidth: "none" }}>
 
                     {/* Title */}
                     <div className="d-flex flex-column gspace-3">
-                        <div className="single-service-title-wrapper" style={{ backgroundColor: "#141414" }}>
-                            <div className="single-service-title text-center" style={{ gap: "5px", backgroundColor: "#141414" }}>
+                        <div className="single-service-title-wrapper" style={{ backgroundColor: "var(--secondary-background-color)" }}>
+                            <div className="single-service-title text-center" style={{ gap: "5px", backgroundColor: "var(--secondary-background-color)" }}>
 
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h2 className="title-heading text-center" style={{ WebkitTextFillColor: "#ffffff" }}>
+                                    <h2 className="title-heading text-center">
                                         Awards & Accreditations
                                     </h2>
                                 </AnimateOnScroll>

@@ -16,10 +16,11 @@ import GlobalCreative from "../../Components/MccollinsMedia/GlobalCreative";
 import CustomGuide from "../../Components/Banner/CustomGuide";
 import Awards from "../../Components/MccollinsMedia/Awards";
 import BehindTheScence from "../../Components/MccollinsMedia/BehindTheScence";
+import NewsletterSection from "../../Components/Form/Newsletter";
 
 function AboutPage() {
     return (
-        <div style={{ backgroundColor: '#000', paddingBottom: '50px' }}>
+        <div style={{ backgroundColor: 'var(--background-color)', paddingBottom: '50px' }}>
             <HeadTitle title="About - McCollins Media" />
 
             <InnerNew desktopImage="/assets/images/abtdesk.jpg" mobileImage="/assets/images/abtmob.jpg" title="Strategically Rooted." title2="Creatively Fueled." title3="Insight Driven." />
@@ -39,7 +40,7 @@ function AboutPage() {
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
                                     <div className="row">
                                         <div className="col-md-6">
-                                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff' }}>
+                                            <h2 className="title-heading">
                                                 Built on Strategy.<br /> Defined by Insight.
                                             </h2>
                                         </div>
@@ -84,6 +85,7 @@ function AboutPage() {
 
             <Awards />
             <BehindTheScence />
+            <NewsletterSection />
 
 
 

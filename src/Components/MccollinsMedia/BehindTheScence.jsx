@@ -13,7 +13,7 @@ function BehindTheScence() {
     }, []);
 
     return (
-        <div className="section">
+        <div className="section pb-0">
             <div className="hero-container" style={{ maxWidth: "none" }} >
                 <div className="newsletter-wrapper">
                     <style>
@@ -41,7 +41,7 @@ function BehindTheScence() {
                         <div className="d-flex flex-column gspace-5 position-relative z-2">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="d-flex flex-column gspace-2 text-center">
-                                    <h2 className="title-heading text-align-left" style={{ WebkitTextFillColor: "#ffffff" }} >#BehindTheScenes</h2>
+                                    <h2 className="title-heading text-align-left">#BehindTheScenes</h2>
                                 </div>
                             </AnimateOnScroll>
 
