@@ -5,9 +5,9 @@ import CustomCounterOnScroll from "../Hooks/CustomCounterOnScroll";
 const FeaturedCaseStudies = () => {
 
     return (
-        <div className={`section`}>
+        <div className={`section`} style={{ backgroundColor: 'var(--featured-case-studies-bg)' }}>
             <div className="hero-container">
-                <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px', backgroundColor: '#000' }} >
+                <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px', backgroundColor: 'var(--featured-case-studies-bg)' }} >
                     <style>
                         {`
                             .card-case-studies::before {
@@ -23,13 +23,13 @@ const FeaturedCaseStudies = () => {
                                         <i className="fa-regular fa-circle-dot"></i>
                                         <span>Case Studies</span>
                                     </div>
-                                    <h2 className="title-heading" style={{ WebkitTextFillColor: "#ffffff" }}>Featured Cases</h2>
+                                    <h2 className="title-heading">Featured Cases</h2>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                     </div>
 
-                    <div className="row" style={{ padding: '25px 35px', backgroundColor: '#212121', borderRadius: '40px', margin: '10px 30px' }} >
+                    <div className="row" style={{ padding: '25px 35px', backgroundColor: 'var(--featued-case-inner-card-bg)', borderRadius: '40px', margin: '10px 30px' }} >
                         <div className="col-md-7" >
                             <div className="case-studies-logo" style={{ marginBottom: '40px' }} >
                                 <img src="/assets/images/clients/mmi.png" alt="" />

@@ -10,7 +10,7 @@ function MarketingFoundation() {
                 <div className="hero-container">
                     <div className="row text-center" >
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff', marginBottom: '40px' }}>
+                            <h2 className="title-heading" style={{ marginBottom: '40px' }}>
                                 A Marketing Foundation That<br /> Grows your brand
                             </h2>
                         </AnimateOnScroll>
@@ -22,7 +22,7 @@ function MarketingFoundation() {
                             <div className="d-flex flex-column">
                                 <div className="card-expertise-wrapper">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h3 className="title-heading" style={{ WebkitTextFillColor: '#fff' }}>
+                                        <h3 className="title-heading">
                                             The Best Solutions For Your Business
                                         </h3>
                                     </AnimateOnScroll>
@@ -43,7 +43,7 @@ function MarketingFoundation() {
                                     </h3>
                                 </AnimateOnScroll>
 
-                                <div style={{ display: 'flex', gap: '30px' }}>
+                                {/* <div style={{ display: 'flex', gap: '30px' }}>
                                     <div>
                                         <ul style={{ paddingLeft: '0px' }}>
                                             <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Digital Strategy Development</h5></li>
@@ -56,6 +56,24 @@ function MarketingFoundation() {
                                             <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Community Management</h5></li>
                                             <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Influencer Marketing</h5></li>
                                             <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Performance Marketing</h5></li>
+                                        </ul>
+                                    </div>
+                                </div> */}
+
+                                <div className="point-arrow-list-wrapper">
+                                    <div>
+                                        <ul className="point-arrow-list">
+                                            <li><h5>Digital Strategy Development</h5></li>
+                                            <li><h5>Social Media Management</h5></li>
+                                            <li><h5>Content Creation</h5></li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <ul className="point-arrow-list">
+                                            <li><h5>Community Management</h5></li>
+                                            <li><h5>Influencer Marketing</h5></li>
+                                            <li><h5>Performance Marketing</h5></li>
                                         </ul>
                                     </div>
                                 </div>

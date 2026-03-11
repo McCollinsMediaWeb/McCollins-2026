@@ -13,14 +13,14 @@ import CaseStudiesSectionNew from "../../Components/CaseStudies/CaseStudiesNew";
 
 function WebsiteDevelopment() {
     return (
-        <div style={{ backgroundColor: '#000' }}>
+        <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Website Development - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Performance Marketing" currentPage="Services Details" /> */}
             <InnerNew desktopImage="/assets/images/s2.jpg" mobileImage="/assets/images/s2mob.jpg" title="Website" title2="Development" />
             <LargestBrands />
             <ClientPortfolio />
             <WebsiteAppDesign />
-            <CaseStudiesSectionNew />
+            <CaseStudiesSectionNew noPadding={true} />
             {/* <TestimonialSection /> */}
             <NewsletterSection />
             {/* <FaqSection /> */}

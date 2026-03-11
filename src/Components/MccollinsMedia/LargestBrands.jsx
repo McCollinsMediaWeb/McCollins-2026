@@ -15,7 +15,7 @@ function LargestBrands() {
                             <div className="d-flex flex-column gspace-5">
                                 <AnimateOnScroll animation="fadeInDown" speed="normal">
                                     <div className="d-flex flex-column gspace-2">
-                                        <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff' }}>Trusted By Largest Brands<br />For Website Development</h2>
+                                        <h2 className="title-heading">Trusted By Largest Brands<br />For Website Development</h2>
                                         <p className="mb-0" style={{ fontWeight: 100 }}>Every brand in today's time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magneto, React or Shopify to name a few. Our agency is partners with several leading platforms.</p>
                                     </div>
                                 </AnimateOnScroll>
@@ -31,7 +31,7 @@ function LargestBrands() {
                                 }
                             `}
                             </style>
-                            <div className="digital-process-steps" style={{ backgroundColor: '#000', border: 'none' }}>
+                            <div className="digital-process-steps" style={{ backgroundColor: 'var(--background-color)', border: 'none' }}>
                                 <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1">
                                     {webDevelopmentSteps.map((item, index) => (
                                         <WebDevelopmentCard

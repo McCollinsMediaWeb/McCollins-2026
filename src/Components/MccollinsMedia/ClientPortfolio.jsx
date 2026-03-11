@@ -6,7 +6,7 @@ function ClientPortfolio() {
 
     return (
         <>
-            <div className="section" style={{ backgroundColor: '#a3bfff' }}>
+            <div className="section" style={{ backgroundColor: 'var(--client-portfolio-bg)' }}>
                 <div className="hero-container">
                     <div className="text-center">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">

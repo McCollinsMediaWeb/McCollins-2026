@@ -223,7 +223,7 @@ const ContactSection = () => {
 
                                 <h2
                                     className="title-heading"
-                                    style={{ WebkitTextFillColor: "white", marginBottom: '10px' }}
+                                    style={{ marginBottom: '10px' }}
                                 >
                                     Ready To Do Something Big?
                                 </h2>

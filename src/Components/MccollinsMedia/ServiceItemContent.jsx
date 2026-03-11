@@ -37,9 +37,13 @@ function ServiceItemContent({ desktopImage, mobileImage, title, subtitle, Positi
                         <div className="BannerBoxCn" style={{ width: '800px' }}>
                             <h2 className="title-heading">{title}</h2>
 
-                            <div className="title-heading-2" style={{ marginTop: '30px', marginBottom: '30px' }}>
+                            {/* <div className="title-heading-2" style={{ marginTop: '30px', marginBottom: '30px' }}>
                                 {subtitle}
-                            </div>
+                            </div> */}
+
+                            <p style={{ marginTop: '30px', marginBottom: '30px', color: '#adadad' }}>
+                                {subtitle}
+                            </p>
 
                             <a href="#" className="btn btn-primary" style={{ backgroundColor: '#e02f47', border: 'none', width: 'fit-content' }} >
 

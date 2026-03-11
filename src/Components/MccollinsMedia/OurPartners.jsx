@@ -6,15 +6,15 @@ function OurPartners() {
 
     return (
         <>
-            <div className="section" style={{ backgroundColor: '#212121' }}>
+            <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="hero-container">
                     <div className="text-center">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff', marginBottom: '10px' }}>
+                            <h2 className="title-heading" style={{ marginBottom: '10px' }}>
                                 Our Partners
                             </h2>
                         </AnimateOnScroll>
-                        <p style={{ color: '#fff', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                        <p style={{ fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <img src="/assets/images/a1.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />

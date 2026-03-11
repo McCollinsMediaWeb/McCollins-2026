@@ -21,7 +21,7 @@ export default function ThemeSwitcher() {
                 localStorage.setItem('lightmode', 'active');
 
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'assets/images/mcmain.png');
+                    logo.setAttribute('src', '/public/assets/images/mcmain.png');
                 });
 
                 partnerLogos.forEach((img) => {
@@ -35,7 +35,7 @@ export default function ThemeSwitcher() {
                 localStorage.removeItem('lightmode');
 
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'assets/images/mcmain.png');
+                    logo.setAttribute('src', '/public/assets/images/mcmain.png');
                 });
 
                 partnerLogos.forEach((img) => {

@@ -9,7 +9,7 @@ import FeaturedCaseStudies from "../../Components/MccollinsMedia/FeaturedCaseStu
 
 function PerformanceMarketing() {
     return (
-        <div style={{ backgroundColor: '#000' }} >
+        <div style={{ backgroundColor: 'var(--background-color)' }} >
             <HeadTitle title="Performance Marketing - McCollins Media - Digital Marketing Agency" />
             <InnerNew desktopImage="/assets/images/s4.jpg" mobileImage="/assets/images/s4mob.jpg" title="Performance" title2="Marketing" title3="" />
             <BestSolutions />

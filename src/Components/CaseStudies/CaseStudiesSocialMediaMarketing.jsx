@@ -7,9 +7,9 @@ const CaseStudiesSocialMediaMarketing = ({ noPadding }) => {
 
     return (
         <div className={`section ${noPadding ? "p-0" : ""}`}>
-            <div className="hero-container" style={{ maxWidth: '1380px' }}>
+            <div className="hero-container">
                 <div className="case-studies-layout" style={{ padding: '0px', borderRadius: 'none' }}>
-                    <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px', backgroundColor: '#000' }} >
+                    <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px', backgroundColor: 'var(--background-color)' }} >
                         <style>
                             {`
                                 .card-case-studies::before {
@@ -25,7 +25,7 @@ const CaseStudiesSocialMediaMarketing = ({ noPadding }) => {
                                             <i className="fa-regular fa-circle-dot"></i>
                                             <span>Case Studies</span>
                                         </div>
-                                        <h2 className="title-heading" style={{ WebkitTextFillColor: "#ffffff" }}>Featured Cases</h2>
+                                        <h2 className="title-heading">Featured Cases</h2>
                                     </div>
                                 </AnimateOnScroll>
                                 <p style={{ marginTop: "15px", fontWeight: 100 }}>Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil industries in Saudi Arabia. Have a look at some of our work.</p>

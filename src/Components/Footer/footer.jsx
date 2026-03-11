@@ -12,7 +12,7 @@ const Footer = () => {
                                 <div className="col col-lg-4">
                                     <div className="footer-logo-container">
                                         <div className="logo-container-footer">
-                                            <img src="/assets/images/mcmain.png" alt="Logo" className="site-logo img-fluid" />
+                                            <img src="/public/assets/images/mcmain.png" alt="Logo" className="site-logo img-fluid" />
                                         </div>
                                         <h5 style={{ color: '#fff' }}>Elevate Your Brand in the<br /> Digital World.</h5>
                                         {/* <p>

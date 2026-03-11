@@ -77,7 +77,7 @@ function Navbar() {
                             <div className="HeaderBoxMiddle">
                                 <NavLink className="navbar-brand" to="/" >
                                     <img
-                                        src="/assets/images/mcmain.png"
+                                        src="/public/assets/images/mcmain.png"
                                         className="site-logo img-fluid"
                                         alt="Logo"
                                     />
@@ -88,7 +88,7 @@ function Navbar() {
                                     <ThemeSwitcher />
                                 </div>
                                 <div className="HeaderBoxRight">
-                                    <a href="#" className="CallLink btn btn-accent">
+                                    <a href="#" style={{ backgroundColor: '#000' }} className="CallLink btn btn-accent">
                                         Let's Talk
                                     </a>
                                 </div>
@@ -105,7 +105,7 @@ function Navbar() {
                             <div className="HdMenuLeft">
                                 <NavLink className="navbar-brand" onClick={() => setMenuOpen(prev => !prev)}>
                                     <img
-                                        src="/assets/images/mcmain.png"
+                                        src="/public/assets/images/mcmain.png"
                                         className="img-fluid"
                                         alt="Logo"
                                     />

@@ -19,18 +19,31 @@ function SocialMediaMarketingImageWithText() {
                             </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff', marginBottom: '10px' }}>
+                                <h2 className="title-heading" style={{ marginBottom: '10px' }}>
                                     Social Media <br />Route
                                 </h2>
                             </AnimateOnScroll>
 
-                            <div>
+                            {/* <div>
                                 <ul style={{ paddingLeft: '0px' }}>
                                     <li style={{ display: 'flex', alignItems: 'start', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px', marginTop: '5px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Content Management in AR/EN</h5></li>
                                     <li style={{ display: 'flex', alignItems: 'start', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px', marginTop: '5px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Comment Moderation</h5></li>
                                     <li style={{ display: 'flex', alignItems: 'start', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px', marginTop: '5px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Buzz Generation - Ramadan,<br /> UAE National Day, Menu Launch, Competitions</h5></li>
                                     <li style={{ display: 'flex', alignItems: 'start', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px', marginTop: '5px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Blogger Outreach Program</h5></li>
                                     <li style={{ display: 'flex', alignItems: 'start', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px', marginTop: '5px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Social Media Monitoring and Analysis</h5></li>
+                                </ul>
+                            </div> */}
+
+                            <div>
+                                <ul className="point-arrow-list" style={{ paddingLeft: '0px' }}>
+                                    <li><h5>Content Management in AR/EN</h5></li>
+                                    <li><h5>Comment Moderation</h5></li>
+                                    <li>
+                                        <h5>Buzz Generation - Ramadan,<br />
+                                            UAE National Day, Menu Launch, Competitions</h5>
+                                    </li>
+                                    <li><h5>Blogger Outreach Program</h5></li>
+                                    <li><h5>Social Media Monitoring and Analysis</h5></li>
                                 </ul>
                             </div>
 

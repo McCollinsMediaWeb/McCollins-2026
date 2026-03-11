@@ -19,12 +19,12 @@ function BestSolutions() {
                             </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff', marginBottom: '40px' }}>
+                                <h2 className="title-heading" style={{ marginBottom: '40px' }}>
                                     The Best Solutions <br />For Your Business
                                 </h2>
                             </AnimateOnScroll>
 
-                            <div style={{ display: 'flex', gap: '30px' }}>
+                            {/* <div style={{ display: 'flex', gap: '30px' }}>
                                 <div>
                                     <ul style={{ paddingLeft: '0px' }}>
                                         <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Campaign Planning</h5></li>
@@ -39,6 +39,26 @@ function BestSolutions() {
                                         <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Performance Monitoring</h5></li>
                                         <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Optimization</h5></li>
                                         <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Achieving Target Audience</h5></li>
+                                    </ul>
+                                </div>
+                            </div> */}
+
+                            <div style={{ display: "flex", gap: "30px" }}>
+                                <div>
+                                    <ul className="point-arrow-list">
+                                        <li><h5>Campaign Planning</h5></li>
+                                        <li><h5>Keyword Research</h5></li>
+                                        <li><h5>Campaign Setup</h5></li>
+                                        <li><h5>Ad Creation</h5></li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <ul className="point-arrow-list">
+                                        <li><h5>Bid Management</h5></li>
+                                        <li><h5>Performance Monitoring</h5></li>
+                                        <li><h5>Optimization</h5></li>
+                                        <li><h5>Achieving Target Audience</h5></li>
                                     </ul>
                                 </div>
                             </div>

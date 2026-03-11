@@ -12,7 +12,7 @@ function HeaderLayout() {
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="sub-heading">
                                 <i className="fa-regular fa-circle-dot"></i>
-                                <span>Our Expertise</span>
+                                <span>Our Core Services</span>
                             </div>
                         </AnimateOnScroll>
 

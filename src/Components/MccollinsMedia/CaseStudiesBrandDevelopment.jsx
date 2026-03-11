@@ -7,7 +7,7 @@ function CaseStudiesBrandDevelopment() {
 
     return (
         <>
-            <div className="section HdLayt1">
+            <div className="section HdLayt1" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="container">
                     <div className="expertise-title">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
@@ -37,12 +37,12 @@ function CaseStudiesBrandDevelopment() {
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs1.jpg" />
                                                 <div className="CaseStudyBoxContent">
-                                                    <div className="csSt1">Hospitality / Restaurent</div>
-                                                    <h4 className="csSt2">Doors Dubai</h4>
+                                                    <div className="csSt1" style={{ color: '#fff' }}>Hospitality / Restaurent</div>
+                                                    <h4 className="csSt2" style={{ color: '#fff' }}>Doors Dubai</h4>
                                                     <div className="LinkLists">
-                                                        <div className="LinkListItem">Brand Strategy & Identity</div>
-                                                        <div className="LinkListItem">Social Media</div>
-                                                        <div className="LinkListItem">Performance Marketing</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Brand Strategy & Identity</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Social Media</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Performance Marketing</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -59,12 +59,12 @@ function CaseStudiesBrandDevelopment() {
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs2.jpg" />
                                                 <div className="CaseStudyBoxContent">
-                                                    <div className="csSt1">Hospitality / Restaurent</div>
-                                                    <h4 className="csSt2">Creamio Cafe</h4>
+                                                    <div className="csSt1" style={{ color: '#fff' }}>Hospitality / Restaurent</div>
+                                                    <h4 className="csSt2" style={{ color: '#fff' }}>Creamio Cafe</h4>
                                                     <div className="LinkLists">
-                                                        <div className="LinkListItem">Brand Strategy & Identity</div>
-                                                        <div className="LinkListItem">Social Media</div>
-                                                        <div className="LinkListItem">Performance Marketing</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Brand Strategy & Identity</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Social Media</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Performance Marketing</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -81,12 +81,12 @@ function CaseStudiesBrandDevelopment() {
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs3.jpg" />
                                                 <div className="CaseStudyBoxContent">
-                                                    <div className="csSt1">Hospitality / Restaurent</div>
-                                                    <h4 className="csSt2">Doors Dubai</h4>
+                                                    <div className="csSt1" style={{ color: '#fff' }}>Hospitality / Restaurent</div>
+                                                    <h4 className="csSt2" style={{ color: '#fff' }}>Doors Dubai</h4>
                                                     <div className="LinkLists">
-                                                        <div className="LinkListItem">Brand Strategy & Identity</div>
-                                                        <div className="LinkListItem">Social Media</div>
-                                                        <div className="LinkListItem">Performance Marketing</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Brand Strategy & Identity</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Social Media</div>
+                                                        <div className="LinkListItem" style={{ color: '#fff' }}>Performance Marketing</div>
                                                     </div>
                                                 </div>
                                             </div>

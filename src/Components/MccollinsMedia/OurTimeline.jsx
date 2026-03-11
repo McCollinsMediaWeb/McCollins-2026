@@ -16,7 +16,7 @@ function OurTimeline() {
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="row">
                                 <div className="col-md-7">
-                                    <h2 className="title-heading" style={{ WebkitTextFillColor: "#fff" }} >
+                                    <h2 className="title-heading" >
                                         Our Timeline
                                     </h2>
                                 </div>
@@ -24,7 +24,7 @@ function OurTimeline() {
                         </AnimateOnScroll>
                     </div>
 
-                    <div className="digital-process-steps-wrapper" style={{ marginTop: '80px' }}>
+                    <div className="digital-process-steps-wrapper" style={{ marginTop: '30px' }}>
                         <style>
                             {`
                                 .digital-process-steps-wrapper::before{
@@ -32,7 +32,7 @@ function OurTimeline() {
                                 }
                             `}
                         </style>
-                        <div className="digital-process-steps" style={{ backgroundColor: '#000', border: 'none' }}>
+                        <div className="digital-process-steps" style={{ backgroundColor: 'var(--background-color)', border: 'none' }}>
                             <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-2">
                                 {timeline.map((item) => (
                                     <div className="col" key={item.id}>
@@ -54,14 +54,14 @@ function OurTimeline() {
 
 
 
-            <div className="section pt-6 pb-10" style={{ backgroundColor: '#1f1f1f' }}>
+            <div className="section pt-6 pb-10" style={{ backgroundColor: 'var(--set-us-apart-bg)' }}>
                 <div className="hero-container">
                     <div className="d-flex flex-column gspace-5">
-                        <div className="single-service-title-wrapper" style={{ backgroundColor: '#1f1f1f' }} >
+                        <div className="single-service-title-wrapper" style={{ backgroundColor: 'var(--set-us-apart-bg)' }} >
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <h2 className="title-heading" style={{ WebkitTextFillColor: "#fff" }} >
+                                        <h2 className="title-heading" >
                                             What Sets Us Apart
                                         </h2>
                                     </div>
@@ -83,7 +83,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             Exceptional Creativity
                                         </h4>
                                     </AnimateOnScroll>
@@ -94,7 +94,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             Professionalism & Reliability
                                         </h4>
                                     </AnimateOnScroll>
@@ -119,7 +119,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             State-of-the-Art Equipment
                                         </h4>
                                     </AnimateOnScroll>
@@ -130,7 +130,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             Full-Service Solutions
                                         </h4>
                                     </AnimateOnScroll>
@@ -155,7 +155,7 @@ function OurTimeline() {
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             Tailored Approach
                                         </h4>
                                     </AnimateOnScroll>
@@ -166,7 +166,7 @@ function OurTimeline() {
                             <div className="row pt-5" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
                                             Client Satisfaction
                                         </h4>
                                     </AnimateOnScroll>

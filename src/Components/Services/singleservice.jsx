@@ -5,20 +5,20 @@ import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 const SingleServiceSection = () => {
     return (
         <>
-            <div className="section pb-0" style={{ backgroundColor: '#212121' }}>
+            <div className="section pb-0" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="hero-container">
                     <div className="d-flex flex-column gspace-5">
                         {/* <div className="single-service-spacer"></div> */}
-                        <div className="single-service-title-wrapper" style={{ backgroundColor: '#212121' }}>
-                            <div className="single-service-title" style={{ backgroundColor: '#212121' }}>
+                        <div className="single-service-title-wrapper" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
+                            <div className="single-service-title" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                                 <AnimateOnScroll animation="fadeInRight" speed="slow">
                                     <div className="sub-heading" style={{ justifyContent: 'center' }}>
                                         <i className="fa-regular fa-circle-dot"></i>
-                                        <span style={{ fontSize: 'var(--font-size-3xl)', color: '#3876fc' }}>Marketing Automation</span>
+                                        <span style={{ fontSize: 'var(--font-size-xl)', color: '#3876fc', fontWeight: '500' }}>Marketing Automation</span>
                                     </div>
                                 </AnimateOnScroll>
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h2 className="title-heading text-center" style={{ WebkitTextFillColor: "#ffffff" }}>
+                                    <h2 className="title-heading text-center">
                                         Precision Automation<br /> For High-Velocity Brands.
                                     </h2>
                                 </AnimateOnScroll>
@@ -43,14 +43,14 @@ const SingleServiceSection = () => {
 
 
 
-            <div className="section pt-5 pb-0" style={{ backgroundColor: '#000' }}>
+            <div className="section pt-5 pb-0" style={{ backgroundColor: 'var(--background-color)' }}>
                 <div className="hero-container">
                     <div className="d-flex flex-column gspace-5">
                         {/* <div className="single-service-spacer"></div> */}
                         <div className="single-service-title-wrapper" >
                             <div className="single-service-title" >
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h2 className="title-heading text-center" style={{ WebkitTextFillColor: "#ffffff" }}>
+                                    <h2 className="title-heading text-center">
                                         Core Performance Pillars
                                     </h2>
                                 </AnimateOnScroll>
@@ -62,6 +62,7 @@ const SingleServiceSection = () => {
                                         src="/assets/images/p2.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
                                     />
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center">
@@ -89,6 +90,7 @@ const SingleServiceSection = () => {
                                         src="/assets/images/p3.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
                                     />
                                 </div>
                             </div>
@@ -101,6 +103,7 @@ const SingleServiceSection = () => {
                                         src="/assets/images/p4.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
                                     />
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center">
@@ -128,6 +131,7 @@ const SingleServiceSection = () => {
                                         src="/assets/images/p5.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
                                     />
                                 </div>
                             </div>
@@ -138,6 +142,7 @@ const SingleServiceSection = () => {
                                         src="/assets/images/p6.jpg"
                                         alt="Service Image"
                                         className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
                                     />
                                 </div>
                                 <div className="col-md-4 d-flex flex-column justify-content-center">

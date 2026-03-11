@@ -32,7 +32,7 @@ const ContactFormNew = () => {
 
     return (
         <div className="form-layout-wrapper">
-            <div className="card form-layout" style={{ backgroundImage: 'none', backgroundColor: '#1f1f1f' }}>
+            <div className="card form-layout" style={{ backgroundImage: 'none', backgroundColor: 'var(--contact-card-color)' }}>
                 <h3 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>Ready to get started?</h3>
                 <h6 className="" style={{ WebkitTextFillColor: "#8f8f8f" }}>Your email address will not be published. Required fields are marked *</h6>
 

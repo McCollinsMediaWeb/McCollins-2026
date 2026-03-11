@@ -19,7 +19,7 @@ function WebsiteAppDesign() {
                         </AnimateOnScroll>
 
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff', marginBottom: '0px' }}>
+                            <h2 className="title-heading" style={{ marginBottom: '0px', marginTop: '20px' }}>
                                 Smartly Engineered For Your<br /> Convenience
                             </h2>
                         </AnimateOnScroll>
@@ -46,21 +46,21 @@ function WebsiteAppDesign() {
                     </div>
 
 
-                    <div className="row mt-5 pt-5">
+                    <div className="row mt-1 pt-5">
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: '#212121', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Corporate Website<br /> Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We engineer tailored corporate websites that elevate your brand identity through seamless user experiences and precision digital design.</p>
                             </div>
                         </div>
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: '#212121', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>E-commerce Website<br /> Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We create strategic E-commerce experiences designed to optimize user journeys, drive conversions, and unlock measurable revenue potential.</p>
                             </div>
                         </div>
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: '#212121', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Lead Generation<br /> Funnel Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We make strategic lead funnels designed to maximize acquisition efficiency and convert high-value prospects into loyal customers.</p>
                             </div>
@@ -68,13 +68,13 @@ function WebsiteAppDesign() {
                     </div>
                     <div className="row" style={{ marginTop: '0.5rem' }}>
                         <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: '#212121', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Tailored Websites for Your<br /> Unique Needs</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>Tired of One-Size-Fits-All Websites? Generic website templates can’t effectively showcase what sets your business apart. Don’t settle for mediocrity when you can have a website that’s as unique as your brand.</p>
                             </div>
                         </div>
                         <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: '#212121', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Mobile-First Website<br /> Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>Our mobile-first website development services prioritize the mobile user experience. We ensure your website is designed and optimized for smartphones and tablets, with a focus on speed, functionality, and user-friendliness.</p>
                             </div>

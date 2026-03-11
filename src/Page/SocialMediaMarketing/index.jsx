@@ -10,14 +10,17 @@ import OurPartners from "../../Components/MccollinsMedia/OurPartners";
 
 function SocialMediaMarketing() {
     return (
-        <div style={{ backgroundColor: '#000' }}>
+        <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Social Media Marketing - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Performance Marketing" currentPage="Services Details" /> */}
             <InnerNew desktopImage="/assets/images/s3.jpg" mobileImage="/assets/images/s3mob.jpg" title="Social Media" title2="Marketing" />
             <MarketingFoundation />
             <ClientPortfolio />
             <SocialMediaMarketingImageWithText />
-            <CaseStudiesSocialMediaMarketing />
+            <div className="container mb-5">
+                <div style={{ height: '1px', backgroundColor: '#828282', width: "100%" }} ></div>
+            </div>
+            <CaseStudiesSocialMediaMarketing noPadding={true} />
             <OurPartners />
             <NewsletterSection />
         </div>

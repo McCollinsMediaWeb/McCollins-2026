@@ -8,7 +8,7 @@ import NewsletterSection from "../../Components/Form/Newsletter";
 
 function ContentProduction() {
     return (
-        <div style={{ backgroundColor: '#000' }} >
+        <div style={{ backgroundColor: 'var(--background-color)' }} >
             <HeadTitle title="Content Production - McCollins Media - Digital Marketing Agency" />
             <InnerNew desktopImage="/assets/images/s6.jpg" mobileImage="/assets/images/s6mob.jpg" title="Content" title2="Production" title3="" />
             <HeaderLayoutDynamic />

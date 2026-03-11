@@ -21,7 +21,7 @@ function HeaderLayoutDynamic() {
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="row">
                                 <div className="col-md-7">
-                                    <h2 className="title-heading" style={{ WebkitTextFillColor: "#fff" }} >
+                                    <h2 className="title-heading" >
                                         Video Storytelling For<br />Tech Marketing
                                     </h2>
                                 </div>
@@ -37,7 +37,7 @@ function HeaderLayoutDynamic() {
 
 
 
-                    <div className="digital-process-steps-wrapper" style={{ marginTop: '80px' }}>
+                    <div className="digital-process-steps-wrapper" style={{ marginTop: '50px' }}>
                         <style>
                             {`
                                 .digital-process-steps-wrapper::before{
@@ -45,7 +45,7 @@ function HeaderLayoutDynamic() {
                                 }
                             `}
                         </style>
-                        <div className="digital-process-steps" style={{ backgroundColor: '#000', border: 'none' }}>
+                        <div className="digital-process-steps" style={{ backgroundColor: 'var(--background-color)', border: 'none' }}>
                             <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1">
                                 {contentProductionSteps.map((item, index) => (
                                     <ContentProductionStepCard
