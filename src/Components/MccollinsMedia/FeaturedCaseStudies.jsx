@@ -29,12 +29,15 @@ const FeaturedCaseStudies = () => {
                         </div>
                     </div>
 
-                    <div className="row" style={{ padding: '25px 35px', backgroundColor: 'var(--featued-case-inner-card-bg)', borderRadius: '40px', margin: '10px 30px' }} >
+                    <div className="row featured-case-studies-inner-card">
                         <div className="col-md-7" >
                             <div className="case-studies-logo" style={{ marginBottom: '40px' }} >
                                 <img src="/assets/images/clients/mmi.png" alt="" />
                             </div>
-                            <div className="row" style={{ marginBottom: '40px' }} >
+                            <div className="d-flex d-md-none mb-3" style={{ display: 'flex' }} >
+                                <img className="width-full brdRadius" src="/assets/images/cake.jpg" alt="" />
+                            </div>
+                            <div className="row mb-md-5" >
                                 <div className="col-md-6" >
                                     <h4 style={{ color: '#3876fc', marginBottom: '10px' }}>Objective</h4>
                                     <p style={{ fontWeight: 100 }}>Masterbaker Studio aimed to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate butters, and creams.</p>
@@ -50,7 +53,7 @@ const FeaturedCaseStudies = () => {
                             </div>
                         </div>
                         <div className="col-md-4" >
-                            <div style={{ display: 'flex' }} >
+                            <div className="d-none d-md-flex" style={{ display: 'flex' }} >
                                 <img className="width-full brdRadius" src="/assets/images/cake.jpg" alt="" />
                             </div>
                             <div>
@@ -64,7 +67,7 @@ const FeaturedCaseStudies = () => {
                                             suffixClassName="counter-detail"
                                         />
                                     </h2>
-                                    <p style={{ fontWeight: 100, color: '#fff' }}>Increased in conversion/purchase</p>
+                                    <p style={{ fontWeight: 100 }}>Increased in conversion/purchase</p>
                                 </div>
                                 <div style={{ width: '100%', height: '1px', backgroundColor: '#000' }} />
                                 <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >
@@ -77,7 +80,7 @@ const FeaturedCaseStudies = () => {
                                             suffixClassName="counter-detail"
                                         />
                                     </h2>
-                                    <p style={{ fontWeight: 100, color: '#fff' }}>Conversion rates, with a 3.25 ROAS</p>
+                                    <p style={{ fontWeight: 100 }}>Conversion rates, with a 3.25 ROAS</p>
                                 </div>
                                 <div style={{ width: '100%', height: '1px', backgroundColor: '#000' }} />
                                 <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >
@@ -90,7 +93,7 @@ const FeaturedCaseStudies = () => {
                                             suffixClassName="counter-detail"
                                         />
                                     </h2>
-                                    <p style={{ fontWeight: 100, color: '#fff' }}>Increased in ROAS</p>
+                                    <p style={{ fontWeight: 100 }}>Increased in ROAS</p>
                                 </div>
                             </div>
                         </div>

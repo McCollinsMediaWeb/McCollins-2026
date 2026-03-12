@@ -2,6 +2,19 @@ import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import CounterOnScroll from "../Hooks/CounterOnScroll";
 
+const clients = [
+    "rta.png",
+    "costa-coffee.png",
+    "fujifilm.png",
+    "toshiba.png",
+    "energizer.png",
+    "damac.png",
+    "pioneer.png",
+    "wagamama.png",
+    "dxb.png",
+    "mmi.png",
+];
+
 function ClientPortfolio() {
 
     return (
@@ -16,7 +29,7 @@ function ClientPortfolio() {
                         </AnimateOnScroll>
                         <p style={{ color: '#000', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/costa-coffee.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
@@ -24,13 +37,34 @@ function ClientPortfolio() {
                         <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
 
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '5rem' }}>
+
+                    <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '5rem' }}>
                         <img src="/assets/images/clients/damac.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/pioneer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
+
+                    <div className="d-flex d-md-none" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }} >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '2rem', alignItems: 'start', flexDirection: 'column' }}>
+                            <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/costa-coffee.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/toshiba.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        </div>
+
+                        <div style={{ display: 'flex', justifyContent: 'space-around', gap: '5rem', alignItems: 'start', flexDirection: 'column' }}>
+                            <img src="/assets/images/clients/damac.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/pioneer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 

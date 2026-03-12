@@ -5227,3 +5227,16 @@ body.lightmode .cta-service-banner::before {
     background-repeat: no-repeat;
     display: inline-block;
 }
+
+body.lightmode .point-arrow-list li::before {
+    background-image: url("/assets/images/txtarow.png");
+    width: 18px;
+    height: 18px;
+}
+
+.featured-case-studies-inner-card {
+    padding: 25px 35px;
+    background-color: var(--featued-case-inner-card-bg);
+    border-radius: 40px;
+    margin: 10px 30px;
+}

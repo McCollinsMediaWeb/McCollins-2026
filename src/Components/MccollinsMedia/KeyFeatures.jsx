@@ -17,13 +17,13 @@ function KeyFeatures() {
                     </div>
                     <div className="row">
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Advanced<br /> Attribution Modeling</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We deploy sophisticated tracking frameworks to provide total transparency on the customer journey, ensuring every dollar is optimized for maximum ROI.</p>
                             </div>
                         </div>
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Algorithmic<br /> Audience Targeting</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>Leveraging deep-tier data insights and AI-driven signals to reach high-value prospects at the exact moment of intent across global platforms.</p>
                             </div>
@@ -37,7 +37,7 @@ function KeyFeatures() {
                     </div>
                     <div className="row" style={{ marginTop: '0.5rem' }}>
                         <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Multi-Channel Synergy</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We architect unified campaigns across Search, Social, and Programmatic networks to ensure a cohesive brand presence that drives consistent sales velocity.</p>
                             </div>

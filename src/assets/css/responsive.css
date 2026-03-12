@@ -393,6 +393,16 @@
         max-width: 50%;
     }
 
+    .featured-case-studies-inner-card {
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin: 5px 5px;
+    }
+
+    .case-studies-logo img {
+        width: 100px;
+    }
+
     .banner-video-content p {
         font-size: var(--font-size-xs);
         max-width: 100%;
