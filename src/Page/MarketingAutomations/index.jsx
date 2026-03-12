@@ -15,6 +15,9 @@ function MarketingAutomations() {
             <InnerNew desktopImage="/assets/images/s5.jpg" mobileImage="/assets/images/s5mob.jpg" title="Marketing" title2="Automation" />
             <SingleServiceSection />
             {/* <TestimonialSection /> */}
+            <div className="container">
+                <div className="mt-5" style={{ width: '100%', height: '1px', backgroundColor: '#d6d6d6' }} />
+            </div>
             <NewsletterSection />
             {/* <FaqSection /> */}
         </>

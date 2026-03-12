@@ -191,9 +191,9 @@ import "./contact.css";
 const ContactSection = () => {
     return (
         <div className="section">
-            <div className="hero-container" style={{ maxWidth: "1380px" }}>
+            <div className="hero-container" >
                 <div className="row row-cols-lg-2 row-cols-1 g-5">
-                    <div className="col col-lg-12">
+                    <div className="col col-lg-12" style={{ marginTop: '0px' }}>
 
                         <div className="contact-title-wrapper">
 
@@ -261,24 +261,24 @@ const ContactSection = () => {
 
                                 <div className="custom-contact-row">
                                     <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Contact</span>
-                                            <h5>Mobile: +971 55 956 4135</h5>
+                                        <div className="d-flex flex-column align-items-center align-items-md-start mb-3">
+                                            <h3 style={{ color: '#3876fc' }} >Contact</h3>
+                                            <h5 className="mt-3">Mobile: +971 55 956 4135</h5>
                                             <h5>Email: info@mccollinsmedia.com</h5>
                                         </div>
                                     </div>
 
                                     <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Our Address</span>
+                                        <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
+                                            <h3 style={{ color: '#3876fc' }} >Our Address</h3>
                                             <h5 className="mt-3">G04, Loft Office 2, Entrance C,</h5>
                                             <h5>Dubai Media City, Dubai</h5>
                                         </div>
                                     </div>
 
                                     <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Office Hours</span>
+                                        <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
+                                            <h3 style={{ color: '#3876fc' }} >Office Hours</h3>
                                             <h5 className="mt-3">Monday - Friday</h5>
                                             <h5>9.00 AM to 6.00 PM</h5>
                                         </div>

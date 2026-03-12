@@ -57,7 +57,7 @@ const SingleServiceSection = () => {
                             </div>
 
                             <div className="row pt-5" >
-                                <div className="col-md-8">
+                                <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
                                         src="/assets/images/p2.jpg"
                                         alt="Service Image"
@@ -65,7 +65,7 @@ const SingleServiceSection = () => {
                                         style={{ borderRadius: '0px' }}
                                     />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column justify-content-center">
+                                <div className="col-md-4 d-flex flex-column justify-content-center px-4 py-3">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Intelligent Lead Nurturing
@@ -75,9 +75,16 @@ const SingleServiceSection = () => {
                                 </div>
                             </div>
 
-
-                            <div className="row" >
-                                <div className="col-md-8 d-flex flex-column justify-content-center">
+                            <div className="row d-flex d-md-none" >
+                                <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
+                                    <img
+                                        src="/assets/images/p3.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center px-4 py-3">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Omnichannel Synchronization
@@ -85,7 +92,19 @@ const SingleServiceSection = () => {
                                     </AnimateOnScroll>
                                     <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
                                 </div>
-                                <div className="col-md-4">
+                            </div>
+
+
+                            <div className="row d-none d-md-flex" >
+                                <div className="col-md-8 d-flex flex-column justify-content-center px-4 py-3">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Omnichannel Synchronization
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                </div>
+                                <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
                                         src="/assets/images/p3.jpg"
                                         alt="Service Image"
@@ -98,7 +117,7 @@ const SingleServiceSection = () => {
 
 
                             <div className="row" >
-                                <div className="col-md-8">
+                                <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
                                         src="/assets/images/p4.jpg"
                                         alt="Service Image"
@@ -106,7 +125,7 @@ const SingleServiceSection = () => {
                                         style={{ borderRadius: '0px' }}
                                     />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column justify-content-center">
+                                <div className="col-md-4 d-flex flex-column justify-content-center px-4 py-3">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             CRM & Data Integration
@@ -116,9 +135,16 @@ const SingleServiceSection = () => {
                                 </div>
                             </div>
 
-
-                            <div className="row" >
-                                <div className="col-md-8 d-flex flex-column justify-content-center">
+                            <div className="row d-flex d-md-none" >
+                                <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
+                                    <img
+                                        src="/assets/images/p5.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                        style={{ borderRadius: '0px' }}
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center px-4 py-3">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Predictive Audience Segmentation
@@ -126,7 +152,19 @@ const SingleServiceSection = () => {
                                     </AnimateOnScroll>
                                     <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
                                 </div>
-                                <div className="col-md-4">
+                            </div>
+
+
+                            <div className="row d-none d-md-flex" >
+                                <div className="col-md-8 d-flex flex-column justify-content-center px-4 py-3">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Predictive Audience Segmentation
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                </div>
+                                <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
                                         src="/assets/images/p5.jpg"
                                         alt="Service Image"
@@ -137,7 +175,7 @@ const SingleServiceSection = () => {
                             </div>
 
                             <div className="row" >
-                                <div className="col-md-8">
+                                <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
                                         src="/assets/images/p6.jpg"
                                         alt="Service Image"
@@ -145,7 +183,7 @@ const SingleServiceSection = () => {
                                         style={{ borderRadius: '0px' }}
                                     />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column justify-content-center">
+                                <div className="col-md-4 d-flex flex-column justify-content-center px-4 py-3">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Automated Lifecycle Management

@@ -1,6 +1,7 @@
 /* CONTACT HEADING */
 .contact-heading {
-    font-size: clamp(22px, 2.2vw, 34px);
+    /* font-size: clamp(22px, 2.2vw, 34px); */
+    font-size: var(--font-size-h1);
     font-weight: 600;
     color: #3876fc;
     letter-spacing: 0.5px;

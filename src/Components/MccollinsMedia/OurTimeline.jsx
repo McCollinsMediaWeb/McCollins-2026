@@ -67,7 +67,7 @@ function OurTimeline() {
                                     </div>
                                     <div className="col-md-6" style={{ display: "flex", alignItems: 'start' }}>
                                         <p style={{ fontWeight: 100 }}>
-                                            Our edge lies in the precision-engineering of high-fidelity visual assets that combine global production standards with localized strategic depth.
+                                            <span className="d-md-none d-block"><br /></span>Our edge lies in the precision-engineering of high-fidelity visual assets that combine global production standards with localized strategic depth.
                                         </p>
                                     </div>
                                 </div>
@@ -91,7 +91,25 @@ function OurTimeline() {
                                 </div>
                             </div>
 
-                            <div className="row pt-5" >
+                            <div className="row pt-0 pt-md-5 d-md-none d-block" >
+                                <div className="col-md-8">
+                                    <img
+                                        src="/assets/images/cn2.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
+                                            Professionalism & Reliability
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Our reputation is built on the architecture of trust, combining seamless project management with a relentless commitment to deadline-driven excellence and premium output.</p>
+                                </div>
+                            </div>
+
+                            <div className="row pt-0 pt-md-5 d-none d-md-flex" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
@@ -109,7 +127,7 @@ function OurTimeline() {
                                 </div>
                             </div>
 
-                            <div className="row pt-5" >
+                            <div className="row pt-0 pt-md-5" >
                                 <div className="col-md-8">
                                     <img
                                         src="/assets/images/cn3.jpg"
@@ -127,7 +145,25 @@ function OurTimeline() {
                                 </div>
                             </div>
 
-                            <div className="row pt-5" >
+                            <div className="row pt-0 pt-md-5 d-md-none d-block" >
+                                <div className="col-md-8">
+                                    <img
+                                        src="/assets/images/cn4.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
+                                            Full-Service Solutions
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>We provide a comprehensive production ecosystem, architecting every phase from conceptual blueprinting to high-fidelity post-production to ensure a seamless, turnkey brand experience.</p>
+                                </div>
+                            </div>
+
+                            <div className="row pt-0 pt-md-5 d-none d-md-flex" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
@@ -145,7 +181,7 @@ function OurTimeline() {
                                 </div>
                             </div>
 
-                            <div className="row pt-5" >
+                            <div className="row pt-0 pt-md-5" >
                                 <div className="col-md-8">
                                     <img
                                         src="/assets/images/cn5.jpg"
@@ -163,7 +199,25 @@ function OurTimeline() {
                                 </div>
                             </div>
 
-                            <div className="row pt-5" >
+                            <div className="row pt-0 pt-md-5 d-md-none d-block" >
+                                <div className="col-md-8">
+                                    <img
+                                        src="/assets/images/cn6.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                    />
+                                </div>
+                                <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>
+                                            Client Satisfaction
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered results and uncompromised service standards designed to ensure total brand partner confidence and long-term success.</p>
+                                </div>
+                            </div>
+
+                            <div className="row pt-0 pt-md-5 d-none d-md-flex" >
                                 <div className="col-md-4 d-flex flex-column justify-content-center" style={{ padding: '30px 30px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#e02f47' }}>

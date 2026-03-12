@@ -52,7 +52,7 @@ function ServiceItemContent({ desktopImage, mobileImage, title, subtitle, Positi
                                 </div>
 
                                 <div className="icon-circle">
-                                    <i className="fa-solid fa-arrow-right"></i>
+                                    <i style={{ color: '#000' }} className="fa-solid fa-arrow-right"></i>
                                 </div>
 
                             </a>

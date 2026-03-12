@@ -6,7 +6,7 @@ import CaseStudyCardNew from "../Card/CaseStudiesCardNew";
 const CaseStudiesSectionNew = ({ noPadding }) => {
 
     return (
-        <div className={`section ${noPadding ? "p-0" : ""}`} style={{ paddingLeft: '0px', paddingRight: '0px' }}>
+        <div className={`section ${noPadding ? "p-0" : ""}`}>
             <div className="hero-container">
                 <div className=" case-studies-layout" style={{ padding: '0px', borderRadius: 'none' }}>
                     <div className="card card-case-studies" style={{ padding: '5px 5px 55px 5px', backgroundColor: 'var(--background-color)' }} >
