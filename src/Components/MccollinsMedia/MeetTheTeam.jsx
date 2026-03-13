@@ -240,8 +240,8 @@ const MeetTheTeam = () => {
 
                         <div ref={scrollRef} className="team-scroll">
 
-                            <div style={{ ...cardStyle }} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/mk.png" alt="" style={imgStyle} />
+                            <div className="team-card d-flex flex-column gspace-1">
+                                <img src="/assets/images/mk.png" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Meghna Kothari
                                 </h4>
@@ -250,8 +250,8 @@ const MeetTheTeam = () => {
                                 </h5>
                             </div>
 
-                            <div style={cardStyle} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/manjeet.webp" alt="" style={imgStyle} />
+                            <div className="team-card d-flex flex-column gspace-1">
+                                <img src="/assets/images/manjeet.webp" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Manjeet
                                 </h4>
@@ -260,8 +260,8 @@ const MeetTheTeam = () => {
                                 </h5>
                             </div>
 
-                            <div style={cardStyle} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/as.png" alt="" style={imgStyle} />
+                            <div className="team-card d-flex flex-column gspace-1">
+                                <img src="/assets/images/as.png" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Ashar
                                 </h4>
@@ -270,8 +270,8 @@ const MeetTheTeam = () => {
                                 </h5>
                             </div>
 
-                            <div style={cardStyle} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/manjeet.webp" alt="" style={imgStyle} />
+                            <div className="team-card d-flex flex-column gspace-1">
+                                <img src="/assets/images/manjeet.webp" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     George
                                 </h4>
@@ -280,8 +280,8 @@ const MeetTheTeam = () => {
                                 </h5>
                             </div>
 
-                            <div style={cardStyle} className="d-flex flex-column gspace-1">
-                                <img src="/assets/images/manjeet.webp" alt="" style={imgStyle} />
+                            <div className="team-card d-flex flex-column gspace-1">
+                                <img src="/assets/images/manjeet.webp" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
                                     Ijas
                                 </h4>

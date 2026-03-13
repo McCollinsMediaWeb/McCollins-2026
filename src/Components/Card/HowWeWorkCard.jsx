@@ -9,13 +9,23 @@ const HowWeWorkCard = ({ icon, step, title, content, isFirst }) => {
                 <div className="digital-process-card">
                     {!isFirst && <div className="step-spacer"></div>}
                     <div className="digital-process-step" style={{ backgroundColor: 'var(--background-color)' }} >
-                        <div className="d-flex justify-content-between">
+                        {/* <div className="d-flex justify-content-between">
                             <div>
                                 <img src={icon} alt="Digital Process Icon" className="process-icon" style={{ width: '40%' }} />
                             </div>
                             <span>{step}</span>
+                        </div> */}
+                        <div className="d-flex justify-content-between justify-content-md-between justify-content-center">
+                            <div className="w-100 text-center text-md-start">
+                                <img
+                                    src={icon}
+                                    alt="Digital Process Icon"
+                                    className="process-icon img-fluid"
+                                    style={{ width: "30%" }}
+                                />
+                            </div>
                         </div>
-                        <div className="d-flex flex-column gspace-2">
+                        <div className="d-flex flex-column gspace-2 text-center text-md-start">
                             <h5>{title}</h5>
                             <p>{content}</p>
                         </div>

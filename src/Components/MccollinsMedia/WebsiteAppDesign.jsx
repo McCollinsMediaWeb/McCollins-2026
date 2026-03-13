@@ -48,13 +48,13 @@ function WebsiteAppDesign() {
 
                     <div className="row mt-1 pt-5">
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Corporate Website<br /> Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We engineer tailored corporate websites that elevate your brand identity through seamless user experiences and precision digital design.</p>
                             </div>
                         </div>
                         <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>E-commerce Website<br /> Development</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>We create strategic E-commerce experiences designed to optimize user journeys, drive conversions, and unlock measurable revenue potential.</p>
                             </div>
@@ -68,7 +68,7 @@ function WebsiteAppDesign() {
                     </div>
                     <div className="row" style={{ marginTop: '0.5rem' }}>
                         <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
+                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', borderRadius: '5px' }} >
                                 <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Tailored Websites for Your<br /> Unique Needs</h4>
                                 <p style={{ fontWeight: 100, marginTop: '18px' }}>Tired of One-Size-Fits-All Websites? Generic website templates can’t effectively showcase what sets your business apart. Don’t settle for mediocrity when you can have a website that’s as unique as your brand.</p>
                             </div>

@@ -393,6 +393,10 @@
         max-width: 50%;
     }
 
+    .AbtParaBox {
+        margin-top: 0px;
+    }
+
     .featured-case-studies-inner-card {
         padding: 10px 10px;
         border-radius: 20px;

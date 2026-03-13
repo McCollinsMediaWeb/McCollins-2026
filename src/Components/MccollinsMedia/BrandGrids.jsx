@@ -87,19 +87,19 @@ function BrandGrids() {
             <div className="container mt-5" >
                 <div className="row">
                     <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                        <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                        <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                             <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Brand Discovery & <br />Research</h4>
                             <p style={{ fontWeight: 100, marginTop: '18px', minHeight: '140px' }}>We explore your brand, audience, and market to uncover clear insights that form the foundation for a strong brand identity and a distinctive market position.</p>
                         </div>
                     </div>
                     <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                        <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                        <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                             <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Positioning & <br />Strategy</h4>
                             <p style={{ fontWeight: 100, marginTop: '18px', minHeight: '140px' }}>We define what your brand stands for, the position it claims within the market, and the message that truly resonates with your audience the strategic foundation for a brand that sticks.</p>
                         </div>
                     </div>
                     <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                        <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                        <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                             <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Visual identity<br /><br /></h4>
                             <p style={{ fontWeight: 100, marginTop: '18px', minHeight: '140px' }}>We design a visual identity that reflects your ambitions including logo, colors, typography, imagery, and guidelines. A recognizable look that gives your brand instant strength.</p>
                         </div>
@@ -107,7 +107,7 @@ function BrandGrids() {
                 </div>
                 <div className="row" style={{ marginTop: '0.5rem' }}>
                     <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                        <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                        <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
                             <h4 style={{ color: '#3876fc', lineHeight: '35px' }}>Brand Collateral & <br />Applications</h4>
                             <p style={{ fontWeight: 100, marginTop: '18px', minHeight: '110px' }}>We translate your brand’s visual DNA into a cohesive ecosystem of high-impact physical and digital applications. Every touchpoint is architected to uphold your premium positioning and ensure absolute consistency throughout the consumer journey.</p>
                         </div>

@@ -38,6 +38,7 @@ function ServiceItem({ desktopImage, mobileImage, title, title2, subtitle, Posit
                             <h1 className="title-heading">{title}</h1>
 
                             <div
+                                className="d-none d-md-flex"
                                 style={{
                                     display: "flex",
                                     gap: "30px",
@@ -48,6 +49,22 @@ function ServiceItem({ desktopImage, mobileImage, title, title2, subtitle, Posit
                                 <h1 className="title-heading">{title2}</h1>
 
                                 <p style={{ maxWidth: "50%", color: "#fff", marginBottom: '0px' }}>
+                                    {subtitle}
+                                </p>
+                            </div>
+
+                            <div
+                                className="d-flex d-md-none"
+                                style={{
+                                    display: "flex",
+                                    gap: "30px",
+                                    flexDirection: "column",
+                                    alignItems: Position === "right" ? "self-end" : "baseline"
+                                }}
+                            >
+                                <h1 className="title-heading">{title2}</h1>
+
+                                <p style={{ maxWidth: "90%", color: "#fff", marginBottom: '0px' }}>
                                     {subtitle}
                                 </p>
                             </div>

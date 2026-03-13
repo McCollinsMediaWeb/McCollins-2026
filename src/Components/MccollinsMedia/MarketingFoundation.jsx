@@ -20,7 +20,7 @@ function MarketingFoundation() {
                     <div className="row mt-5 pt-3" >
                         <div className="col-md-4" >
                             <div className="d-flex flex-column">
-                                <div className="card-expertise-wrapper">
+                                <div className="card-expertise-wrapper text-center text-md-start">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h3 className="title-heading">
                                             The Best Solutions For Your Business
@@ -38,29 +38,12 @@ function MarketingFoundation() {
                             <div className="">
 
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h3 className="title-heading" style={{ WebkitTextFillColor: '#3876fc', marginBottom: '40px' }}>
+                                    <h3 className="title-heading text-center text-md-start" style={{ WebkitTextFillColor: '#3876fc', marginBottom: '40px' }}>
                                         What We Offer
                                     </h3>
                                 </AnimateOnScroll>
 
-                                {/* <div style={{ display: 'flex', gap: '30px' }}>
-                                    <div>
-                                        <ul style={{ paddingLeft: '0px' }}>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Digital Strategy Development</h5></li>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Social Media Management</h5></li>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Content Creation</h5></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <ul style={{ paddingLeft: '0px' }}>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Community Management</h5></li>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Influencer Marketing</h5></li>
-                                            <li style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '30px' }}><img style={{ width: '30px', height: '30px' }} src="/assets/images/arrow-up-right.png" alt="" /><h5 style={{ fontWeight: 600, color: '#3876fc' }}>Performance Marketing</h5></li>
-                                        </ul>
-                                    </div>
-                                </div> */}
-
-                                <div className="point-arrow-list-wrapper">
+                                <div className="point-arrow-list-wrapper d-none d-md-flex">
                                     <div>
                                         <ul className="point-arrow-list">
                                             <li><h5>Digital Strategy Development</h5></li>
@@ -77,12 +60,26 @@ function MarketingFoundation() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className="point-arrow-list-wrapper d-flex d-md-none">
+                                    <div>
+                                        <ul className="point-arrow-list">
+                                            <li><h5>Digital Strategy Development</h5></li>
+                                            <li><h5>Social Media Management</h5></li>
+                                            <li><h5>Content Creation</h5></li>
+                                            <li><h5>Community Management</h5></li>
+                                            <li><h5>Influencer Marketing</h5></li>
+                                            <li><h5>Performance Marketing</h5></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                     <div
-                        className="row"
+                        className="row d-none d-md-flex"
                         style={{
                             display: "flex",
                             justifyContent: "center",
@@ -100,6 +97,24 @@ function MarketingFoundation() {
                                 }}
                             />
                         </div>
+                    </div>
+
+                    <div
+                        className="row d-md-none justify-content-center"
+                        style={{
+                            height: "100px",
+                            overflow: "hidden"
+                        }}
+                    >
+                        <img
+                            src="/assets/images/600400.png"
+                            alt=""
+                            className="img-fluid"
+                            style={{
+                                width: "100%",
+                                height: "auto"
+                            }}
+                        />
                     </div>
 
                 </div>

@@ -20,7 +20,7 @@ function WebsiteDevelopment() {
             <LargestBrands />
             <ClientPortfolio />
             <WebsiteAppDesign />
-            <CaseStudiesSectionNew noPadding={true} />
+            <CaseStudiesSectionNew noPadding={false} />
             {/* <TestimonialSection /> */}
             <NewsletterSection />
             {/* <FaqSection /> */}

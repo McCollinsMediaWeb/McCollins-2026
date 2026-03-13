@@ -27,14 +27,14 @@ function BannerHomeSection() {
                         <div className="container">
                             <div className="HeroBannerSbText1">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <h3 className="title-heading-banner">
+                                    <h3 className="title-heading">
                                         Market with Digital Mastery
                                     </h3>
                                 </AnimateOnScroll>
                             </div>
-                            <div  className="HeroBannerSbText2">
+                            <div className="HeroBannerSbText2">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <h1 className="title-heading-banner">
+                                    <h1 className="title-heading">
                                         Market with <br /> Digital Mastery
                                     </h1>
                                 </AnimateOnScroll>
@@ -44,7 +44,7 @@ function BannerHomeSection() {
                                     <a href="#" class="btn btn-accent"><div class="btn-title"><span>Get Started</span></div><div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div></a>
                                 </div>
                             </AnimateOnScroll>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,8 @@ const GlobalCreative = () => {
                                         style={{ height: '400px', borderRadius: '0px' }}
                                     />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}>
+                                {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
+                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Mastering Ecosystems. Delivering Results.
@@ -39,7 +40,7 @@ const GlobalCreative = () => {
                             </div>
 
 
-                            <div className="row" >
+                            <div className="row d-none d-md-flex" >
                                 <div className="col-md-8 d-flex flex-column justify-content-center" style={{ paddingRight: '40px', paddingLeft: '0px' }}>
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
@@ -59,6 +60,27 @@ const GlobalCreative = () => {
                                 </div>
                             </div>
 
+                            <div className="row d-flex d-md-none">
+                                <div className="col-md-8" style={{ paddingRight: '0px', paddingLeft: '0px' }}>
+                                    <img
+                                        src="/assets/images/abt2.jpg"
+                                        alt="Service Image"
+                                        className="single-service-img"
+                                        style={{ height: '400px', borderRadius: '0px' }}
+                                    />
+                                </div>
+                                {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
+                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
+                                            Web. Apps. Commerce.
+                                        </h4>
+                                    </AnimateOnScroll>
+                                    <p style={{ fontWeight: 500, color: 'var(--new-color)', marginTop: '15px' }} >Be it a mobile application, website or an e-commerce platform,</p>
+                                    <p style={{ fontWeight: 100 }}>we create a product for your brand from the scratch. Create an exclusive product for your brand which can build a database over time!</p>
+                                </div>
+                            </div>
+
 
 
                             <div className="row">
@@ -70,7 +92,8 @@ const GlobalCreative = () => {
                                         style={{ height: '400px', borderRadius: '0px' }}
                                     />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}>
+                                {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
+                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Precision Lead<br /> Generation.

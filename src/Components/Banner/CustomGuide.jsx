@@ -5,7 +5,7 @@ import VideoButtonNew from "../Video/VideoButtonNew";
 function CustomGuide() {
     return (
         <>
-            <div className="section-guide">
+            {/* <div className="section-guide">
                 <div className="guide-banner">
                     <div className="hero-container">
                         <div style={{ position: 'absolute', bottom: '9%', right: '5%' }} >
@@ -16,13 +16,37 @@ function CustomGuide() {
                         </div>
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="guide-content">
-                                {/* <div className="guide-video-container">
-                                    <VideoButton videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
-                                    <p>See How We Help Brands Grow</p>
-                                </div> */}
                                 <div className="d-flex flex-column gspace-2">
                                     <h2 className="title-heading" style={{ WebkitTextFillColor: '#fff' }}>Scale your vision<br /> globally with<br /> McCollins Media</h2>
                                     <p style={{ fontWeight: 100, maxWidth: '60%' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                </div>
+                            </div>
+                        </AnimateOnScroll>
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="section-guide">
+                <div className="guide-banner" style={{ backgroundImage: 'url(/assets/images/global.jpg)' }} >
+                    <div className="hero-container">
+                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                            <div className="guide-content" style={{ maxWidth: 'unset' }}>
+                                <div className="d-flex flex-column gspace-2">
+                                    <h2 className="title-heading mb-3" style={{ WebkitTextFillColor: '#fff' }}>Scale your vision<br /> globally with<br /> McCollins Media</h2>
+                                    <div className="d-block d-md-none" >
+                                        <p style={{ fontWeight: 100, color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                        <div className="guide-video-container">
+                                            <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
+                                            <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', flexDirection: 'row' }} >
+                                        <p style={{ fontWeight: 100, maxWidth: '40%', color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                        <div className="guide-video-container">
+                                            <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
+                                            <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </AnimateOnScroll>

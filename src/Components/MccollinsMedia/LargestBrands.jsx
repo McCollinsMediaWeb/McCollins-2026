@@ -10,7 +10,7 @@ function LargestBrands() {
         <>
             <div className="section">
                 <div className="hero-container">
-                    <div className="d-flex flex-column gspace-5">
+                    <div className="d-flex gspace-5 flex-column-reverse flex-md-column">
                         <div className="chooseus-content-container">
                             <div className="d-flex flex-column gspace-5">
                                 <AnimateOnScroll animation="fadeInDown" speed="normal">
@@ -47,23 +47,6 @@ function LargestBrands() {
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className="chooseus-card-container">
-                            <div className="row">
-                                {whychooseus.slice(0, 6).map((item) => (
-                                    <div className="col-md-4">
-                                        <ChooseUsCard
-                                            key={item.id}
-                                            icon={item.icon}
-                                            title={item.title}
-                                            content={item.content}
-                                            link={item.link}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div> */}
-
                     </div>
                 </div>
             </div>

@@ -5080,7 +5080,7 @@ body.lightmode .cta-service-banner::before {
 }
 
 .StRp1 {
-    font-size: var(--font-size-6xl);
+    /* font-size: var(--font-size-6xl); */
     color: var(--accent-color);
     margin-bottom: 25px;
     line-height: 1.4;
@@ -5095,7 +5095,7 @@ body.lightmode .cta-service-banner::before {
 .LnkLstBoxItem {
     position: relative;
     padding-left: 40px;
-    font-size: var(--font-size-3xl);
+    /* font-size: var(--font-size-3xl); */
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -5239,4 +5239,43 @@ body.lightmode .point-arrow-list li::before {
     background-color: var(--featued-case-inner-card-bg);
     border-radius: 40px;
     margin: 10px 30px;
+}
+
+
+.team-card {
+    width: 380px;
+    flex-shrink: 0;
+}
+
+.team-card img {
+    width: 380px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+/* Mobile */
+@media (max-width:768px) {
+
+    .team-card {
+        width: 220px;
+    }
+
+    .team-card img {
+        width: 220px;
+        height: 300px;
+    }
+
+}
+
+.team-scroll {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+@media (max-width:768px) {
+    .team-scroll {
+        padding-left: 20px;
+    }
 }

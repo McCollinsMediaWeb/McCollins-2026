@@ -17,22 +17,23 @@ function FullImageWithText({ desktopImage, mobileImage, title, subtitle, content
 
     const bgImage = isMobile ? mobileImage : desktopImage;
 
+    const gradient = isMobile
+        ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9))`
+        : `linear-gradient(
+        to right,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 50%,
+        rgba(0,0,0,0.85) 50%,
+        rgba(0,0,0,0.9) 100%
+     )`;
+
     return (
         <div
             style={{
-                height: "90vh",
+                height: "100vh",
                 display: "flex",
                 alignItems: "center",
-                backgroundImage: `
-                    linear-gradient(
-                        to right,
-                        rgba(0,0,0,0) 0%,
-                        rgba(0,0,0,0) 50%,
-                        rgba(0,0,0,0.85) 50%,
-                        rgba(0,0,0,0.9) 100%
-                    ),
-                    url(${bgImage})
-                `,
+                backgroundImage: `${gradient}, url(${bgImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 marginBottom: mb
@@ -52,15 +53,15 @@ function FullImageWithText({ desktopImage, mobileImage, title, subtitle, content
                                     <div className="row align-items-center">
                                         <div className="StWrp1">
                                             <h3 className={`InIt1 ${iconClass}`} style={{ color: '#fff' }}>{title}</h3>
-                                            <div className="StRp1">{subtitle}</div>
+                                            <h4 className="StRp1">{subtitle}</h4>
                                             <p style={{ color: '#8f8f8f' }}>
                                                 {content}
                                             </p>
                                             <div className="LnkLstBox">
                                                 {points.map((point, index) => (
-                                                    <div key={index} className="LnkLstBoxItem" style={{ color: '#fff' }}>
+                                                    <h5 key={index} className="LnkLstBoxItem" style={{ color: '#fff' }}>
                                                         {point}
-                                                    </div>
+                                                    </h5>
                                                 ))}
                                             </div>
                                         </div>

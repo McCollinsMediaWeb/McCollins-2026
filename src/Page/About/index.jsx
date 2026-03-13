@@ -44,7 +44,7 @@ function AboutPage() {
                                                 Built on Strategy.<br /> Defined by Insight.
                                             </h2>
                                         </div>
-                                        <div className="col-md-6 d-flex align-items-end">
+                                        <div className="col-md-6 d-flex align-items-end pt-3 pt-md-0">
                                             <div>
                                                 <div className="HdT1">A Voice For Your Brand</div>
                                                 <p>

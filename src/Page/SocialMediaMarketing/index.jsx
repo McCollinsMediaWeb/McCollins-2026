@@ -18,9 +18,9 @@ function SocialMediaMarketing() {
             <ClientPortfolio />
             <SocialMediaMarketingImageWithText />
             <div className="container mb-5">
-                <div style={{ height: '1px', backgroundColor: '#828282', width: "100%" }} ></div>
+                <div style={{ height: '1px', backgroundColor: '#d6d6d6', width: "100%" }} ></div>
             </div>
-            <CaseStudiesSocialMediaMarketing noPadding={true} />
+            <CaseStudiesSocialMediaMarketing noPadding={false} />
             <OurPartners />
             <NewsletterSection />
         </div>
