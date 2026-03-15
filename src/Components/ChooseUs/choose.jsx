@@ -3,8 +3,8 @@ import { whychooseus } from "../../Data/ChooseUsData";
 import ChooseUsCard from "../Card/ChoooseUsCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-function ChooseUsSection(){
-    return(
+function ChooseUsSection() {
+    return (
         <>
             <div className="section">
                 <div className="hero-container">
@@ -48,18 +48,18 @@ function ChooseUsSection(){
                             <div className="row">
                                 {whychooseus.slice(0, 6).map((item) => (
                                     <div className="col-md-4">
-                                        <ChooseUsCard 
-                                        key={item.id}
-                                        icon={item.icon}
-                                        title={item.title}
-                                        content={item.content}
-                                        link={item.link}
-                                    />  
+                                        <ChooseUsCard
+                                            key={item.id}
+                                            icon={item.icon}
+                                            title={item.title}
+                                            content={item.content}
+                                            link={item.link}
+                                        />
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

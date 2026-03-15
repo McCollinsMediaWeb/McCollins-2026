@@ -264,6 +264,15 @@
         padding: 0em 2em 0em 0em;
     }
 
+    .partners-card {
+        margin-top: 30px;
+        padding: 1rem;
+    }
+
+    .partner-logo {
+        width: 100px;
+    }
+
     .number-box {
         margin: 0;
         width: 100%;
@@ -434,7 +443,7 @@
     }
 
     .section-footer {
-        padding: 0px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
     }
 
     .card-pricing-title {

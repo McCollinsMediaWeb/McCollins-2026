@@ -4785,7 +4785,7 @@ body.lightmode .cta-service-banner::before {
 
 .BannerImageBox {
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 }
 
@@ -5228,11 +5228,41 @@ body.lightmode .cta-service-banner::before {
     display: inline-block;
 }
 
+.choose-us-point::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/images/txtarow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.our-expertise-point-6::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("/assets/images/ind6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
 body.lightmode .point-arrow-list li::before {
     background-image: url("/assets/images/txtarow.png");
     width: 18px;
     height: 18px;
 }
+
+/* body.lightmode .choose-us-point::before {
+    background-image: url("/assets/images/txtarow.png");
+    width: 18px;
+    height: 18px;
+} */
 
 .featured-case-studies-inner-card {
     padding: 25px 35px;
@@ -5278,4 +5308,125 @@ body.lightmode .point-arrow-list li::before {
     .team-scroll {
         padding-left: 20px;
     }
+}
+
+
+.card-col {
+    padding-left: 0;
+    padding-right: .5rem;
+}
+
+.industry-card {
+    position: relative;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    cursor: pointer;
+}
+
+/* Gradient overlay */
+.industry-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+/* Text content */
+.industry-content {
+    position: relative;
+    color: #fff;
+    max-width: 80%;
+    z-index: 2;
+}
+
+.industry-content p {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+/* Hover icon */
+.industry-hover-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.industry-card:hover .industry-hover-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+.partners-card {
+    border-radius: 30px;
+
+    /* Glass background */
+    background: rgba(40, 40, 40, 0.65);
+
+    /* Blur behind the card */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* soft shadow */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+
+    margin-top: -50px;
+
+    padding: 3rem;
+}
+
+/* Logos */
+.partner-logo {
+    width: 140px;
+    object-fit: contain;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.partners-card::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.6), transparent 70%);
+    filter: blur(60px);
+}
+
+.partners-card {
+    position: relative;
 }

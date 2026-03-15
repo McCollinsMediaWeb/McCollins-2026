@@ -24,6 +24,7 @@ const HowWeWorkCard = ({ icon, step, title, content, isFirst }) => {
                                     style={{ width: "30%" }}
                                 />
                             </div>
+                            <span style={{ fontWeight: 'bold' }}>{step}</span>
                         </div>
                         <div className="d-flex flex-column gspace-2 text-center text-md-start">
                             <h5>{title}</h5>
