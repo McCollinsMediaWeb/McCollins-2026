@@ -10,7 +10,7 @@ import CaseStudiesSectionNew from "../../Components/CaseStudies/CaseStudiesNew";
 
 function CaseStudiesPage() {
     return (
-        <>
+        <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Case Studies - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Case Studies" currentPage="Case Studies" /> */}
             <InnerNew desktopImage="/assets/images/servicemaindesk.jpg" mobileImage="/assets/images/servicemainmob.jpg" title="Case Studies" title2="" title3="" />
@@ -19,7 +19,7 @@ function CaseStudiesPage() {
             {/* <GuideBannerSection /> */}
             {/* <ModalVideoSection /> */}
             {/* <TestimonialSection /> */}
-        </>
+        </div>
     );
 }
 

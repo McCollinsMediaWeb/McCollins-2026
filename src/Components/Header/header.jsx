@@ -77,7 +77,7 @@ function Navbar() {
                             <div className="HeaderBoxMiddle">
                                 <NavLink className="navbar-brand" to="/" >
                                     <img
-                                        src="/public/assets/images/mcmain.png"
+                                        src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png"
                                         className="site-logo img-fluid"
                                         alt="Logo"
                                     />
@@ -105,7 +105,7 @@ function Navbar() {
                             <div className="HdMenuLeft">
                                 <NavLink className="navbar-brand" onClick={() => setMenuOpen(prev => !prev)}>
                                     <img
-                                        src="/public/assets/images/mcmain.png"
+                                        src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png"
                                         className="img-fluid"
                                         alt="Logo"
                                     />
