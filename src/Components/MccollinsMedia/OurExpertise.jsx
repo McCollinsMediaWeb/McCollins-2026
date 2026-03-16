@@ -28,64 +28,76 @@ function OurExpertise() {
 
 
                     <div className="row mt-1 pt-5">
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind1.png" alt="" />
-                                    <h5>Real Estate</h5>
+                        <AnimateOnScroll animation="fadeInLeft" speed="slow">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
+                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind1.png" alt="" />
+                                        <h5>Real Estate</h5>
+                                    </div>
+                                    <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
                                 </div>
-                                <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
                             </div>
-                        </div>
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind2.png" alt="" />
-                                    <h5>Luxury</h5>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
+                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind2.png" alt="" />
+                                        <h5>Luxury</h5>
+                                    </div>
+                                    <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
                                 </div>
-                                <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
                             </div>
-                        </div>
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind3.png" alt="" />
-                                    <h5>Food & Beverage</h5>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll animation="fadeInLeft" speed="fast">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind3.png" alt="" />
+                                        <h5>Food & Beverage</h5>
+                                    </div>
+                                    <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
                                 </div>
-                                <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     </div>
 
                     <div className="row mt-1">
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind4.png" alt="" />
-                                    <h5>Technology</h5>
+                        <AnimateOnScroll animation="fadeInRight" speed="slow">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
+                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind4.png" alt="" />
+                                        <h5>Technology</h5>
+                                    </div>
+                                    <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
                                 </div>
-                                <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
                             </div>
-                        </div>
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind5.png" alt="" />
-                                    <h5>Startups</h5>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll animation="fadeInRight" speed="normal">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
+                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind5.png" alt="" />
+                                        <h5>Startups</h5>
+                                    </div>
+                                    <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
                                 </div>
-                                <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
                             </div>
-                        </div>
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind6.png" alt="" />
-                                    <h5>B2B</h5>
-                                </div>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll animation="fadeInRight" speed="fast">
+                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
+                                    <div className="d-flex align-items-end gap-3 mb-4">
+                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind6.png" alt="" />
+                                        <h5>B2B</h5>
+                                    </div>
 
-                                <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
+                                    <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
+                                </div>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     </div>
 
 

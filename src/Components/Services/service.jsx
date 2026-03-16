@@ -3,15 +3,15 @@ import { services } from "../../Data/ServiceData";
 import ServiceCard from "../Card/ServiceCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-function ServiceSection(){
+function ServiceSection() {
 
-    return(
+    return (
         <>
             <div className="section ServiceSection">
                 <div className="hero-container">
                     <div className="d-flex flex-column justify-content-center text-center gspace-5">
                         <div className="d-flex flex-column justify-content-center text-center gspace-2">
-                            <AnimateOnScroll animation="fadeInDown" speed="normal">    
+                            <AnimateOnScroll animation="fadeInDown" speed="normal">
                                 <div className="sub-heading align-self-center">
                                     <i className="fa-regular fa-circle-dot"></i>
                                     <span>Our Core Services</span>
@@ -20,7 +20,7 @@ function ServiceSection(){
 
                             <AnimateOnScroll animation="fadeInDown" speed="normal">
                                 <h2 className="title-heading heading-container heading-container-medium">
-                                    Digital Solutions<br/> That Drive Real Results
+                                    Digital Solutions<br /> That Drive Real Results
                                 </h2>
                             </AnimateOnScroll>
                         </div>
@@ -28,7 +28,7 @@ function ServiceSection(){
                             <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-2">
                                 {services.map((item) => (
                                     <div className="col" key={item.id}>
-                                        <ServiceCard 
+                                        <ServiceCard
                                             icon={item.icon}
                                             title={item.title}
                                             content={item.content}
@@ -39,12 +39,14 @@ function ServiceSection(){
                                 ))}
                             </div>
                         </div>
-                        <div className="service-link-footer">
-                            <p>
-                                Need a custom solution? Let&apos;s create a strategy tailored for your business.
-                                <a href="./contact"> Get a Free Strategy Call</a>
-                            </p>
-                        </div>
+                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                            <div className="service-link-footer">
+                                <p>
+                                    Need a custom solution? Let&apos;s create a strategy tailored for your business.
+                                    <a href="./contact"> Get a Free Strategy Call</a>
+                                </p>
+                            </div>
+                        </AnimateOnScroll>
                     </div>
                 </div>
             </div>

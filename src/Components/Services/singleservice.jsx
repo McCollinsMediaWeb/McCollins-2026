@@ -22,17 +22,21 @@ const SingleServiceSection = () => {
                                         Precision Automation<br /> For High-Velocity Brands.
                                     </h2>
                                 </AnimateOnScroll>
-                                <p className="text-center" style={{ marginTop: '15px', fontWeight: '100', }}>
-                                    We architect sophisticated automation ecosystems that bridge the gap between audience engagement and<br /> commercial scale. By engineering intelligent workflows that nurture prospects with precision, we transform your digital<br /> presence into a high-velocity engine for sustainable growth.
-                                </p>
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <p className="text-center" style={{ marginTop: '15px', fontWeight: '100', }}>
+                                        We architect sophisticated automation ecosystems that bridge the gap between audience engagement and<br /> commercial scale. By engineering intelligent workflows that nurture prospects with precision, we transform your digital<br /> presence into a high-velocity engine for sustainable growth.
+                                    </p>
+                                </AnimateOnScroll>
                             </div>
 
-                            <img
-                                src="/assets/images/p1.jpg"
-                                alt="Service Image"
-                                className="single-service-img"
-                                style={{ marginTop: '40px', marginBottom: '70px' }}
-                            />
+                            <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                <img
+                                    src="/assets/images/p1.jpg"
+                                    alt="Service Image"
+                                    className="single-service-img"
+                                    style={{ marginTop: '40px', marginBottom: '70px' }}
+                                />
+                            </AnimateOnScroll>
 
                         </div>
                     </div>
@@ -71,7 +75,9 @@ const SingleServiceSection = () => {
                                             Intelligent Lead Nurturing
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>We design multi-stage, behavior-triggered workflows that deliver personalized content at the exact moment of intent, accelerating the transition from lead to loyal customer.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>We design multi-stage, behavior-triggered workflows that deliver personalized content at the exact moment of intent, accelerating the transition from lead to loyal customer.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -90,7 +96,9 @@ const SingleServiceSection = () => {
                                             Omnichannel Synchronization
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -102,7 +110,9 @@ const SingleServiceSection = () => {
                                             Omnichannel Synchronization
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>Architecting a unified communication layer across email, SMS and web to ensure a seamless and consistent brand narrative throughout the entire user journey.</p>
+                                    </AnimateOnScroll>
                                 </div>
                                 <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
@@ -131,7 +141,9 @@ const SingleServiceSection = () => {
                                             CRM & Data Integration
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>Engineering seamless data pipelines between your digital platforms and CRM, providing a 360-degree view of consumer behavior and actionable business intelligence.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>Engineering seamless data pipelines between your digital platforms and CRM, providing a 360-degree view of consumer behavior and actionable business intelligence.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -150,7 +162,9 @@ const SingleServiceSection = () => {
                                             Predictive Audience Segmentation
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -162,7 +176,9 @@ const SingleServiceSection = () => {
                                             Predictive Audience Segmentation
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>Utilizing data driven triggers to automatically categorize users based on their engagement levels, ensuring high relevance messaging and maximum conversion efficiency.</p>
+                                    </AnimateOnScroll>
                                 </div>
                                 <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0px' }}>
                                     <img
@@ -189,12 +205,11 @@ const SingleServiceSection = () => {
                                             Automated Lifecycle Management
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px' }}>From onboarding to re-engagement, we build persistent automation frameworks that maximize customer lifetime value (CLV) and reduce operational overhead.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px' }}>From onboarding to re-engagement, we build persistent automation frameworks that maximize customer lifetime value (CLV) and reduce operational overhead.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>

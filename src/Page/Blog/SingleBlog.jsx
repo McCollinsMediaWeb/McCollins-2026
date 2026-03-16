@@ -16,7 +16,7 @@ export default function SingleBlog() {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await fetch(`http://localhost:8000/api/blogs/${slug}`);
+                const res = await fetch(`https://mccollins-server-2026.vercel.app/api/blogs/${slug}`);
 
                 if (!res.ok) {
                     throw new Error("Blog not found");

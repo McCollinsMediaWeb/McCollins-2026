@@ -39,34 +39,40 @@ function OurServices() {
                                 </AnimateOnScroll>
 
                                 <div className="point-arrow-list-wrapper d-none d-md-flex" style={{ gap: '50px' }}>
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Brand Development</h5></li>
-                                            <li><h5>Web</h5></li>
-                                            <li><h5>Social Media</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Brand Development</h5></li>
+                                                <li><h5>Web</h5></li>
+                                                <li><h5>Social Media</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
 
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Performance Marketing</h5></li>
-                                            <li><h5>Marketing Automation</h5></li>
-                                            <li><h5>Content Production</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Performance Marketing</h5></li>
+                                                <li><h5>Marketing Automation</h5></li>
+                                                <li><h5>Content Production</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
                                 </div>
 
                                 <div className="point-arrow-list-wrapper d-flex d-md-none">
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Brand Development</h5></li>
-                                            <li><h5>Web</h5></li>
-                                            <li><h5>Social Media</h5></li>
-                                            <li><h5>Performance Marketing</h5></li>
-                                            <li><h5>Marketing Automation</h5></li>
-                                            <li><h5>Content Production</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Brand Development</h5></li>
+                                                <li><h5>Web</h5></li>
+                                                <li><h5>Social Media</h5></li>
+                                                <li><h5>Performance Marketing</h5></li>
+                                                <li><h5>Marketing Automation</h5></li>
+                                                <li><h5>Content Production</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
                                 </div>
 
                             </div>
@@ -87,7 +93,9 @@ function OurServices() {
                                     </AnimateOnScroll>
                                 </div>
                             </div> */}
-                            <img className="img-fluid" src="/assets/images/600400.png" />
+                            <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                <img className="img-fluid" src="/assets/images/rounds-shapes.png" />
+                            </AnimateOnScroll>
                         </div>
                     </div>
 
@@ -167,8 +175,8 @@ function OurServices() {
 
 
 
-                </div>
-            </div>
+                </div >
+            </div >
 
         </>
     );

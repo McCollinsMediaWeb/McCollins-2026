@@ -27,7 +27,9 @@ function ClientPortfolio() {
                                 Client Portfolio
                             </h2>
                         </AnimateOnScroll>
-                        <p style={{ color: '#000', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                            <p style={{ color: '#000', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                        </AnimateOnScroll>
                     </div>
                     <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />

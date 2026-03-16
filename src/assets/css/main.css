@@ -4762,6 +4762,10 @@ body.lightmode .cta-service-banner::before {
     background-image: url(../../../public/assets/images/bg1.jpg);
 }
 
+body.lightmode .ServiceSection {
+    background-image: url(../../../public/assets/images/bggrey.png);
+}
+
 .HdT1 {
     color: var(--accent-color);
     margin-bottom: 15px;
@@ -5399,7 +5403,7 @@ body.lightmode .point-arrow-list li::before {
 
     overflow: hidden;
 
-    margin-top: -50px;
+    margin-top: -70px;
 
     padding: 3rem;
 }
@@ -5528,17 +5532,19 @@ body.lightmode .point-arrow-list li::before {
 }
 
 @media (max-width: 1000px) {
-  .HeroBannerContent .align-self-center{
-    align-self: end !important;
-  }
-  .HeaderBoxRight{
-    display: none;
-  }
-  .site-logo {
-    min-width: 120px;
+    .HeroBannerContent .align-self-center {
+        align-self: end !important;
+    }
+
+    .HeaderBoxRight {
+        display: none;
+    }
+
+    .site-logo {
+        min-width: 120px;
     }
 
     .navbar-action-button {
-    padding: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
 }

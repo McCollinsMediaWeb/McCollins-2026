@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -60,13 +60,13 @@ const Footer = () => {
                                     <div className="footer-quick-links">
                                         <h6 style={{ color: '#3876fc', fontWeight: 600 }}>Quick Links</h6>
                                         <ul className="footer-list">
-                                            <li><NavLink to="/">Home</NavLink></li>
-                                            <li><NavLink to="/about">About</NavLink></li>
-                                            <li><NavLink to="/service">Service</NavLink></li>
-                                            <li><NavLink to="/industry">Industry</NavLink></li>
-                                            <li><NavLink to="/blog">Blog</NavLink></li>
-                                            <li><NavLink to="/case_studies">Case Study</NavLink></li>
-                                            <li><NavLink to="/contact">Contact</NavLink></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/service">Service</a></li>
+                                            <li><a href="/industry">Industry</a></li>
+                                            <li><a href="/blog">Blog</a></li>
+                                            <li><a href="/case_studies">Case Study</a></li>
+                                            <li><a href="/contact">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -76,14 +76,14 @@ const Footer = () => {
                                     <div className="footer-services-container">
                                         <h6 style={{ color: '#3876fc', fontWeight: 600 }}>Services</h6>
                                         <ul className="footer-list">
-                                            <li><NavLink to="/service/website-development">Website Development</NavLink></li>
-                                            <li><NavLink to="/service/social-media-marketing">Social Media Marketing</NavLink></li>
-                                            <li><NavLink to="/service/marketing-automations">Marketing Automation</NavLink></li>
-                                            <li><NavLink to="/service">Google Ads</NavLink></li>
-                                            <li><NavLink to="/service">Search Engine Optimization</NavLink></li>
-                                            <li><NavLink to="/service/content-production">Film Production</NavLink></li>
-                                            <li><NavLink to="/service/brand-development">Brand Development</NavLink></li>
-                                            <li><NavLink to="/service/performance-marketing">Perfomance Marketing</NavLink></li>
+                                            <li><a href="/service/website-development">Website Development</a></li>
+                                            <li><a href="/service/social-media-marketing">Social Media Marketing</a></li>
+                                            <li><a href="/service/marketing-automations">Marketing Automation</a></li>
+                                            <li><a href="/service">Google Ads</a></li>
+                                            <li><a href="/service">Search Engine Optimization</a></li>
+                                            <li><a href="/service/content-production">Film Production</a></li>
+                                            <li><a href="/service/brand-development">Brand Development</a></li>
+                                            <li><a href="/service/performance-marketing">Perfomance Marketing</a></li>
                                         </ul>
                                     </div>
                                 </div>

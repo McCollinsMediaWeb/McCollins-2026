@@ -28,7 +28,9 @@ const CaseStudiesSocialMediaMarketing = ({ noPadding }) => {
                                         <h2 className="title-heading">Featured Cases</h2>
                                     </div>
                                 </AnimateOnScroll>
-                                <p style={{ marginTop: "15px", fontWeight: 100 }}>Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil industries in Saudi Arabia. Have a look at some of our work.</p>
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <p style={{ marginTop: "15px", fontWeight: 100 }}>Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil industries in Saudi Arabia. Have a look at some of our work.</p>
+                                </AnimateOnScroll>
                             </div>
                         </div>
                     </div>

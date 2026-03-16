@@ -40,14 +40,16 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
                                     <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
                                 </div>
                             </div>
-                            <div className="col-md-6" >
-                                <h2 className="title-heading mb-3" style={{ WebkitTextFillColor: '#fff' }}>Scale your vision<br /> globally with<br /> McCollins Media</h2>
-                                <p style={{ fontWeight: 100, maxWidth: '90%', color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
-                                <div className="guide-video-container d-flex d-md-none mt-4">
-                                    <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
-                                    <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                            <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                <div className="col-md-6" >
+                                    <h2 className="title-heading mb-3" style={{ WebkitTextFillColor: '#fff' }}>Scale your vision<br /> globally with<br /> McCollins Media</h2>
+                                    <p style={{ fontWeight: 100, maxWidth: '90%', color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                    <div className="guide-video-container d-flex d-md-none mt-4">
+                                        <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
+                                        <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </AnimateOnScroll>
                         </div>
                     </div>
                 </div>

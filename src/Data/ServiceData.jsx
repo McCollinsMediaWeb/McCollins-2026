@@ -5,7 +5,7 @@ export const services = [
         title: "Brand Development",
         content: "Crafting cohesive brand identities that resonate across cultures and command a global presence.",
         speed: "slow",
-        link: "single_services",
+        link: "/service/brand-development",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const services = [
         title: "Web Development",
         content: "Developing high-performance, responsive websites engineered to convert global audiences into loyal customers.",
         speed: "normal",
-        link: "single_services",
+        link: "/service/web-development",
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const services = [
         title: "Social Media",
         content: "Cultivating vibrant digital communities through culturally resonant content that sparks global engagement.",
         speed: "fast",
-        link: "single_services",
+        link: "/service/social-media-marketing",
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ export const services = [
         title: "Perfomance Marketing",
         content: "Accelerating your ROI through data-driven, cross-border campaigns engineered for maximum conversion and global scale.",
         speed: "slow",
-        link: "single_services",
+        link: "/service/performance-marketing",
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ export const services = [
         title: "Marketing Automation ",
         content: "Driving sustainable growth through data-driven automation engineered for global consistency and local relevance.",
         speed: "normal",
-        link: "single_services",
+        link: "/service/marketing-automation",
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ export const services = [
         title: "Content Production",
         content: "Blending cinematic storytelling with strategic intent to produce content that resonates locally and scales globally.",
         speed: "fast",
-        link: "single_services",
+        link: "/service/content-production",
     },
 ];
 

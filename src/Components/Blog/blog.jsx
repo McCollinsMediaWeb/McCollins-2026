@@ -61,7 +61,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import BlogCard from "../Card/BlogCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mccollins-server-2026.vercel.app";
 
 function BlogSection() {
     const [blogs, setBlogs] = useState([]);

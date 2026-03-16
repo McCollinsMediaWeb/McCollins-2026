@@ -30,10 +30,8 @@ function Industry() {
                             <p className="text-center">Transforming industry-specific challenges into global success stories<span><br /></span> through specialized strategic mastery.</p>
                         </div>
                     </AnimateOnScroll>
-
-
-
                 </div>
+
                 <div className="IndustryAreaWrap">
                     <AnimateOnScroll animation="fadeInUp" speed="normal">
                         <div className="IndustryItem">
@@ -45,7 +43,7 @@ function Industry() {
                                     </div>
                                     <div className="col-md-7 pt-3 pt-md-0">
                                         <div className="StWrp1">
-                                            <div className="StRp1">Architecting Digital Dominance<br /> for Global Real Estate.</div>
+                                            <h4 className="StRp1">Architecting Digital Dominance<br /> for Global Real Estate.</h4>
                                             <p>Architecting a dominant digital presence for the world’s most ambitious property developments and brokerage firms. We bridge the gap between premier real estate assets and global investors through data-backed lead generation and immersive brand storytelling.</p>
                                             <div className="LnkLstBox">
                                                 <h5 className="LnkLstBoxItem">Precision Lead Acquisition</h5>
@@ -75,7 +73,7 @@ function Industry() {
                                         </div>
                                         <div className="col-md-7 pt-3 pt-md-0">
                                             <div className="StWrp1">
-                                                <div className="StRp1">Premium Luxury Marketing Solutions<br /> curated for your brand</div>
+                                                <h4 className="StRp1">Premium Luxury Marketing Solutions<br /> curated for your brand</h4>
                                                 <p>There’s a reason why luxury brands don’t advertise like the other brands in the world. Unlike those brands, they cater to a niche audience that only buys from them. They are not necessarily looking for more customers to engage with them. Marketing for luxurious brands is that, luxury. They want to inspire passion and proudness in people. Through their interaction with you, they want you to physically manifest the luxury shown by them.<br /><br /> After having worked with luxury brands like Mercedes Benz, YSL, and Lootah Perfumes, McCollins has had the pleasure of working with some of the finest luxury brands</p>
                                                 <div className="LnkLstBox">
                                                     <h5 className="LnkLstBoxItem">Bespoke Brand Storytelling</h5>
@@ -98,7 +96,7 @@ function Industry() {
 
                                         <div className="col-md-7">
                                             <div className="StWrp1">
-                                                <div className="StRp1">Premium Luxury Marketing Solutions<br /> curated for your brand</div>
+                                                <h4 className="StRp1">Premium Luxury Marketing Solutions<br /> curated for your brand</h4>
                                                 <p>There’s a reason why luxury brands don’t advertise like the other brands in the world. Unlike those brands, they cater to a niche audience that only buys from them. They are not necessarily looking for more customers to engage with them. Marketing for luxurious brands is that, luxury. They want to inspire passion and proudness in people. Through their interaction with you, they want you to physically manifest the luxury shown by them.<br /><br /> After having worked with luxury brands like Mercedes Benz, YSL, and Lootah Perfumes, McCollins has had the pleasure of working with some of the finest luxury brands</p>
                                                 <div className="LnkLstBox">
                                                     <h5 className="LnkLstBoxItem">Bespoke Brand Storytelling</h5>
@@ -156,7 +154,7 @@ function Industry() {
                                     </div>
                                     <div className="col-md-7 pt-3 pt-md-0">
                                         <div className="StWrp1">
-                                            <div className="StRp1">Technology Marketing Solutions catering to the Middle East</div>
+                                            <h4 className="StRp1">Technology Marketing Solutions catering to the Middle East</h4>
                                             <p>Driving the next wave of digital transformation by bridging the gap between global technical innovation and the Middle East’s unique market dynamics. We empower high-growth tech brands to navigate the region’s ambitious digital landscape with precision-engineered strategies and localized expertise.</p>
                                             <div className="LnkLstBox">
                                                 <h5 className="LnkLstBoxItem">Hyper-Localized Tech Narratives</h5>
@@ -186,7 +184,7 @@ function Industry() {
                                         </div>
                                         <div className="col-md-7 pt-3 pt-md-0">
                                             <div className="StWrp1">
-                                                <div className="StRp1">Accelerating Vision into Global Dominance.</div>
+                                                <h4 className="StRp1">Accelerating Vision into Global Dominance.</h4>
                                                 <p>Empowering disruptive startups to bridge the gap between initial innovation and sustainable global dominance. We provide the strategic foundation and high-velocity execution necessary to navigate the complexities of market entry and venture-backed scaling.</p>
                                                 <div className="LnkLstBox">
                                                     <h5 className="LnkLstBoxItem">Agile Market Entry</h5>
@@ -212,7 +210,7 @@ function Industry() {
 
                                         <div className="col-md-7">
                                             <div className="StWrp1">
-                                                <div className="StRp1">Accelerating Vision into Global Dominance.</div>
+                                                <h4 className="StRp1">Accelerating Vision into Global Dominance.</h4>
                                                 <p>
                                                     Empowering disruptive startups to bridge the gap between initial innovation and sustainable global dominance. We provide the strategic foundation and high-velocity execution necessary to navigate the complexities of market entry and venture-backed scaling.
                                                 </p>

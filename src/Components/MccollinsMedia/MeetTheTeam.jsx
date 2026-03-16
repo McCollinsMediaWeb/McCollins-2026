@@ -225,10 +225,12 @@ const MeetTheTeam = () => {
                                     </h4>
                                 </AnimateOnScroll>
 
-                                <p style={{ marginTop: "5px", fontWeight: 100 }}>
-                                    You know our story, but do you know who keeps it alive?
-                                    Meet our team who take brands to unthinkable heights!
-                                </p>
+                                <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    <p style={{ marginTop: "5px", fontWeight: 100 }}>
+                                        You know our story, but do you know who keeps it alive?
+                                        Meet our team who take brands to unthinkable heights!
+                                    </p>
+                                </AnimateOnScroll>
 
                             </div>
                         </div>

@@ -75,13 +75,13 @@ function Navbar() {
 
                             </div>
                             <div className="HeaderBoxMiddle">
-                                <NavLink className="navbar-brand" to="/" >
+                                <a className="navbar-brand" href="/" >
                                     <img
                                         src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png"
                                         className="site-logo img-fluid"
                                         alt="Logo"
                                     />
-                                </NavLink>
+                                </a>
                             </div>
                             <div style={{ display: 'flex' }} >
                                 <div className="navbar-action-button">
@@ -127,71 +127,71 @@ function Navbar() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/" onClick={() => setMenuOpen(prev => !prev)}>Home</NavLink>
+                                        <a className="MegLnkTp1" href="/" onClick={() => setMenuOpen(prev => !prev)}>Home</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/about" onClick={() => setMenuOpen(prev => !prev)}>About Us</NavLink>
+                                        <a className="MegLnkTp1" href="/about" onClick={() => setMenuOpen(prev => !prev)}>About Us</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</NavLink>
+                                        <a className="MegLnkTp1" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
+                                        <a className="MegLnkTp1" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</NavLink>
+                                        <a className="MegLnkTp1" href="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>Contact</NavLink>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/website-development" onClick={() => setMenuOpen(prev => !prev)}>Website Development</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/social-media-marketing" onClick={() => setMenuOpen(prev => !prev)}>Social Media Marketing</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/marketing-automations" onClick={() => setMenuOpen(prev => !prev)}>Marketing Automations</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Google Ads</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service" onClick={() => setMenuOpen(prev => !prev)}>Search Engine Optimization</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/content-production" onClick={() => setMenuOpen(prev => !prev)}>Film Production</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/brand-development" onClick={() => setMenuOpen(prev => !prev)}>Brand Development</NavLink>
-                                    </div>
-                                    <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/service/performance-marketing" onClick={() => setMenuOpen(prev => !prev)}>Perfomance Marketing</NavLink>
+                                        <a className="MegLnkTp1" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>Contact</a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</NavLink>
+                                        <a className="MegLnkTp1" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</NavLink>
+                                        <a className="MegLnkTp1 FontSmall" href="/service/website-development" onClick={() => setMenuOpen(prev => !prev)}>Website Development</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</NavLink>
+                                        <a className="MegLnkTp1 FontSmall" href="/service/social-media-marketing" onClick={() => setMenuOpen(prev => !prev)}>Social Media Marketing</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</NavLink>
+                                        <a className="MegLnkTp1 FontSmall" href="/service/marketing-automations" onClick={() => setMenuOpen(prev => !prev)}>Marketing Automations</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</NavLink>
+                                        <a className="MegLnkTp1 FontSmall" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Google Ads</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <NavLink className="MegLnkTp1 FontSmall" to="/industry" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</NavLink>
+                                        <a className="MegLnkTp1 FontSmall" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Search Engine Optimization</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/service/content-production" onClick={() => setMenuOpen(prev => !prev)}>Film Production</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/service/brand-development" onClick={() => setMenuOpen(prev => !prev)}>Brand Development</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/service/performance-marketing" onClick={() => setMenuOpen(prev => !prev)}>Perfomance Marketing</a>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,9 +205,9 @@ function Navbar() {
                                 <div className="HdT2">We do it right , we do it well , we do it on time </div>
                             </div>
                             <div className="col-md-3">
-                                <NavLink className="btn btn-accent" to="/contact" onClick={() => setMenuOpen(prev => !prev)}>
+                                <a className="btn btn-accent" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>
                                     <div class="btn-title"><span>Get Started</span></div><div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
-                                </NavLink>
+                                </a>
                             </div>
                         </div>
                     </div>

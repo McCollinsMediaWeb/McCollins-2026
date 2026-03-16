@@ -121,82 +121,89 @@ const CaseStudiesSection = ({ noPadding }) => {
 
                     <div className="row mt-1 pt-5">
                         <div className="col-md-8 card-col">
-                            <div className="industry-card" style={{ backgroundImage: "url(/assets/images/oakberry.jpg)" }}>
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/oakberry.jpg)" }}>
 
-                                <div className="industry-overlay"></div>
+                                    <div className="industry-overlay"></div>
 
-                                <div className="industry-content">
-                                    <div className="d-flex align-items-end gap-1 mb-1">
-                                        <h6>OAK BERRY</h6>
+                                    <div className="industry-content">
+                                        <div className="d-flex align-items-end gap-1 mb-1">
+                                            <h6>OAK BERRY</h6>
+                                        </div>
+                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
-                                    <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
-                                </div>
 
-                                <div className="industry-hover-icon">
-                                    <i className="fa-solid fa-arrow-right"></i>
+                                    <div className="industry-hover-icon">
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
                                 </div>
-
-                            </div>
+                            </AnimateOnScroll>
                         </div>
 
                         <div className="col-md-4 card-col pt-2 pt-md-0">
-                            <div className="industry-card" style={{ backgroundImage: "url(/assets/images/voss.jpg)" }}>
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/voss.jpg)" }}>
 
-                                <div className="industry-overlay"></div>
+                                    <div className="industry-overlay"></div>
 
-                                <div className="industry-content">
-                                    <div className="d-flex align-items-end gap-1 mb-1">
-                                        <h6>VOSS DUBAI</h6>
+                                    <div className="industry-content">
+                                        <div className="d-flex align-items-end gap-1 mb-1">
+                                            <h6>VOSS DUBAI</h6>
+                                        </div>
+                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
-                                    <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
-                                </div>
 
-                                <div className="industry-hover-icon">
-                                    <i className="fa-solid fa-arrow-right"></i>
-                                </div>
+                                    <div className="industry-hover-icon">
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
 
-                            </div>
+                                </div>
+                            </AnimateOnScroll>
                         </div>
                     </div>
 
 
                     <div className="row mt-3">
                         <div className="col-md-4 card-col">
-                            <div className="industry-card" style={{ backgroundImage: "url(/assets/images/dubai.jpg)" }}>
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/dubai.jpg)" }}>
 
-                                <div className="industry-overlay"></div>
+                                    <div className="industry-overlay"></div>
 
-                                <div className="industry-content">
-                                    <div className="d-flex align-items-end gap-1 mb-1">
-                                        <h6>Dubai Airport Freezone</h6>
+                                    <div className="industry-content">
+                                        <div className="d-flex align-items-end gap-1 mb-1">
+                                            <h6>Dubai Airport Freezone</h6>
+                                        </div>
+                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >APP Design</p>
                                     </div>
-                                    <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >APP Design</p>
-                                </div>
 
-                                <div className="industry-hover-icon">
-                                    <i className="fa-solid fa-arrow-right"></i>
-                                </div>
+                                    <div className="industry-hover-icon">
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
 
-                            </div>
+                                </div>
+                            </AnimateOnScroll>
                         </div>
 
                         <div className="col-md-8 card-col pt-2 pt-md-0">
-                            <div className="industry-card" style={{ backgroundImage: "url(/assets/images/pioneer.jpg)" }}>
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/pioneer.jpg)" }}>
 
-                                <div className="industry-overlay"></div>
+                                    <div className="industry-overlay"></div>
 
-                                <div className="industry-content">
-                                    <div className="d-flex align-items-end gap-1 mb-1">
-                                        <h6>Pioneer</h6>
+                                    <div className="industry-content">
+                                        <div className="d-flex align-items-end gap-1 mb-1">
+                                            <h6>Pioneer</h6>
+                                        </div>
+                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Website</p>
                                     </div>
-                                    <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Website</p>
-                                </div>
 
-                                <div className="industry-hover-icon">
-                                    <i className="fa-solid fa-arrow-right"></i>
-                                </div>
+                                    <div className="industry-hover-icon">
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
 
-                            </div>
+                                </div>
+                            </AnimateOnScroll>
                         </div>
                     </div>
 

@@ -54,43 +54,47 @@ const Awards = () => {
                                     </h2>
                                 </AnimateOnScroll>
 
-                                <p style={{ marginTop: "5px", fontWeight: 100 }}>
-                                    A decorated legacy of industry-leading excellence and globally recognized performance standards.
-                                </p>
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <p style={{ marginTop: "5px", fontWeight: 100 }}>
+                                        A decorated legacy of industry-leading excellence and globally recognized performance standards.
+                                    </p>
+                                </AnimateOnScroll>
 
                             </div>
                         </div>
                     </div>
 
                     {/* Awards Images */}
-                    <div className="row mt-5 g-4">
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div className="row mt-5 g-4">
 
-                        {awards.map((img, index) => (
-                            <div key={index} className="col-lg-4 col-md-6">
+                            {awards.map((img, index) => (
+                                <div key={index} className="col-lg-4 col-md-6">
 
-                                <div
-                                    style={{
-                                        borderRadius: "40px",
-                                        overflow: "hidden",
-                                        background: "#2c2c2c"
-                                    }}
-                                >
-                                    <img
-                                        src={img}
-                                        alt="award"
+                                    <div
                                         style={{
-                                            width: "100%",
-                                            height: "100%",
-                                            objectFit: "cover",
-                                            borderRadius: "40px"
+                                            borderRadius: "40px",
+                                            overflow: "hidden",
+                                            background: "#2c2c2c"
                                         }}
-                                    />
+                                    >
+                                        <img
+                                            src={img}
+                                            alt="award"
+                                            style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                objectFit: "cover",
+                                                borderRadius: "40px"
+                                            }}
+                                        />
+                                    </div>
+
                                 </div>
+                            ))}
 
-                            </div>
-                        ))}
-
-                    </div>
+                        </div>
+                    </AnimateOnScroll>
 
                 </div>
             </div>

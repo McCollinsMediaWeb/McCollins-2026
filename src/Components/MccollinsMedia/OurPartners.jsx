@@ -14,7 +14,9 @@ function OurPartners() {
                                 Our Partners
                             </h2>
                         </AnimateOnScroll>
-                        <p style={{ fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                            <p style={{ fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                        </AnimateOnScroll>
                     </div>
                     <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <img src="/assets/images/a1.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />

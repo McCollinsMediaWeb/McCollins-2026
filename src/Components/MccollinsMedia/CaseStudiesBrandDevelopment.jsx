@@ -22,9 +22,11 @@ function CaseStudiesBrandDevelopment() {
                                 <h2 className="title-heading">
                                     Featured Cases
                                 </h2>
-                                <p>
-                                    Over the past decade, we have partnered with a wide range of brands on their brand development journeys—helping them shape identities, build trust, and create meaningful connections with their audiences. From strategy and design to storytelling and positioning, our work has empowered brands to stand out and grow stronger in competitive markets.
-                                </p>
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <p>
+                                        Over the past decade, we have partnered with a wide range of brands on their brand development journeys—helping them shape identities, build trust, and create meaningful connections with their audiences. From strategy and design to storytelling and positioning, our work has empowered brands to stand out and grow stronger in competitive markets.
+                                    </p>
+                                </AnimateOnScroll>
 
                             </div>
 

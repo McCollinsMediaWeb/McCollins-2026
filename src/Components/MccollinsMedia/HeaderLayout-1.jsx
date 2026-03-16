@@ -29,7 +29,7 @@ function HeaderLayout1() {
                                         <span>Let Work Together</span>
                                     </div>
 
-                                    <div className="icon-circle">
+                                    <div className="icon-circle" style={{ backgroundColor: '#000' }}>
                                         <i className="fa-solid fa-arrow-right"></i>
                                     </div>
 

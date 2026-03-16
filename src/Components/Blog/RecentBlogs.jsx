@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 
 
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mccollins-server-2026.vercel.app";
 
 const RecentBlogs = () => {
 

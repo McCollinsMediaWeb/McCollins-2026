@@ -87,7 +87,9 @@ function OurTimeline() {
                                             Exceptional Creativity
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>We engineer avant-grade visual concepts that bridge the gap between disruptive artistry and strategic brand intent to command absolute market authority.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>We engineer avant-grade visual concepts that bridge the gap between disruptive artistry and strategic brand intent to command absolute market authority.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -105,7 +107,9 @@ function OurTimeline() {
                                             Professionalism & Reliability
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Our reputation is built on the architecture of trust, combining seamless project management with a relentless commitment to deadline-driven excellence and premium output.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Our reputation is built on the architecture of trust, combining seamless project management with a relentless commitment to deadline-driven excellence and premium output.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -116,7 +120,9 @@ function OurTimeline() {
                                             Professionalism & Reliability
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Our reputation is built on the architecture of trust, combining seamless project management with a relentless commitment to deadline-driven excellence and premium output.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Our reputation is built on the architecture of trust, combining seamless project management with a relentless commitment to deadline-driven excellence and premium output.</p>
+                                    </AnimateOnScroll>
                                 </div>
                                 <div className="col-md-8">
                                     <img
@@ -141,7 +147,9 @@ function OurTimeline() {
                                             State-of-the-Art Equipment
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered content powered by a world-class inventory of the latest cinematic technology and specialized production hardware.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered content powered by a world-class inventory of the latest cinematic technology and specialized production hardware.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -159,7 +167,9 @@ function OurTimeline() {
                                             Full-Service Solutions
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>We provide a comprehensive production ecosystem, architecting every phase from conceptual blueprinting to high-fidelity post-production to ensure a seamless, turnkey brand experience.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>We provide a comprehensive production ecosystem, architecting every phase from conceptual blueprinting to high-fidelity post-production to ensure a seamless, turnkey brand experience.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -170,7 +180,9 @@ function OurTimeline() {
                                             Full-Service Solutions
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>We provide a comprehensive production ecosystem, architecting every phase from conceptual blueprinting to high-fidelity post-production to ensure a seamless, turnkey brand experience.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>We provide a comprehensive production ecosystem, architecting every phase from conceptual blueprinting to high-fidelity post-production to ensure a seamless, turnkey brand experience.</p>
+                                    </AnimateOnScroll>
                                 </div>
                                 <div className="col-md-8">
                                     <img
@@ -195,7 +207,9 @@ function OurTimeline() {
                                             Tailored Approach
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Our process is a meticulous study of your brand's unique DNA, resulting in a precision-engineered production roadmap tailored for maximum market resonance.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Our process is a meticulous study of your brand's unique DNA, resulting in a precision-engineered production roadmap tailored for maximum market resonance.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -213,7 +227,9 @@ function OurTimeline() {
                                             Client Satisfaction
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered results and uncompromised service standards designed to ensure total brand partner confidence and long-term success.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered results and uncompromised service standards designed to ensure total brand partner confidence and long-term success.</p>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
 
@@ -224,7 +240,9 @@ function OurTimeline() {
                                             Client Satisfaction
                                         </h4>
                                     </AnimateOnScroll>
-                                    <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered results and uncompromised service standards designed to ensure total brand partner confidence and long-term success.</p>
+                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                        <p style={{ marginTop: '15px', fontWeight: 100 }}>Precision-engineered results and uncompromised service standards designed to ensure total brand partner confidence and long-term success.</p>
+                                    </AnimateOnScroll>
                                 </div>
                                 <div className="col-md-8">
                                     <img
@@ -234,7 +252,6 @@ function OurTimeline() {
                                     />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

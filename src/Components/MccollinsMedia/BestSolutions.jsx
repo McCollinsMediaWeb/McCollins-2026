@@ -113,23 +113,27 @@ function BestSolutions() {
                                 </AnimateOnScroll>
 
                                 <div className="d-none d-md-flex" style={{ display: "flex", gap: "30px" }}>
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Campaign Planning</h5></li>
-                                            <li><h5>Keyword Research</h5></li>
-                                            <li><h5>Campaign Setup</h5></li>
-                                            <li><h5>Ad Creation</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Campaign Planning</h5></li>
+                                                <li><h5>Keyword Research</h5></li>
+                                                <li><h5>Campaign Setup</h5></li>
+                                                <li><h5>Ad Creation</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
 
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Bid Management</h5></li>
-                                            <li><h5>Performance Monitoring</h5></li>
-                                            <li><h5>Optimization</h5></li>
-                                            <li><h5>Achieving Target Audience</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Bid Management</h5></li>
+                                                <li><h5>Performance Monitoring</h5></li>
+                                                <li><h5>Optimization</h5></li>
+                                                <li><h5>Achieving Target Audience</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
                                 </div>
 
                                 <div className="d-md-none" style={{ display: "flex", gap: "30px" }}>

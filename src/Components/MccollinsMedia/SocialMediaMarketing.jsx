@@ -81,28 +81,30 @@ function SocialMediaMarketingImageWithText() {
                                     </h2>
                                 </AnimateOnScroll>
 
-                                <div>
-                                    <ul className="point-arrow-list" style={{ paddingLeft: '0px' }}>
-                                        <li><h5>Content Management in AR/EN</h5></li>
-                                        <li><h5>Comment Moderation</h5></li>
-                                        <li>
-                                            <h5>Buzz Generation - Ramadan,<br />
-                                                UAE National Day, Menu Launch, Competitions</h5>
-                                        </li>
-                                        <li><h5>Blogger Outreach Program</h5></li>
-                                        <li><h5>Social Media Monitoring and Analysis</h5></li>
-                                    </ul>
-                                </div>
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <div>
+                                        <ul className="point-arrow-list" style={{ paddingLeft: '0px' }}>
+                                            <li><h5>Content Management in AR/EN</h5></li>
+                                            <li><h5>Comment Moderation</h5></li>
+                                            <li>
+                                                <h5>Buzz Generation - Ramadan,<br />
+                                                    UAE National Day, Menu Launch, Competitions</h5>
+                                            </li>
+                                            <li><h5>Blogger Outreach Program</h5></li>
+                                            <li><h5>Social Media Monitoring and Analysis</h5></li>
+                                        </ul>
+                                    </div>
+                                </AnimateOnScroll>
 
                                 <div>
-                                    <a href="#" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
+                                    <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
 
                                         <div className="btn-title">
                                             <span>Schedule a Meeting Today</span>
                                         </div>
 
                                         <div className="icon-circle" style={{ backgroundColor: '#000' }}>
-                                            <i className="fa-solid fa-arrow-right" style={{ color: '#fff' }}></i>
+                                            <i className="fa-solid fa-arrow-right"></i>
                                         </div>
 
                                     </a>

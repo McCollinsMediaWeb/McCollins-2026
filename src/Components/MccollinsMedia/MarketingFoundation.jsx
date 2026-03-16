@@ -14,7 +14,9 @@ function MarketingFoundation() {
                                 A Marketing Foundation That<br /> Grows your brand
                             </h2>
                         </AnimateOnScroll>
-                        <p style={{ fontWeight: 100, maxWidth: '900px', margin: '0 auto' }}>Boost your online presence with a top notch Social media marketing agency in Dubai. Drive engagement, increase brand visibility and Reach your target audience effectively.</p>
+                        <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <p style={{ fontWeight: 100, maxWidth: '900px', margin: '0 auto' }}>Boost your online presence with a top notch Social media marketing agency in Dubai. Drive engagement, increase brand visibility and Reach your target audience effectively.</p>
+                        </AnimateOnScroll>
                     </div>
 
                     <div className="row mt-5 pt-3" >
@@ -44,34 +46,40 @@ function MarketingFoundation() {
                                 </AnimateOnScroll>
 
                                 <div className="point-arrow-list-wrapper d-none d-md-flex">
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Digital Strategy Development</h5></li>
-                                            <li><h5>Social Media Management</h5></li>
-                                            <li><h5>Content Creation</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Digital Strategy Development</h5></li>
+                                                <li><h5>Social Media Management</h5></li>
+                                                <li><h5>Content Creation</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
 
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Community Management</h5></li>
-                                            <li><h5>Influencer Marketing</h5></li>
-                                            <li><h5>Performance Marketing</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Community Management</h5></li>
+                                                <li><h5>Influencer Marketing</h5></li>
+                                                <li><h5>Performance Marketing</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
                                 </div>
 
                                 <div className="point-arrow-list-wrapper d-flex d-md-none">
-                                    <div>
-                                        <ul className="point-arrow-list">
-                                            <li><h5>Digital Strategy Development</h5></li>
-                                            <li><h5>Social Media Management</h5></li>
-                                            <li><h5>Content Creation</h5></li>
-                                            <li><h5>Community Management</h5></li>
-                                            <li><h5>Influencer Marketing</h5></li>
-                                            <li><h5>Performance Marketing</h5></li>
-                                        </ul>
-                                    </div>
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Digital Strategy Development</h5></li>
+                                                <li><h5>Social Media Management</h5></li>
+                                                <li><h5>Content Creation</h5></li>
+                                                <li><h5>Community Management</h5></li>
+                                                <li><h5>Influencer Marketing</h5></li>
+                                                <li><h5>Performance Marketing</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
                                 </div>
 
                             </div>
@@ -87,14 +95,14 @@ function MarketingFoundation() {
                             overflow: "hidden"
                         }}
                     >
-                        <div style={{ width: '50%', height: '200px' }} >
+                        <div style={{ width: '50%', height: '240px' }} >
                             <img
-                                src="/assets/images/600400.png"
+                                src="/assets/images/rounds-shapes.png"
                                 alt=""
                                 style={{
-                                    // height: "60%",
                                     objectFit: "contain"
                                 }}
+                                className="img-fluid"
                             />
                         </div>
                     </div>

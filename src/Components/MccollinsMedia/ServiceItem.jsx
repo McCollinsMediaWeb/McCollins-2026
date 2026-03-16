@@ -75,7 +75,7 @@ function ServiceItem({ desktopImage, mobileImage, title, title2, subtitle, Posit
                                     <span>View More</span>
                                 </div>
 
-                                <div className="icon-circle">
+                                <div className="icon-circle" style={{ backgroundColor: '#000' }}>
                                     <i className="fa-solid fa-arrow-right"></i>
                                 </div>
 
