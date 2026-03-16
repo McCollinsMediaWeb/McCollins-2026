@@ -5526,3 +5526,19 @@ body.lightmode .point-arrow-list li::before {
 .showreel-video-wrapper {
     will-change: transform;
 }
+
+@media (max-width: 1000px) {
+  .HeroBannerContent .align-self-center{
+    align-self: end !important;
+  }
+  .HeaderBoxRight{
+    display: none;
+  }
+  .site-logo {
+    min-width: 120px;
+    }
+
+    .navbar-action-button {
+    padding: 0px 0px 0px 0px;
+    }
+}

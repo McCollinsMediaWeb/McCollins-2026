@@ -114,7 +114,7 @@ function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage })
                         </div>
                     </div> */}
                     <div className="HeroBannerContent">
-                        <div className="container pb-5 align-self-end">
+                        <div className="container pb-5 align-self-center">
                             <div className="HeroBannerSbText1">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                     <h3 className="title-heading">
