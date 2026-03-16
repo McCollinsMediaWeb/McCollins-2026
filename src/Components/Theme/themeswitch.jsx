@@ -20,8 +20,12 @@ export default function ThemeSwitcher() {
                 document.body.classList.add('lightmode');
                 localStorage.setItem('lightmode', 'active');
 
+                // siteLogos.forEach((logo) => {
+                //     logo.setAttribute('src', '/public/assets/images/mcmain.png');
+                // });
+
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', '/public/assets/images/mcmain.png');
+                    logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
                 });
 
                 partnerLogos.forEach((img) => {
@@ -34,8 +38,12 @@ export default function ThemeSwitcher() {
                 document.body.classList.remove('lightmode');
                 localStorage.removeItem('lightmode');
 
+                // siteLogos.forEach((logo) => {
+                //     logo.setAttribute('src', '/public/assets/images/mcmain.png');
+                // });
+
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', '/public/assets/images/mcmain.png');
+                    logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
                 });
 
                 partnerLogos.forEach((img) => {
