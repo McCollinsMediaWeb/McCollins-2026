@@ -18,6 +18,7 @@ import HowWeWork from "../../Components/MccollinsMedia/HowWeWork";
 import WhyChooseUs from "../../Components/MccollinsMedia/WhyChooseUs";
 import OurExpertise from "../../Components/MccollinsMedia/OurExpertise";
 import OurServices from "../../Components/MccollinsMedia/OurServices";
+import Showreel from "../../Components/MccollinsMedia/Showreel";
 
 function HomePage() {
     return (
@@ -31,8 +32,10 @@ function HomePage() {
             <CaseStudiesSection />
             <OurExpertise />
 
+            <Showreel />
 
-            <GuideBannerSection />
+
+            {/* <GuideBannerSection /> */}
             <ModalVideoSection />
 
             {/* <ChooseUsSection /> */}
