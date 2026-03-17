@@ -5548,3 +5548,7 @@ body.lightmode .point-arrow-list li::before {
         padding: 0px 0px 0px 0px;
     }
 }
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}

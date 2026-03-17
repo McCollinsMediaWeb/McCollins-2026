@@ -2,6 +2,7 @@ import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import CounterOnScroll from "../Hooks/CounterOnScroll";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { partnerships } from "../../Data/PartnershipData";
 
@@ -120,8 +121,9 @@ function OurServices() {
                         </div>
 
 
-                        {/* <div className="swiperPartner-container">
-                            <Swiper
+                        <div className="swiperPartner-container">
+                            {/* <Swiper
+                                auto
                                 slidesPerView={6}
                                 spaceBetween={20}
                                 loop={true}
@@ -143,11 +145,36 @@ function OurServices() {
                                         </div>
                                     </SwiperSlide>
                                 ))}
+                            </Swiper> */}
+                            <Swiper
+                                modules={[Autoplay]}
+                                slidesPerView={5}
+                                spaceBetween={20}
+                                loop={true}
+                                speed={5000} // 👈 higher = slower smooth movement
+                                autoplay={{
+                                    delay: 0, // 👈 no pause between slides
+                                    disableOnInteraction: false,
+                                }}
+                                breakpoints={{
+                                    230: { slidesPerView: 3 },
+                                    767: { slidesPerView: 4 },
+                                    1024: { slidesPerView: 6 },
+                                }}
+                                className="swiperPartner"
+                            >
+                                {partnerships.concat(partnerships).map((partner) => (
+                                    <SwiperSlide key={partner.id}>
+                                        <div className="col-6 col-md">
+                                            <img className="img-fluid partner-logo" src={partner.logo} />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
-                        </div> */}
+                        </div>
 
 
-                        <div className="row text-center align-items-center">
+                        {/* <div className="row text-center align-items-center">
 
                             <div className="col-6 col-md">
                                 <img className="img-fluid partner-logo" src="/assets/images/client-1-1.png" />
@@ -169,7 +196,7 @@ function OurServices() {
                                 <img className="img-fluid partner-logo" src="/assets/images/client-1-5.png" />
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
 

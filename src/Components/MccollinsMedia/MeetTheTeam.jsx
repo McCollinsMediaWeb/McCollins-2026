@@ -69,7 +69,7 @@
 //                         >
 
 //                             <div style={{ ...cardStyle, marginLeft: "40px" }} className="d-flex flex-column gspace-1">
-//                                 <img src="/assets/images/manjeet.webp" style={imgStyle} />
+//                                 <img src="/assets/images/mk.png" style={imgStyle} />
 //                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
 //                                     Meghna Kothari
 //                                 </h4>
@@ -89,7 +89,7 @@
 //                             </div>
 
 //                             <div style={cardStyle} className="d-flex flex-column gspace-1">
-//                                 <img src="/assets/images/manjeet.webp" style={imgStyle} />
+//                                 <img src="/assets/images/as.png" style={imgStyle} />
 //                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
 //                                     Ashar
 //                                 </h4>
@@ -156,52 +156,82 @@
 import React, { useEffect, useRef } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import "./scroll.css";
+import { teamData2 } from "../../Data/TeamData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const MeetTheTeam = () => {
 
-    const scrollRef = useRef(null);
-    const indicatorRef = useRef(null);
+    // const scrollRef = useRef(null);
+    // const indicatorRef = useRef(null);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const handleScroll = () => {
-            const container = scrollRef.current;
-            const indicator = indicatorRef.current;
+    //     const handleScroll = () => {
+    //         const container = scrollRef.current;
+    //         const indicator = indicatorRef.current;
 
-            const maxScroll = container.scrollWidth - container.clientWidth;
-            const scrollLeft = container.scrollLeft;
+    //         const maxScroll = container.scrollWidth - container.clientWidth;
+    //         const scrollLeft = container.scrollLeft;
 
-            const trackWidth = indicator.parentElement.offsetWidth;
-            const indicatorWidth = 50;
+    //         const trackWidth = indicator.parentElement.offsetWidth;
+    //         const indicatorWidth = 50;
 
-            const maxMove = trackWidth - indicatorWidth;
+    //         const maxMove = trackWidth - indicatorWidth;
 
-            const move = (scrollLeft / maxScroll) * maxMove;
+    //         const move = (scrollLeft / maxScroll) * maxMove;
 
-            indicator.style.transform = `translateX(${move}px)`;
-        };
+    //         indicator.style.transform = `translateX(${move}px)`;
+    //     };
 
-        const container = scrollRef.current;
+    //     const container = scrollRef.current;
 
-        container.addEventListener("scroll", handleScroll);
+    //     container.addEventListener("scroll", handleScroll);
 
-        return () => {
-            container.removeEventListener("scroll", handleScroll);
-        };
+    //     return () => {
+    //         container.removeEventListener("scroll", handleScroll);
+    //     };
 
-    }, []);
+    // }, []);
 
-    const cardStyle = {
-        width: "380px",
-        flexShrink: 0
-    };
+    // const cardStyle = {
+    //     width: "380px",
+    //     flexShrink: 0
+    // };
 
-    const imgStyle = {
-        width: "380px",
-        height: "500px",
-        objectFit: "cover",
-        borderRadius: "40px"
-    };
+    // const imgStyle = {
+    //     width: "380px",
+    //     height: "500px",
+    //     objectFit: "cover",
+    //     borderRadius: "40px"
+    // };
+
+    // const swiperRef = useRef(null);
+
+
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             const swiper = swiperRef.current?.swiper;
+
+    //             if (!swiper) return;
+
+    //             if (entry.isIntersecting) {
+    //                 swiper.autoplay.start(); // ✅ start when visible
+    //             } else {
+    //                 swiper.autoplay.stop(); // ✅ stop when out of view (optional)
+    //             }
+    //         },
+    //         { threshold: 0.4 } // adjust trigger point
+    //     );
+
+    //     if (swiperRef.current) {
+    //         observer.observe(swiperRef.current);
+    //     }
+
+    //     return () => observer.disconnect();
+    // }, []);
 
     return (
         <>
@@ -237,11 +267,49 @@ const MeetTheTeam = () => {
                     </div>
 
 
+
+
+                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                        <div className="pt-5 pb-5">
+                            <Swiper
+                                modules={[Autoplay]}
+                                slidesPerView={3}
+                                spaceBetween={10}
+                                loop={true}
+                                speed={7000}
+                                autoplay={{
+                                    delay: 0,
+                                    disableOnInteraction: false,
+                                }}
+                                breakpoints={{
+                                    230: { slidesPerView: 1 },
+                                    767: { slidesPerView: 1 },
+                                    1024: { slidesPerView: 3 },
+                                }}
+                                className="swiperPartner"
+                            >
+                                {teamData2.concat(teamData2).map((member) => (
+                                    <SwiperSlide key={member.id}>
+                                        <div className="team-card d-flex flex-column gspace-1">
+                                            <img src={member.image} alt="" />
+                                            <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
+                                                {member.name}
+                                            </h4>
+                                            <h5 style={{ color: "var(--new-color)", fontWeight: 100 }}>
+                                                {member.title}
+                                            </h5>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    </AnimateOnScroll>
+
+
+
                     {/* Team Section */}
-                    <div className="pt-5 pb-5">
-
+                    {/* <div className="pt-5 pb-5">
                         <div ref={scrollRef} className="team-scroll">
-
                             <div className="team-card d-flex flex-column gspace-1">
                                 <img src="/assets/images/mk.png" alt="" />
                                 <h4 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
@@ -291,11 +359,9 @@ const MeetTheTeam = () => {
                                     Web Lead
                                 </h5>
                             </div>
-
                         </div>
 
 
-                        {/* Custom Scrollbar */}
                         <div style={{ width: '80%', margin: '0 auto' }}>
                             <div
                                 style={{
@@ -307,7 +373,6 @@ const MeetTheTeam = () => {
                                     overflow: "hidden"
                                 }}
                             >
-
                                 <div
                                     ref={indicatorRef}
                                     style={{
@@ -320,12 +385,9 @@ const MeetTheTeam = () => {
                                         transition: "transform 0.1s"
                                     }}
                                 />
-
                             </div>
-
                         </div>
-
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
