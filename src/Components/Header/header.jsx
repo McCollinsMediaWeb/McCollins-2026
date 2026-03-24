@@ -198,11 +198,12 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="MegaMenuFooter">
+                <div className="MegaMenuFooter d-none d-sm-block">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-9">
-                                <div className="HdT2">We do it right , we do it well , we do it on time </div>
+                                {/* <div className="HdT2">We Do It Right , We Do It Well , We Do It On Time </div> */}
+                                <h6 style={{ color: '#fff' }}>We Do It Right , We Do It Well , We Do It On Time</h6>
                             </div>
                             <div className="col-md-3">
                                 <a className="btn btn-accent" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>

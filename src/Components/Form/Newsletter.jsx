@@ -93,41 +93,81 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
                                 </div>
                             )}
 
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <form
-                                    id="newsletterForm"
-                                    onSubmit={handleSubmit}
-                                    className="needs-validation"
-                                    noValidate
-                                    style={{ border: '1px solid #666', width: '100%' }}
-                                >
-                                    <div className="input-container">
-                                        <input
-                                            style={{ padding: '5px 20px 5px 20px' }}
-                                            type="email"
-                                            name="newsletter-email"
-                                            id="newsletter-email"
-                                            placeholder="Give your best email"
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                            className={error ? "error-border" : ""}
-                                            required
-                                        />
-                                        {error && (
-                                            <div className="error-text">{errorMessage}</div>
-                                        )}
-                                    </div>
-                                    <button className="btn btn-primary" type="submit">
-                                        <span className="btn-title">
-                                            <span>Subscribe</span>
-                                        </span>
-                                        <span className="icon-circle">
-                                            <i className="fa-solid fa-arrow-right"></i>
-                                        </span>
-                                    </button>
-                                </form>
-                            </AnimateOnScroll>
+                            <div className="d-none d-md-block" >
+                                <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    <form
+                                        id="newsletterForm"
+                                        onSubmit={handleSubmit}
+                                        className="needs-validation"
+                                        noValidate
+                                        style={{ border: '1px solid #666', width: '100%' }}
+                                    >
+                                        <div className="input-container">
+                                            <input
+                                                style={{ padding: '5px 20px 5px 20px' }}
+                                                type="email"
+                                                name="newsletter-email"
+                                                id="newsletter-email"
+                                                placeholder="Give your best email"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                className={error ? "error-border" : ""}
+                                                required
+                                            />
+                                            {error && (
+                                                <div className="error-text">{errorMessage}</div>
+                                            )}
+                                        </div>
+                                        <button className="btn btn-primary" type="submit">
+                                            <span className="btn-title">
+                                                <span>Subscribe</span>
+                                            </span>
+                                            <span className="icon-circle">
+                                                <i className="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </button>
+                                    </form>
+                                </AnimateOnScroll>
+                            </div>
 
+
+                            <div className="d-block d-md-none" >
+                                <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    <form
+                                        id="newsletterForm"
+                                        onSubmit={handleSubmit}
+                                        className="needs-validation"
+                                        noValidate
+                                        style={{ border: '1px solid #666', width: '100%' }}
+                                    >
+                                        <div className="input-container">
+                                            <input
+                                                style={{ padding: '12px 14px', marginBottom: '14px', }}
+                                                type="email"
+                                                name="newsletter-email"
+                                                id="newsletter-email"
+                                                placeholder="Give your best email"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                className={error ? "error-border" : ""}
+                                                required
+                                            />
+                                            {error && (
+                                                <div className="error-text">{errorMessage}</div>
+                                            )}
+                                        </div>
+                                        <button className="btn btn-primary" type="submit" style={{ padding: '3px' }}>
+                                            <span className="btn-title" style={{ padding: '3px 3px 3px 3px' }}>
+                                                <span>Subscribe</span>
+                                            </span>
+                                            <span className="icon-circle">
+                                                <i className="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </button>
+                                    </form>
+                                </AnimateOnScroll>
+
+                            </div>
                         </div>
                     </div>
                 </div>
