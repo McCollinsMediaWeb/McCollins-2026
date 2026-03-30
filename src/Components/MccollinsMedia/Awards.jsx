@@ -31,10 +31,16 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
+// const awards = [
+//     "/assets/images/dummy-img-600x400.jpg",
+//     "/assets/images/dummy-img-600x400.jpg",
+//     "/assets/images/dummy-img-600x400.jpg"
+// ];
+
 const awards = [
-    "/assets/images/dummy-img-600x400.jpg",
-    "/assets/images/dummy-img-600x400.jpg",
-    "/assets/images/dummy-img-600x400.jpg"
+    "/assets/images/award1.png",
+    "/assets/images/award2.png",
+    "/assets/images/award3.png"
 ];
 
 const Awards = () => {

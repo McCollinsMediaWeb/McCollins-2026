@@ -107,7 +107,7 @@ export const teamData2 = [
 		id: 4,
 		name: "George",
 		title: "Account Manager",
-		image: "/assets/images/manjeet.webp",
+		image: "/assets/images/George.webp",
 		socials: {
 			facebook: "https://facebook.com",
 			instagram: "https://instagram.com",
@@ -118,7 +118,7 @@ export const teamData2 = [
 		id: 5,
 		name: "Ijas",
 		title: "Web Lead",
-		image: "/assets/images/manjeet.webp",
+		image: "/assets/images/ijas.webp",
 		socials: {
 			facebook: "https://facebook.com",
 			instagram: "https://instagram.com",

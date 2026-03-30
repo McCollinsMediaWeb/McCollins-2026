@@ -141,7 +141,7 @@ function Industry() {
                         </div>
                     </AnimateOnScroll> */}
 
-                    <FullImageWithText desktopImage="/assets/images/cnt1.jpg" mobileImage="/assets/images/cnt1mob.jpg" title="Food & Beverage" subtitle="Accelerating F&B market share by bridging the gap between local flavor and global digital scale." content="the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same." points={['High-Impact Sensory Storytelling', 'Strategic Market Penetration', 'Omnichannel Consumer Engagement']} iconClass="t3" mb='50px' />
+                    <FullImageWithText desktopImage="/assets/images/foodBg.png" mobileImage="/assets/images/foodBg-mob.png" title="Food & Beverage" subtitle="Accelerating F&B market share by bridging the gap between local flavor and global digital scale." content="the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same." points={['High-Impact Sensory Storytelling', 'Strategic Market Penetration', 'Omnichannel Consumer Engagement']} iconClass="t3" mb='50px' />
 
 
                     <AnimateOnScroll animation="fadeInUp" speed="normal">
@@ -232,7 +232,7 @@ function Industry() {
                         </AnimateOnScroll>
                     </div>
 
-                    <FullImageWithText desktopImage="/assets/images/cnt1.jpg" mobileImage="/assets/images/cnt1mob.jpg" title="B2B" subtitle="B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand." content="Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale." points={['Account-Based Precision', 'Strategic Lead Nurturing', 'Authority-Driven Thought Leadership', 'Data-Backed Sales Alignment']} iconClass="t6" mb='0px' />
+                    <FullImageWithText desktopImage="/assets/images/b2bBg.png" mobileImage="/assets/images/b2bBg-mob.png" title="B2B" subtitle="B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand." content="Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale." points={['Account-Based Precision', 'Strategic Lead Nurturing', 'Authority-Driven Thought Leadership', 'Data-Backed Sales Alignment']} iconClass="t6" mb='0px' />
 
                     {/* <AnimateOnScroll animation="fadeInUp" speed="normal">
                         <div className="IndustryItem FullScreenItem">
