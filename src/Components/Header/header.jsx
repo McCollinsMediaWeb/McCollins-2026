@@ -133,16 +133,16 @@ function Navbar() {
                                         <a className="MegLnkTp1" href="/about" onClick={() => setMenuOpen(prev => !prev)}>About Us</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</a>
+                                        <a className="MegLnkTp1 desk-only" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Services</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</a>
+                                        <a className="MegLnkTp1 desk-only" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1" href="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</a>
+                                        <a className="MegLnkTp1 desk-only" href="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>Contact</a>
+                                        <a className="MegLnkTp1 desk-only" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>Contact</a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
@@ -193,15 +193,21 @@ function Navbar() {
                                     <div className="LinkItem">
                                         <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</a>
                                     </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 mob-only" href="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</a>
+                                    </div>
+                                    <div className="LinkItem">
+                                        <a className="MegLnkTp1 mob-only" href="/contact" onClick={() => setMenuOpen(prev => !prev)}>Contact</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="MegaMenuFooter d-none d-sm-block">
+                <div className="MegaMenuFooter d-none d-sm-block desk-only">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-md-9">
+                            <div className="col-md-9 desk-only">
                                 {/* <div className="HdT2">We Do It Right , We Do It Well , We Do It On Time </div> */}
                                 <h6 style={{ color: '#fff' }}>We Do It Right , We Do It Well , We Do It On Time</h6>
                             </div>

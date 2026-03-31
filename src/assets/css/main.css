@@ -5530,8 +5530,13 @@ body.lightmode .point-arrow-list li::before {
 .showreel-video-wrapper {
     will-change: transform;
 }
-
+.mob-only{
+    display: none !important;
+}
 @media (max-width: 1000px) {
+    .mob-only{
+        display: inline-block !important;
+    }
     .HeroBannerContent .align-self-center {
         align-self: end !important;
     }
@@ -5546,6 +5551,18 @@ body.lightmode .point-arrow-list li::before {
 
     .navbar-action-button {
         padding: 0px 0px 0px 0px;
+    }
+    .desk-only{
+        display: none !important;
+    }
+    .LinkItem a{
+        font-size: 22px;
+    }
+    .LinkItem a.FontSmall {
+    font-size: 16px;
+    }
+    .MegaMenuMiddle {
+        padding: 15px 0px;
     }
 }
 
