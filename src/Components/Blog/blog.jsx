@@ -137,10 +137,10 @@ function BlogSection() {
                                         expert insights, and actionable strategies to elevate your
                                         digital marketing game.
                                     </p>
-                                    <div className="link-wrapper">
+                                    {/* <div className="link-wrapper">
                                         <a href="./blog">View All Articles</a>
                                         <i className="fa-solid fa-circle-arrow-right"></i>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </AnimateOnScroll>
                         </div>

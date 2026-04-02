@@ -30,44 +30,44 @@ function AboutPage() {
                     <div className="section HdLayt1" style={{ paddingBottom: '0px' }}>
                         <div className="container">
                             <div className="expertise-title">
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <div className="sub-heading">
-                                        <i className="fa-regular fa-circle-dot"></i>
-                                        <span>About Us</span>
-                                    </div>
-                                </AnimateOnScroll>
+                                {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
+                                <div className="sub-heading">
+                                    <i className="fa-regular fa-circle-dot"></i>
+                                    <span>About Us</span>
+                                </div>
+                                {/* </AnimateOnScroll> */}
 
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <h2 className="title-heading">
-                                                Built on Strategy.<br /> Defined by Insight.
-                                            </h2>
-                                        </div>
-                                        <div className="col-md-6 d-flex align-items-end pt-3 pt-md-0">
-                                            <div>
-                                                <div className="HdT1">A Voice For Your Brand</div>
-                                                <p>
-                                                    Partnering With Ambitious Brands To Transform Cultural Intelligence Into Market-Leading Digital Influence.
-                                                </p>
-                                            </div>
+                                {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <h2 className="title-heading">
+                                            Built on Strategy.<br /> Defined by Insight.
+                                        </h2>
+                                    </div>
+                                    <div className="col-md-6 d-flex align-items-end pt-3 pt-md-0">
+                                        <div>
+                                            <div className="HdT1">A Voice For Your Brand</div>
+                                            <p>
+                                                Partnering With Ambitious Brands To Transform Cultural Intelligence Into Market-Leading Digital Influence.
+                                            </p>
                                         </div>
                                     </div>
-                                </AnimateOnScroll>
+                                </div>
+                                {/* </AnimateOnScroll> */}
                                 <div className="AbtParaBox">
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
 
-                                        <p>McCollins Media is a Digital Brand Activation agency specializing in Mobile-first technology and Performance-Driven Marketing campaigns in the MENA region. We are Headquartered in Dubai with a complete in-house team of creative professionals.</p>
+                                    <p>McCollins Media is a Digital Brand Activation agency specializing in Mobile-first technology and Performance-Driven Marketing campaigns in the MENA region. We are Headquartered in Dubai with a complete in-house team of creative professionals.</p>
 
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <p>We are in the pursuit of providing digital advancement to all our clients to take their brand to the next level. Be it Web Development, Google Ads, 360 Brand Development, or Digital Marketing, we do everything in-house.
-                                        </p>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    {/* </AnimateOnScroll> */}
+                                    {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
+                                    <p>We are in the pursuit of providing digital advancement to all our clients to take their brand to the next level. Be it Web Development, Google Ads, 360 Brand Development, or Digital Marketing, we do everything in-house.
+                                    </p>
+                                    {/* </AnimateOnScroll> */}
+                                    {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
 
-                                        <p>Our multi-cultural team is always daring to set viral trends, venture into the digital realm, and take ownership of the brands we represent. After 15 years of being a pioneer Digital Marketing agency in the UAE, we’re just starting what we are here for!</p>
-                                    </AnimateOnScroll>
+                                    <p>Our multi-cultural team is always daring to set viral trends, venture into the digital realm, and take ownership of the brands we represent. After 15 years of being a pioneer Digital Marketing agency in the UAE, we’re just starting what we are here for!</p>
+                                    {/* </AnimateOnScroll> */}
                                 </div>
 
                             </div>

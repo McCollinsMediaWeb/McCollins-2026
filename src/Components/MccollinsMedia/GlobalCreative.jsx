@@ -28,36 +28,40 @@ const GlobalCreative = () => {
                                     />
                                 </div>
                                 {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
-                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <AnimateOnScroll animation="fadeInUp">
+                                    <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
+                                        {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Mastering Ecosystems. Delivering Results.
                                         </h4>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        {/* </AnimateOnScroll> */}
+                                        {/* <AnimateOnScroll animation="fadeInLeft" speed="normal"> */}
                                         <div>
                                             <p style={{ fontWeight: 500, color: 'var(--new-color)', marginTop: '15px' }} >Managing the digital ecosystem for your brand with a result</p>
                                             <p style={{ fontWeight: 100 }}>From Digital Media Buying, Campaign Development, Blogger Outreach Programs to Content Development, we do it all in-house.</p>
                                         </div>
-                                    </AnimateOnScroll>
-                                </div>
+                                        {/* </AnimateOnScroll> */}
+                                    </div>
+                                </AnimateOnScroll>
                             </div>
 
 
                             <div className="row d-none d-md-flex" >
-                                <div className="col-md-8 d-flex flex-column justify-content-center" style={{ paddingRight: '40px', paddingLeft: '0px' }}>
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <AnimateOnScroll animation="fadeInUp">
+                                    <div className="col-md-8 d-flex flex-column justify-content-center" style={{ paddingRight: '40px', paddingLeft: '0px' }}>
+                                        {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Web. Apps. Commerce.
                                         </h4>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        {/* </AnimateOnScroll> */}
+                                        {/* <AnimateOnScroll animation="fadeInLeft" speed="normal"> */}
                                         <div>
                                             <p style={{ fontWeight: 500, color: 'var(--new-color)', marginTop: '15px' }} >Be it a mobile application, website or an e-commerce platform,</p>
                                             <p style={{ fontWeight: 100 }}>we create a product for your brand from the scratch. Create an exclusive product for your brand which can build a database over time!</p>
                                         </div>
-                                    </AnimateOnScroll>
-                                </div>
+                                        {/* </AnimateOnScroll> */}
+                                    </div>
+                                </AnimateOnScroll>
                                 <div className="col-md-4" style={{ paddingRight: '0px', paddingLeft: '0px' }}>
                                     <img
                                         src="/assets/images/abt2.jpg"
@@ -78,19 +82,21 @@ const GlobalCreative = () => {
                                     />
                                 </div>
                                 {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
-                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <AnimateOnScroll animation="fadeInUp">
+                                    <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
+                                        {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Web. Apps. Commerce.
                                         </h4>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        {/* </AnimateOnScroll> */}
+                                        {/* <AnimateOnScroll animation="fadeInLeft" speed="normal"> */}
                                         <div>
                                             <p style={{ fontWeight: 500, color: 'var(--new-color)', marginTop: '15px' }} >Be it a mobile application, website or an e-commerce platform,</p>
                                             <p style={{ fontWeight: 100 }}>we create a product for your brand from the scratch. Create an exclusive product for your brand which can build a database over time!</p>
                                         </div>
-                                    </AnimateOnScroll>
-                                </div>
+                                        {/* </AnimateOnScroll> */}
+                                    </div>
+                                </AnimateOnScroll>
                             </div>
 
 
@@ -105,19 +111,21 @@ const GlobalCreative = () => {
                                     />
                                 </div>
                                 {/* <div className="col-md-4 d-flex flex-column justify-content-center" style={{ paddingRight: '0px', paddingLeft: '40px' }}> */}
-                                <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <AnimateOnScroll animation="fadeInUp" >
+                                    <div className="col-md-4 d-flex flex-column justify-content-center ps-md-5 pt-3 pt-md-0">
+                                        {/* <AnimateOnScroll animation="fadeInRight" speed="normal"> */}
                                         <h4 className="title-heading" style={{ WebkitTextFillColor: '#3876fc' }}>
                                             Precision Lead<br /> Generation.
                                         </h4>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        {/* </AnimateOnScroll> */}
+                                        {/* <AnimateOnScroll animation="fadeInLeft" speed="normal"> */}
                                         <div>
                                             <p style={{ fontWeight: 500, color: 'var(--new-color)', marginTop: '15px' }} >Implement performance based marketing, ensure lead generation</p>
                                             <p style={{ fontWeight: 100 }}>call to action to your website or mobile application. Get the phone ringing or increase the CTR for your campaigns. Get in touch now.</p>
                                         </div>
-                                    </AnimateOnScroll>
-                                </div>
+                                        {/* </AnimateOnScroll> */}
+                                    </div>
+                                </AnimateOnScroll>
                             </div>
 
                         </div>

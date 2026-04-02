@@ -68,7 +68,7 @@ function Industry() {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-md-5">
-                                            <h3 className="InIt1 t1">Luxury</h3>
+                                            <h3 className="InIt1 t2">Luxury</h3>
                                             <img className="width-full InImage" src="/assets/images/in2.png" />
                                         </div>
                                         <div className="col-md-7 pt-3 pt-md-0">
@@ -89,7 +89,7 @@ function Industry() {
 
 
                     <div className="d-none d-md-block">
-                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        {/* <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="IndustryItem">
                                 <div className="container">
                                     <div className="row">
@@ -107,6 +107,28 @@ function Industry() {
                                         <div className="col-md-5">
                                             <h3 className="InIt1 right t2">Luxury</h3>
                                             <img className="width-full InImage" src="/assets/images/in2.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </AnimateOnScroll> */}
+                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                            <div className="IndustryItem">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-md-5">
+                                            <h3 className="InIt1 t2">Luxury</h3>
+                                            <img className="width-full InImage" src="/assets/images/in2.png" />
+                                        </div>
+                                        <div className="col-md-7 pt-3 pt-md-0">
+                                            <div className="StWrp1">
+                                                <h4 className="StRp1">Premium Luxury Marketing Solutions<br /> curated for your brand</h4>
+                                                <p>There’s a reason why luxury brands don’t advertise like the other brands in the world. Unlike those brands, they cater to a niche audience that only buys from them. They are not necessarily looking for more customers to engage with them. Marketing for luxurious brands is that, luxury. They want to inspire passion and proudness in people. Through their interaction with you, they want you to physically manifest the luxury shown by them.<br /><br /> After having worked with luxury brands like Mercedes Benz, YSL, and Lootah Perfumes, McCollins has had the pleasure of working with some of the finest luxury brands</p>
+                                                <div className="LnkLstBox">
+                                                    <h5 className="LnkLstBoxItem">Bespoke Brand Storytelling</h5>
+                                                    <h5 className="LnkLstBoxItem">Exclusive Audience Architecture</h5>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +163,40 @@ function Industry() {
                         </div>
                     </AnimateOnScroll> */}
 
-                    <FullImageWithText desktopImage="/assets/images/foodBg.png" mobileImage="/assets/images/foodBg-mob.png" title="Food & Beverage" subtitle="Accelerating F&B market share by bridging the gap between local flavor and global digital scale." content="the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same." points={['High-Impact Sensory Storytelling', 'Strategic Market Penetration', 'Omnichannel Consumer Engagement']} iconClass="t3" mb='50px' />
+                    {/* <FullImageWithText desktopImage="/assets/images/foodBg.png" mobileImage="/assets/images/foodBg-mob.png" title="Food & Beverage" subtitle="Accelerating F&B market share by bridging the gap between local flavor and global digital scale." content="the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same." points={['High-Impact Sensory Storytelling', 'Strategic Market Penetration', 'Omnichannel Consumer Engagement']} iconClass="t3" mb='50px' /> */}
+
+
+                    <div className="container">
+                        <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '40px', marginTop: '10px' }} />
+                    </div>
+
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div className="IndustryItem">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-5">
+                                        <h3 className="InIt1 t3">Food & Beverage</h3>
+                                        <img className="width-full InImage" src="/assets/images/ink12.jpg" />
+                                    </div>
+                                    <div className="col-md-7 pt-3 pt-md-0">
+                                        <div className="StWrp1">
+                                            <h4 className="StRp1">Accelerating F&B market share by bridging the gap between local flavor and global digital scale.</h4>
+                                            <p>the food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same.</p>
+                                            <div className="LnkLstBox">
+                                                <h5 className="LnkLstBoxItem">High-Impact Sensory Storytelling</h5>
+                                                <h5 className="LnkLstBoxItem">Strategic Market Penetration</h5>
+                                                <h5 className="LnkLstBoxItem">Omnichannel Consumer Engagement</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </AnimateOnScroll>
+
+                    <div className="container">
+                        <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '40px', marginTop: '10px' }} />
+                    </div>
 
 
                     <AnimateOnScroll animation="fadeInUp" speed="normal">
@@ -179,7 +234,7 @@ function Industry() {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-md-5">
-                                            <h3 className="InIt1 t4">Startups </h3>
+                                            <h3 className="InIt1 t5">Startups </h3>
                                             <img className="width-full InImage" src="/assets/images/in5.jpg" />
                                         </div>
                                         <div className="col-md-7 pt-3 pt-md-0">
@@ -203,7 +258,7 @@ function Industry() {
 
 
                     <div className="d-none d-md-block" >
-                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        {/* <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="IndustryItem">
                                 <div className="container">
                                     <div className="row">
@@ -229,10 +284,36 @@ function Industry() {
                                     </div>
                                 </div>
                             </div>
+                        </AnimateOnScroll> */}
+                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                            <div className="IndustryItem">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-md-5">
+                                            <h3 className="InIt1 t5">Startups</h3>
+                                            <img className="width-full InImage" src="/assets/images/in5.jpg" />
+                                        </div>
+                                        <div className="col-md-7 pt-3 pt-md-0">
+                                            <div className="StWrp1">
+                                                <h4 className="StRp1">Accelerating Vision into Global Dominance.</h4>
+                                                <p>
+                                                    Empowering disruptive startups to bridge the gap between initial innovation and sustainable global dominance. We provide the strategic foundation and high-velocity execution necessary to navigate the complexities of market entry and venture-backed scaling.
+                                                </p>
+                                                <div className="LnkLstBox">
+                                                    <h5 className="LnkLstBoxItem">Agile Market Entry</h5>
+                                                    <h5 className="LnkLstBoxItem">Venture-Focused Scalability</h5>
+                                                    <h5 className="LnkLstBoxItem">High-Velocity User Acquisition</h5>
+                                                    <h5 className="LnkLstBoxItem">Strategic Brand Maturation</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </AnimateOnScroll>
                     </div>
 
-                    <FullImageWithText desktopImage="/assets/images/b2bBg.png" mobileImage="/assets/images/b2bBg-mob.png" title="B2B" subtitle="B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand." content="Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale." points={['Account-Based Precision', 'Strategic Lead Nurturing', 'Authority-Driven Thought Leadership', 'Data-Backed Sales Alignment']} iconClass="t6" mb='0px' />
+                    {/* <FullImageWithText desktopImage="/assets/images/b2bBg.png" mobileImage="/assets/images/b2bBg-mob.png" title="B2B" subtitle="B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand." content="Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale." points={['Account-Based Precision', 'Strategic Lead Nurturing', 'Authority-Driven Thought Leadership', 'Data-Backed Sales Alignment']} iconClass="t6" mb='0px' /> */}
 
                     {/* <AnimateOnScroll animation="fadeInUp" speed="normal">
                         <div className="IndustryItem FullScreenItem">
@@ -261,6 +342,35 @@ function Industry() {
                             </div>
                         </div>
                     </AnimateOnScroll> */}
+
+                    <div className="container">
+                        <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '40px', marginTop: '10px' }} />
+                    </div>
+
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div className="IndustryItem">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-5">
+                                        <h3 className="InIt1 t6">B2B</h3>
+                                        <img className="width-full InImage" src="/assets/images/in62.jpg" />
+                                    </div>
+                                    <div className="col-md-7 pt-3 pt-md-0">
+                                        <div className="StWrp1">
+                                            <h4 className="StRp1">B2B marketing designed to accelerate sales, strengthen relationships, and scale your brand.</h4>
+                                            <p>Architecting high-impact B2B strategies that transform complex sales cycles into streamlined engines for revenue and market authority. We bridge the gap between technical expertise and human connection, ensuring your brand resonates with decision-makers on a global scale.</p>
+                                            <div className="LnkLstBox">
+                                                <h5 className="LnkLstBoxItem">Account-Based Precision</h5>
+                                                <h5 className="LnkLstBoxItem">Strategic Lead Nurturing</h5>
+                                                <h5 className="LnkLstBoxItem">Authority-Driven Thought Leadership</h5>
+                                                <h5 className="LnkLstBoxItem">Data-Backed Sales Alignment</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </AnimateOnScroll>
                 </div>
             </div>
             <NewsletterSection />

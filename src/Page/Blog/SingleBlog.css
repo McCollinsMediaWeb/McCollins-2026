@@ -1,18 +1,21 @@
 .blog-content {
     line-height: 1.9;
     font-size: 17px;
-    color: #e6e6e6;
+    /* color: #e6e6e6; */
+    color: var(--text-color);
 }
 
 .blog-content p {
     margin-bottom: 18px;
-    color: white;
+    /* color: white; */
+    color: var(--text-color);
 }
 
 .blog-content h1,
 .blog-content h2,
 .blog-content h3 {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--text-color);
     margin-top: 28px;
     margin-bottom: 12px;
     font-weight: 700;
