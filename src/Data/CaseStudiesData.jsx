@@ -107,6 +107,35 @@ export const caseStudiesData2 = [
 		className: "css",
 		size: "small",
 	},
+
+
+	{
+		id: 9,
+		title: "Cryo",
+		description: "150% increase in qualified leads & 70% lower customer acquisition cost.",
+		tags: ["Website Design", "Website Development"],
+		category: "Health & Wellness",
+		className: "cryo",
+		size: "small",
+	},
+	{
+		id: 10,
+		title: "Toshiba",
+		description: "3x increase in organic traffic & 2x revenue growth in 6 months...",
+		tags: ["Website Design", "Website Development"],
+		category: "Electronics",
+		className: "toshiba",
+		size: "small",
+	},
+	{
+		id: 11,
+		title: "Snaidero",
+		description: "200% increase in brand mentions & 60% higher engagement rates...",
+		tags: ["Website Design", "Website Development"],
+		category: "E-Commerce",
+		className: "snaidero",
+		size: "small",
+	},
 ];
 
 
