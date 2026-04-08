@@ -70,6 +70,43 @@ export const caseStudiesData2 = [
 		className: "business-communication",
 		size: "small",
 	},
+
+	{
+		id: 5,
+		title: "Costa",
+		description: "5x ROI on social media campaigns & 80% increase in engagement...",
+		tags: ["Website Design", "Website Development"],
+		category: "F&B",
+		className: "costa",
+		size: "small",
+	},
+	{
+		id: 6,
+		title: "FujiFilm",
+		description: "150% increase in qualified leads & 70% lower customer acquisition cost.",
+		tags: ["Website Design", "Website Development"],
+		category: "Electronics",
+		className: "fuji-film",
+		size: "small",
+	},
+	{
+		id: 7,
+		title: "Oak Berry",
+		description: "3x increase in organic traffic & 2x revenue growth in 6 months...",
+		tags: ["Website Design", "Website Development"],
+		category: "F&B",
+		className: "oak-berry",
+		size: "small",
+	},
+	{
+		id: 8,
+		title: "Cleaning Superstore",
+		description: "200% increase in brand mentions & 60% higher engagement rates...",
+		tags: ["Website Design", "Website Development"],
+		category: "E-Commerce",
+		className: "css",
+		size: "small",
+	},
 ];
 
 

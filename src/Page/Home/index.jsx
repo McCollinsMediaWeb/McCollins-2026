@@ -24,7 +24,7 @@ function HomePage() {
     return (
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="McCollins Media - Home" />
-            <BannerHomeSection desktopImage="/assets/images/mcmain.jpg" mobileImage="/assets/images/mcmainmob.jpg" title="Brand" title2="Development" title3="" />
+            <BannerHomeSection desktopImage="/assets/images/home-banner.jpeg" mobileImage="/assets/images/home-banner-mob.jpeg" title="Brand" title2="Development" title3="" />
             <OurServices />
             {/* <ExpertiseSection /> */}
             {/* <PartnershipSection /> */}

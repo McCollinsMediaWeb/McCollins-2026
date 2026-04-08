@@ -20,7 +20,7 @@ function ClientPortfolio() {
     return (
         <>
             <div className="section" style={{ backgroundColor: 'var(--client-portfolio-bg)' }}>
-                <div className="hero-container">
+                <div className="hero-container" style={{ maxWidth: '1400px' }}>
                     <div className="text-center">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <h2 className="title-heading" style={{ WebkitTextFillColor: '#000', marginBottom: '10px' }}>
@@ -37,6 +37,7 @@ function ClientPortfolio() {
                         <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/toshiba.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/clients/oak-berry.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
 
 
@@ -46,6 +47,7 @@ function ClientPortfolio() {
                         <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        <img src="/assets/images/clients/trader-vics.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                     </div>
 
                     <div className="d-flex d-md-none" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }} >
@@ -55,6 +57,7 @@ function ClientPortfolio() {
                             <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/toshiba.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/oak-berry.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         </div>
 
                         <div style={{ display: 'flex', justifyContent: 'space-around', gap: '5rem', alignItems: 'start', flexDirection: 'column' }}>
@@ -63,6 +66,7 @@ function ClientPortfolio() {
                             <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                            <img src="/assets/images/clients/trader-vics.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         </div>
                     </div>
 

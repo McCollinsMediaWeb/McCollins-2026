@@ -5184,11 +5184,13 @@ body.lightmode .ServiceSection {
 }
 
 .MainWeb .case-studies-content.pioneer {
-    background-image: url(../../../public/assets/images/w1.jpg);
+    /* background-image: url(../../../public/assets/images/w1.jpg); */
+    background-image: url(../../../public/assets/images/case-studies/pioneer.jpeg);
 }
 
 .MainWeb .case-studies-content.dxb-hotel {
-    background-image: url(../../../public/assets/images/w2.jpg);
+    /* background-image: url(../../../public/assets/images/w2.jpg); */
+    background-image: url(../../../public/assets/images/case-studies/dubai-expo.jpeg);
 }
 
 .MainWeb .case-studies-content.takmeel {
@@ -5197,6 +5199,35 @@ body.lightmode .ServiceSection {
 
 .MainWeb .case-studies-content.business-communication {
     background-image: url(../../../public/assets/images/w4.jpg);
+}
+
+
+.MainWeb .case-studies-content.costa {
+    background-image: url(../../../public/assets/images/case-studies/costa.jpeg);
+}
+
+.MainWeb .case-studies-content.fuji-film {
+    background-image: url(../../../public/assets/images/case-studies/fuji-film.jpeg);
+}
+
+.MainWeb .case-studies-content.oak-berry {
+    background-image: url(../../../public/assets/images/case-studies/oak-berry.jpeg);
+}
+
+.MainWeb .case-studies-content.css {
+    background-image: url(../../../public/assets/images/case-studies/css.jpeg);
+}
+
+.MainWeb .case-studies-content.cryo {
+    background-image: url(../../../public/assets/images/case-studies/cryo.jpeg);
+}
+
+.MainWeb .case-studies-content.toshiba {
+    background-image: url(../../../public/assets/images/case-studies/toshiba.jpeg);
+}
+
+.MainWeb .case-studies-content.snaidero {
+    background-image: url(../../../public/assets/images/case-studies/snaidero.jpeg);
 }
 
 .point-arrow-list-wrapper {
@@ -5530,13 +5561,16 @@ body.lightmode .point-arrow-list li::before {
 .showreel-video-wrapper {
     will-change: transform;
 }
-.mob-only{
+
+.mob-only {
     display: none !important;
 }
+
 @media (max-width: 1000px) {
-    .mob-only{
+    .mob-only {
         display: inline-block !important;
     }
+
     .HeroBannerContent .align-self-center {
         align-self: end !important;
     }
@@ -5552,15 +5586,19 @@ body.lightmode .point-arrow-list li::before {
     .navbar-action-button {
         padding: 0px 0px 0px 0px;
     }
-    .desk-only{
+
+    .desk-only {
         display: none !important;
     }
-    .LinkItem a{
+
+    .LinkItem a {
         font-size: 22px;
     }
+
     .LinkItem a.FontSmall {
-    font-size: 16px;
+        font-size: 16px;
     }
+
     .MegaMenuMiddle {
         padding: 15px 0px;
     }
