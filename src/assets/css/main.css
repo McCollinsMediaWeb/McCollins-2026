@@ -5443,6 +5443,7 @@ body.lightmode .point-arrow-list li::before {
 .partner-logo {
     width: 140px;
     object-fit: contain;
+    height: 100px;
 }
 
 .partner-logo:hover {

@@ -22,6 +22,22 @@ import ContentProduction from "./Page/ContentProduction";
 import WebsiteDevelopment from "./Page/WebsiteDevelopment";
 import SocialMediaMarketing from "./Page/SocialMediaMarketing";
 
+import OakberryCaseStudyPage from "./Page/CaseStudies/Oakberry";
+import CleaningSuperstoreCaseStudyPage from "./Page/CaseStudies/CleaningSuperstore";
+import PioneerCaseStudyPage from "./Page/CaseStudies/Pioneer";
+import ToshibaCaseStudyPage from "./Page/CaseStudies/Toshiba";
+import DxbCaseStudyPage from "./Page/CaseStudies/Dxb";
+import SnaideroCaseStudyPage from "./Page/CaseStudies/Snaidero";
+import CryoCaseStudyPage from "./Page/CaseStudies/Cryo";
+import VossDubaiCaseStudyPage from "./Page/CaseStudies/VossDubai";
+import TakmeelCaseStudyPage from "./Page/CaseStudies/Takmeel";
+import CostaCaseStudyPage from "./Page/CaseStudies/Costa";
+import FujifilmCaseStudyPage from "./Page/CaseStudies/Fujifilm";
+import DoorsDubaiCaseStudyPage from "./Page/CaseStudies/DoorsDubai";
+import MarsaAjmanMallCaseStudyPage from "./Page/CaseStudies/MarsaAjmanMall";
+import FelisKitchenCaseStudyPage from "./Page/CaseStudies/FelisKitchen";
+import CreamioCafeCaseStudyPage from "./Page/CaseStudies/CreamioCafe";
+
 function AppRouter() {
     return (
         <Routes>
@@ -37,6 +53,21 @@ function AppRouter() {
             <Route path="/service/website-development" element={<WebsiteDevelopment />} />
             <Route path="/service/social-media-marketing" element={<SocialMediaMarketing />} />
             <Route path="case_studies" element={<CaseStudiesPage />} />
+            <Route path="case_studies/oakberry" element={<OakberryCaseStudyPage />} />
+            <Route path="case_studies/cleaning-superstore" element={<CleaningSuperstoreCaseStudyPage />} />
+            <Route path="case_studies/pioneer" element={<PioneerCaseStudyPage />} />
+            <Route path="case_studies/toshiba" element={<ToshibaCaseStudyPage />} />
+            <Route path="case_studies/dubai-airport-freezone" element={<DxbCaseStudyPage />} />
+            <Route path="case_studies/snaidero" element={<SnaideroCaseStudyPage />} />
+            <Route path="case_studies/cryo" element={<CryoCaseStudyPage />} />
+            <Route path="case_studies/voss-dubai" element={<VossDubaiCaseStudyPage />} />
+            <Route path="case_studies/takmeel" element={<TakmeelCaseStudyPage />} />
+            <Route path="case_studies/costa" element={<CostaCaseStudyPage />} />
+            <Route path="case_studies/fujifilm" element={<FujifilmCaseStudyPage />} />
+            <Route path="case_studies/doors-dubai" element={<DoorsDubaiCaseStudyPage />} />
+            <Route path="case_studies/marsa-ajman-mall" element={<MarsaAjmanMallCaseStudyPage />} />
+            <Route path="case_studies/felis-kitchen" element={<FelisKitchenCaseStudyPage />} />
+            <Route path="case_studies/creamio-cafe" element={<CreamioCafeCaseStudyPage />} />
             <Route path="team" element={<TeamPage />} />
             <Route path="partnership" element={<PartnershipPage />} />
             <Route path="pricing" element={<PricingPage />} />

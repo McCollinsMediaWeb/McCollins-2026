@@ -111,7 +111,7 @@ function BrandGrids() {
                         </div>
                     </AnimateOnScroll>
                 </div>
-                <div className="row" style={{ marginTop: '0.5rem' }}>
+                <div className="row" style={{ marginTop: '0rem' }}>
                     <AnimateOnScroll animation="fadeInLeft" speed="normal">
                         <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
                             <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >

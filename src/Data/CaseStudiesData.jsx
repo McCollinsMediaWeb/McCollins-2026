@@ -42,6 +42,7 @@ export const caseStudiesData2 = [
 		category: "Electronics",
 		className: "pioneer",
 		size: "small",
+		url: "/case_studies/pioneer"
 	},
 	{
 		id: 2,
@@ -51,6 +52,7 @@ export const caseStudiesData2 = [
 		category: "Hotel/Resort",
 		className: "dxb-hotel",
 		size: "small",
+		url: "/case_studies/dubai-airport-freezone"
 	},
 	{
 		id: 3,
@@ -60,16 +62,18 @@ export const caseStudiesData2 = [
 		category: "Real Estate",
 		className: "takmeel",
 		size: "small",
+		url: "/case_studies/takmeel"
 	},
-	{
-		id: 4,
-		title: "Business Communication",
-		description: "200% increase in brand mentions & 60% higher engagement rates...",
-		tags: ["Website Design", "Website Development"],
-		category: "Startup",
-		className: "business-communication",
-		size: "small",
-	},
+	// {
+	// 	id: 4,
+	// 	title: "Business Communication",
+	// 	description: "200% increase in brand mentions & 60% higher engagement rates...",
+	// 	tags: ["Website Design", "Website Development"],
+	// 	category: "Startup",
+	// 	className: "business-communication",
+	// 	size: "small",
+	//  url: "/case_studies/business-communication"
+	// },
 
 	{
 		id: 5,
@@ -79,6 +83,7 @@ export const caseStudiesData2 = [
 		category: "F&B",
 		className: "costa",
 		size: "small",
+		url: "/case_studies/costa"
 	},
 	{
 		id: 6,
@@ -88,6 +93,7 @@ export const caseStudiesData2 = [
 		category: "Electronics",
 		className: "fuji-film",
 		size: "small",
+		url: "/case_studies/fujifilm"
 	},
 	{
 		id: 7,
@@ -97,6 +103,7 @@ export const caseStudiesData2 = [
 		category: "F&B",
 		className: "oak-berry",
 		size: "small",
+		url: "/case_studies/oakberry"
 	},
 	{
 		id: 8,
@@ -106,6 +113,7 @@ export const caseStudiesData2 = [
 		category: "E-Commerce",
 		className: "css",
 		size: "small",
+		url: "/case_studies/cleaning-superstore"
 	},
 
 
@@ -117,6 +125,7 @@ export const caseStudiesData2 = [
 		category: "Health & Wellness",
 		className: "cryo",
 		size: "small",
+		url: "/case_studies/cryo"
 	},
 	{
 		id: 10,
@@ -126,6 +135,7 @@ export const caseStudiesData2 = [
 		category: "Electronics",
 		className: "toshiba",
 		size: "small",
+		url: "/case_studies/toshiba"
 	},
 	{
 		id: 11,
@@ -135,6 +145,7 @@ export const caseStudiesData2 = [
 		category: "E-Commerce",
 		className: "snaidero",
 		size: "small",
+		url: "/case_studies/snaidero"
 	},
 ];
 
@@ -149,15 +160,17 @@ export const caseStudiesDataSocialMediaMarketing = [
 		category: "Hotel / Restaurant",
 		className: "doors-dubai",
 		size: "small",
+		url: "/case_studies/doors-dubai"
 	},
 	{
 		id: 2,
-		title: "Marsaajmanmall",
+		title: "Marsa Ajman Mall",
 		description: "150% increase in qualified leads & 70% lower customer acquisition cost.",
 		tags: ["Social Media", "Social Media Marketing"],
 		category: "Hotel / Resort",
 		className: "marsaajmanmall",
 		size: "small",
+		url: "/case_studies/marsa-ajman-mall"
 	},
 	{
 		id: 3,
@@ -167,6 +180,7 @@ export const caseStudiesDataSocialMediaMarketing = [
 		category: "F & B",
 		className: "oak-berry",
 		size: "small",
+		url: "/case_studies/oakberry"
 	},
 	{
 		id: 4,
@@ -176,5 +190,6 @@ export const caseStudiesDataSocialMediaMarketing = [
 		category: "F & B",
 		className: "felis-kitchen",
 		size: "small",
+		url: "/case_studies/felis-kitchen"
 	},
 ];

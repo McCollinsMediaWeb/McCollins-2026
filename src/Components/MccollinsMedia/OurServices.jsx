@@ -121,31 +121,7 @@ function OurServices() {
                         </div>
 
 
-                        <div className="swiperPartner-container">
-                            {/* <Swiper
-                                auto
-                                slidesPerView={6}
-                                spaceBetween={20}
-                                loop={true}
-                                autoplay={{
-                                    delay: 5000,
-                                    disableOnInteraction: false,
-                                }}
-                                breakpoints={{
-                                    230: { slidesPerView: 3 },
-                                    767: { slidesPerView: 4 },
-                                    1024: { slidesPerView: 6 },
-                                }}
-                                className="swiperPartner"
-                            >
-                                {partnerships.concat(partnerships).map((partner) => (
-                                    <SwiperSlide key={partner.id + Math.random()}>
-                                        <div className="partner-slide">
-                                            <img src={partner.logo} alt="Client" className="partner-logo img-fluid" />
-                                        </div>
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper> */}
+                        <div className="swiperPartner-container mt-3">
                             <Swiper
                                 modules={[Autoplay]}
                                 slidesPerView={5}

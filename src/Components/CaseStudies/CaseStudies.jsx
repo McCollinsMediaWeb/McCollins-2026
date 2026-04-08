@@ -6,55 +6,6 @@ import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 const CaseStudiesSection = ({ noPadding }) => {
 
     return (
-        // <div className={`section ${noPadding ? "p-0" : ""}`}>
-        //     <div className="hero-container">
-        //         <div className="case-studies-layout">
-        //             <div className="card card-case-studies">
-        //                 <div className="row row-cols-lg-2 row-cols-1 grid-spacer-5">
-        //                     <div className="col">
-        //                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-        //                             <div className="d-flex flex-column gspace-2">
-        //                                 <div className="sub-heading">
-        //                                     <i className="fa-regular fa-circle-dot"></i>
-        //                                     <span>Case Studies</span>
-        //                                 </div>
-        //                                 <h2 className="title-heading">Witness the impact of globally fluent digital strategies</h2>
-        //                             </div>
-        //                         </AnimateOnScroll>
-        //                     </div>
-        //                     <div className="col">
-        //                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-        //                             <div className="d-flex flex-column h-100 justify-content-end gspace-2">
-        //                                 <p>We don't just talk about results—we deliver them. Here are some of our most impactful case studies showcasing how our digital marketing strategies drive success.</p>
-        //                                 <div className="link-wrapper">
-        //                                     <a href="./case_studies">More Case Studies</a>
-        //                                     <i className="fa-solid fa-circle-arrow-right"></i>
-        //                                 </div>
-        //                             </div>
-        //                         </AnimateOnScroll>
-        //                     </div>
-        //                 </div>
-
-        //                 {/* Cards */}
-        //                 <div className="d-flex flex-column gspace-2">
-        //                     <div className="d-flex flex-column flex-lg-row gspace-2">
-        //                         {caseStudiesData.slice(0, 2).map((item) => (
-        //                             <CaseStudyCard key={item.id} {...item} />
-        //                         ))}
-        //                     </div>
-        //                     <div className="d-flex flex-column flex-lg-row gspace-2">
-        //                         {caseStudiesData.slice(2, 4).map((item) => (
-        //                             <CaseStudyCard key={item.id} {...item} />
-        //                         ))}
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //             <div className="spacer"></div>
-        //         </div>
-        //     </div>
-        // </div>
-
-
         <>
             <div className="section">
                 <div className="hero-container">
@@ -133,9 +84,11 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
 
-                                    <div className="industry-hover-icon">
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                    <a href="/case_studies/oakberry">
+                                        <div className="industry-hover-icon">
+                                            <i className="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </AnimateOnScroll>
                         </div>
@@ -153,9 +106,11 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
 
-                                    <div className="industry-hover-icon">
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                    <a href="/case_studies/voss-dubai">
+                                        <div className="industry-hover-icon">
+                                            <i className="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
 
                                 </div>
                             </AnimateOnScroll>
@@ -177,9 +132,11 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >APP Design</p>
                                     </div>
 
-                                    <div className="industry-hover-icon">
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                    <a href="/case_studies/dubai-airport-freezone">
+                                        <div className="industry-hover-icon">
+                                            <i className="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
 
                                 </div>
                             </AnimateOnScroll>
@@ -198,9 +155,11 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Website</p>
                                     </div>
 
-                                    <div className="industry-hover-icon">
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                    <a href="/case_studies/pioneer">
+                                        <div className="industry-hover-icon">
+                                            <i className="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
 
                                 </div>
                             </AnimateOnScroll>

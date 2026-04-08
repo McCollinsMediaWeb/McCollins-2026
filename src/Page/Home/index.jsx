@@ -48,7 +48,7 @@ function HomePage() {
                 <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '0px', marginTop: '10px' }} />
             </div>
             <NewsletterSection />
-            <FullImageWithContact desktopImage="/assets/images/global.jpg" mobileImage="/assets/images/global.jpg" title="Let's Start Your Project" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
+            <FullImageWithContact desktopImage="/assets/images/global.jpg" mobileImage="/assets/images/global-mob.jpg" title="Let's Start Your Project" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
             {/* <BlogSection /> */}
         </div>
     );

@@ -48,7 +48,7 @@ function CaseStudiesBrandDevelopment() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="single_services" class="btn btn-primary">
+                                            <a href="/case_studies/doors-dubai" class="btn btn-primary">
                                                 <div class="btn-title">
                                                     <span>View Details</span>
                                                 </div>
@@ -70,7 +70,7 @@ function CaseStudiesBrandDevelopment() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="single_services" class="btn btn-primary">
+                                            <a href="/case_studies/creamio-cafe" class="btn btn-primary">
                                                 <div class="btn-title">
                                                     <span>View Details</span>
                                                 </div>
@@ -92,7 +92,7 @@ function CaseStudiesBrandDevelopment() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="single_services" class="btn btn-primary">
+                                            <a href="/case_studies/doors-dubai" class="btn btn-primary">
                                                 <div class="btn-title">
                                                     <span>View Details</span>
                                                 </div>
