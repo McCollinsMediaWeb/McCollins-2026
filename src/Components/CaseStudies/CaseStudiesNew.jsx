@@ -36,7 +36,7 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             {/* Cards */}
             <div className="MainWeb row g-4" style={{ marginTop: "20px" }}>
                 {caseStudiesData2.map((item) => (
-                    <div key={item.id} className="col-12 col-md-6" style={{ paddingLeft: '0px', paddingRight: '0px', marginTop: '0px' }}>
+                    <div key={item.id} className="col-12 col-md-4" style={{ paddingLeft: '0px', paddingRight: '0px', marginTop: '0px' }}>
                         <CaseStudyCardNew {...item} />
                     </div>
                 ))}

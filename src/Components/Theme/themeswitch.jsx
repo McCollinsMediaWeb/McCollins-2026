@@ -15,6 +15,7 @@ export default function ThemeSwitcher() {
         const updateLogos = () => {
             const siteLogos = document.querySelectorAll('.site-logo');
             const partnerLogos = document.querySelectorAll('.partner-logo');
+            const clientLogos = document.querySelectorAll('.client-logo');
 
             if (lightMode) {
                 document.body.classList.add('lightmode');
@@ -28,12 +29,18 @@ export default function ThemeSwitcher() {
                     logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
                 });
 
-                partnerLogos.forEach((img) => {
-                    const src = img.getAttribute('src');
-                    if (!src.includes('-dark')) {
-                        img.setAttribute('src', src.replace('.png', '-dark.png'));
-                    }
-                });
+                // partnerLogos.forEach((img) => {
+                //     const src = img.getAttribute('src');
+                //     if (!src.includes('-dark')) {
+                //         img.setAttribute('src', src.replace('.png', '-dark.png'));
+                //     }
+                // });
+
+                // clientLogos.forEach((img) => {
+                //     const src = img.getAttribute('src');
+                //     img.setAttribute('src', src.replace('-white.png', '.png'));
+                // });
+
             } else {
                 document.body.classList.remove('lightmode');
                 localStorage.removeItem('lightmode');
@@ -46,10 +53,17 @@ export default function ThemeSwitcher() {
                     logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
                 });
 
-                partnerLogos.forEach((img) => {
-                    const src = img.getAttribute('src');
-                    img.setAttribute('src', src.replace('-dark.png', '.png'));
-                });
+                // partnerLogos.forEach((img) => {
+                //     const src = img.getAttribute('src');
+                //     img.setAttribute('src', src.replace('-dark.png', '.png'));
+                // });
+
+                // clientLogos.forEach((img) => {
+                //     const src = img.getAttribute('src');
+                //     if (!src.includes('-white')) {
+                //         img.setAttribute('src', src.replace('.png', '-white.png'));
+                //     }
+                // });
             }
         };
 

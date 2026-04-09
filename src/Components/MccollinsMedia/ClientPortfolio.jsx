@@ -19,7 +19,8 @@ function ClientPortfolio() {
 
     return (
         <>
-            <div className="section" style={{ backgroundColor: 'var(--client-portfolio-bg)' }}>
+            {/* <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}> */}
+            <div className="section" style={{ backgroundColor: '#fff' }}>
                 <div className="hero-container" style={{ maxWidth: '1400px' }}>
                     <div className="text-center">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
@@ -31,7 +32,7 @@ function ClientPortfolio() {
                             <p style={{ color: '#000', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
                         </AnimateOnScroll>
                     </div>
-                    <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    {/* <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/costa-coffee.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                         <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
@@ -67,6 +68,50 @@ function ClientPortfolio() {
                             <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
                             <img src="/assets/images/clients/trader-vics.png" alt="Client Portfolio" className="img-fluid" style={{ objectFit: 'cover' }} />
+                        </div>
+                    </div> */}
+
+
+
+
+                    <div class="marquee-wrapper">
+                        <div class="marquee-itemLeft marquee-item1">
+                            <img src="/assets/images/clients/rta.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemLeft marquee-item2">
+                            <img src="/assets/images/clients/costa-coffee.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'contain' }} />
+                        </div>
+                        <div class="marquee-itemLeft marquee-item3">
+                            <img src="/assets/images/clients/fujifilm.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemLeft marquee-item4">
+                            <img src="/assets/images/clients/toshiba.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemLeft marquee-item5">
+                            <img src="/assets/images/clients/energizer.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemLeft marquee-item6">
+                            <img src="/assets/images/clients/oak-berry.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                    </div>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-itemRight marquee-item1">
+                            <img src="/assets/images/clients/damac.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemRight marquee-item2">
+                            <img src="/assets/images/clients/pioneer.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemRight marquee-item3">
+                            <img src="/assets/images/clients/wagamama.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemRight marquee-item4">
+                            <img src="/assets/images/clients/dxb.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemRight marquee-item5">
+                            <img src="/assets/images/clients/mmi.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div class="marquee-itemRight marquee-item6">
+                            <img src="/assets/images/clients/trader-vics.png" alt="Client Portfolio" className="img-fluid client-logo" style={{ objectFit: 'cover' }} />
                         </div>
                     </div>
 
