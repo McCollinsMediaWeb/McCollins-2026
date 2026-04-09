@@ -13,7 +13,7 @@ function SocialMediaMarketing() {
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Social Media Marketing - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Performance Marketing" currentPage="Services Details" /> */}
-            <InnerNew desktopImage="/assets/images/s3.jpg" mobileImage="/assets/images/s3mob.jpg" title="Social Media" title2="Marketing" />
+            <InnerNew desktopImage="/assets/images/social-media-marketing-banner.jpg" mobileImage="/assets/images/social-media-marketing-banner-mobile.jpg" title="Social Media" title2="Marketing" />
             <MarketingFoundation />
             <ClientPortfolio />
             <SocialMediaMarketingImageWithText />

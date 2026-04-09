@@ -12,7 +12,7 @@ function MarketingAutomations() {
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Marketing Automations - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Performance Marketing" currentPage="Services Details" /> */}
-            <InnerNew desktopImage="/assets/images/s5.jpg" mobileImage="/assets/images/s5mob.jpg" title="Marketing" title2="Automation" />
+            <InnerNew desktopImage="/assets/images/marketing-automation-banner.jpg" mobileImage="/assets/images/marketing-automation-banner-mobile.jpg" title="Marketing" title2="Automation" />
             <SingleServiceSection />
             {/* <TestimonialSection /> */}
             <div className="container">

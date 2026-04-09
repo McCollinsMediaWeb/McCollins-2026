@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-function InnerNew({ title,title2,title3, desktopImage, mobileImage }) {
+function InnerNew({ title, title2, title3, desktopImage, mobileImage }) {
 
     const playerRef = useRef(null);
     const videoContainerRef = useRef(null);
@@ -43,7 +43,7 @@ function InnerNew({ title,title2,title3, desktopImage, mobileImage }) {
                             </picture>
 
                             {/* Gradient Overlay */}
-                            <div
+                            {/* <div
                                 style={{
                                     position: "absolute",
                                     top: 0,
@@ -53,6 +53,23 @@ function InnerNew({ title,title2,title3, desktopImage, mobileImage }) {
                                     pointerEvents: "none",
                                     background:
                                         "linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.85) 100%)",
+                                }}
+                            /> */}
+
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    pointerEvents: "none",
+                                    background: `
+                                        linear-gradient(
+                                            180deg,
+                                            rgba(0,0,0,0.3) 0%,
+                                            rgba(0,0,0,0.3) 50%,
+                                            rgba(0,0,0,0.5) 75%,
+                                            rgba(0,0,0,0.95) 100%
+                                        )
+                                    `
                                 }}
                             />
                         </div>

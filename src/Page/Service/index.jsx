@@ -16,7 +16,7 @@ function ServicePage() {
     return (
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Services - McCollins Media" />
-            <InnerNew desktopImage="/assets/images/servicemaindesk.jpg" mobileImage="/assets/images/servicemainmob.jpg" title="A Comprehensive" title2="Ecosystem of " title3="Digital Excellence." />
+            <InnerNew desktopImage="/assets/images/services-banner.jpg" mobileImage="/assets/images/service-banner-mobile.jpg" title="A Comprehensive" title2="Ecosystem of " title3="Digital Excellence." />
             <HeaderLayout />
             <ServiceItem desktopImage="/assets/images/s1.jpg" mobileImage="/assets/images/s1mob.jpg" title="Brand" title2="Development" subtitle="Crafting cohesive brand identities that resonate across cultures and command a global presence." Position="left" link="/service/brand-development" />
             <ServiceItem desktopImage="/assets/images/s2.jpg" mobileImage="/assets/images/s2mob.jpg" title="WEBSITE/APP" title2="DESIGN" subtitle="Developing high-performance, responsive websites engineered to convert global audiences into loyal customers." Position="right" link="/service/website-development" />
