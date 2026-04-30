@@ -159,10 +159,10 @@ function Navbar() {
                                         <a className="MegLnkTp1 FontSmall" href="/service/marketing-automations" onClick={() => setMenuOpen(prev => !prev)}>Marketing Automations</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Google Ads</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/service/google-ads" onClick={() => setMenuOpen(prev => !prev)}>Google Ads</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/service" onClick={() => setMenuOpen(prev => !prev)}>Search Engine Optimization</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/service/search-engine-optimization" onClick={() => setMenuOpen(prev => !prev)}>Search Engine Optimization</a>
                                     </div>
                                     <div className="LinkItem">
                                         <a className="MegLnkTp1 FontSmall" href="/service/content-production" onClick={() => setMenuOpen(prev => !prev)}>Film Production</a>
@@ -179,19 +179,19 @@ function Navbar() {
                                         <a className="MegLnkTp1" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Industry</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/industry/corporate-marketing" onClick={() => setMenuOpen(prev => !prev)}>Corporate Marketing</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/industry/food-and-beverage" onClick={() => setMenuOpen(prev => !prev)}>Food And Beverage</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/industry/healthcare-marketing" onClick={() => setMenuOpen(prev => !prev)}>Healthcare Marketing</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/industry/luxury-marketing" onClick={() => setMenuOpen(prev => !prev)}>Luxury Marketing</a>
                                     </div>
                                     <div className="LinkItem">
-                                        <a className="MegLnkTp1 FontSmall" href="/industry" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</a>
+                                        <a className="MegLnkTp1 FontSmall" href="/industry/technology-marketing" onClick={() => setMenuOpen(prev => !prev)}>Technology Marketing</a>
                                     </div>
                                     <div className="LinkItem">
                                         <a className="MegLnkTp1 mob-only" href="/blog" onClick={() => setMenuOpen(prev => !prev)}>Blogs</a>

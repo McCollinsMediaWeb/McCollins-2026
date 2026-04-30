@@ -4982,8 +4982,8 @@ body.lightmode .ServiceSection {
 
 .csSt1::before {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
@@ -4993,13 +4993,13 @@ body.lightmode .ServiceSection {
 
 .csSt1::after {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: var(--accent-color);
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 3px;
+    top: 3px;
 }
 
 .csSt2 {
@@ -5725,4 +5725,11 @@ body.lightmode .point-arrow-list li::before {
     width: 250px;
     height: 130px;
     object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+    .text-custom-google-ads {
+        min-height: 83px;
+    }
 }

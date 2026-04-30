@@ -21,6 +21,8 @@ import MarketingAutomations from "./Page/MarketingAutomations";
 import ContentProduction from "./Page/ContentProduction";
 import WebsiteDevelopment from "./Page/WebsiteDevelopment";
 import SocialMediaMarketing from "./Page/SocialMediaMarketing";
+import SearchEngineOptimization from "./Page/Seo";
+import GoogleAds from "./Page/GoogleAds";
 
 import OakberryCaseStudyPage from "./Page/CaseStudies/Oakberry";
 import CleaningSuperstoreCaseStudyPage from "./Page/CaseStudies/CleaningSuperstore";
@@ -38,6 +40,12 @@ import MarsaAjmanMallCaseStudyPage from "./Page/CaseStudies/MarsaAjmanMall";
 import FelisKitchenCaseStudyPage from "./Page/CaseStudies/FelisKitchen";
 import CreamioCafeCaseStudyPage from "./Page/CaseStudies/CreamioCafe";
 
+import CorporateMarketing from "./Page/Industries/CorporateMarketing";
+import FoodAndBeverage from "./Page/Industries/FoodAndBeverage";
+import LuxuryMarketing from "./Page/Industries/LuxuryMarketing";
+import TechnologyMarketing from "./Page/Industries/TechnologyMarketing";
+import HealthcareMarketing from "./Page/Industries/HealthcareMarketing";
+
 function AppRouter() {
     return (
         <Routes>
@@ -45,6 +53,11 @@ function AppRouter() {
             <Route path="about" element={<AboutPage />} />
             <Route path="service" element={<ServicePage />} />
             <Route path="industry" element={<Industry />} />
+            <Route path="/industry/corporate-marketing" element={<CorporateMarketing />} />
+            <Route path="/industry/food-and-beverage" element={<FoodAndBeverage />} />
+            <Route path="/industry/luxury-marketing" element={<LuxuryMarketing />} />
+            <Route path="/industry/technology-marketing" element={<TechnologyMarketing />} />
+            <Route path="/industry/healthcare-marketing" element={<HealthcareMarketing />} />
             <Route path="single_services" element={<SingleServicePage />} />
             <Route path="/service/marketing-automations" element={<MarketingAutomations />} />
             <Route path="/service/brand-development" element={<BrandDevelopment />} />
@@ -52,6 +65,8 @@ function AppRouter() {
             <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
             <Route path="/service/website-development" element={<WebsiteDevelopment />} />
             <Route path="/service/social-media-marketing" element={<SocialMediaMarketing />} />
+            <Route path="/service/search-engine-optimization" element={<SearchEngineOptimization />} />
+            <Route path="/service/google-ads" element={<GoogleAds />} />
             <Route path="case_studies" element={<CaseStudiesPage />} />
             <Route path="case_studies/oakberry" element={<OakberryCaseStudyPage />} />
             <Route path="case_studies/cleaning-superstore" element={<CleaningSuperstoreCaseStudyPage />} />
