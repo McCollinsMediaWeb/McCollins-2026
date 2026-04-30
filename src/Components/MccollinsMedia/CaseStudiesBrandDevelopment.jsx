@@ -35,7 +35,7 @@ function CaseStudiesBrandDevelopment() {
                             <div className="CaseStudiesBoxWrap">
                                 <div className="CaseStudiesBoxes">
                                     <div className="row">
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 mb-3 mb-md-0">
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs1.jpg" />
                                                 <div className="CaseStudyBoxContent">
@@ -57,7 +57,7 @@ function CaseStudiesBrandDevelopment() {
                                                 </div>
                                             </a>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 mb-3 mb-md-0">
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs2.jpg" />
                                                 <div className="CaseStudyBoxContent">
@@ -79,7 +79,7 @@ function CaseStudiesBrandDevelopment() {
                                                 </div>
                                             </a>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 mb-3 mb-md-0">
                                             <div className="CaseStudyBox">
                                                 <img src="/assets/images/cs3.jpg" />
                                                 <div className="CaseStudyBoxContent">

@@ -5733,3 +5733,29 @@ body.lightmode .point-arrow-list li::before {
         min-height: 83px;
     }
 }
+
+.point-google-ads {
+    position: relative;
+    padding-left: 40px;
+    /* space for icon */
+}
+
+.point-google-ads::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/images/arrow-up-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body.lightmode .point-google-ads::before {
+    background-image: url(/assets/images/txtarow.png);
+    width: 20px;
+    height: 17px;
+}
