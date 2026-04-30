@@ -44,7 +44,7 @@ function FoodAndBeverage() {
                                         Deliciously Bold Marketing<br /> for Food & Beverage Visionaries.
                                     </h3>
                                 </div>
-                                <div className="col-md-5" style={{ display: "flex", alignItems: 'end' }}>
+                                <div className="col-md-5 mt-3 mt-md-0" style={{ display: "flex", alignItems: 'end' }}>
                                     <p style={{ fontWeight: 100 }}>
                                         The food and beverage industry has been booming in recent years. While the target market for this industry changes from brand to brand, the strategies used are more or less the same.
                                     </p>
@@ -74,7 +74,7 @@ function FoodAndBeverage() {
                             </div>
                         </div>
 
-                        <div className="col-md-6" >
+                        <div className="col-md-6 mt-3 mt-md-0" >
                             <div className="expertise-title" style={{ width: '100%' }}>
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
                                     <h3 className="title-heading" style={{ marginBottom: '10px' }}>
@@ -89,7 +89,7 @@ function FoodAndBeverage() {
                                 </AnimateOnScroll>
 
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <p className="mt-3" style={{ fontWeight: 100 }} >
+                                    <p className="mt-0 mt-md-3" style={{ fontWeight: 100 }} >
                                         As marketing partners for brands like Wagamama, Mister Baker, Marrybrown, Trader Vics, Shakeys Pizza, Paavos Pizza and more, we are capable of identifying the problem you are facing in your strategies, overcoming them and devising new techniques and tactics to induce more customers.
                                     </p>
                                 </AnimateOnScroll>
@@ -116,18 +116,24 @@ function FoodAndBeverage() {
 
             <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="container">
-
                     <AnimateOnScroll animation="fadeInUp" speed="normal">
                         <div className="UnBoxT1 sectionboxT1 pt-0">
                             <h2 className="title-heading text-center">Digital Marketing Services</h2>
                             <p className="text-center">Although there are many methods that can be used to market a food and beverage brand successfully, here are some services that we swear by:</p>
                         </div>
                     </AnimateOnScroll>
-                    <div className="GridBoxWrap">
+                    <div className="GridBoxWrap mt-0">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-1 mb-md-5">
                                 <div className="row gx-5">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull borderRadius5" src="/assets/images/food-and-beverage-2.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-6 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Content Marketing & Engagement</h5>
@@ -141,17 +147,16 @@ function FoodAndBeverage() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull borderRadius5" src="/assets/images/food-and-beverage-2.png" />
                                             </div>
                                         </AnimateOnScroll>
-
                                     </div>
                                 </div>
                             </div>
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-0 mb-md-5">
                                 <div className="row gx-5">
                                     <div className="col-md-6">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
@@ -161,7 +166,7 @@ function FoodAndBeverage() {
                                         </AnimateOnScroll>
 
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Branding</h5>
@@ -181,7 +186,14 @@ function FoodAndBeverage() {
 
                             <div className="GridBox">
                                 <div className="row gx-5">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull borderRadius5" src="/assets/images/food-and-beverage-4.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-6 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Performance Marketing</h5>
@@ -189,7 +201,7 @@ function FoodAndBeverage() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull borderRadius5" src="/assets/images/food-and-beverage-4.png" />

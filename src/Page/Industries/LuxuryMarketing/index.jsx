@@ -46,7 +46,7 @@ function LuxuryMarketing() {
 
 
 
-            <div className="section pt-5">
+            <div className="section pt-0 pt-md-5">
                 <div className="hero-container">
                     <div className="row gx-5">
 
@@ -64,7 +64,7 @@ function LuxuryMarketing() {
                             </div>
                         </div>
 
-                        <div className="col-md-5 mt-5" >
+                        <div className="col-md-5 mt-4 mt-md-5" >
                             <div className="expertise-title" style={{ width: '100%' }}>
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                     <p style={{ fontWeight: 100 }} >
@@ -73,7 +73,7 @@ function LuxuryMarketing() {
                                 </AnimateOnScroll>
 
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <p className="mt-3" style={{ fontWeight: 100 }} >
+                                    <p className="mt-0 mt-md-3" style={{ fontWeight: 100 }} >
                                         After having worked with luxury brands like Mercedes Benz, YSL, and Lootah Perfumes, McCollins has had the pleasure of working with some of the finest luxury brands
                                     </p>
                                 </AnimateOnScroll>
@@ -100,13 +100,20 @@ function LuxuryMarketing() {
 
 
 
-            <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
+            <div className="section pt-2 pt-md-5" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="container">
                     <div className="GridBoxWrap">
                         <div className="GridBoxes">
                             <div className="GridBox">
                                 <div className="row gx-5">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull borderRadius5" src="/assets/images/luxury-marketing-2.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-6 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Content Marketing & Lead Generation</h5>
@@ -116,7 +123,7 @@ function LuxuryMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull borderRadius5" src="/assets/images/luxury-marketing-2.png" />
@@ -132,11 +139,11 @@ function LuxuryMarketing() {
 
 
 
-            <div className="section pb-0">
+            <div className="section pt-2 pt-md-5 pb-0">
                 <div className="container">
                     <div className="GridBoxWrap">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-0 mb-md-5">
                                 <div className="row gx-5">
                                     <div className="col-md-7">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
@@ -146,7 +153,7 @@ function LuxuryMarketing() {
                                         </AnimateOnScroll>
 
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Website Design and Development</h5>
@@ -158,9 +165,16 @@ function LuxuryMarketing() {
                                 </div>
                             </div>
 
-                            <div className="GridBox pt-5">
+                            <div className="GridBox pt-3 pt-md-5 mt-0">
                                 <div className="row gx-5">
-                                    <div className="col-md-5">
+                                    <div className="col-md-7 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull borderRadius5" src="/assets/images/luxury-marketing-4.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-5 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Social Media Marketing</h5>
@@ -168,7 +182,7 @@ function LuxuryMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-7">
+                                    <div className="col-md-7 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull borderRadius5" src="/assets/images/luxury-marketing-4.png" />

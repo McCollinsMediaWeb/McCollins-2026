@@ -38,7 +38,7 @@ function TechnologyMarketing() {
 
 
 
-            <div className="section pt-5 pb-0">
+            <div className="section pt-3 pt-md-5 pb-0">
                 <div className="hero-container">
                     <div className="row gx-5">
                         <div className="col-md-6" >
@@ -73,7 +73,7 @@ function TechnologyMarketing() {
                         </div>
 
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <p className="mt-4" style={{ fontWeight: 100 }} >
+                            <p className="mt-3 mt-md-5" style={{ fontWeight: 100 }} >
                                 As an agency with great experience in various industries, we forayed into technology marketing with brands like LG, Samsung, Fujifilm, and so many more.
                             </p>
                         </AnimateOnScroll>
@@ -84,11 +84,11 @@ function TechnologyMarketing() {
 
 
 
-            <div className="section pt-4 pb-0">
+            <div className="section pt-0 pt-md-4 pb-0">
                 <div className="container">
-                    <div className="GridBoxWrap">
-                        <div className="GridBoxes">
-                            <div className="GridBox">
+                    <div className="GridBoxWrap mt-0">
+                        <div className="GridBoxes mt-0">
+                            <div className="GridBox mt-3">
                                 <div className="row gx-5">
                                     <div className="col-md-5">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
@@ -97,7 +97,7 @@ function TechnologyMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-7">
+                                    <div className="col-md-7 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Social Media Marketing</h5>
@@ -116,13 +116,20 @@ function TechnologyMarketing() {
 
 
 
-            <div className="section pb-0 pt-5">
+            <div className="section pb-0 pt-0 pt-md-5">
                 <div className="container">
                     <div className="GridBoxWrap">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-2 mb-md-5">
                                 <div className="row gx-5">
-                                    <div className="col-md-5">
+                                    <div className="col-md-7 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull rounded" src="/assets/images/technology-marketing-3.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-5 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Content Marketing</h5>
@@ -131,18 +138,17 @@ function TechnologyMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-7">
+                                    <div className="col-md-7 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull rounded" src="/assets/images/technology-marketing-3.png" />
                                             </div>
                                         </AnimateOnScroll>
-
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="GridBox pt-5">
+                            <div className="GridBox pt-0 pt-md-5">
                                 <div className="row gx-5">
 
                                     <div className="col-md-5">
@@ -153,7 +159,7 @@ function TechnologyMarketing() {
                                         </AnimateOnScroll>
                                     </div>
 
-                                    <div className="col-md-7">
+                                    <div className="col-md-7 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Website Design and Development</h5>

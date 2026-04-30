@@ -48,7 +48,19 @@ export default function SingleBlog() {
     }, [blog]);
 
 
-    if (loading) return <h2 style={{ padding: "80px" }}>Loading...</h2>;
+    if (loading) return <div className="d-flex justify-content-center align-items-center py-4" style={{ minHeight: '50vh' }}>
+        <div
+            style={{
+                width: "36px",
+                height: "36px",
+                border: "4px solid #e0e0e0",
+                borderTop: "4px solid #FFDE11",
+                borderRadius: "50%",
+                animation: "spin 0.8s linear infinite",
+            }}
+        />
+    </div>;
+
     if (error || !blog) return <h2 style={{ padding: "80px" }}>Blog Not Found</h2>;
 
     return (

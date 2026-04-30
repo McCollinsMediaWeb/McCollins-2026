@@ -53,7 +53,7 @@ function HealthcareMarketing() {
                                 </h3>
                             </AnimateOnScroll>
                         </div>
-                        <div className="col-md-3" >
+                        <div className="col-md-3 d-none d-md-block" >
                             <div>
                                 <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
                                     <div className="btn-title">
@@ -72,18 +72,38 @@ function HealthcareMarketing() {
                                 <p className="mt-4" style={{ fontWeight: 100 }} >Al Borg Laboratories and Al Tadawi Medical Center are some of our clients who have helped us pave our name in the healthcare marketing services sector.</p>
                             </div>
                         </AnimateOnScroll>
+
+                        <div className="col-md-3 d-block d-md-none" >
+                            <div>
+                                <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
+                                    <div className="btn-title">
+                                        <span>Schedule a Meeting Today</span>
+                                    </div>
+                                    <div className="icon-circle" style={{ backgroundColor: '#000' }}>
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className="section pt-5 pb-5" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
+            <div className="section pt-2 pt-md-5 pb-5" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="container">
                     <div className="GridBoxWrap">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-1 mb-md-5">
                                 <div className="row gx-5">
-                                    <div className="col-md-7">
+                                    <div className="col-md-5 d-block d-md-none">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull rounded" src="/assets/images/healthcare-marketing-2.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-7 mt-4 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Content Marketing and Lead Generation</h5>
@@ -105,7 +125,7 @@ function HealthcareMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull rounded" src="/assets/images/healthcare-marketing-2.png" />
