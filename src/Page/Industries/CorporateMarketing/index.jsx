@@ -34,7 +34,7 @@ function CorporateMarketing() {
                                 <img
                                     src="/assets/images/corporate-1.png"
                                     alt="Expertise Image"
-                                    className="img-fluid brdRadius mt-4"
+                                    className="img-fluid brdRadius mt-2 mt-md-4"
                                 />
 
                             </div>
@@ -46,20 +46,19 @@ function CorporateMarketing() {
                                     <div className="d-flex flex-column">
                                         <div className="">
                                             <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                                <p style={{ fontWeight: 100, marginTop: '60px' }}>
+                                                <p className="mt-4 mt-md-5" style={{ fontWeight: 100 }}>
                                                     When you take a company as a whole and promote its services and products through various forms of marketing, it is known as corporate marketing.
                                                 </p>
                                             </AnimateOnScroll>
                                         </div>
                                         <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                            <p className="mt-5" style={{ fontWeight: 100 }}>
+                                            <p className="mt-0 mt-md-5" style={{ fontWeight: 100 }}>
                                                 We have had the pleasure of working with several
                                                 corporate conglomerates over the last decade trom their branding, to social media marketing, website development, performance marketing and content
                                                 development within the GCC Markets primarily - United Arab Emirates, Saudi Arabia, Kuwait, Qatar and Bahrain.
                                             </p>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="expertise-spacer"></div>
                                 </div>
                             </div>
                         </div>
@@ -69,12 +68,19 @@ function CorporateMarketing() {
 
 
 
-            <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
+            <div className="section pt-4" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="container">
                     <div className="GridBoxWrap">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-0 mb-md-5">
                                 <div className="row gx-5">
+                                    <div className="col-md-5 d-flex d-md-none align-items-center mb-4">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull borderRadius5" src="/assets/images/corporate-2.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
                                     <div className="col-md-7">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
@@ -103,13 +109,12 @@ function CorporateMarketing() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 d-none d-md-flex align-items-center">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull borderRadius5" src="/assets/images/corporate-2.png" />
                                             </div>
                                         </AnimateOnScroll>
-
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +128,7 @@ function CorporateMarketing() {
                                         </AnimateOnScroll>
 
                                     </div>
-                                    <div className="col-md-7">
+                                    <div className="col-md-7 mt-3 mt-md-0">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">Search Engine Marketing and Google Ads</h5>

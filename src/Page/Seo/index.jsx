@@ -32,7 +32,7 @@ function SearchEngineOptimization() {
                                     </h3>
                                 </div>
                                 <div className="col-md-7" style={{ display: "flex", alignItems: 'end' }}>
-                                    <p style={{ fontWeight: 100 }}>
+                                    <p className="mt-3 mt-md-0" style={{ fontWeight: 100 }}>
                                         We help your brand rank high on Google search so you're noticed at the right place, at the right time.
                                     </p>
                                 </div>
@@ -43,55 +43,20 @@ function SearchEngineOptimization() {
             </div>
 
 
-            {/* <div className="section pt-5 pb-5">
-                <div className="hero-container">
-                    <div className="row">
-                        <img
-                            src="/assets/images/healthcare-marketing-1.png"
-                            alt="Expertise Image"
-                            className="img-fluid rounded"
-                        />
-                    </div>
-
-                    <div className="row pt-5">
-                        <div className="col-md-9" >
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <h3 className="title-heading">
-                                    Get A Best-Healthcare Marketing Plan
-                                </h3>
-                            </AnimateOnScroll>
-                        </div>
-                        <div className="col-md-3" >
-                            <div>
-                                <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
-                                    <div className="btn-title">
-                                        <span>Schedule a Meeting Today</span>
-                                    </div>
-                                    <div className="icon-circle" style={{ backgroundColor: '#000' }}>
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="mt-3">
-                                <p style={{ fontWeight: 100 }} >Be it for a hospital, medicine suppliers, or even their agencies, creating strategies for all of them fall under healthcare marketing. These strategies are designed to attract new patients, raise awareness and provide valuable advice to the community.</p>
-                                <p className="mt-4" style={{ fontWeight: 100 }} >Al Borg Laboratories and Al Tadawi Medical Center are some of our clients who have helped us pave our name in the healthcare marketing services sector.</p>
-                            </div>
-                        </AnimateOnScroll>
-                    </div>
-                </div>
-            </div> */}
-
-
-            <div className="section pt-5 pb-5">
+            <div className="section pt-3 pt-md-5 pb-5">
                 <div className="container">
-                    <div className="GridBoxWrap">
+                    <div className="GridBoxWrap mt-0">
                         <div className="GridBoxes">
-                            <div className="GridBox mb-5">
+                            <div className="GridBox mb-0">
                                 <div className="row gx-5 g-5">
-                                    <div className="col-md-6">
+                                    <div className="d-flex d-md-none mt-3 mb-3">
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <div>
+                                                <img className="widthFull rounded" src="/assets/images/seo-1.png" />
+                                            </div>
+                                        </AnimateOnScroll>
+                                    </div>
+                                    <div className="col-md-6 mt-2">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h5 className="GridBoxT1">On-page optimization</h5>
@@ -121,7 +86,7 @@ function SearchEngineOptimization() {
                                         </AnimateOnScroll>
 
                                     </div>
-                                    <div className="col-md-5 d-flex justify-content-end">
+                                    <div className="col-md-5 d-flex justify-content-end d-none d-md-block">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <img className="widthFull rounded" src="/assets/images/seo-1.png" />
@@ -138,7 +103,19 @@ function SearchEngineOptimization() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-5 d-flex align-items-end justify-content-end">
+                                    <div className="col-md-5 d-none d-md-flex align-items-end justify-content-end">
+                                        <div>
+                                            <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
+                                                <div className="btn-title">
+                                                    <span>Schedule a Meeting Today</span>
+                                                </div>
+                                                <div className="icon-circle" style={{ backgroundColor: '#000' }}>
+                                                    <i className="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 d-flex d-md-none justify-content-start mt-3">
                                         <div>
                                             <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
                                                 <div className="btn-title">
@@ -160,7 +137,7 @@ function SearchEngineOptimization() {
                                             </div>
                                         </AnimateOnScroll>
                                     </div>
-                                    <div className="col-md-5 d-flex align-items-end justify-content-end">
+                                    <div className="col-md-5 d-flex align-items-end justify-content-end mt-3">
                                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                                             <div>
                                                 <h3 className="title-heading" >
