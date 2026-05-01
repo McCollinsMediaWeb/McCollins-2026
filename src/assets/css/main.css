@@ -5759,3 +5759,18 @@ body.lightmode .point-google-ads::before {
     width: 20px;
     height: 17px;
 }
+
+.phone-input-wrapper .PhoneInputInput {
+    /* match your existing <input> styles */
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.phone-input-wrapper .PhoneInputInput:focus {
+    border-color: #3876fc;
+    box-shadow: 0 0 0 2px rgba(56, 118, 252, 0.2);
+}
