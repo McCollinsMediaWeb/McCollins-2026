@@ -79,8 +79,8 @@ const Footer = () => {
                                             <li><a href="/service/website-development">Website Development</a></li>
                                             <li><a href="/service/social-media-marketing">Social Media Marketing</a></li>
                                             <li><a href="/service/marketing-automations">Marketing Automation</a></li>
-                                            <li><a href="/service">Google Ads</a></li>
-                                            <li><a href="/service">Search Engine Optimization</a></li>
+                                            <li><a href="/service/google-ads">Google Ads</a></li>
+                                            <li><a href="/service/search-engine-optimization">Search Engine Optimization</a></li>
                                             <li><a href="/service/content-production">Film Production</a></li>
                                             <li><a href="/service/brand-development">Brand Development</a></li>
                                             <li><a href="/service/performance-marketing">Perfomance Marketing</a></li>
