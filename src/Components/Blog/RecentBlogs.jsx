@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-
-
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 const API_URL = "https://mccollins-server-2026.vercel.app";
 
@@ -28,9 +27,9 @@ const RecentBlogs = () => {
     }, []);
 
     return (
-
-        <div className="card recent-post">
-            <h4>Recent Blog</h4>
+        <AnimateOnScroll animation="fadeInUp" speed="normal">
+            <div className="card recent-post">
+                <h4>Recent Blog</h4>
             {blogs.map((blog) => (
                 <a
                     className="d-flex flex-row w-100 gspace-1"
@@ -67,6 +66,7 @@ const RecentBlogs = () => {
                 </a>
             ))}
         </div>
+    </AnimateOnScroll>
 
     );
 };

@@ -53,13 +53,13 @@ function LuxuryMarketing() {
                         <div className="col-md-7" >
                             <div className="">
                                 <div className="">
-                                    <div className="d-flex flex-column">
+                                    <AnimateOnScroll animation="fadeInUp" speed="normal">
                                         <img
                                             src="/assets/images/luxury-marketing-1.png"
                                             alt="Expertise Image"
                                             className="img-fluid rounded"
                                         />
-                                    </div>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
                         </div>

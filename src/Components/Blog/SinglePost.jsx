@@ -1,5 +1,6 @@
 import React from "react";
 import { blogs } from "../../Data/BlogPostData";
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 const BlogPostSection = () => {
     return (
@@ -7,7 +8,8 @@ const BlogPostSection = () => {
             <div className="hero-container">
                 <div className="row row-cols-lg-2 row-cols-1 grid-spacer-5">
                     <div className="col col-lg-4 order-2 order-lg-1">
-                        <div className="d-flex flex-column flex-md-row flex-lg-column gspace-5">
+                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                            <div className="d-flex flex-column flex-md-row flex-lg-column gspace-5">
                             <div className="card recent-post">
                                 <h4>Recent Blog</h4>
                                 {blogs.map((blog) => (
@@ -45,10 +47,12 @@ const BlogPostSection = () => {
                                     <i className="fa-solid fa-circle-arrow-right"></i>
                                 </div>
                             </div>
-                        </div>
+                            </div>
+                        </AnimateOnScroll>
                     </div>
                     <div className="col col-lg-8 order-1 order-lg-2">
-                        <div className="d-flex flex-column gspace-2">
+                        <AnimateOnScroll animation="fadeInRight" speed="normal">
+                            <div className="d-flex flex-column gspace-2">
                             <div className="post-image">
                                 <img
                                     src="/assets/images/dummy-img-600x400.jpg"
@@ -116,8 +120,9 @@ const BlogPostSection = () => {
                                 finibus dapibus. In vulputate nisl id mollis fringilla.
                             </p>
                         </div>
-                    </div>
+                    </AnimateOnScroll>
                 </div>
+            </div>
             </div>
         </div>
     );

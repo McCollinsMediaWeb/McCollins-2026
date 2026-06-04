@@ -38,11 +38,13 @@ function HealthcareMarketing() {
             <div className="section pt-5 pb-5">
                 <div className="hero-container">
                     <div className="row">
-                        <img
-                            src="/assets/images/healthcare-marketing-1.png"
-                            alt="Expertise Image"
-                            className="img-fluid rounded"
-                        />
+                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                            <img
+                                src="/assets/images/healthcare-marketing-1.png"
+                                alt="Expertise Image"
+                                className="img-fluid rounded"
+                            />
+                        </AnimateOnScroll>
                     </div>
 
                     <div className="row pt-5">

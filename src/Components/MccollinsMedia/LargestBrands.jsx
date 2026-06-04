@@ -23,30 +23,32 @@ function LargestBrands() {
                         </div>
 
 
-                        <div className="digital-process-steps-wrapper">
-                            <style>
-                                {`
-                                .digital-process-steps-wrapper::before{
-                                    background-image: none !important;
-                                }
-                            `}
-                            </style>
-                            <div className="digital-process-steps" style={{ backgroundColor: 'var(--background-color)', border: 'none' }}>
-                                <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1">
-                                    {webDevelopmentSteps.map((item, index) => (
-                                        <WebDevelopmentCard
-                                            key={index}
-                                            icon={item.icon}
-                                            step={item.step}
-                                            title={item.title}
-                                            title2={item.title2}
-                                            content={item.content}
-                                            isFirst={index === 0}
-                                        />
-                                    ))}
+                        <AnimateOnScroll animation="fadeInUp">
+                            <div className="digital-process-steps-wrapper">
+                                <style>
+                                    {`
+                                    .digital-process-steps-wrapper::before{
+                                        background-image: none !important;
+                                    }
+                                `}
+                                </style>
+                                <div className="digital-process-steps" style={{ backgroundColor: 'var(--background-color)', border: 'none' }}>
+                                    <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1">
+                                        {webDevelopmentSteps.map((item, index) => (
+                                            <WebDevelopmentCard
+                                                key={index}
+                                                icon={item.icon}
+                                                step={item.step}
+                                                title={item.title}
+                                                title2={item.title2}
+                                                content={item.content}
+                                                isFirst={index === 0}
+                                            />
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     </div>
                 </div>
             </div>

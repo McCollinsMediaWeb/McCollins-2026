@@ -177,15 +177,11 @@
 //             </div>
 //         </div>
 //     );
-// };
-
 // export default ContactSection;
-
-
-
 
 import React from "react";
 import ContactFormNew from "../Form/ContactFormNew";
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import "./contact.css";
 
 const ContactSection = () => {
@@ -194,123 +190,89 @@ const ContactSection = () => {
             <div className="hero-container" >
                 <div className="row row-cols-lg-2 row-cols-1 g-5">
                     <div className="col col-lg-12" style={{ marginTop: '0px' }}>
+                        <AnimateOnScroll animation="fadeInUp">
+                            <div className="contact-title-wrapper">
+                                {/* Remove theme background shapes */}
+                                <style>
+                                    {`
+                                        .contact-title-wrapper::before{
+                                            content:none !important;
+                                            background:none !important;
+                                        }
+                                    `}
+                                </style>
 
-                        <div className="contact-title-wrapper">
-
-                            {/* Remove theme background shapes */}
-                            <style>
-                                {`
-                                    .contact-title-wrapper::before{
-                                        content:none !important;
-                                        background:none !important;
-                                    }
-                                `}
-                            </style>
-
-                            <div
-                                className="card contact-title"
-                                style={{
-                                    textAlign: "center",
-                                    border: "none",
-                                    backgroundImage: "none",
-                                }}
-                            >
-                                {/* Heading */}
-                                <div className="sub-heading justify-content-center">
-                                    <i className="fa-regular fa-circle-dot"></i>
-                                    <span>Contact Us</span>
-                                </div>
-
-                                <h2
-                                    className="title-heading"
-                                    style={{ marginBottom: '10px' }}
+                                <div
+                                    className="card contact-title"
+                                    style={{
+                                        textAlign: "center",
+                                        border: "none",
+                                        backgroundImage: "none",
+                                    }}
                                 >
-                                    Ready To Do Something Big?
-                                </h2>
-
-                                {/* CONTACT DETAILS */}
-                                {/* <div className="row align-items-stretch text-center text-md-start contact-row">
-
-                                    <div className="col-12 col-md-4 contact-item">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Contact</span>
-                                            <h5 className="mt-3">Mobile: +971 55 956 4135</h5>
-                                            <h5>Email: info@mccollinsmedia.com</h5>
-                                        </div>
+                                    {/* Heading */}
+                                    <div className="sub-heading justify-content-center">
+                                        <i className="fa-regular fa-circle-dot"></i>
+                                        <span>Contact Us</span>
                                     </div>
 
-                                    <div className="col-12 col-md-4 contact-item">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Our Address</span>
-                                            <h5 className="mt-3">
-                                                G04, Loft Office 2, Entrance C,
-                                                <br />
-                                                Dubai Media City, Dubai
-                                            </h5>
-                                        </div>
-                                    </div>
+                                    <h2
+                                        className="title-heading"
+                                        style={{ marginBottom: '10px' }}
+                                    >
+                                        Ready To Do Something Big?
+                                    </h2>
 
-                                    <div className="col-12 col-md-4 contact-item">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start">
-                                            <span style={{ fontSize: 'var(--font-size-8xl)', color: '#3876fc' }} >Office Hours</span>
-                                            <h5 className="mt-3">Monday - Friday</h5>
-                                            <h5>9.00 AM to 6.00 PM</h5>
+                                    <div className="custom-contact-row">
+                                        <div className="">
+                                            <div className="d-flex flex-column align-items-center align-items-md-start mb-3">
+                                                <h3 style={{ color: '#3876fc' }} >Contact</h3>
+                                                <h5 className="mt-3">Mobile: +971 55 956 4135</h5>
+                                                <h5>Email: info@mccollinsmedia.com</h5>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div> */}
 
-                                <div className="custom-contact-row">
-                                    <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start mb-3">
-                                            <h3 style={{ color: '#3876fc' }} >Contact</h3>
-                                            <h5 className="mt-3">Mobile: +971 55 956 4135</h5>
-                                            <h5>Email: info@mccollinsmedia.com</h5>
+                                        <div className="">
+                                            <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
+                                                <h3 style={{ color: '#3876fc' }} >Our Address</h3>
+                                                <h5 className="mt-3">G04, Loft Office 2, Entrance C,</h5>
+                                                <h5>Dubai Media City, Dubai</h5>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
-                                            <h3 style={{ color: '#3876fc' }} >Our Address</h3>
-                                            <h5 className="mt-3">G04, Loft Office 2, Entrance C,</h5>
-                                            <h5>Dubai Media City, Dubai</h5>
-                                        </div>
-                                    </div>
-
-                                    <div className="">
-                                        <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
-                                            <h3 style={{ color: '#3876fc' }} >Office Hours</h3>
-                                            <h5 className="mt-3">Monday - Friday</h5>
-                                            <h5>9.00 AM to 6.00 PM</h5>
+                                        <div className="">
+                                            <div className="d-flex flex-column align-items-center align-items-md-start mt-3">
+                                                <h3 style={{ color: '#3876fc' }} >Office Hours</h3>
+                                                <h5 className="mt-3">Monday - Friday</h5>
+                                                <h5>9.00 AM to 6.00 PM</h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </div>
-                        </div>
-
+                        </AnimateOnScroll>
                     </div>
                 </div>
 
-
-
-
                 {/* FORM */}
                 <div className="col col-lg-12">
-                    <div id="success-message" className="alert success hidden">
-                        <span className="check-icon">
-                            <i className="fa-solid fa-2xl fa-check"></i>
-                        </span>
-                        <p>Thank you! Form submitted successfully.</p>
-                    </div>
-                    <div id="error-message" className="alert error hidden">
-                        <span className="cross-icon">
-                            <i className="fa-solid fa-2xl fa-xmark"></i>
-                        </span>
-                        <p>Oops! Form submission failed. Please try again.</p>
-                    </div>
-                    <ContactFormNew />
+                    <AnimateOnScroll animation="fadeInUp">
+                        <div>
+                            <div id="success-message" className="alert success hidden">
+                                <span className="check-icon">
+                                    <i className="fa-solid fa-2xl fa-check"></i>
+                                </span>
+                                <p>Thank you! Form submitted successfully.</p>
+                            </div>
+                            <div id="error-message" className="alert error hidden">
+                                <span className="cross-icon">
+                                    <i className="fa-solid fa-2xl fa-xmark"></i>
+                                </span>
+                                <p>Oops! Form submission failed. Please try again.</p>
+                            </div>
+                            <ContactFormNew />
+                        </div>
+                    </AnimateOnScroll>
                 </div>
             </div>
         </div>
@@ -318,3 +280,7 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
+
+
+

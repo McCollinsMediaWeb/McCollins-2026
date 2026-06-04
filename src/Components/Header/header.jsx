@@ -130,7 +130,7 @@ function Navbar() {
                                 </NavLink>
                             </div>
 
-                            <div className="HdMenuMiddle">
+                            <div className="HdMenuMiddle d-none d-lg-block">
                                 <div className="HdT1">Explore Menu</div>
                             </div>
 

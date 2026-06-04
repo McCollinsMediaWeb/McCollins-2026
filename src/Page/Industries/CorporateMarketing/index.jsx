@@ -31,11 +31,13 @@ function CorporateMarketing() {
                                     </h3>
                                 </AnimateOnScroll>
 
-                                <img
-                                    src="/assets/images/corporate-1.png"
-                                    alt="Expertise Image"
-                                    className="img-fluid brdRadius mt-2 mt-md-4"
-                                />
+                                <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                    <img
+                                        src="/assets/images/corporate-1.png"
+                                        alt="Expertise Image"
+                                        className="img-fluid brdRadius mt-2 mt-md-4"
+                                    />
+                                </AnimateOnScroll>
 
                             </div>
                         </div>

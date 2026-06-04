@@ -62,11 +62,13 @@ function TechnologyMarketing() {
                             <div className="">
                                 <div className="">
                                     <div className="d-flex flex-column">
-                                        <img
-                                            src="/assets/images/technology-marketing-1.png"
-                                            alt="Expertise Image"
-                                            className="img-fluid rounded"
-                                        />
+                                        <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                            <img
+                                                src="/assets/images/technology-marketing-1.png"
+                                                alt="Expertise Image"
+                                                className="img-fluid rounded"
+                                            />
+                                        </AnimateOnScroll>
                                     </div>
                                 </div>
                             </div>

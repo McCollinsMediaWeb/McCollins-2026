@@ -63,13 +63,13 @@ function FoodAndBeverage() {
                         <div className="col-md-6" >
                             <div className="">
                                 <div className="">
-                                    <div className="d-flex flex-column">
+                                    <AnimateOnScroll animation="fadeInUp" speed="normal">
                                         <img
                                             src="/assets/images/food-and-beverage-1.png"
                                             alt="Expertise Image"
                                             className="img-fluid"
                                         />
-                                    </div>
+                                    </AnimateOnScroll>
                                 </div>
                             </div>
                         </div>
