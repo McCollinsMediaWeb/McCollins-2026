@@ -8,6 +8,9 @@ import { partnerships } from "../../Data/PartnershipData";
 
 function OurServices() {
 
+    const row1 = partnerships.filter((_, idx) => idx % 2 === 0);
+    const row2 = partnerships.filter((_, idx) => idx % 2 !== 0);
+
     return (
         <>
             <div className="section pt-5">
@@ -121,26 +124,57 @@ function OurServices() {
                         </div>
 
 
+                        {/* Row 1 Slider */}
                         <div className="swiperPartner-container mt-3">
                             <Swiper
                                 modules={[Autoplay]}
                                 slidesPerView={5}
                                 spaceBetween={20}
                                 loop={true}
-                                speed={5000} // 👈 higher = slower smooth movement
+                                speed={6000}
                                 autoplay={{
-                                    delay: 0, // 👈 no pause between slides
+                                    delay: 0,
                                     disableOnInteraction: false,
                                 }}
                                 breakpoints={{
-                                    230: { slidesPerView: 3 },
-                                    767: { slidesPerView: 4 },
-                                    1024: { slidesPerView: 6 },
+                                    230: { slidesPerView: 3, spaceBetween: 8 },
+                                    767: { slidesPerView: 4, spaceBetween: 12 },
+                                    1024: { slidesPerView: 6, spaceBetween: 20 },
                                 }}
                                 className="swiperPartner"
                             >
-                                {partnerships.concat(partnerships).map((partner) => (
-                                    <SwiperSlide key={partner.id}>
+                                {row1.concat(row1).map((partner, index) => (
+                                    <SwiperSlide key={`row1-${partner.id}-${index}`}>
+                                        <div className="col-6 col-md">
+                                            <img className="img-fluid partner-logo" src={partner.logo} />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+
+                        {/* Row 2 Slider */}
+                        <div className="swiperPartner-container mt-3">
+                            <Swiper
+                                modules={[Autoplay]}
+                                slidesPerView={5}
+                                spaceBetween={20}
+                                loop={true}
+                                speed={6500}
+                                autoplay={{
+                                    delay: 0,
+                                    disableOnInteraction: false,
+                                    reverseDirection: true,
+                                }}
+                                breakpoints={{
+                                    230: { slidesPerView: 3, spaceBetween: 8 },
+                                    767: { slidesPerView: 4, spaceBetween: 12 },
+                                    1024: { slidesPerView: 6, spaceBetween: 20 },
+                                }}
+                                className="swiperPartner"
+                            >
+                                {row2.concat(row2).map((partner, index) => (
+                                    <SwiperSlide key={`row2-${partner.id}-${index}`}>
                                         <div className="col-6 col-md">
                                             <img className="img-fluid partner-logo" src={partner.logo} />
                                         </div>

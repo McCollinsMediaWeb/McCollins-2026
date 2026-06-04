@@ -151,9 +151,10 @@ function Navbar() {
                         <div className="MenuItems">
                             <div className="row">
 
-                                {/* LEFT COLUMN */}
-
-                                <div className="col-md-4">
+                                {/* Column 1: Core Navigation */}
+                                <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div className="menu-col-title d-none d-lg-block">Explore</div>
+                                    
                                     <div className="LinkItem">
                                         <a
                                             className="MegLnkTp1"
@@ -176,21 +177,31 @@ function Navbar() {
 
                                     <div className="LinkItem">
                                         <a
-                                            className="MegLnkTp1 desk-only"
-                                            href="/service"
+                                            className="MegLnkTp1"
+                                            href="/case_studies"
                                             onClick={() => setMenuOpen(false)}
                                         >
-                                            Services
+                                            Case Studies
                                         </a>
                                     </div>
 
                                     <div className="LinkItem">
                                         <a
-                                            className="MegLnkTp1 desk-only"
-                                            href="/industry"
+                                            className="MegLnkTp1"
+                                            href="/Testimonial"
                                             onClick={() => setMenuOpen(false)}
                                         >
-                                            Industry
+                                            Testimonials
+                                        </a>
+                                    </div>
+
+                                    <div className="LinkItem">
+                                        <a
+                                            className="MegLnkTp1"
+                                            href="/faq"
+                                            onClick={() => setMenuOpen(false)}
+                                        >
+                                            FAQs
                                         </a>
                                     </div>
 
@@ -215,15 +226,13 @@ function Navbar() {
                                     </div>
                                 </div>
 
-                                {/* SERVICES */}
-
-                                <div className="col-md-4">
-
-                                    <div className="LinkItem HasSubmenu">
+                                {/* Column 2: Our Services */}
+                                <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div className="menu-col-title HasSubmenu">
                                         <a
-                                            className="MegLnkTp1"
                                             href="/service"
                                             onClick={() => setMenuOpen(false)}
+                                            style={{ color: 'inherit', textDecoration: 'none' }}
                                         >
                                             Services
                                         </a>
@@ -325,23 +334,21 @@ function Navbar() {
                                                 href="/service/performance-marketing"
                                                 onClick={() => setMenuOpen(false)}
                                             >
-                                                Perfomance Marketing
+                                                Performance Marketing
                                             </a>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* INDUSTRY */}
-
-                                <div className="col-md-4">
-
-                                    <div className="LinkItem HasSubmenu">
+                                {/* Column 3: Industries */}
+                                <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div className="menu-col-title HasSubmenu">
                                         <a
-                                            className="MegLnkTp1"
                                             href="/industry"
                                             onClick={() => setMenuOpen(false)}
+                                            style={{ color: 'inherit', textDecoration: 'none' }}
                                         >
-                                            Industry
+                                            Industries
                                         </a>
 
                                         {openSubmenu === "industry" ? (
@@ -435,8 +442,27 @@ function Navbar() {
                                             Contact
                                         </a>
                                     </div>
-
                                 </div>
+
+                                {/* Column 4: Featured Promo Panel */}
+                                <div className="col-lg-3 col-12 d-none d-lg-block">
+                                    <div className="menu-featured-card h-100 d-flex flex-column justify-content-between p-4 rounded-4">
+                                        <div>
+                                            <span className="badge-featured">Featured Agency</span>
+                                            <h4 className="card-heading mt-3 mb-2 text-white" style={{ fontWeight: 600 }}>Let's build something remarkable.</h4>
+                                            <p className="card-text text-white-50" style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.4 }}>Transform your brand's digital resonance and scale your impact with McCollins Media.</p>
+                                        </div>
+                                        <a
+                                            href="/contact"
+                                            onClick={() => setMenuOpen(false)}
+                                            className="btn btn-accent mt-4 align-self-start"
+                                            style={{ backgroundColor: 'var(--accent-color)', color: '#fff', border: 'none' }}
+                                        >
+                                            Get In Touch <i className="fa-solid fa-arrow-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

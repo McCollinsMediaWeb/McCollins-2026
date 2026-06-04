@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
+    const [quickLinksOpen, setQuickLinksOpen] = useState(false);
+    const [servicesOpen, setServicesOpen] = useState(false);
+
     return (
         <div className="section-footer">
             <div className="bg-footer-wrapper">
@@ -14,40 +17,32 @@ const Footer = () => {
                                         <div className="logo-container-footer">
                                             <img src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png" alt="Logo" className="site-logo img-fluid" />
                                         </div>
-                                        <h5 style={{ color: '#fff' }}>Elevate Your Brand in the<br /> Digital World.</h5>
-                                        {/* <p>
-                                            Elevate Your Brand in the
-                                            Digital World.Elevate Your Brand in the
-                                            Digital World.Elevate Your Brand in the
-                                            Digital World.
-                                        </p> */}
-
+                                        <h5 className="footer-tagline">Elevate Your Brand in the<br /> Digital World.</h5>
 
                                         <div className="d-flex flex-column gspace-1">
-                                            {/* <h6>Social Media</h6> */}
                                             <div className="social-container">
                                                 <div className="social-item-wrapper">
-                                                    <a href="https://www.tiktok.com/@mccollinsmedia" className="social-item">
+                                                    <a href="https://www.tiktok.com/@mccollinsmedia" className="social-item social-tiktok" aria-label="TikTok">
                                                         <i className="fa-brands fa-tiktok"></i>
                                                     </a>
                                                 </div>
                                                 <div className="social-item-wrapper">
-                                                    <a href="https://www.instagram.com/mccollinsmedia/?hl=en" className="social-item">
+                                                    <a href="https://www.instagram.com/mccollinsmedia/?hl=en" className="social-item social-instagram" aria-label="Instagram">
                                                         <i className="fa-brands fa-instagram"></i>
                                                     </a>
                                                 </div>
                                                 <div className="social-item-wrapper">
-                                                    <a href="https://www.facebook.com/mccollinsmedia/" className="social-item">
+                                                    <a href="https://www.facebook.com/mccollinsmedia/" className="social-item social-facebook" aria-label="Facebook">
                                                         <i className="fa-brands fa-facebook"></i>
                                                     </a>
                                                 </div>
                                                 <div className="social-item-wrapper">
-                                                    <a href="https://www.linkedin.com/company/mccollins-media/" className="social-item">
+                                                    <a href="https://www.linkedin.com/company/mccollins-media/" className="social-item social-linkedin" aria-label="LinkedIn">
                                                         <i className="fa-brands fa-linkedin"></i>
                                                     </a>
                                                 </div>
                                                 <div className="social-item-wrapper">
-                                                    <a href="https://wa.me/971559564135?text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media" className="social-item">
+                                                    <a href="https://wa.me/971559564135?text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media" className="social-item social-whatsapp" aria-label="WhatsApp">
                                                         <i className="fa-brands fa-whatsapp"></i>
                                                     </a>
                                                 </div>
@@ -57,8 +52,13 @@ const Footer = () => {
                                 </div>
 
                                 <div className="col col-lg-2">
-                                    <div className="footer-quick-links">
-                                        <h6 style={{ color: '#3876fc', fontWeight: 600 }}>Quick Links</h6>
+                                    <div className={`footer-quick-links footer-collapse-section ${quickLinksOpen ? 'is-open' : ''}`}>
+                                        <h6 className="footer-heading" onClick={() => setQuickLinksOpen(!quickLinksOpen)}>
+                                            Quick Links
+                                            <span className="footer-toggle-icon">
+                                                {quickLinksOpen ? '−' : '+'}
+                                            </span>
+                                        </h6>
                                         <ul className="footer-list">
                                             <li><a href="/">Home</a></li>
                                             <li><a href="/about">About</a></li>
@@ -71,10 +71,14 @@ const Footer = () => {
                                     </div>
                                 </div>
 
-
                                 <div className="col col-lg-3">
-                                    <div className="footer-services-container">
-                                        <h6 style={{ color: '#3876fc', fontWeight: 600 }}>Services</h6>
+                                    <div className={`footer-services-container footer-collapse-section ${servicesOpen ? 'is-open' : ''}`}>
+                                        <h6 className="footer-heading" onClick={() => setServicesOpen(!servicesOpen)}>
+                                            Services
+                                            <span className="footer-toggle-icon">
+                                                {servicesOpen ? '−' : '+'}
+                                            </span>
+                                        </h6>
                                         <ul className="footer-list">
                                             <li><a href="/service/website-development">Website Development</a></li>
                                             <li><a href="/service/social-media-marketing">Social Media Marketing</a></li>
@@ -83,51 +87,37 @@ const Footer = () => {
                                             <li><a href="/service/search-engine-optimization">Search Engine Optimization</a></li>
                                             <li><a href="/service/content-production">Film Production</a></li>
                                             <li><a href="/service/brand-development">Brand Development</a></li>
-                                            <li><a href="/service/performance-marketing">Perfomance Marketing</a></li>
+                                            <li><a href="/service/performance-marketing">Performance Marketing</a></li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <div className="col col-lg-3">
                                     <div className="footer-contact-container">
-                                        <h6 style={{ color: '#3876fc', fontWeight: 600 }}>Contact Info</h6>
-                                        <ul className="footer-list">
-                                            <li><a href="tel:+971559564135">Phone:<span><br /></span> +971 55 956 4135</a></li>
-                                            <li style={{ margin: '30px 0px' }}><a href="mailto:info@mccollinsmedia.com">Email:<span><br /></span> info@mccollinsmedia.com</a></li>
-                                            <li><a href="https://maps.app.goo.gl/Q73FPL2WiPaVaofQ8" target="_blank">Addresss:<span><br /></span>
-                                                G04, Loft Office 2, Entrance C,
-                                                Dubai Media City, Dubai</a></li>
+                                        <h6 className="footer-heading">Contact Info</h6>
+                                        <ul className="footer-list footer-contact-list">
+                                            <li>
+                                                <a href="tel:+971559564135">
+                                                    <i className="fa-solid fa-phone footer-contact-icon"></i>
+                                                    <span><strong>Phone:</strong><br /> +971 55 956 4135</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:info@mccollinsmedia.com">
+                                                    <i className="fa-solid fa-envelope footer-contact-icon"></i>
+                                                    <span><strong>Email:</strong><br /> info@mccollinsmedia.com</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://maps.app.goo.gl/Q73FPL2WiPaVaofQ8" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-solid fa-location-dot footer-contact-icon"></i>
+                                                    <span><strong>Address:</strong><br />
+                                                        G04, Loft Office 2, Entrance C,<br />
+                                                        Dubai Media City, Dubai
+                                                    </span>
+                                                </a>
+                                            </li>
                                         </ul>
-                                        {/* <div className="d-flex flex-column gspace-1">
-                                            <h6>Social Media</h6>
-                                            <div className="social-container">
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.tiktok.com/@mccollinsmedia" className="social-item">
-                                                        <i className="fa-brands fa-tiktok"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.instagram.com/mccollinsmedia/?hl=en" className="social-item">
-                                                        <i className="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.facebook.com/mccollinsmedia/" className="social-item">
-                                                        <i className="fa-brands fa-facebook"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.linkedin.com/company/mccollins-media/" className="social-item">
-                                                        <i className="fa-brands fa-linkedin"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://wa.me/971559564135?text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media" className="social-item">
-                                                        <i className="fa-brands fa-whatsapp"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div> */}
                                     </div>
                                 </div>
                             </div>

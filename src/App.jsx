@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/footer";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import { ModalVideoProvider } from "./Components/Video/ModalVideoContext";
 import { NavProvider } from "./Components/Context/NavContext";
+import PageTransition from "./Components/Transitions/PageTransition";
 
 function App(){
     return (
@@ -13,7 +14,9 @@ function App(){
                 <ModalVideoProvider>
                     <Navbar />
                     <Sidebar />
-                    <AppRouter />
+                    <PageTransition>
+                        <AppRouter />
+                    </PageTransition>
                     <Footer />
                 </ModalVideoProvider>
             </NavProvider>
