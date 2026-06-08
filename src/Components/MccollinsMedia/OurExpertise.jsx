@@ -1,106 +1,113 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
-import CounterOnScroll from "../Hooks/CounterOnScroll";
 
 function OurExpertise() {
-
     return (
         <>
-            <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
+            <div className="section expertise-section-new">
                 <div className="hero-container">
+                    <div className="row text-center justify-content-center">
+                        <div className="col-lg-8">
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <div className="sub-heading justify-content-center">
+                                    <i className="fa-regular fa-circle-dot case-study-dot"></i>
+                                    <span>Expertise</span>
+                                </div>
+                            </AnimateOnScroll>
 
-                    <div className="row text-center">
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="sub-heading justify-content-center">
-                                <i className="fa-regular fa-circle-dot"></i>
-                                <span>Expertise</span>
-                            </div>
-                        </AnimateOnScroll>
-
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ marginBottom: "0px", marginTop: "20px" }}>
-                                Proven success across
-                                <br className="d-none d-md-block" />
-                                {` `}these key sectors.
-                            </h2>
-                        </AnimateOnScroll>
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <h2 className="expertise-heading">
+                                    <span className="line-delight">PROVEN SUCCESS ACROSS THESE</span>
+                                    <span className="line-playfair">Key Sectors.</span>
+                                </h2>
+                            </AnimateOnScroll>
+                        </div>
                     </div>
 
+                    <div className="row g-4 pt-4 mt-1">
+                        {/* Column 1: Left */}
+                        <div className="col-md-4 expertise-col-left">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                <div className="expertise-item mb-5">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind1.png" alt="Real Estate" />
+                                        <h5 className="expertise-title">REAL ESTATE</h5>
+                                    </div>
+                                    <p className="expertise-desc">
+                                        Fueling your brand's evolution with precision analytics and real-time market insights.
+                                    </p>
+                                </div>
+                            </AnimateOnScroll>
 
-                    <div className="row g-4 pt-5 mt-1">
-                        <AnimateOnScroll animation="fadeInLeft" speed="slow">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind1.png" alt="" />
-                                        <h5>Real Estate</h5>
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
+                                <div className="expertise-item">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind4.png" alt="Technology" />
+                                        <h5 className="expertise-title">TECHNOLOGY</h5>
                                     </div>
-                                    <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
+                                    <p className="expertise-desc">
+                                        Fueling your brand's evolution with precision analytics and real-time market insights.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind2.png" alt="" />
-                                        <h5>Luxury</h5>
-                                    </div>
-                                    <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
-                                </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInLeft" speed="fast">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind3.png" alt="" />
-                                        <h5>Food & Beverage</h5>
-                                    </div>
-                                    <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
-                                </div>
-                            </div>
-                        </AnimateOnScroll>
+                            </AnimateOnScroll>
+                        </div>
 
-                        <AnimateOnScroll animation="fadeInRight" speed="slow">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind4.png" alt="" />
-                                        <h5>Technology</h5>
+                        {/* Column 2: Middle */}
+                        <div className="col-md-4 expertise-col-middle">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={50}>
+                                <div className="expertise-item mb-5">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind2.png" alt="Luxury" />
+                                        <h5 className="expertise-title">LUXURY</h5>
                                     </div>
-                                    <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
+                                    <p className="expertise-desc">
+                                        Transforming disruptive ideas into high-impact digital experiences across every continent.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind5.png" alt="" />
-                                        <h5>Startups</h5>
+                            </AnimateOnScroll>
+
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
+                                <div className="expertise-item">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind5.png" alt="Startups" />
+                                        <h5 className="expertise-title">STARTUPS</h5>
                                     </div>
-                                    <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
+                                    <p className="expertise-desc">
+                                        Transforming disruptive ideas into high-impact digital experiences across every continent.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInRight" speed="fast">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <div className="d-flex align-items-end gap-3 mb-4">
-                                        <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind6.png" alt="" />
-                                        <h5>B2B</h5>
+                            </AnimateOnScroll>
+                        </div>
+
+                        {/* Column 3: Right */}
+                        <div className="col-md-4 expertise-col-right">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
+                                <div className="expertise-item mb-5">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind3.png" alt="Food & Beverage" />
+                                        <h5 className="expertise-title">FOOD & BEVERAGE</h5>
                                     </div>
-                                    <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
+                                    <p className="expertise-desc">
+                                        Honest analytics and actionable insights to ensure your investment drives measurable impact.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
+                            </AnimateOnScroll>
+
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={200}>
+                                <div className="expertise-item">
+                                    <div className="d-flex align-items-center gap-3 mb-3">
+                                        <img className="expertise-icon" src="/assets/images/ind6.png" alt="B2B" />
+                                        <h5 className="expertise-title">B2B</h5>
+                                    </div>
+                                    <p className="expertise-desc">
+                                        Honest analytics and actionable insights to ensure your investment drives measurable impact.
+                                    </p>
+                                </div>
+                            </AnimateOnScroll>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
-
         </>
     );
 }

@@ -32,19 +32,24 @@ function CustomGuide() {
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="guide-content" style={{ maxWidth: 'unset' }}>
                                 <div className="d-flex flex-column gspace-2">
-                                    <h2 className="title-heading mb-3" style={{ WebkitTextFillColor: '#fff' }}>Scale your vision<br /> globally with<br /> McCollins Media</h2>
+                                    <h2 className="scale-vision-heading">
+                                        <span className="text-playfair">Scale </span>
+                                        <span className="text-delight">YOUR VISION</span><br />
+                                        <span className="text-delight">GLOBALLY WITH</span><br />
+                                        <span className="text-delight">MCCOLLINS MEDIA</span>
+                                    </h2>
                                     <div className="d-block d-md-none" >
-                                        <p style={{ fontWeight: 100, color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                        <p className="scale-vision-desc">Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
                                         <div className="guide-video-container">
                                             <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
-                                            <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                                            <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
                                         </div>
                                     </div>
                                     <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', flexDirection: 'row' }} >
-                                        <p style={{ fontWeight: 100, maxWidth: '40%', color: '#adadad' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
+                                        <p className="scale-vision-desc" style={{ maxWidth: '40%' }}>Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.</p>
                                         <div className="guide-video-container">
                                             <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
-                                            <p style={{ maxWidth: '100%', marginBottom: '0px', color: '#fff' }}>See How We Help<br /> Brands Grow</p>
+                                            <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
                                         </div>
                                     </div>
                                 </div>

@@ -1,90 +1,106 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
-import CounterOnScroll from "../Hooks/CounterOnScroll";
 
 function WhyChooseUs() {
-
     return (
         <>
             <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
                 <div className="hero-container">
-                    {/* <div className="d-flex flex-column flex-lg-row gspace-5"> */}
-
-                    <div className="row">
-                        <div className="col-md-6" >
+                    <div className="row align-items-start mb-5">
+                        <div className="col-md-8">
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <div className="sub-heading">
-                                    <i className="fa-regular fa-circle-dot"></i>
+                                    <i className="fa-regular fa-circle-dot case-study-dot"></i>
                                     <span>Why Choose McCollins Media</span>
                                 </div>
                             </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <h2 className="title-heading" style={{ marginBottom: "0px", marginTop: "20px" }}>
-                                    Your global growth
-                                    <br className="d-none d-md-block" />
-                                    {` `}is the benchmark of
-                                    <br className="d-none d-md-block" />
-                                    {` `}our performance.
+                                <h2 className="choose-us-heading">
+                                    <span className="line-delight">YOUR GLOBAL GROWTH IS</span>
+                                    <span className="line-delight">THE BENCHMARK OF <span className="line-playfair d-inline">Our</span></span>
+                                    <span className="line-playfair">Performance.</span>
                                 </h2>
                             </AnimateOnScroll>
-                        </div>
-                        <div className="col-md-6 align-self-end" >
-                            <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                <p style={{ fontWeight: 100, margin: '20px 0px' }}>
-                                    In a borderless digital landscape, the right partnership defines your trajectory. At McCollins, we go beyond standard campaigns to craft globally fluent strategies that drive measurable, long-term success.
-                                </p>
-                            </AnimateOnScroll>
 
-                            <div>
-                                <a href="/contact" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
-
-                                    <div className="btn-title">
-                                        <span>Get Free Consultation</span>
+                            <div className="mt-4">
+                                <a href="/contact" className="btn-case-studies-more">
+                                    <span>Get Free Consultation</span>
+                                    <div className="btn-icon-circle">
+                                        <i className="fa-solid fa-arrow-right"></i>
                                     </div>
-
-                                    <div className="icon-circle" style={{ backgroundColor: '#000' }}>
-                                        <i className="fa-solid fa-arrow-right" style={{ color: '#fff' }}></i>
-                                    </div>
-
                                 </a>
                             </div>
                         </div>
+                        <div className="col-md-4 pt-md-4 mt-md-5">
+                            <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                <p className="choose-us-desc-new">
+                                    In a borderless digital landscape, the right partnership defines your trajectory. At McCollins, we go beyond standard campaigns to craft globally fluent strategies that drive measurable, long-term success.
+                                </p>
+                            </AnimateOnScroll>
+                        </div>
                     </div>
 
+                    <div className="row g-4 pt-4 mt-1">
+                        {/* Card 1 */}
+                        <div className="col-md-4">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                <div className="choose-us-card-new">
+                                    <div className="choose-us-img-wrapper">
+                                        <img src="/tr1.png" alt="Data-Driven Approach" className="choose-us-img-new" />
+                                    </div>
+                                    <h5 className="choose-us-title-new mt-3">
+                                        <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
+                                        <span className="text-delight">DATA-DRIVEN </span>
+                                        <span className="text-playfair">Approach</span>
+                                    </h5>
+                                    <p className="expertise-desc mt-2">
+                                        Fueling your brand's evolution with precision analytics and real-time market insights.
+                                    </p>
+                                </div>
+                            </AnimateOnScroll>
+                        </div>
 
-                    <div className="row g-4 pt-5 mt-1">
-                        <AnimateOnScroll animation="fadeInLeft" speed="slow">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <img src="/assets/images/data-driven-approach.png" alt="" style={{ width: '100%', height: 'auto' }} />
-                                    <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Data-Driven Approach</h5>
-                                    <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
+                        {/* Card 2 */}
+                        <div className="col-md-4">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
+                                <div className="choose-us-card-new">
+                                    <div className="choose-us-img-wrapper">
+                                        <img src="/tr2.png" alt="Creative & Innovative" className="choose-us-img-new" />
+                                    </div>
+                                    <h5 className="choose-us-title-new mt-3">
+                                        <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
+                                        <span className="text-playfair">Creative </span>
+                                        <span className="text-delight">& INNOVATIVE</span>
+                                    </h5>
+                                    <p className="expertise-desc mt-2">
+                                        Transforming disruptive ideas into high-impact digital experiences across every continent.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <img src="/assets/images/creative-innovative.png" alt="" style={{ width: '100%', height: 'auto' }} />
-                                    <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Creative & Innovative</h5>
-                                    <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
+                            </AnimateOnScroll>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="col-md-4">
+                            <AnimateOnScroll animation="fadeInUp" speed="normal" delay={200}>
+                                <div className="choose-us-card-new">
+                                    <div className="choose-us-img-wrapper">
+                                        <img src="/tr3.png" alt="Transparent Reporting" className="choose-us-img-new" />
+                                    </div>
+                                    <h5 className="choose-us-title-new mt-3">
+                                        <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
+                                        <span className="text-delight">TRANSPARENT </span>
+                                        <span className="text-playfair">Reporting</span>
+                                    </h5>
+                                    <p className="expertise-desc mt-2">
+                                        Honest analytics and actionable insights to ensure your investment drives measurable impact.
+                                    </p>
                                 </div>
-                            </div>
-                        </AnimateOnScroll>
-                        <AnimateOnScroll animation="fadeInLeft" speed="fast">
-                            <div className="col-md-4">
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
-                                    <img src="/assets/images/transparent-reporting.png" alt="" style={{ width: '100%', height: 'auto' }} />
-                                    <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Transparent Reporting</h5>
-                                    <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
-                                </div>
-                            </div>
-                        </AnimateOnScroll>
+                            </AnimateOnScroll>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

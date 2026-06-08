@@ -187,17 +187,16 @@ const SHEETS_URL =
     "https://script.google.com/macros/s/AKfycbxW9tElDCU3C6Xhaaxz7UJe9k3REXVkkNeOZSqAeG_WwpEF7PPeuud2w2Bixsk20jpM/exec";
 
 // ✅ Moved OUTSIDE NewsletterSection so it's never redefined on re-render
-const FormContent = ({ inputStyle, buttonStyle, btnTitleStyle, email, setEmail, loading, handleSubmit }) => (
+const FormContent = ({ email, setEmail, loading, handleSubmit }) => (
     <form
         id="newsletterForm"
         onSubmit={handleSubmit}
-        className="needs-validation"
+        className="newsletter-form-new"
         noValidate
-        style={{ border: "1px solid #666", width: "100%" }}
     >
-        <div className="input-container">
+        <div className="input-container-new">
             <input
-                style={inputStyle}
+                className="newsletter-input-new"
                 type="email"
                 name="newsletter-email"
                 id="newsletter-email"
@@ -208,20 +207,17 @@ const FormContent = ({ inputStyle, buttonStyle, btnTitleStyle, email, setEmail, 
             />
         </div>
         <button
-            className="btn btn-primary"
+            className="newsletter-button-new"
             type="submit"
-            style={buttonStyle}
             disabled={loading}
         >
-            <span className="btn-title" style={btnTitleStyle}>
-                <span>{loading ? "Subscribing..." : "Subscribe"}</span>
-            </span>
-            <span className="icon-circle">
+            <span>{loading ? "Subscribing..." : "Subscribe"}</span>
+            <div className="newsletter-btn-icon-circle">
                 {loading
                     ? <i className="fa-solid fa-spinner fa-spin"></i>
                     : <i className="fa-solid fa-arrow-right"></i>
                 }
-            </span>
+            </div>
         </button>
     </form>
 );
@@ -283,7 +279,7 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
     };
 
     return (
-        <div className="section">
+        <div className="section newsletter-section-new">
 
             {toast && (
                 <div
@@ -353,55 +349,35 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
                                 background-image: none !important;
                                 text-align: left !important;
                                 align-items: normal !important;
+                                padding: 0 !important;
                             }
                             .newsletter-layout::before {
                                 background-image: none !important;
                             }
                         `}</style>
 
-                        <div className="d-flex flex-column gspace-5 position-relative z-2">
+                        <div className="d-flex flex-column gspace-4 position-relative z-2 w-100">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="d-flex flex-column gspace-2">
-                                    <h2 className="title-heading text-align-left">
-                                        Stay Ahead in Digital Marketing
+                                    <h2 className="newsletter-heading">
+                                        <span className="text-delight">STAY AHEAD IN DIGITAL </span>
+                                        <span className="text-playfair">Marketing</span>
                                     </h2>
-                                    <p className="text-align-left" style={{ fontWeight: 100 }}>
+                                    <p className="newsletter-desc-new">
                                         Get exclusive insights, trends, and strategies delivered straight to your inbox.
                                         Subscribe now!
                                     </p>
                                 </div>
                             </AnimateOnScroll>
 
-                            {/* Desktop */}
-                            <div className="d-none d-md-block">
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <FormContent
-                                        inputStyle={{ padding: "5px 20px" }}
-                                        buttonStyle={{}}
-                                        btnTitleStyle={{}}
-                                        email={email}
-                                        setEmail={setEmail}
-                                        loading={loading}
-                                        handleSubmit={handleSubmit}
-                                    />
-                                </AnimateOnScroll>
-                            </div>
-
-                            {/* Mobile */}
-                            <div className="d-block d-md-none">
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <FormContent
-                                        inputStyle={{ padding: "12px 14px", marginBottom: "14px" }}
-                                        buttonStyle={{ padding: "3px" }}
-                                        btnTitleStyle={{ padding: "3px" }}
-                                        email={email}
-                                        setEmail={setEmail}
-                                        loading={loading}
-                                        handleSubmit={handleSubmit}
-                                    />
-                                </AnimateOnScroll>
-                            </div>
-
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <FormContent
+                                    email={email}
+                                    setEmail={setEmail}
+                                    loading={loading}
+                                    handleSubmit={handleSubmit}
+                                />
+                            </AnimateOnScroll>
                         </div>
                     </div>
                 </div>

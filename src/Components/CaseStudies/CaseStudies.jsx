@@ -1,195 +1,279 @@
-import React from "react";
-import { caseStudiesData } from "../../Data/CaseStudiesData";
-import CaseStudyCard from "../Card/CaseStudiesCard";
+import React, { useRef, useEffect, useState } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-const CaseStudiesSection = ({ noPadding }) => {
+const CaseStudiesSection = () => {
+    const trackRef = useRef(null);
+    const isMouseDownRef = useRef(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const studies = [
+        {
+            title: "PIONEER",
+            subtitle: "Website",
+            image: "/assets/images/pioneer.jpg",
+            link: "/case_studies/pioneer",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "OAK BERRY",
+            subtitle: "Digital Marketing",
+            image: "/assets/images/oakberry.jpg",
+            link: "/case_studies/oakberry",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "VOSS DUBAI",
+            subtitle: "Digital Marketing",
+            image: "/assets/images/voss.jpg",
+            link: "/case_studies/voss-dubai",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "BETTER LIFE",
+            subtitle: "Performance Marketing",
+            image: "/assets/images/better_life.png",
+            link: "/case_studies/better-life",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "DUBAI AIRPORT FREEZONE",
+            subtitle: "App Design",
+            image: "/assets/images/dubai.jpg",
+            link: "/case_studies/dubai-airport-freezone",
+            themeClass: "theme-light-text"
+        }
+    ];
+
+    // Triple studies for seamless infinite scrolling
+    const tripledStudies = [...studies, ...studies, ...studies];
+
+    // Set initial scroll position to start of middle set
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+        
+        const setInitialScroll = () => {
+            const children = track.children;
+            if (children.length >= 5) {
+                const firstChild = children[0];
+                const targetChild = children[5];
+                if (firstChild && targetChild) {
+                    const singleSetWidth = targetChild.offsetLeft - firstChild.offsetLeft;
+                    track.scrollLeft = singleSetWidth;
+                }
+            }
+        };
+
+        const timer = setTimeout(setInitialScroll, 150);
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Infinite auto-scrolling loop
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+
+        let animationFrameId;
+        const speed = 0.8; // scroll speed (pixels per frame)
+
+        const animate = () => {
+            if (!isMouseDownRef.current && !isHovered) {
+                track.scrollLeft += speed;
+
+                const children = track.children;
+                if (children.length >= 5) {
+                    const firstChild = children[0];
+                    const targetChild = children[5];
+                    if (firstChild && targetChild) {
+                        const singleSetWidth = targetChild.offsetLeft - firstChild.offsetLeft;
+                        
+                        if (track.scrollLeft >= singleSetWidth * 2) {
+                            track.scrollLeft -= singleSetWidth;
+                        } else if (track.scrollLeft <= 10) {
+                            track.scrollLeft += singleSetWidth;
+                        }
+                    }
+                }
+            }
+            animationFrameId = requestAnimationFrame(animate);
+        };
+
+        animationFrameId = requestAnimationFrame(animate);
+
+        return () => {
+            cancelAnimationFrame(animationFrameId);
+        };
+    }, [isHovered]);
+
+    // Drag to scroll logic
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+
+        let startX;
+        let scrollLeft;
+        let hasMoved = false;
+
+        const onMouseDown = (e) => {
+            isMouseDownRef.current = true;
+            startX = e.pageX - track.offsetLeft;
+            scrollLeft = track.scrollLeft;
+            hasMoved = false;
+        };
+
+        const onMouseLeave = () => {
+            isMouseDownRef.current = false;
+        };
+
+        const onMouseUp = () => {
+            isMouseDownRef.current = false;
+        };
+
+        const onMouseMove = (e) => {
+            if (!isMouseDownRef.current) return;
+            e.preventDefault();
+            const x = e.pageX - track.offsetLeft;
+            const walk = (x - startX) * 1.5; // Scroll speed multiplier
+            if (Math.abs(walk) > 3) {
+                hasMoved = true;
+            }
+            track.scrollLeft = scrollLeft - walk;
+        };
+
+        const onClick = (e) => {
+            if (hasMoved) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        };
+
+        track.addEventListener('mousedown', onMouseDown);
+        track.addEventListener('mouseleave', onMouseLeave);
+        track.addEventListener('mouseup', onMouseUp);
+        track.addEventListener('mousemove', onMouseMove);
+        track.addEventListener('click', onClick, true);
+
+        return () => {
+            track.removeEventListener('mousedown', onMouseDown);
+            track.removeEventListener('mouseleave', onMouseLeave);
+            track.removeEventListener('mouseup', onMouseUp);
+            track.removeEventListener('mousemove', onMouseMove);
+            track.removeEventListener('click', onClick, true);
+        };
+    }, []);
+
+    const handleScrollNext = () => {
+        const track = trackRef.current;
+        if (!track) return;
+        const children = track.children;
+        let cardWidth = 340;
+        if (children.length > 0) {
+            cardWidth = children[0].offsetWidth + 20; // card width + gap
+        }
+        track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    };
+
+    const handleScrollPrev = () => {
+        const track = trackRef.current;
+        if (!track) return;
+        const children = track.children;
+        let cardWidth = 340;
+        if (children.length > 0) {
+            cardWidth = children[0].offsetWidth + 20;
+        }
+        track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    };
 
     return (
         <>
-            <div className="section">
+            <div className="section case-studies-section-container">
                 <div className="hero-container">
-
-                    {/* <div className="row">
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="sub-heading">
-                                <i className="fa-regular fa-circle-dot"></i>
-                                <span>Case Study</span>
-                            </div>
-                        </AnimateOnScroll>
-
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ marginBottom: "0px", marginTop: "20px" }}>
-                                Witness the impact of globally fluent digital strategies
-                                <br className="d-none d-md-block" />
-                                {` `}these key sectors.
-                            </h2>
-                        </AnimateOnScroll>
-                    </div> */}
-
-                    <div className="row">
-                        <div className="col-md-6" >
+                    <div className="row align-items-start mb-4">
+                        <div className="col-md-8">
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <div className="sub-heading">
-                                    <i className="fa-regular fa-circle-dot"></i>
+                                    <i className="fa-regular fa-circle-dot case-study-dot"></i>
                                     <span>Case Study</span>
                                 </div>
                             </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <h2 className="title-heading" style={{ marginBottom: "0px", marginTop: "20px" }}>
-                                    Witness the impact
-                                    <br className="d-none d-md-block" />
-                                    {` `}of globally fluent
-                                    <br className="d-none d-md-block" />
-                                    {` `}digital strategies.
+                                <h2 className="case-studies-heading">
+                                    <span className="line-delight">WITNESS THE IMPACT</span>
+                                    <span className="line-delight">OF GLOBALLY FLUENT</span>
+                                    <span className="line-playfair">Digital Strategies.</span>
                                 </h2>
                             </AnimateOnScroll>
 
-                            <div className="mt-4">
-                                <a href="/case_studies" className="btn btn-primary" style={{ maxWidth: 'fit-content' }}>
-
-                                    <div className="btn-title">
-                                        <span>More Case Studies</span>
+                            <div className="mt-4 d-none d-md-block">
+                                <a href="/case_studies" className="btn-case-studies-more">
+                                    <span>More Case Studies</span>
+                                    <div className="btn-icon-circle">
+                                        <i className="fa-solid fa-arrow-right"></i>
                                     </div>
-
-                                    <div className="icon-circle" style={{ backgroundColor: '#000' }}>
-                                        <i className="fa-solid fa-arrow-right" style={{ color: '#fff' }}></i>
-                                    </div>
-
                                 </a>
                             </div>
                         </div>
-                        <div className="col-md-6 align-self-center" >
+                        <div className="col-md-4 pt-md-4 mt-md-5">
                             <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                <p style={{ fontWeight: 100, margin: '20px 0px' }}>
+                                <p className="case-studies-desc-new">
                                     Witness the transformative impact of strategies engineered for global resonance and measurable market dominance.
                                 </p>
                             </AnimateOnScroll>
                         </div>
-
                     </div>
 
-                    <div className="row mt-1 pt-5">
-                        <div className="col-md-8 card-col">
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/oakberry.jpg)" }}>
+                    <div 
+                        className="case-studies-track-container position-relative"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        {/* Navigation buttons */}
+                        <button 
+                            className="case-studies-nav-btn prev-btn" 
+                            onClick={handleScrollPrev}
+                            aria-label="Previous Case Study"
+                        >
+                            <i className="fa-solid fa-chevron-left"></i>
+                        </button>
+                        
+                        <button 
+                            className="case-studies-nav-btn next-btn" 
+                            onClick={handleScrollNext}
+                            aria-label="Next Case Study"
+                        >
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </button>
 
-                                    <div className="industry-overlay"></div>
-
-                                    <div className="industry-content">
-                                        <div className="d-flex align-items-end gap-1 mb-1">
-                                            <h6>OAK BERRY</h6>
-                                        </div>
-                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
+                        <div className="case-studies-track" ref={trackRef}>
+                            {tripledStudies.map((study, idx) => (
+                                <a 
+                                    key={`${idx}-${study.title}`}
+                                    href={study.link} 
+                                    className={`case-study-card-new ${study.themeClass}`} 
+                                    style={{ backgroundImage: `url(${study.image})` }}
+                                >
+                                    <div className="card-image-overlay"></div>
+                                    <div className="card-content">
+                                        <h4 className="card-title">{study.title}</h4>
+                                        <p className="card-subtitle">{study.subtitle}</p>
                                     </div>
-
-                                    <a href="/case_studies/oakberry">
-                                        <div className="industry-hover-icon">
-                                            <i className="fa-solid fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </AnimateOnScroll>
-                        </div>
-
-                        <div className="col-md-4 card-col pt-2 pt-md-0">
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/voss.jpg)" }}>
-
-                                    <div className="industry-overlay"></div>
-
-                                    <div className="industry-content">
-                                        <div className="d-flex align-items-end gap-1 mb-1">
-                                            <h6>VOSS DUBAI</h6>
-                                        </div>
-                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
-                                    </div>
-
-                                    <a href="/case_studies/voss-dubai">
-                                        <div className="industry-hover-icon">
-                                            <i className="fa-solid fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </AnimateOnScroll>
+                                </a>
+                            ))}
                         </div>
                     </div>
 
-
-                    <div className="row mt-3">
-                        <div className="col-md-4 card-col">
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/dubai.jpg)" }}>
-
-                                    <div className="industry-overlay"></div>
-
-                                    <div className="industry-content">
-                                        <div className="d-flex align-items-end gap-1 mb-1">
-                                            <h6>Dubai Airport Freezone</h6>
-                                        </div>
-                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >APP Design</p>
-                                    </div>
-
-                                    <a href="/case_studies/dubai-airport-freezone">
-                                        <div className="industry-hover-icon">
-                                            <i className="fa-solid fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </AnimateOnScroll>
-                        </div>
-
-                        <div className="col-md-8 card-col pt-2 pt-md-0">
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <div className="industry-card" style={{ backgroundImage: "url(/assets/images/pioneer.jpg)" }}>
-
-                                    <div className="industry-overlay"></div>
-
-                                    <div className="industry-content">
-                                        <div className="d-flex align-items-end gap-1 mb-1">
-                                            <h6>Pioneer</h6>
-                                        </div>
-                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Website</p>
-                                    </div>
-
-                                    <a href="/case_studies/pioneer">
-                                        <div className="industry-hover-icon">
-                                            <i className="fa-solid fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </AnimateOnScroll>
-                        </div>
-                    </div>
-
-                    {/* <div className="row mt-1">
-                        <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                            <div className="mb-2" style={{ backgroundImage: 'url(/assets/images/dubai.jpg)' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <img className="img-fluid" style={{ width: '70px' }} src="/assets/images/ind4.jpg" alt="" />
-                                    <h5>Technology</h5>
-                                </div>
-                                <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
+                    {/* Mobile only button display underneath */}
+                    <div className="mt-4 d-block d-md-none text-center">
+                        <a href="/case_studies" className="btn-case-studies-more">
+                            <span>More Case Studies</span>
+                            <div className="btn-icon-circle">
+                                <i className="fa-solid fa-arrow-right"></i>
                             </div>
-                        </div>
-                        <div className="col-md-8" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                            <div className="mb-2" style={{ backgroundImage: 'url(/assets/images/pioneer.jpg)' }} >
-                                <div className="d-flex align-items-end gap-3 mb-4">
-                                    <h5>Startups</h5>
-                                </div>
-                                <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
-                            </div>
-                        </div>
-                    </div> */}
-
-
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </>
     );
 };
