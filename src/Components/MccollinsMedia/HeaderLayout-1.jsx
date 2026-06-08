@@ -8,7 +8,7 @@ function HeaderLayout1() {
     return (
         <>
             <div className="section HdLayt1">
-                <div className="container">
+                <div className="hero-container">
                     <div className="expertise-title">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="sub-heading">

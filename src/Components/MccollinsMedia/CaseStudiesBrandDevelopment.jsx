@@ -8,7 +8,7 @@ function CaseStudiesBrandDevelopment() {
     return (
         <>
             <div className="section HdLayt1" style={{ backgroundColor: 'var(--precision-automation-bg)' }}>
-                <div className="container">
+                <div className="hero-container">
                     <div className="expertise-title">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="sub-heading">

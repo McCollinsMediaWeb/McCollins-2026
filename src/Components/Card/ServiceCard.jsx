@@ -4,22 +4,17 @@ import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 const ServiceCard = ({ icon, title, content, link, speed = "" }) => {
     return (
         <>
-            <AnimateOnScroll animation="fadeInLeft" speed={speed}>
-                <div className="card card-service" style={{ backgroundColor: 'var(--background-color)', backgroundImage: 'none', border: '1px solid #5d5d5d' }}>
-                    <div className="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                        {/* <div>
-                            <div className="service-icon-wrapper">
-                                <div className="service-icon">
-                                    <img src={icon} alt="Service Icon" className="img-fluid" />
-                                </div>
+            <AnimateOnScroll animation="fadeInLeft" speed={speed} style={{ height: '100%' }}>
+                <div className="card card-service" style={{ backgroundColor: 'var(--background-color)', backgroundImage: 'none', border: '1px solid #5d5d5d', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                    <div>
+                        <div className="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
+                            <div className="service-title">
+                                <h4>{title}</h4>
                             </div>
-                        </div> */}
-                        <div className="service-title">
-                            <h4>{title}</h4>
                         </div>
+                        <p className="custom-card-text" style={{ marginTop: '15px', fontWeight: 100 }}>{content}</p>
                     </div>
-                    <p className="custom-card-text">{content}</p>
-                    <a href={link} className="btn btn-accent" style={{ backgroundColor: '#0d0d0d', width: 'fit-content' }}>
+                    <a href={link} className="btn btn-accent mt-3" style={{ backgroundColor: '#0d0d0d', width: 'fit-content' }}>
                         <div className="btn-title">
                             <span>Read More</span>
                         </div>

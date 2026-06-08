@@ -53,29 +53,29 @@ function WhyChooseUs() {
                     </div>
 
 
-                    <div className="row mt-1 pt-5">
+                    <div className="row g-4 pt-5 mt-1">
                         <AnimateOnScroll animation="fadeInLeft" speed="slow">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                    <img src="/assets/images/data-driven-approach.png" alt="" style={{ width: '100%', height: '100%' }} />
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
+                                    <img src="/assets/images/data-driven-approach.png" alt="" style={{ width: '100%', height: 'auto' }} />
                                     <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Data-Driven Approach</h5>
                                     <p style={{ fontWeight: 100 }}>Fueling your brand's evolution with precision analytics and real-time market insights.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                                <div className="mb-2" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                    <img src="/assets/images/creative-innovative.png" alt="" style={{ width: '100%', height: '100%' }} />
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
+                                    <img src="/assets/images/creative-innovative.png" alt="" style={{ width: '100%', height: 'auto' }} />
                                     <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Creative & Innovative</h5>
                                     <p style={{ fontWeight: 100 }}>Transforming disruptive ideas into high-impact digital experiences across every continent.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInLeft" speed="fast">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px' }} >
-                                    <img src="/assets/images/transparent-reporting.png" alt="" style={{ width: '100%', height: '100%' }} />
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '25px 30px', height: '100%' }} >
+                                    <img src="/assets/images/transparent-reporting.png" alt="" style={{ width: '100%', height: 'auto' }} />
                                     <h5 className="choose-us-point my-3" style={{ fontWeight: 500 }}>Transparent Reporting</h5>
                                     <p style={{ fontWeight: 100 }}>Honest analytics and actionable insights to ensure your investment drives measurable impact. </p>
                                 </div>

@@ -81,7 +81,7 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <div className="d-flex align-items-end gap-1 mb-1">
                                             <h6>OAK BERRY</h6>
                                         </div>
-                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
+                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
 
                                     <a href="/case_studies/oakberry">
@@ -103,7 +103,7 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <div className="d-flex align-items-end gap-1 mb-1">
                                             <h6>VOSS DUBAI</h6>
                                         </div>
-                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
+                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Digital Marketing</p>
                                     </div>
 
                                     <a href="/case_studies/voss-dubai">
@@ -129,7 +129,7 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <div className="d-flex align-items-end gap-1 mb-1">
                                             <h6>Dubai Airport Freezone</h6>
                                         </div>
-                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >APP Design</p>
+                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >APP Design</p>
                                     </div>
 
                                     <a href="/case_studies/dubai-airport-freezone">
@@ -152,7 +152,7 @@ const CaseStudiesSection = ({ noPadding }) => {
                                         <div className="d-flex align-items-end gap-1 mb-1">
                                             <h6>Pioneer</h6>
                                         </div>
-                                        <p style={{ fontFamily: 'MyCustomFont', fontWeight: 100, color: '#fff' }} >Website</p>
+                                        <p style={{ fontFamily: 'Delight', fontWeight: 100, color: '#fff' }} >Website</p>
                                     </div>
 
                                     <a href="/case_studies/pioneer">

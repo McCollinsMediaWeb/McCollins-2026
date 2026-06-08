@@ -15,48 +15,52 @@ function OurServices() {
         <>
             <div className="section pt-5">
                 <div className="hero-container">
-                    <div className="row text-center">
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="sub-heading justify-content-center">
-                                <i className="fa-regular fa-circle-dot"></i>
-                                <span>Our Services</span>
-                            </div>
-                        </AnimateOnScroll>
+                    <div className="row align-items-center">
+                        <div className="col-md-8 text-start">
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                <div className="sub-heading" style={{ marginBottom: '20px', justifyContent: 'center' }}>
+                                    <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
+                                    <span style={{ fontFamily: 'Delight', fontWeight: 'bold', textTransform: 'uppercase' }}>Our Services</span>
+                                </div>
+                            </AnimateOnScroll>
 
-                        <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ marginBottom: "0px", marginTop: "20px" }}>
-                                Local resonance
-                                <br className="d-none d-md-block" />
-                                {` `}Global Performance.
-                            </h2>
-                        </AnimateOnScroll>
-                    </div>
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                <h2 className="our-services-title">
+                                    <span className="sans-bold">LOCAL RESONANCE GLOBAL</span>
+                                    <br />
+                                    <span className="serif-italic">Performance</span>
+                                </h2>
+                            </AnimateOnScroll>
 
-
-                    <div className="row mt-5 pt-3" >
-                        <div className="col-md-7" >
-                            <div className="">
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <h3 className="title-heading text-center text-md-start" style={{ WebkitTextFillColor: '#3876fc', marginBottom: '40px' }}>
-                                        What We Do Best
+                            <div className="mt-5 pt-3">
+                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                    <h3 className="title-heading text-start sans-bold" style={{ WebkitTextFillColor: '#3876fc', marginBottom: '40px', fontSize: '1.8rem', letterSpacing: '0.5px' }}>
+                                        WHAT WE DO BEST
                                     </h3>
                                 </AnimateOnScroll>
 
-                                <div className="point-arrow-list-wrapper d-none d-md-flex" style={{ gap: '50px' }}>
+                                <div className="point-arrow-list-wrapper d-none d-md-flex" style={{ gap: '60px', justifyContent: 'space-between' }}>
                                     <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                         <div>
                                             <ul className="point-arrow-list">
                                                 <li><h5>Brand Development</h5></li>
                                                 <li><h5>Web</h5></li>
+                                            </ul>
+                                        </div>
+                                    </AnimateOnScroll>
+
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={150}>
+                                        <div>
+                                            <ul className="point-arrow-list">
+                                                <li><h5>Performance Marketing</h5></li>
                                                 <li><h5>Social Media</h5></li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>
 
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={300}>
                                         <div>
                                             <ul className="point-arrow-list">
-                                                <li><h5>Performance Marketing</h5></li>
                                                 <li><h5>Marketing Automation</h5></li>
                                                 <li><h5>Content Production</h5></li>
                                             </ul>
@@ -78,28 +82,16 @@ function OurServices() {
                                         </div>
                                     </AnimateOnScroll>
                                 </div>
-
                             </div>
                         </div>
 
-                        <div className="col-md-5" >
-                            {/* <div className="d-flex flex-column">
-                                <div className="card-expertise-wrapper text-center text-md-start">
-                                    <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                        <h3 className="title-heading">
-                                            The Best Solutions For Your Business
-                                        </h3>
-                                    </AnimateOnScroll>
-                                    <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                        <p style={{ fontWeight: 100, marginTop: '30px' }}>
-                                            Boost your online presence with the leading social media agency. Our expert team offers tailored strategies and effective solutions to drive traffic and maximize conversions.
-                                        </p>
-                                    </AnimateOnScroll>
-                                </div>
-                            </div> */}
-                            <AnimateOnScroll animation="fadeInDown" speed="normal">
-                                <img className="img-fluid" src="/assets/images/rounds-shapes.png" />
-                            </AnimateOnScroll>
+                        <div className="col-md-4 text-center mt-4 mt-md-0">
+                            <img 
+                                className="img-fluid flower-animated" 
+                                src="/flower.png" 
+                                alt="Flower Shape"
+                                style={{ maxHeight: '300px', objectFit: 'contain' }}
+                            />
                         </div>
                     </div>
 

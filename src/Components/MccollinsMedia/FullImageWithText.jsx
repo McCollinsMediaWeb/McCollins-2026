@@ -39,7 +39,7 @@ function FullImageWithText({ desktopImage, mobileImage, title, subtitle, content
                 marginBottom: mb
             }}
         >
-            <div className="container">
+            <div className="hero-container">
                 <div className="row">
 
                     {/* Left column (empty, image visible) */}
@@ -49,7 +49,7 @@ function FullImageWithText({ desktopImage, mobileImage, title, subtitle, content
                     <div className="col-md-6">
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                             <div className="IndustryItem FullScreenItem">
-                                <div className="container">
+                                <div className="hero-container">
                                     <div className="row align-items-center">
                                         <div className="StWrp1">
                                             <h3 className={`InIt1 ${iconClass}`} style={{ color: '#fff' }}>{title}</h3>

@@ -338,7 +338,7 @@ function NewsletterSection({ btnColor = "#3876fc" }) {
                 }
             `}</style>
 
-            <div className="hero-container" style={{ maxWidth: "1380px" }}>
+            <div className="hero-container">
                 <div className="newsletter-wrapper">
                     <style>{`
                         .newsletter-wrapper::before {

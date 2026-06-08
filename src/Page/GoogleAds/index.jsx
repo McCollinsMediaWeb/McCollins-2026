@@ -27,7 +27,7 @@ function GoogleAds() {
 
 
             <div className="section HdLayt1 pb-0">
-                <div className="container">
+                <div className="hero-container">
                     <div className="expertise-title">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
                             <div className="sub-heading">
@@ -46,67 +46,68 @@ function GoogleAds() {
                                     <p className="mt-4" style={{ fontWeight: 100 }}>Google Ads Management involves creating and optimizing campaigns to connect brands with customers searching for specific products.</p>
                                     <p className="mt-4" style={{ fontWeight: 100 }}>As a certified Google Partner, Mccollins Media is a leading agency for Search Engine Marketing in Dubai. We specialize in high-impact lead generation and conversion campaigns, helping businesses achieve their short-term targets faster and more effectively.</p>
                                     <p className="mt-4" style={{ fontWeight: 100 }}>Google Ad Management involves several steps, including:</p>
+                                    <br />
                                 </>
                             </AnimateOnScroll>
                         </div>
                     </div>
 
-                    <div className="row" style={{ marginTop: '1rem' }}>
+                    <div className="row g-4 mt-1">
                         <AnimateOnScroll animation="fadeInLeft" speed="slow">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Campaign planning</h4>
                                     <p className="text-custom-google-ads" style={{ fontWeight: 100, marginTop: '18px' }}>Defining the campaign goals, target audience, and budget.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                                <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Keyword research</h4>
                                     <p className="text-custom-google-ads" style={{ fontWeight: 100, marginTop: '18px' }}>Identifying the keywords that people use to search for the products or services being advertised.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInLeft" speed="fast">
-                            <div className="col-md-4" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }}  >
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-4">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Campaign setup</h4>
                                     <p className="text-custom-google-ads" style={{ fontWeight: 100, marginTop: '18px' }}>Setting up the campaign structure, ad groups and targeting options.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                     </div>
-                    <div className="row" style={{ marginTop: '0.5rem' }}>
+                    <div className="row g-4 mt-1">
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-6">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Ad creation</h4>
                                     <p style={{ fontWeight: 100, marginTop: '18px' }}>Creating compelling and relevant ads that resonate with the target audience.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-6">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Bid management</h4>
                                     <p style={{ fontWeight: 100, marginTop: '18px' }}>Setting the right bid amounts for each ad and keyword to optimize ad performance.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                     </div>
-                    <div className="row" style={{ marginTop: '0.5rem' }}>
+                    <div className="row g-4 mt-1">
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div className="mb-2 mb-md-0" style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-6">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Performance monitoring</h4>
                                     <p style={{ fontWeight: 100, marginTop: '18px' }}>Tracking the campaign performance and making adjustments to improve the ad's performance.</p>
                                 </div>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <div className="col-md-6" style={{ paddingLeft: '0px', paddingRight: '0.5rem' }} >
-                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px' }} >
+                            <div className="col-md-6">
+                                <div style={{ backgroundColor: 'var(--feature-card-bg)', padding: '40px 30px', borderRadius: '5px', height: '100%' }} >
                                     <h4 className="point-google-ads" style={{ color: '#3876fc', lineHeight: '35px' }}>Optimization</h4>
                                     <p style={{ fontWeight: 100, marginTop: '18px' }}>Continuously testing and optimizing the ads to improve their relevance, click-through rate (CTR), and conversion rate.</p>
                                 </div>
@@ -132,7 +133,7 @@ function GoogleAds() {
 
                 <div className="BannerBoxContent">
                     <div className="section">
-                        <div className="container">
+                        <div className="hero-container">
                             <div className="row">
                                 <div className="col-md-6 d-flex align-items-end" >
                                     <AnimateOnScroll animation="fadeInUp" speed="normal">

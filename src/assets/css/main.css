@@ -484,7 +484,7 @@ ul {
 }
 
 .hero-container {
-    max-width: 1280px;
+    max-width: 1350px;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -2479,8 +2479,9 @@ body.lightmode .card-partner {
 }
 
 .service-title {
-    color: var(--accent-color);
-    text-align: start;
+    color: #fff;
+  text-align: start;
+  text-transform: uppercase;
 }
 
 .service-link-footer,
@@ -5166,11 +5167,13 @@ body.lightmode .menu-featured-card .card-text {
 
 
 .ServiceSection {
-    background-image: url(../../../public/assets/images/bg1.jpg);
+    background-color: #000000;
+    background-image: radial-gradient(circle at center, #081730 0%, #000000 80%);
 }
 
 body.lightmode .ServiceSection {
     background-image: url(../../../public/assets/images/bggrey.png);
+    background-color: #f7f7f7;
 }
 
 .HdT1 {
@@ -5648,22 +5651,31 @@ body.lightmode .ServiceSection {
 }
 
 .point-arrow-list li {
+    font-family: 'Delight', sans-serif !important;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
-    color: var(--custom-h5-color);
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .point-arrow-list li h5 {
-    font-weight: 600;
-    color: var(--custom-h5-color);
+    font-family: 'Delight', sans-serif !important;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+
+body.lightmode .point-arrow-list li,
+body.lightmode .point-arrow-list li h5 {
+    color: #000;
 }
 
 .point-arrow-list li::before {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
     background-image: url("/assets/images/arrow-up-right.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -5841,7 +5853,7 @@ body.lightmode .point-arrow-list li::before {
 
     overflow: hidden;
 
-    margin-top: -70px;
+    margin-top: 80px;
 
     padding: 3rem;
 }
@@ -6662,5 +6674,104 @@ body.lightmode .MegamenuHeader .HdT1 {
     .btn-hero .icon-circle {
         width: 36px;
         height: 36px;
+    }
+}
+
+/* ================== Our Services Title Responsiveness ================== */
+.our-services-title {
+    font-size: 4.2rem !important;
+    line-height: 0.95 !important;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.our-services-title span {
+    display: inline-block;
+    white-space: nowrap;
+}
+@media screen and (max-width: 992px) {
+    .our-services-title {
+        font-size: 3.2rem !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .our-services-title {
+        font-size: 1.85rem !important;
+        margin-bottom: 25px;
+    }
+}
+
+/* ================== Flower Asset Floating Spin Animation ================== */
+@keyframes flowerFloatSpin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.flower-animated {
+    animation: flowerFloatSpin 25s linear infinite;
+    will-change: transform;
+}
+
+/* ================== Global Typography Helpers ================== */
+.sans-bold {
+    font-family: 'Delight', sans-serif !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+
+.serif-italic {
+    font-family: 'Playfair Display', serif !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+/* ================== Service Section Split Heading ================== */
+.service-section-title {
+    font-size: 3.8rem !important;
+    line-height: 1.05 !important;
+    color: #fff;
+    margin: 0;
+    font-family: 'Delight', sans-serif !important;
+}
+.service-section-title span {
+    display: inline-block;
+}
+.service-section-desc {
+    font-family: 'Delight', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 440px;
+    margin: 0;
+}
+body.lightmode .service-section-title {
+    color: #000;
+}
+body.lightmode .service-section-desc {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 992px) {
+    .service-section-title {
+        font-size: 2.8rem !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .service-section-title {
+        font-size: 1.85rem !important;
+    }
+    .service-section-desc {
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin-top: 10px;
     }
 }

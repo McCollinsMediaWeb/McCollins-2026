@@ -32,7 +32,7 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
 
             <div className="BannerBoxContent">
                 <div className="section">
-                    <div className="container">
+                    <div className="hero-container">
                         <div className="row">
                             <div className="col-md-6 d-flex align-items-end d-none d-md-flex" >
                                 <div className="guide-video-container">
