@@ -66,24 +66,20 @@ function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage })
                                 width: "100%",
                             }}
                         >
-                            <picture>
-                                {/* Mobile image */}
-                                <source
-                                    media="(max-width: 768px)"
-                                    srcSet={mobileImage}
-                                />
-                                {/* Desktop image (default fallback) */}
-                                <img
-                                    src={desktopImage}
-                                    alt="MainBanner"
-                                    className="mainBannerimage width-full"
-                                    style={{
-                                        width: "100%",
-                                        display: "block",
-                                        objectFit: "cover",
-                                    }}
-                                />
-                            </picture>
+                            <video
+                                src="/herobannervideo.mp4"
+                                poster={desktopImage}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="mainBannerimage width-full"
+                                style={{
+                                    width: "100%",
+                                    display: "block",
+                                    objectFit: "cover",
+                                }}
+                            />
 
                             {/* Gradient Overlay */}
                             <div
