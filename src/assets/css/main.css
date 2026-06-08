@@ -66,17 +66,118 @@
 
 /* ================== 01. Import Vendor ================== */
 
-@import url('/assets/css/vendor/font-family-plus-jakarta-sans.css');
 @import url('/assets/css/vendor/fontawesome.css');
 @import url('/assets/css/vendor/brands.css');
 @import url('/assets/css/vendor/regular.css');
 @import url('/assets/css/vendor/solid.css');
 
+/* Delight Font declarations */
 @font-face {
-    font-family: "MyCustomFont";
-    src: url("/assets/css/vendor/PlusJakartaSans-ExtraLight.ttf") format("truetype");
-    font-weight: normal;
+    font-family: 'Delight';
+    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Delight';
+    src: url('/fonts/Delight/Delight-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Delight';
+    src: url('/fonts/Delight/Delight-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Delight';
+    src: url('/fonts/Delight/Delight-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Delight';
+    src: url('/fonts/Delight/Delight-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Playfair Display Font declarations */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* ================== 02 Root Variables ================== */
@@ -116,7 +217,7 @@
     --box-shadow-bottom-right: 3px 3px 7px 0px rgba(56, 117, 253, 0.44);
     --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(56, 117, 253, 0.44);
     --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(56, 117, 253, 0.44);
-    --global-font: "Plus Jakarta Sans", sans-serif;
+    --global-font: 'Delight', sans-serif;
     --global-border-radius: 25px 25px 25px 25px;
     --animation-normal: 1.25s;
     --animation-slow: 2s;
@@ -351,6 +452,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Playfair Display', serif;
     font-weight: var(--font-weight-bold);
     margin: 0;
 }
@@ -6377,4 +6479,188 @@ body.lightmode .MegamenuHeader .HdT1 {
 
 .animate__fadeIn {
     animation-name: fadeInCustom !important;
+}
+
+/* ================== Home Hero Banner & Video Responsiveness ================== */
+.home-hero-banner {
+    height: auto;
+}
+.home-hero-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .home-hero-banner {
+        height: 100vh !important;
+        height: 100dvh !important;
+    }
+    .home-hero-banner .keep-dark,
+    .home-hero-banner .HeroBanner,
+    .home-hero-banner .home-hero-video-wrapper {
+        height: 100% !important;
+    }
+    .home-hero-video {
+        height: 100vh !important;
+        height: 100dvh !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
+/* ================== Home Hero Banner Typography & Layout ================== */
+.hero-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif !important;
+    font-style: italic !important;
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: none !important;
+}
+
+.hero-title-main {
+    font-size: 6.8rem !important;
+    line-height: 0.95 !important;
+    color: #fff;
+    letter-spacing: -2px;
+}
+
+.hero-title-main .sans-bold {
+    font-family: 'Delight', sans-serif !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+
+.hero-title-main .serif-italic {
+    font-family: 'Playfair Display', serif !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+/* Button style from screenshot */
+.btn-hero {
+    background-color: #3875fd !important;
+    border: none !important;
+    max-width: fit-content !important;
+    box-shadow: none !important;
+    padding: 6px 6px 6px 30px !important;
+    border-radius: 100px !important;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 20px;
+    height: 56px;
+    text-decoration: none;
+}
+.btn-hero .btn-title {
+    padding: 0 !important;
+    width: auto !important;
+}
+.btn-hero .btn-title span {
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px;
+    font-family: 'Delight', sans-serif !important;
+}
+.btn-hero .icon-circle {
+    background-color: #000 !important;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.btn-hero .icon-circle i {
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+/* Bottom Split Text styles */
+.hero-bottom-text {
+    position: absolute;
+    bottom: 50px;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 2;
+}
+.hero-bottom-text-left,
+.hero-bottom-text-right {
+    font-family: 'Delight', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 450px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title-main {
+        font-size: 5.5rem !important;
+    }
+    .hero-subtitle {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home-hero-banner .HeroBannerContent .align-self-center {
+        align-self: center !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-title-container {
+        gap: 8px;
+        margin-top: 40px;
+    }
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .hero-title-main {
+        font-size: 3.2rem !important;
+        letter-spacing: -1px;
+    }
+    .hero-bottom-text {
+        bottom: 30px;
+        left: 20px;
+        right: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-bottom-text-left,
+    .hero-bottom-text-right {
+        max-width: 100%;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    .btn-hero {
+        padding: 6px 6px 6px 20px !important;
+        height: 48px;
+    }
+    .btn-hero .btn-title span {
+        font-size: 0.95rem !important;
+    }
+    .btn-hero .icon-circle {
+        width: 36px;
+        height: 36px;
+    }
 }
