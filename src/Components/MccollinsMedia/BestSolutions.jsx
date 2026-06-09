@@ -96,15 +96,19 @@ function BestSolutions() {
                     </div> */}
 
 
+                    {/* Centered Subheading */}
+                    <div className="d-flex flex-column justify-content-center text-center mb-4">
+                        <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <div className="sub-heading align-self-center" style={{ marginBottom: '20px', justifyContent: 'center' }}>
+                                <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
+                                <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Performance Marketing</span>
+                            </div>
+                        </AnimateOnScroll>
+                    </div>
+
                     <div className="row">
                         <div className="col-md-7" >
                             <div className="expertise-title" style={{ width: '100%' }}>
-                                <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                    <div className="sub-heading">
-                                        <i className="fa-regular fa-circle-dot"></i>
-                                        <span>Performance Marketing</span>
-                                    </div>
-                                </AnimateOnScroll>
 
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
                                     <h2 className="title-heading" style={{ marginBottom: '40px' }}>

@@ -1,56 +1,49 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
+    // Show more / show less states
+    const [quickLinksShowMore, setQuickLinksShowMore] = useState(false);
+    const [servicesShowMore, setServicesShowMore] = useState(false);
+
+    // Mobile collapse states
     const [quickLinksOpen, setQuickLinksOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
+
+    // Links data
+    const allQuickLinks = [
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+        { name: "Service", path: "/service" },
+        { name: "Case Study", path: "/case_studies" },
+        { name: "Industry", path: "/industry" },
+        { name: "Blog", path: "/blog" },
+        { name: "Contact", path: "/contact" }
+    ];
+
+    const allServices = [
+        { name: "Website Development", path: "/service/website-development" },
+        { name: "Social Media Marketing", path: "/service/social-media-marketing" },
+        { name: "Marketing Automation", path: "/service/marketing-automations" },
+        { name: "Google Ads", path: "/service/google-ads" },
+        { name: "Search Engine Optimization", path: "/service/search-engine-optimization" },
+        { name: "Film Production", path: "/service/content-production" },
+        { name: "Brand Development", path: "/service/brand-development" },
+        { name: "Performance Marketing", path: "/service/performance-marketing" }
+    ];
+
+    // Determine what to display
+    const displayedQuickLinks = quickLinksShowMore ? allQuickLinks : allQuickLinks.slice(0, 4);
+    const displayedServices = servicesShowMore ? allServices : allServices.slice(0, 4);
 
     return (
         <div className="section-footer">
             <div className="bg-footer-wrapper">
-                <div className="bg-footer">
+                <div className="bg-footer" style={{ overflow: "hidden" }}>
                     <div className="hero-container position-relative z-2">
                         <div className="d-flex flex-column gspace-2">
                             <div className="row row-cols-lg-4 row-cols-md-2 row-cols-1 grid-spacer-5">
-                                <div className="col col-lg-4">
-                                    <div className="footer-logo-container">
-                                        <div className="logo-container-footer">
-                                            <img src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png" alt="Logo" className="site-logo img-fluid" />
-                                        </div>
-                                        <h5 className="footer-tagline">Elevate Your Brand in the<br /> Digital World.</h5>
-
-                                        <div className="d-flex flex-column gspace-1">
-                                            <div className="social-container">
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.tiktok.com/@mccollinsmedia" className="social-item social-tiktok" aria-label="TikTok">
-                                                        <i className="fa-brands fa-tiktok"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.instagram.com/mccollinsmedia/?hl=en" className="social-item social-instagram" aria-label="Instagram">
-                                                        <i className="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.facebook.com/mccollinsmedia/" className="social-item social-facebook" aria-label="Facebook">
-                                                        <i className="fa-brands fa-facebook"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://www.linkedin.com/company/mccollins-media/" className="social-item social-linkedin" aria-label="LinkedIn">
-                                                        <i className="fa-brands fa-linkedin"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="social-item-wrapper">
-                                                    <a href="https://wa.me/971559564135?text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media" className="social-item social-whatsapp" aria-label="WhatsApp">
-                                                        <i className="fa-brands fa-whatsapp"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                
+                                {/* Column 1: Quick Links */}
                                 <div className="col col-lg-2">
                                     <div className={`footer-quick-links footer-collapse-section ${quickLinksOpen ? 'is-open' : ''}`}>
                                         <h6 className="footer-heading" onClick={() => setQuickLinksOpen(!quickLinksOpen)}>
@@ -60,17 +53,23 @@ const Footer = () => {
                                             </span>
                                         </h6>
                                         <ul className="footer-list">
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="/about">About</a></li>
-                                            <li><a href="/service">Service</a></li>
-                                            <li><a href="/industry">Industry</a></li>
-                                            <li><a href="/blog">Blog</a></li>
-                                            <li><a href="/case_studies">Case Study</a></li>
-                                            <li><a href="/contact">Contact</a></li>
+                                            {displayedQuickLinks.map((link) => (
+                                                <li key={link.name}>
+                                                    <a href={link.path}>{link.name}</a>
+                                                </li>
+                                            ))}
                                         </ul>
+                                        <button 
+                                            className="footer-show-more-btn"
+                                            onClick={() => setQuickLinksShowMore(!quickLinksShowMore)}
+                                        >
+                                            <span>{quickLinksShowMore ? "Show less" : "Show more"}</span>
+                                            <i className={`fa-solid ${quickLinksShowMore ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+                                        </button>
                                     </div>
                                 </div>
 
+                                {/* Column 2: Services */}
                                 <div className="col col-lg-3">
                                     <div className={`footer-services-container footer-collapse-section ${servicesOpen ? 'is-open' : ''}`}>
                                         <h6 className="footer-heading" onClick={() => setServicesOpen(!servicesOpen)}>
@@ -80,18 +79,23 @@ const Footer = () => {
                                             </span>
                                         </h6>
                                         <ul className="footer-list">
-                                            <li><a href="/service/website-development">Website Development</a></li>
-                                            <li><a href="/service/social-media-marketing">Social Media Marketing</a></li>
-                                            <li><a href="/service/marketing-automations">Marketing Automation</a></li>
-                                            <li><a href="/service/google-ads">Google Ads</a></li>
-                                            <li><a href="/service/search-engine-optimization">Search Engine Optimization</a></li>
-                                            <li><a href="/service/content-production">Film Production</a></li>
-                                            <li><a href="/service/brand-development">Brand Development</a></li>
-                                            <li><a href="/service/performance-marketing">Performance Marketing</a></li>
+                                            {displayedServices.map((service) => (
+                                                <li key={service.name}>
+                                                    <a href={service.path}>{service.name}</a>
+                                                </li>
+                                            ))}
                                         </ul>
+                                        <button 
+                                            className="footer-show-more-btn"
+                                            onClick={() => setServicesShowMore(!servicesShowMore)}
+                                        >
+                                            <span>{servicesShowMore ? "Show less" : "Show more"}</span>
+                                            <i className={`fa-solid ${servicesShowMore ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+                                        </button>
                                     </div>
                                 </div>
 
+                                {/* Column 3: Contact Info */}
                                 <div className="col col-lg-3">
                                     <div className="footer-contact-container">
                                         <h6 className="footer-heading">Contact Info</h6>
@@ -120,20 +124,65 @@ const Footer = () => {
                                         </ul>
                                     </div>
                                 </div>
+
+                                {/* Column 4: Right Side CTA & Socials */}
+                                <div className="col col-lg-4">
+                                    <div className="footer-cta-container">
+                                        <div className="d-flex justify-content-between align-items-start gap-3">
+                                            <h4 className="footer-cta-text">
+                                                Ready to start your next<br /> digital experience?
+                                            </h4>
+                                            <button 
+                                                className="footer-scroll-top"
+                                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                aria-label="Scroll to top"
+                                            >
+                                                <i className="fa-solid fa-arrow-up"></i>
+                                            </button>
+                                        </div>
+                                        
+                                        <div className="mt-3">
+                                            <a href="/contact" className="btn-get-in-touch">
+                                                <span className="btn-white-dot"></span>
+                                                <span>GET IN TOUCH</span>
+                                            </a>
+                                        </div>
+
+                                        <div className="social-container-new mt-4">
+                                            <a href="https://www.instagram.com/mccollinsmedia/?hl=en" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="Instagram">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/mccollins-media/" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="LinkedIn">
+                                                <i className="fa-brands fa-linkedin-in"></i>
+                                            </a>
+                                            <a href="https://www.tiktok.com/@mccollinsmedia" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="TikTok">
+                                                <i className="fa-brands fa-tiktok"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div className="footer-content-spacer" style={{ height: '30px' }}></div>
                         </div>
 
-                        <div className="copyright-container">
-                            <span className="copyright">© 2026 All Rights Reserved McCollins Media</span>
+                        {/* Divider Line */}
+                        <div style={{ height: '1px', backgroundColor: 'rgba(255,255,255,0.08)', width: '100%', marginBottom: '25px' }} />
+
+                        <div className="copyright-container mt-0" style={{ border: 'none', paddingTop: '0px' }}>
+                            <span className="copyright" style={{ textTransform: 'uppercase' }}>© 2026 ALL RIGHTS RESERVED McCOLLINS MEDIA</span>
                             <div className="d-flex flex-row gspace-2">
-                                <a href="#" className="legal-link">Terms of Service</a>
-                                <a href="#" className="legal-link">Privacy Policy</a>
+                                <a href="/privacy-policy" className="legal-link">PRIVACY POLICY</a>
                             </div>
                         </div>
 
                         <div className="footer-spacer"></div>
+
+                        {/* Giant Brand Text */}
+                        <div className="footer-brand-name-wrapper">
+                            <h1 className="footer-brand-name">McCOLLINS MEDIA</h1>
+                        </div>
                     </div>
                 </div>
             </div>

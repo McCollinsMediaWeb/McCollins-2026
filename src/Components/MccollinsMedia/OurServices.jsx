@@ -15,14 +15,17 @@ function OurServices() {
         <>
             <div className="section pt-5">
                 <div className="hero-container">
+                    <div className="d-flex flex-column justify-content-center text-center mb-4">
+                        <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <div className="sub-heading align-self-center" style={{ marginBottom: '20px', justifyContent: 'center' }}>
+                                <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
+                                <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Our Services</span>
+                            </div>
+                        </AnimateOnScroll>
+                    </div>
+
                     <div className="row align-items-center">
                         <div className="col-md-8 text-start">
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="sub-heading" style={{ marginBottom: '20px', justifyContent: 'center' }}>
-                                    <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
-                                    <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Our Services</span>
-                                </div>
-                            </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <h2 className="our-services-title">
@@ -34,7 +37,7 @@ function OurServices() {
 
                             <div className="mt-5 pt-3">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <h3 className="title-heading text-start sans-bold" style={{ WebkitTextFillColor: '#3876fc', marginBottom: '40px', fontSize: '1.8rem', letterSpacing: '0.5px' }}>
+                                    <h3 className="text-start sans-bold" style={{ color: '#3876fc', WebkitTextFillColor: '#3876fc', background: 'none', WebkitBackgroundClip: 'initial', marginBottom: '40px', fontSize: '1.8rem', letterSpacing: '0.5px' }}>
                                         WHAT WE DO BEST
                                     </h3>
                                 </AnimateOnScroll>
@@ -43,8 +46,8 @@ function OurServices() {
                                     <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                         <div>
                                             <ul className="point-arrow-list">
-                                                <li><h5>Brand Development</h5></li>
-                                                <li><h5>Web</h5></li>
+                                                <li>Brand Development</li>
+                                                <li>Web</li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>
@@ -52,8 +55,8 @@ function OurServices() {
                                     <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={150}>
                                         <div>
                                             <ul className="point-arrow-list">
-                                                <li><h5>Performance Marketing</h5></li>
-                                                <li><h5>Social Media</h5></li>
+                                                <li>Performance Marketing</li>
+                                                <li>Social Media</li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>
@@ -61,8 +64,8 @@ function OurServices() {
                                     <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={300}>
                                         <div>
                                             <ul className="point-arrow-list">
-                                                <li><h5>Marketing Automation</h5></li>
-                                                <li><h5>Content Production</h5></li>
+                                                <li>Marketing Automation</li>
+                                                <li>Content Production</li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>
@@ -72,12 +75,12 @@ function OurServices() {
                                     <AnimateOnScroll animation="fadeInRight" speed="normal">
                                         <div>
                                             <ul className="point-arrow-list">
-                                                <li><h5>Brand Development</h5></li>
-                                                <li><h5>Web</h5></li>
-                                                <li><h5>Social Media</h5></li>
-                                                <li><h5>Performance Marketing</h5></li>
-                                                <li><h5>Marketing Automation</h5></li>
-                                                <li><h5>Content Production</h5></li>
+                                                <li>Brand Development</li>
+                                                <li>Web</li>
+                                                <li>Social Media</li>
+                                                <li>Performance Marketing</li>
+                                                <li>Marketing Automation</li>
+                                                <li>Content Production</li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>

@@ -81,28 +81,28 @@
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -537,6 +537,7 @@ ul {
 .section-footer {
     padding: 30px 30px 30px 30px;
     background-color: #000;
+    overflow: hidden;
 }
 
 /* ================== 06. Accent Color ================== */
@@ -4518,7 +4519,7 @@ body.lightmode .cta-service-banner::before {
 }
 
 .footer-heading {
-    color: #3876fc;
+    color: #ffffff;
     font-weight: 600;
     font-size: var(--font-size-xl);
     text-transform: uppercase;
@@ -4535,7 +4536,7 @@ body.lightmode .cta-service-banner::before {
     left: 0;
     width: 30px;
     height: 2px;
-    background: linear-gradient(90deg, #3875fd 0%, transparent 100%);
+    background: linear-gradient(90deg, #ffffff 0%, transparent 100%);
     border-radius: 2px;
 }
 
@@ -4577,7 +4578,7 @@ body.lightmode .cta-service-banner::before {
 .footer-list a::before {
     content: '→';
     font-size: 14px;
-    color: #3875fd;
+    color: #ffffff;
     position: absolute;
     left: -15px;
     opacity: 0;
@@ -4629,9 +4630,9 @@ body.lightmode .cta-service-banner::before {
 
 .footer-contact-icon {
     font-size: var(--font-size-lg);
-    color: #3875fd;
-    background: rgba(56, 117, 253, 0.1);
-    border: 1px solid rgba(56, 117, 253, 0.2);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     width: 38px;
     height: 38px;
@@ -4644,9 +4645,9 @@ body.lightmode .cta-service-banner::before {
 }
 
 .footer-contact-list a:hover .footer-contact-icon {
-    background: #3875fd;
-    color: #ffffff;
-    box-shadow: 0 0 12px rgba(56, 117, 253, 0.5);
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
 }
 
@@ -4826,6 +4827,156 @@ body.lightmode .cta-service-banner::before {
     align-self: center;
     background-color: transparent;
     background-image: radial-gradient(at center center, var(--accent-color-6) 0%, var(--accent-transparent) 70%);
+}
+
+/* Custom Footer Styling from Mockup */
+.footer-cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-cta-text {
+    font-family: 'Delight', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer-scroll-top {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.footer-scroll-top:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-get-in-touch {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    padding: 12px 25px;
+    font-family: 'Delight', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.25s ease;
+    width: fit-content;
+}
+
+.btn-get-in-touch:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-white-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.social-container-new {
+    display: flex;
+    gap: 12px;
+}
+
+.social-box {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.social-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer-show-more-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-family: var(--global-font);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-top: 10px;
+    transition: color 0.25s ease;
+}
+
+.footer-show-more-btn:hover {
+    color: #ffffff;
+}
+
+.footer-show-more-btn i {
+    font-size: 10px;
+    transition: transform 0.25s ease;
+}
+
+.footer-brand-name-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-brand-name {
+    font-family: 'Delight', sans-serif;
+    font-weight: 900;
+    font-size: 6.5vw !important;
+    color: #ffffff;
+    opacity: 0.1; /* Clean white watermark style */
+    line-height: 1.0;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap !important;
+    display: inline-block !important;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -5654,15 +5805,17 @@ body.lightmode .ServiceSection {
     font-family: 'Delight', sans-serif !important;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 20px;
     color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400 !important;
 }
 
 .point-arrow-list li h5 {
     font-family: 'Delight', sans-serif !important;
     font-size: 1.15rem;
-    font-weight: 500;
+    font-weight: 400 !important;
     margin: 0;
     color: #fff;
 }
@@ -5673,12 +5826,10 @@ body.lightmode .point-arrow-list li h5 {
 }
 
 .point-arrow-list li::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-image: url("/assets/images/arrow-up-right.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    content: "↗";
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 300;
     display: inline-block;
 }
 
@@ -5707,9 +5858,8 @@ body.lightmode .point-arrow-list li h5 {
 }
 
 body.lightmode .point-arrow-list li::before {
-    background-image: url("/assets/images/txtarow.png");
-    width: 18px;
-    height: 18px;
+    background-image: none;
+    color: #000;
 }
 
 /* body.lightmode .choose-us-point::before {
@@ -6368,11 +6518,12 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 
 .point-arrow-list li::before {
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
 }
 
 .point-arrow-list li:hover {
-    transform: translateX(10px);
+    transform: translateX(6px);
+    color: var(--accent-color, #3876fc) !important;
 }
 
 .point-arrow-list li:hover h5 {
@@ -6380,8 +6531,8 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 
 .point-arrow-list li:hover::before {
-    transform: translate(4px, -4px) rotate(15deg) scale(1.1);
-    filter: drop-shadow(0 4px 6px rgba(56, 118, 252, 0.3));
+    transform: translate(3px, -3px);
+    color: var(--accent-color, #3876fc) !important;
 }
 
 /* partners-card lift & glow on hover */
@@ -6723,15 +6874,15 @@ body.lightmode .MegamenuHeader .HdT1 {
 
 /* ================== Global Typography Helpers ================== */
 .sans-bold {
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 700 !important;
+    font-family: 'Delight', sans-serif !important;
+    font-weight: 900 !important;
     text-transform: uppercase !important;
 }
 
 .serif-italic {
     font-family: 'Playfair Display', serif !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
     text-transform: none !important;
 }
 

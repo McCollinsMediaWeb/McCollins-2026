@@ -188,14 +188,18 @@ const CaseStudiesSection = () => {
         <>
             <div className="section case-studies-section-container">
                 <div className="hero-container">
+                    {/* Centered Subheading */}
+                    <div className="d-flex flex-column justify-content-center text-center mb-4">
+                        <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <div className="sub-heading align-self-center" style={{ marginBottom: '20px', justifyContent: 'center' }}>
+                                <i className="fa-regular fa-circle-dot case-study-dot" style={{ color: '#3876fc' }}></i>
+                                <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Case Study</span>
+                            </div>
+                        </AnimateOnScroll>
+                    </div>
+
                     <div className="row align-items-start mb-4">
                         <div className="col-md-8">
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <div className="sub-heading">
-                                    <i className="fa-regular fa-circle-dot case-study-dot"></i>
-                                    <span>Case Study</span>
-                                </div>
-                            </AnimateOnScroll>
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <h2 className="case-studies-heading">
