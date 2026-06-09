@@ -81,28 +81,28 @@
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Medium.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-SemiBold.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Bold.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Delight';
-    src: url('/fonts/Delight/Delight-Black.woff2') format('woff2');
+    src: url('/fonts/Delight/Delight-Regular.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -225,10 +225,10 @@
 
     /* 2.2 Font Weight Variables */
     --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
+    --font-weight-medium: 400;
+    --font-weight-semibold: 400;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
+    --font-weight-black: 700;
 
     /* 2.3 Font Size Variables */
     --font-size-xs: 12px;
@@ -6533,15 +6533,17 @@ body.lightmode .MegamenuHeader .HdT1 {
 
 .hero-subtitle {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic !important;
+    font-style: normal !important;
     font-size: 3.2rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700 !important;
     line-height: 1.2;
     text-transform: none !important;
 }
 
 .hero-title-main {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     font-size: 6.8rem !important;
     line-height: 0.95 !important;
     color: #fff;
@@ -6549,15 +6551,15 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 
 .hero-title-main .sans-bold {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 900 !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     text-transform: uppercase !important;
 }
 
 .hero-title-main .serif-italic {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic !important;
-    font-weight: 400 !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
     text-transform: none !important;
 }
 
@@ -6581,7 +6583,7 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 .btn-hero .btn-title span {
     color: #fff !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     font-size: 1.1rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px;
@@ -6616,7 +6618,7 @@ body.lightmode .MegamenuHeader .HdT1 {
 .hero-bottom-text-left,
 .hero-bottom-text-right {
     font-family: 'Delight', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.55);
     max-width: 450px;
@@ -6721,15 +6723,15 @@ body.lightmode .MegamenuHeader .HdT1 {
 
 /* ================== Global Typography Helpers ================== */
 .sans-bold {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 900 !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     text-transform: uppercase !important;
 }
 
 .serif-italic {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic !important;
-    font-weight: 400 !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
     text-transform: none !important;
 }
 
@@ -6739,7 +6741,8 @@ body.lightmode .MegamenuHeader .HdT1 {
     line-height: 1.05 !important;
     color: #fff;
     margin: 0;
-    font-family: 'Delight', sans-serif !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
 }
 .service-section-title span {
     display: inline-block;
@@ -6747,7 +6750,7 @@ body.lightmode .MegamenuHeader .HdT1 {
 .service-section-desc {
     font-family: 'Delight', sans-serif;
     font-size: 1.05rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
     max-width: 440px;
@@ -6789,9 +6792,9 @@ body.lightmode .service-section-desc {
 /* Three lines heading */
 .case-studies-heading {
     color: #ffffff;
-    font-family: 'Delight', sans-serif !important;
+    font-family: 'Playfair Display', serif !important;
     font-size: 3.2rem;
-    font-weight: 800;
+    font-weight: 700 !important;
     line-height: 1.1;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -6801,16 +6804,16 @@ body.lightmode .service-section-desc {
 
 .case-studies-heading .line-delight {
     display: block;
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
 }
 
 .case-studies-heading .line-playfair {
     display: block;
     font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-style: normal !important;
     text-transform: none;
-    font-weight: 500;
+    font-weight: 700 !important;
     margin-top: 5px;
 }
 
@@ -6823,7 +6826,7 @@ body.lightmode .service-section-desc {
     color: #ffffff !important;
     font-family: 'Delight', sans-serif !important;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 12px 28px;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -6946,8 +6949,8 @@ body.lightmode .service-section-desc {
 }
 
 .case-study-card-new .card-title {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     font-size: 1.35rem;
     line-height: 1.1;
     margin-bottom: 2px;
@@ -6955,10 +6958,10 @@ body.lightmode .service-section-desc {
 }
 
 .case-study-card-new .card-subtitle {
-    font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-family: 'Delight', sans-serif !important;
+    font-style: normal;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 400 !important;
     margin: 0;
 }
 
@@ -7070,9 +7073,9 @@ body.lightmode .expertise-section-new {
 
 .expertise-heading {
     color: #ffffff;
-    font-family: 'Delight', sans-serif !important;
+    font-family: 'Playfair Display', serif !important;
     font-size: 3.2rem;
-    font-weight: 800;
+    font-weight: 700 !important;
     line-height: 1.15;
     text-transform: uppercase;
     margin-top: 15px;
@@ -7086,16 +7089,16 @@ body.lightmode .expertise-heading {
 
 .expertise-heading .line-delight {
     display: block;
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
 }
 
 .expertise-heading .line-playfair {
     display: block;
     font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-style: normal !important;
     text-transform: none;
-    font-weight: 500;
+    font-weight: 700 !important;
     margin-top: 5px;
 }
 
@@ -7110,8 +7113,8 @@ body.lightmode .expertise-heading {
 }
 
 .expertise-title {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 700;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     font-size: 1.15rem;
     color: #ffffff !important;
     margin: 0;
@@ -7125,7 +7128,7 @@ body.lightmode .expertise-title {
 
 .expertise-desc {
     font-size: 0.95rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 12px;
@@ -7184,9 +7187,9 @@ body.lightmode .expertise-desc {
 
 .choose-us-heading {
     color: #ffffff;
-    font-family: 'Delight', sans-serif !important;
+    font-family: 'Playfair Display', serif !important;
     font-size: 3.2rem;
-    font-weight: 800;
+    font-weight: 700 !important;
     line-height: 1.15;
     text-transform: uppercase;
     margin-top: 15px;
@@ -7200,20 +7203,20 @@ body.lightmode .choose-us-heading {
 
 .choose-us-heading .line-delight {
     display: block;
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
 }
 
 .choose-us-heading .line-playfair {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-style: normal !important;
     text-transform: none;
-    font-weight: 500;
+    font-weight: 700 !important;
 }
 
 .choose-us-desc-new {
     font-size: 1.05rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
@@ -7268,8 +7271,8 @@ body.lightmode .choose-us-desc-new {
 }
 
 .choose-us-title-new .text-delight {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 700;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -7280,9 +7283,9 @@ body.lightmode .choose-us-title-new .text-delight {
 
 .choose-us-title-new .text-playfair {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-style: normal !important;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 700 !important;
 }
 
 body.lightmode .choose-us-title-new .text-playfair {
@@ -7319,9 +7322,9 @@ body.lightmode .how-we-work-section {
 
 .how-we-work-heading {
     color: #ffffff;
-    font-family: 'Delight', sans-serif !important;
+    font-family: 'Playfair Display', serif !important;
     font-size: 3.2rem;
-    font-weight: 800;
+    font-weight: 700 !important;
     line-height: 1.15;
     text-transform: uppercase;
     margin: 0;
@@ -7333,21 +7336,21 @@ body.lightmode .how-we-work-heading {
 }
 
 .how-we-work-heading .line-delight {
-    font-family: 'Delight', sans-serif !important;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
 }
 
 .how-we-work-heading .line-playfair {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic;
+    font-style: normal !important;
     text-transform: none;
-    font-weight: 500;
+    font-weight: 700 !important;
 }
 
 .how-we-work-sub-desc {
     font-family: 'Delight', sans-serif !important;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 400 !important;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 0.1em;
     margin: 0;

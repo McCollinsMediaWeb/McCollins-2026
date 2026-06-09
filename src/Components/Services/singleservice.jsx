@@ -14,7 +14,7 @@ const SingleServiceSection = () => {
                                 <AnimateOnScroll animation="fadeInRight" speed="slow">
                                     <div className="sub-heading" style={{ justifyContent: 'center' }}>
                                         <i className="fa-regular fa-circle-dot"></i>
-                                        <span style={{ fontSize: 'var(--font-size-xl)', color: '#3876fc', fontWeight: '500' }}>Marketing Automation</span>
+                                        <span style={{ fontSize: 'var(--font-size-xl)', color: '#3876fc', fontWeight: '400' }}>Marketing Automation</span>
                                     </div>
                                 </AnimateOnScroll>
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">
@@ -23,7 +23,7 @@ const SingleServiceSection = () => {
                                     </h2>
                                 </AnimateOnScroll>
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <p className="text-center" style={{ marginTop: '15px', fontWeight: '100', }}>
+                                    <p className="text-center" style={{ marginTop: '15px', fontWeight: '400', }}>
                                         We architect sophisticated automation ecosystems that bridge the gap between audience engagement and<br /> commercial scale. By engineering intelligent workflows that nurture prospects with precision, we transform your digital<br /> presence into a high-velocity engine for sustainable growth.
                                     </p>
                                 </AnimateOnScroll>

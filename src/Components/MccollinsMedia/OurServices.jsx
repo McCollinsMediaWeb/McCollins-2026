@@ -20,7 +20,7 @@ function OurServices() {
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="sub-heading" style={{ marginBottom: '20px', justifyContent: 'center' }}>
                                     <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
-                                    <span style={{ fontFamily: 'Delight', fontWeight: 'bold', textTransform: 'uppercase' }}>Our Services</span>
+                                    <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Our Services</span>
                                 </div>
                             </AnimateOnScroll>
 

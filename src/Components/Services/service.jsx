@@ -16,7 +16,7 @@ function ServiceSection() {
                             <AnimateOnScroll animation="fadeInDown" speed="normal">
                                 <div className="sub-heading align-self-center" style={{ marginBottom: '20px', justifyContent: 'center' }}>
                                     <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
-                                    <span style={{ fontFamily: 'Delight', fontWeight: 'bold', textTransform: 'uppercase' }}>Our Core Services</span>
+                                    <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Our Core Services</span>
                                 </div>
                             </AnimateOnScroll>
                         </div>
