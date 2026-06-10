@@ -7093,6 +7093,10 @@ body.lightmode .service-section-desc {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
     cursor: grab;
+    align-items: flex-start; /* Align cards at the top */
+    padding-top: 15px; /* Give headroom for translateY hover */
+    padding-bottom: 25px; /* Prevent scrollbar clipping from height changes */
+    min-height: 560px; /* Ensure space for the tallest card */
     
     /* Full bleed calculations */
     padding-left: 20px;
@@ -7119,18 +7123,53 @@ body.lightmode .service-section-desc {
     position: relative;
     width: 320px;
     height: 480px;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: #1a1a1a;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     text-decoration: none !important;
 }
 
 .case-study-card-new:hover {
     transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Staggered Heights for Desktop/Tablet */
+@media (min-width: 768px) {
+    .case-studies-track .case-study-card-new:nth-child(3n+1) {
+        height: 520px;
+    }
+    .case-studies-track .case-study-card-new:nth-child(3n+2) {
+        height: 440px;
+    }
+    .case-studies-track .case-study-card-new:nth-child(3n) {
+        height: 480px;
+    }
+
+    /* Hover returns to default standard height */
+    .case-studies-track .case-study-card-new:hover {
+        height: 520px !important;
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+    }
+}
+
+/* Light Mode Card styling */
+body.lightmode .case-study-card-new {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #f7f7f7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.lightmode .case-study-card-new:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .case-study-card-new .card-image-overlay {
@@ -7152,20 +7191,22 @@ body.lightmode .service-section-desc {
 }
 
 .case-study-card-new .card-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: 'Delight', sans-serif !important;
     font-weight: 700 !important;
-    font-size: 1.35rem;
-    line-height: 1.1;
-    margin-bottom: 2px;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-bottom: 4px;
     text-transform: uppercase;
 }
 
 .case-study-card-new .card-subtitle {
-    font-family: 'Delight', sans-serif !important;
-    font-style: normal;
-    font-size: 0.95rem;
+    font-family: 'Playfair Display', serif !important;
+    font-style: italic !important;
+    font-size: 1.05rem;
     font-weight: 400 !important;
     margin: 0;
+    text-transform: none !important;
 }
 
 /* Light / Dark themes for cards text & overlay */

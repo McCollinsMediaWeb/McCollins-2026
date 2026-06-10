@@ -10,37 +10,44 @@ const CaseStudiesSection = () => {
         {
             title: "PIONEER",
             subtitle: "Website",
-            image: "/assets/images/pioneer.jpg",
+            image: "/case-studies-thumbs/pioneer.jpg",
             link: "/case_studies/pioneer",
             themeClass: "theme-dark-text"
         },
         {
             title: "OAK BERRY",
-            subtitle: "Digital Marketing",
-            image: "/assets/images/oakberry.jpg",
+            subtitle: "Creative Campaign",
+            image: "/case-studies-thumbs/oakberry.jpg",
             link: "/case_studies/oakberry",
             themeClass: "theme-dark-text"
         },
         {
             title: "VOSS DUBAI",
             subtitle: "Digital Marketing",
-            image: "/assets/images/voss.jpg",
+            image: "/case-studies-thumbs/voss.jpg",
             link: "/case_studies/voss-dubai",
             themeClass: "theme-light-text"
         },
         {
             title: "BETTER LIFE",
             subtitle: "Performance Marketing",
-            image: "/assets/images/better_life.png",
-            link: "/case_studies/better-life",
+            image: "/case-studies-thumbs/betterlife.jpg",
+            link: "/case_studies",
             themeClass: "theme-dark-text"
         },
         {
             title: "DUBAI AIRPORT FREEZONE",
             subtitle: "App Design",
-            image: "/assets/images/dubai.jpg",
+            image: "/case-studies-thumbs/dubai-airport-freezone.jpg",
             link: "/case_studies/dubai-airport-freezone",
             themeClass: "theme-light-text"
+        },
+        {
+            title: "MAPEI",
+            subtitle: "Digital Marketing",
+            image: "/case-studies-thumbs/mapei.jpg",
+            link: "/case_studies",
+            themeClass: "theme-dark-text"
         }
     ];
 
