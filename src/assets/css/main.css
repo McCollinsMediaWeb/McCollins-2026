@@ -6893,7 +6893,6 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 .our-services-title span {
     display: inline-block;
-    white-space: nowrap;
 }
 @media screen and (max-width: 992px) {
     .our-services-title {
@@ -8033,6 +8032,9 @@ body.lightmode .FixedHeader.fixed .HamberMenuLine {
     }
     body.lightmode .scale-vision-play-label {
         color: #000000 !important;
+    }
+    .HeroBannerContent{
+        padding: 15px;
     }
 }
 

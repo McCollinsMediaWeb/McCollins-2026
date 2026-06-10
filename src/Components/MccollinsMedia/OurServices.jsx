@@ -29,9 +29,7 @@ function OurServices() {
 
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <h2 className="our-services-title">
-                                    <span className="sans-bold">LOCAL RESONANCE GLOBAL</span>
-                                    <br />
-                                    <span className="serif-italic">Performance</span>
+                                    <span className="sans-bold">LOCAL RESONANCE GLOBAL&nbsp;<span className="serif-italic">Performance</span></span>
                                 </h2>
                             </AnimateOnScroll>
 
@@ -47,7 +45,7 @@ function OurServices() {
                                         <div>
                                             <ul className="point-arrow-list">
                                                 <li>Brand Development</li>
-                                                <li>Web</li>
+                                                <li>Web Development</li>
                                             </ul>
                                         </div>
                                     </AnimateOnScroll>
@@ -76,7 +74,7 @@ function OurServices() {
                                         <div>
                                             <ul className="point-arrow-list">
                                                 <li>Brand Development</li>
-                                                <li>Web</li>
+                                                <li>Web Development</li>
                                                 <li>Social Media</li>
                                                 <li>Performance Marketing</li>
                                                 <li>Marketing Automation</li>
