@@ -15,8 +15,8 @@ const HowWeWork = () => {
                                     <span>How We Work</span>
                                 </div>
                                 <h2 className="how-we-work-heading mt-3">
-                                    <span className="line-delight">THE MCCOLLINS ASCENSION </span>
-                                    <span className="line-playfair">Model</span>
+                                    <span className="sans-bold">THE MCCOLLINS ASCENSION </span>
+                                    <span className="serif-italic">Model</span>
                                 </h2>
                                 <p className="how-we-work-sub-desc mt-3">
                                     A SYSTEMATIC ROADMAP DESIGNED TO ACCELERATE BRAND GROWTH AND SUSTAIN INTERNATIONAL LEADERSHIP.

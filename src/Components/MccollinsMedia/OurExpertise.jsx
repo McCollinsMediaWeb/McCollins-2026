@@ -17,8 +17,8 @@ function OurExpertise() {
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <h2 className="expertise-heading">
-                                    <span className="line-delight">PROVEN SUCCESS ACROSS THESE</span>
-                                    <span className="line-playfair">Key Sectors.</span>
+                                    <span className="sans-bold">PROVEN SUCCESS ACROSS THESE</span>
+                                    <span className="serif-italic"> Key Sectors.</span>
                                 </h2>
                             </AnimateOnScroll>
                         </div>

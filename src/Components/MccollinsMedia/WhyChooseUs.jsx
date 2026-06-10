@@ -21,9 +21,9 @@ function WhyChooseUs() {
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <h2 className="choose-us-heading">
-                                    <span className="line-delight">YOUR GLOBAL GROWTH IS</span>
-                                    <span className="line-delight">THE BENCHMARK OF <span className="line-playfair d-inline">Our</span></span>
-                                    <span className="line-playfair">Performance.</span>
+                                    <span className="sans-bold">YOUR GLOBAL GROWTH IS </span>
+                                    <span className="sans-bold">THE BENCHMARK OF <span className="line-playfair d-inline">Our</span></span>
+                                    <span className="serif-italic"> Performance.</span>
                                 </h2>
                             </AnimateOnScroll>
 
@@ -56,7 +56,7 @@ function WhyChooseUs() {
                                     <h5 className="choose-us-title-new mt-3">
                                         <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
                                         <span className="text-delight">DATA-DRIVEN </span>
-                                        <span className="text-playfair">Approach</span>
+                                        <span className="text-playfair">&nbsp;Approach</span>
                                     </h5>
                                     <p className="expertise-desc mt-2">
                                         Fueling your brand's evolution with precision analytics and real-time market insights.
@@ -74,8 +74,8 @@ function WhyChooseUs() {
                                     </div>
                                     <h5 className="choose-us-title-new mt-3">
                                         <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
-                                        <span className="text-playfair">Creative </span>
-                                        <span className="text-delight">& INNOVATIVE</span>
+                                        <span className="text-playfair">Creative&nbsp;</span>
+                                        <span className="text-delight"> & INNOVATIVE</span>
                                     </h5>
                                     <p className="expertise-desc mt-2">
                                         Transforming disruptive ideas into high-impact digital experiences across every continent.
@@ -93,8 +93,8 @@ function WhyChooseUs() {
                                     </div>
                                     <h5 className="choose-us-title-new mt-3">
                                         <i className="fa-solid fa-arrow-up-right choose-us-arrow"></i>
-                                        <span className="text-delight">TRANSPARENT </span>
-                                        <span className="text-playfair">Reporting</span>
+                                        <span className="text-delight">TRANSPARENT&nbsp;</span>
+                                        <span className="text-playfair"> Reporting</span>
                                     </h5>
                                     <p className="expertise-desc mt-2">
                                         Honest analytics and actionable insights to ensure your investment drives measurable impact.

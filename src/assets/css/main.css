@@ -452,8 +452,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: var(--font-weight-bold);
+    font-family: 'Delight', sans-serif !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
     margin: 0;
 }
 
@@ -1150,11 +1151,20 @@ body.lightmode #newsletterForm input:autofill:focus {
     padding: 5px 5px 5px 5px;
     justify-content: space-between;
     align-self: stretch;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(56, 117, 253, 0.25);
 }
 
 .btn-accent {
     fill: var(--accent-color-2);
-    transition: all 0.6s;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     background-color: var(--accent-color-4);
     box-shadow: var(--box-shadow-top-left);
 }
@@ -1177,7 +1187,7 @@ body.lightmode .keep-dark .btn-accent {
     text-decoration: none;
     align-self: center;
     width: 100%;
-    transition: all 0.6s;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-title a,
@@ -1186,8 +1196,8 @@ body.lightmode .keep-dark .btn-accent {
 }
 
 .btn-accent:hover {
-    box-shadow: var(--box-shadow-bottom-right);
-    background-color: var(--accent-color-4);
+    box-shadow: 0 12px 25px rgba(56, 117, 253, 0.45), var(--box-shadow-bottom-right) !important;
+    background-color: var(--accent-color-3) !important;
 }
 
 .btn:hover .btn-title a,
@@ -1195,6 +1205,17 @@ body.lightmode .keep-dark .btn-accent {
 .btn:focus .btn-title a,
 .btn:focus .btn-title span {
     color: var(--accent-color) !important;
+}
+
+/* Micro-interaction for inside elements */
+.btn:hover .icon-circle {
+    background-color: var(--accent-color) !important;
+    color: #fff !important;
+    transform: scale(1.08);
+}
+
+.btn:hover .icon-circle i {
+    transform: translateX(4px);
 }
 
 .btn-sidebar {
@@ -6702,9 +6723,9 @@ body.lightmode .MegamenuHeader .HdT1 {
 }
 
 .hero-title-main .sans-bold {
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
+    font-family: 'Delight', sans-serif !important;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .hero-title-main .serif-italic {
@@ -6727,6 +6748,7 @@ body.lightmode .MegamenuHeader .HdT1 {
     gap: 20px;
     height: 56px;
     text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 .btn-hero .btn-title {
     padding: 0 !important;
@@ -6749,10 +6771,23 @@ body.lightmode .MegamenuHeader .HdT1 {
     justify-content: center;
     border-radius: 50%;
     margin-left: auto;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 .btn-hero .icon-circle i {
     color: #fff !important;
     font-size: 1rem;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.btn-hero:hover {
+    background-color: #1a56db !important;
+    box-shadow: 0 12px 30px rgba(56, 117, 253, 0.5) !important;
+}
+.btn-hero:hover .icon-circle {
+    background-color: #fff !important;
+}
+.btn-hero:hover .icon-circle i {
+    color: #3875fd !important;
+    transform: translateX(4px) !important;
 }
 
 /* Bottom Split Text styles */
@@ -7264,8 +7299,8 @@ body.lightmode .expertise-heading {
 }
 
 .expertise-title {
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 700 !important;
+    font-family: 'Delight', sans-serif !important;
+  font-weight: 900 !important;
     font-size: 1.15rem;
     color: #ffffff !important;
     margin: 0;
@@ -7422,8 +7457,8 @@ body.lightmode .choose-us-desc-new {
 }
 
 .choose-us-title-new .text-delight {
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 700 !important;
+    font-family: 'Delight', sans-serif !important;
+  font-weight: 900 !important;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -7873,6 +7908,10 @@ body.lightmode .newsletter-section-new {
     .scale-vision-play-label {
         font-size: 0.85rem;
     }
+}
+
+.text-right{
+    text-align:right;
 }
 
 

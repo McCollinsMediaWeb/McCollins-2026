@@ -203,9 +203,9 @@ const CaseStudiesSection = () => {
 
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <h2 className="case-studies-heading">
-                                    <span className="line-delight">WITNESS THE IMPACT</span>
-                                    <span className="line-delight">OF GLOBALLY FLUENT</span>
-                                    <span className="line-playfair">Digital Strategies.</span>
+                                    <span className="sans-bold">WITNESS THE IMPACT</span>
+                                    <span className="serif-italic"> OF GLOBALLY FLUENT </span>
+                                    <span className="sans-bold">Digital Strategies.</span>
                                 </h2>
                             </AnimateOnScroll>
 
