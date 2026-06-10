@@ -86,7 +86,7 @@ function Navbar() {
                             <div className="HeaderBoxMiddle">
                                 <a className="navbar-brand" href="/">
                                     <img
-                                        src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png"
+                                        src="/assets/images/mcmain.png"
                                         className="site-logo img-fluid"
                                         alt="Logo"
                                     />
@@ -123,8 +123,8 @@ function Navbar() {
                                     onClick={() => setMenuOpen(prev => !prev)}
                                 >
                                     <img
-                                        src="https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png"
-                                        className="img-fluid"
+                                        src="/assets/images/mcmain.png"
+                                        className="img-fluid site-logo"
                                         alt="Logo"
                                     />
                                 </NavLink>

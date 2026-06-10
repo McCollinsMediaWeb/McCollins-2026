@@ -21,49 +21,17 @@ export default function ThemeSwitcher() {
                 document.body.classList.add('lightmode');
                 localStorage.setItem('lightmode', 'active');
 
-                // siteLogos.forEach((logo) => {
-                //     logo.setAttribute('src', '/public/assets/images/mcmain.png');
-                // });
-
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
+                    logo.setAttribute('src', '/assets/images/mcmain-dark.png');
                 });
-
-                // partnerLogos.forEach((img) => {
-                //     const src = img.getAttribute('src');
-                //     if (!src.includes('-dark')) {
-                //         img.setAttribute('src', src.replace('.png', '-dark.png'));
-                //     }
-                // });
-
-                // clientLogos.forEach((img) => {
-                //     const src = img.getAttribute('src');
-                //     img.setAttribute('src', src.replace('-white.png', '.png'));
-                // });
 
             } else {
                 document.body.classList.remove('lightmode');
                 localStorage.removeItem('lightmode');
 
-                // siteLogos.forEach((logo) => {
-                //     logo.setAttribute('src', '/public/assets/images/mcmain.png');
-                // });
-
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', 'https://res.cloudinary.com/dje8fshak/image/upload/v1773638564/mcmain_re91gd.png');
+                    logo.setAttribute('src', '/assets/images/mcmain.png');
                 });
-
-                // partnerLogos.forEach((img) => {
-                //     const src = img.getAttribute('src');
-                //     img.setAttribute('src', src.replace('-dark.png', '.png'));
-                // });
-
-                // clientLogos.forEach((img) => {
-                //     const src = img.getAttribute('src');
-                //     if (!src.includes('-white')) {
-                //         img.setAttribute('src', src.replace('.png', '-white.png'));
-                //     }
-                // });
             }
         };
 

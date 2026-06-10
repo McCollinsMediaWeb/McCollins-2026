@@ -6065,7 +6065,7 @@ body.lightmode .point-arrow-list li::before {
 
     /* desktop */
     .custom-card-text {
-        min-height: 110px;
+        min-height: 100px;
     }
 }
 
@@ -6674,6 +6674,24 @@ body.lightmode .MegamenuHeader .HdT1 {
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+    .home-hero-banner {
+        height: 85vh !important;
+        height: 85dvh !important;
+    }
+    .home-hero-banner .keep-dark,
+    .home-hero-banner .HeroBanner,
+    .home-hero-banner .home-hero-video-wrapper {
+        height: 100% !important;
+    }
+    .home-hero-video {
+        height: 85vh !important;
+        height: 85dvh !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -7326,7 +7344,29 @@ body.lightmode .expertise-desc {
     color: rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .expertise-col-middle {
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    body.lightmode .expertise-col-middle {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .expertise-col-left {
+        padding-right: 20px;
+    }
+    
+    .expertise-col-right {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
     .expertise-col-middle {
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -7914,7 +7954,89 @@ body.lightmode .newsletter-section-new {
     text-align:right;
 }
 
+/* ================== Scale Your Vision Section Stack Layout on Mobile/Tablets ================== */
+@media (max-width: 991px) {
+    .ServiceItemBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .BannerImageBox {
+        height: 40vh !important;
+        position: relative;
+    }
+    .BannerImageBox img {
+        height: 40vh !important;
+        object-fit: cover;
+    }
+    .BannerBoxContent {
+        position: relative !important;
+        background-color: var(--background-color) !important;
+        padding: 60px 0px 40px 0px !important;
+    }
+}
+
+/* ================== Light Mode Readability & Contrast Overrides ================== */
+body.lightmode .our-services-title {
+    color: #000000 !important;
+}
+
+body.lightmode .case-studies-heading {
+    color: #000000 !important;
+}
+
+body.lightmode .case-studies-desc-new {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.lightmode .btn-accent:not(.CallLink) {
+    background-color: var(--accent-color-4) !important;
+    border: 1px solid var(--accent-color) !important;
+}
+
+body.lightmode .btn-accent:not(.CallLink) .btn-title,
+body.lightmode .btn-accent:not(.CallLink) .btn-title span,
+body.lightmode .btn-accent:not(.CallLink) .btn-title a {
+    color: #000000 !important;
+}
+
+body.lightmode .btn-accent:not(.CallLink):hover {
+    background-color: var(--accent-color-3) !important;
+}
+
+body.lightmode .btn-accent:not(.CallLink):hover .btn-title,
+body.lightmode .btn-accent:not(.CallLink):hover .btn-title span,
+body.lightmode .btn-accent:not(.CallLink):hover .btn-title a {
+    color: var(--accent-color) !important;
+}
+
+body.lightmode .FixedHeader.fixed {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.lightmode .FixedHeader.fixed .HamberMenuLine {
+    background-color: #000000 !important;
+}
+
+/* Stacking contact section text adjustments in light mode */
+@media (max-width: 991px) {
+    body.lightmode .scale-vision-heading {
+        color: #000000 !important;
+        WebkitTextFillColor: #000000 !important;
+    }
+    body.lightmode .scale-vision-heading .text-playfair,
+    body.lightmode .scale-vision-heading .text-delight {
+        color: #000000 !important;
+    }
+    body.lightmode .scale-vision-desc {
+        color: rgba(0, 0, 0, 0.7) !important;
+    }
+    body.lightmode .scale-vision-play-label {
+        color: #000000 !important;
+    }
+}
 
 
-
-
+.service-title h4{
+    font-size:23px;
+}

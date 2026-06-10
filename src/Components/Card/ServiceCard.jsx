@@ -14,7 +14,7 @@ const ServiceCard = ({ icon, title, content, link, speed = "" }) => {
                         </div>
                         <p className="custom-card-text" style={{ marginTop: '15px', fontWeight: 100 }}>{content}</p>
                     </div>
-                    <a href={link} className="btn btn-accent mt-3" style={{ backgroundColor: '#0d0d0d', width: 'fit-content' }}>
+                    <a href={link} className="btn btn-accent mt-1" style={{ backgroundColor: '#0d0d0d', width: 'fit-content' }}>
                         <div className="btn-title">
                             <span>Read More</span>
                         </div>
