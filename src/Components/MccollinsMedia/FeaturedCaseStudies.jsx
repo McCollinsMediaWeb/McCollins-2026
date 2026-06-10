@@ -1,108 +1,290 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
-import CustomCounterOnScroll from "../Hooks/CustomCounterOnScroll";
 
 const FeaturedCaseStudies = () => {
+    const trackRef = useRef(null);
+    const isMouseDownRef = useRef(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const studies = [
+        {
+            title: "PIONEER",
+            subtitle: "Website",
+            image: "/case-studies-thumbs/pioneer.jpg",
+            link: "/case_studies/pioneer",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "OAK BERRY",
+            subtitle: "Creative Campaign",
+            image: "/case-studies-thumbs/oakberry.jpg",
+            link: "/case_studies/oakberry",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "VOSS DUBAI",
+            subtitle: "Digital Marketing",
+            image: "/case-studies-thumbs/voss.jpg",
+            link: "/case_studies/voss-dubai",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "BETTER LIFE",
+            subtitle: "Performance Marketing",
+            image: "/case-studies-thumbs/betterlife.jpg",
+            link: "/case_studies",
+            themeClass: "theme-dark-text"
+        },
+        {
+            title: "DUBAI AIRPORT FREEZONE",
+            subtitle: "App Design",
+            image: "/case-studies-thumbs/dubai-airport-freezone.jpg",
+            link: "/case_studies/dubai-airport-freezone",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "MAPEI",
+            subtitle: "Digital Marketing",
+            image: "/case-studies-thumbs/mapei.jpg",
+            link: "/case_studies",
+            themeClass: "theme-dark-text"
+        }
+    ];
+
+    // Triple studies for seamless infinite scrolling
+    const tripledStudies = [...studies, ...studies, ...studies];
+
+    // Set initial scroll position to start of middle set
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+        
+        const setInitialScroll = () => {
+            const children = track.children;
+            if (children.length >= 5) {
+                const firstChild = children[0];
+                const targetChild = children[5];
+                if (firstChild && targetChild) {
+                    const singleSetWidth = targetChild.offsetLeft - firstChild.offsetLeft;
+                    track.scrollLeft = singleSetWidth;
+                }
+            }
+        };
+
+        const timer = setTimeout(setInitialScroll, 150);
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Infinite auto-scrolling loop
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+
+        let animationFrameId;
+        const speed = 0.8; // scroll speed (pixels per frame)
+
+        const animate = () => {
+            if (!isMouseDownRef.current && !isHovered) {
+                track.scrollLeft += speed;
+
+                const children = track.children;
+                if (children.length >= 5) {
+                    const firstChild = children[0];
+                    const targetChild = children[5];
+                    if (firstChild && targetChild) {
+                        const singleSetWidth = targetChild.offsetLeft - firstChild.offsetLeft;
+                        
+                        if (track.scrollLeft >= singleSetWidth * 2) {
+                            track.scrollLeft -= singleSetWidth;
+                        } else if (track.scrollLeft <= 10) {
+                            track.scrollLeft += singleSetWidth;
+                        }
+                    }
+                }
+            }
+            animationFrameId = requestAnimationFrame(animate);
+        };
+
+        animationFrameId = requestAnimationFrame(animate);
+
+        return () => {
+            cancelAnimationFrame(animationFrameId);
+        };
+    }, [isHovered]);
+
+    // Drag to scroll logic
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+
+        let startX;
+        let scrollLeft;
+        let hasMoved = false;
+
+        const onMouseDown = (e) => {
+            isMouseDownRef.current = true;
+            startX = e.pageX - track.offsetLeft;
+            scrollLeft = track.scrollLeft;
+            hasMoved = false;
+        };
+
+        const onMouseLeave = () => {
+            isMouseDownRef.current = false;
+        };
+
+        const onMouseUp = () => {
+            isMouseDownRef.current = false;
+        };
+
+        const onMouseMove = (e) => {
+            if (!isMouseDownRef.current) return;
+            e.preventDefault();
+            const x = e.pageX - track.offsetLeft;
+            const walk = (x - startX) * 1.5; // Scroll speed multiplier
+            if (Math.abs(walk) > 3) {
+                hasMoved = true;
+            }
+            track.scrollLeft = scrollLeft - walk;
+        };
+
+        const onClick = (e) => {
+            if (hasMoved) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        };
+
+        track.addEventListener('mousedown', onMouseDown);
+        track.addEventListener('mouseleave', onMouseLeave);
+        track.addEventListener('mouseup', onMouseUp);
+        track.addEventListener('mousemove', onMouseMove);
+        track.addEventListener('click', onClick, true);
+
+        return () => {
+            track.removeEventListener('mousedown', onMouseDown);
+            track.removeEventListener('mouseleave', onMouseLeave);
+            track.removeEventListener('mouseup', onMouseUp);
+            track.removeEventListener('mousemove', onMouseMove);
+            track.removeEventListener('click', onClick, true);
+        };
+    }, []);
+
+    const handleScrollNext = () => {
+        const track = trackRef.current;
+        if (!track) return;
+        const children = track.children;
+        let cardWidth = 340;
+        if (children.length > 0) {
+            cardWidth = children[0].offsetWidth + 20; // card width + gap
+        }
+        track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    };
+
+    const handleScrollPrev = () => {
+        const track = trackRef.current;
+        if (!track) return;
+        const children = track.children;
+        let cardWidth = 340;
+        if (children.length > 0) {
+            cardWidth = children[0].offsetWidth + 20;
+        }
+        track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    };
 
     return (
-        <div className={`section`} style={{ backgroundColor: 'var(--featured-case-studies-bg)' }}>
-            <div className="hero-container">
-                <AnimateOnScroll animation="fadeInUp" speed="normal">
-                    <div className="card card-case-studies" style={{ padding: '5px 5px 5px 5px', backgroundColor: 'var(--featured-case-studies-bg)' }} >
-                        <style>
-                            {`
-                            .card-case-studies::before {
-                                background-image: none;
-                            }
-                        `}
-                        </style>
-                        <div className="row row-cols-1 grid-spacer-5">
-                            <div className="col">
-                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <div className="d-flex flex-column gspace-1">
-                                        <div className="sub-heading">
-                                            <i className="fa-regular fa-circle-dot"></i>
-                                            <span>Case Studies</span>
-                                        </div>
-                                        <h2 className="title-heading">Featured Cases</h2>
+        <>
+            <div className="section case-studies-section-container">
+                <div className="hero-container">
+                    {/* Centered Subheading */}
+                    <div className="d-flex flex-column justify-content-center text-center mb-4">
+                        <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <div className="sub-heading align-self-center" style={{ marginBottom: '20px', justifyContent: 'center' }}>
+                                <i className="fa-regular fa-circle-dot case-study-dot" style={{ color: '#3876fc' }}></i>
+                                <span style={{ fontFamily: 'Delight', textTransform: 'uppercase' }}>Case Study</span>
+                            </div>
+                        </AnimateOnScroll>
+                    </div>
+
+                    <div className="row align-items-start mb-4">
+                        <div className="col-md-8">
+                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                <h2 className="case-studies-heading">
+                                    <span className="sans-bold">WITNESS THE IMPACT</span>
+                                    <span className="serif-italic"> OF GLOBALLY FLUENT </span>
+                                    <span className="sans-bold">Digital Strategies.</span>
+                                </h2>
+                            </AnimateOnScroll>
+
+                            <div className="mt-4 d-none d-md-block">
+                                <a href="/case_studies" className="btn-case-studies-more">
+                                    <span>More Case Studies</span>
+                                    <div className="btn-icon-circle">
+                                        <i className="fa-solid fa-arrow-right"></i>
                                     </div>
-                                </AnimateOnScroll>
+                                </a>
                             </div>
                         </div>
-
-                        <div className="row featured-case-studies-inner-card">
-                            <div className="col-md-7" >
-                                <div className="case-studies-logo" style={{ marginBottom: '40px' }} >
-                                    <img src="/assets/images/clients/mmi.png" alt="" />
-                                </div>
-                                <div className="d-flex d-md-none mb-3" style={{ display: 'flex' }} >
-                                    <img className="width-full brdRadius" src="/assets/images/cake.jpg" alt="" />
-                                </div>
-                                <div className="row mb-md-5" >
-                                    <div className="col-md-6" >
-                                        <h4 style={{ color: '#3876fc', marginBottom: '10px' }}>Objective</h4>
-                                        <p style={{ fontWeight: 100 }}>Masterbaker Studio aimed to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate butters, and creams.</p>
-                                    </div>
-                                    <div className="col-md-6" >
-                                        <h4 style={{ color: '#3876fc', marginBottom: '10px' }}>Challenge</h4>
-                                        <p style={{ fontWeight: 100 }}>They are struggling to scale their brand online & increase the sales MoM consistently.</p>
-                                    </div>
-                                </div>
-                                <div className="row" >
-                                    <h4 style={{ color: '#3876fc', marginBottom: '10px' }}>Strategy & Implementation</h4>
-                                    <p style={{ fontWeight: 100 }}>To effectively display Masterbaker’s extensive inventory, we utilized Dynamic Search Ads and Performance Max campaigns with Feed-only on Google Ads. Additionally, on Meta Ads, we employed Dynamic prospecting ads and catalog ads targeting lookalike and retargeting audiences. To prevent ad fatigue, we regularly refreshed the first card creatives when frequency exceeded the standard benchmark threshold. Furthermore, implementing negative keywords and placements at the account level helped optimize spending and achieve lower cost per acquisition.</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4" >
-                                <div className="d-none d-md-flex" style={{ display: 'flex' }} >
-                                    <img className="width-full brdRadius" src="/assets/images/cake.jpg" alt="" />
-                                </div>
-                                <div>
-                                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >
-                                        <h2 style={{ color: '#3876fc' }}>
-                                            <CustomCounterOnScroll
-                                                target={32}
-                                                prefix="+"
-                                                suffix="%"
-                                                counterClassName="counter"
-                                                suffixClassName="counter-detail"
-                                            />
-                                        </h2>
-                                        <p style={{ fontWeight: 100 }}>Increased in conversion/purchase</p>
-                                    </div>
-                                    <div style={{ width: '100%', height: '1px', backgroundColor: '#000' }} />
-                                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >
-                                        <h2 style={{ color: '#3876fc' }}>
-                                            <CustomCounterOnScroll
-                                                target={14}
-                                                prefix="+"
-                                                suffix="%"
-                                                counterClassName="counter"
-                                                suffixClassName="counter-detail"
-                                            />
-                                        </h2>
-                                        <p style={{ fontWeight: 100 }}>Conversion rates, with a 3.25 ROAS</p>
-                                    </div>
-                                    <div style={{ width: '100%', height: '1px', backgroundColor: '#000' }} />
-                                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '10px 0px' }} >
-                                        <h2 style={{ color: '#3876fc' }}>
-                                            <CustomCounterOnScroll
-                                                target={28}
-                                                prefix="+"
-                                                suffix="%"
-                                                counterClassName="counter"
-                                                suffixClassName="counter-detail"
-                                            />
-                                        </h2>
-                                        <p style={{ fontWeight: 100 }}>Increased in ROAS</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="col-md-4 pt-md-4 mt-md-5">
+                            <AnimateOnScroll animation="fadeInDown" speed="normal">
+                                <p className="case-studies-desc-new">
+                                    Witness the transformative impact of strategies engineered for global resonance and measurable market dominance.
+                                </p>
+                            </AnimateOnScroll>
                         </div>
                     </div>
-                </AnimateOnScroll>
+
+                    <div 
+                        className="case-studies-track-container position-relative"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        {/* Navigation buttons */}
+                        <button 
+                            className="case-studies-nav-btn prev-btn" 
+                            onClick={handleScrollPrev}
+                            aria-label="Previous Case Study"
+                        >
+                            <i className="fa-solid fa-chevron-left"></i>
+                        </button>
+                        
+                        <button 
+                            className="case-studies-nav-btn next-btn" 
+                            onClick={handleScrollNext}
+                            aria-label="Next Case Study"
+                        >
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div className="case-studies-track" ref={trackRef}>
+                            {tripledStudies.map((study, idx) => (
+                                <a 
+                                    key={`${idx}-${study.title}`}
+                                    href={study.link} 
+                                    className={`case-study-card-new ${study.themeClass}`} 
+                                    style={{ backgroundImage: `url(${study.image})` }}
+                                >
+                                    <div className="card-image-overlay"></div>
+                                    <div className="card-content">
+                                        <h4 className="card-title">{study.title}</h4>
+                                        <p className="card-subtitle">{study.subtitle}</p>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Mobile only button display underneath */}
+                    <div className="mt-4 d-block d-md-none text-center">
+                        <a href="/case_studies" className="btn-case-studies-more">
+                            <span>More Case Studies</span>
+                            <div className="btn-icon-circle">
+                                <i className="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
