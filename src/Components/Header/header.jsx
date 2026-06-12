@@ -564,7 +564,7 @@ function Navbar() {
                     left: 0;
                     width: 100vw;
                     height: 100vh;
-                    background-color: rgba(10, 10, 10, 0.98);
+                    background-color: var(--contact-card-color);
                     backdrop-filter: blur(20px);
                     -webkit-backdrop-filter: blur(20px);
                     z-index: 99999;
@@ -588,6 +588,13 @@ function Navbar() {
                     align-items: center;
                 }
 
+                .contact-modal-overlay .card.form-layout {
+                    background-color: transparent !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                    padding: 0 !important;
+                }
+
                 @keyframes fadeInModal {
                     from { opacity: 0; transform: translateY(-10px); }
                     to { opacity: 1; transform: translateY(0); }
@@ -597,6 +604,71 @@ function Navbar() {
                     .contact-modal-body-container {
                         padding: 40px 0;
                         align-items: flex-start;
+                    }
+                }
+
+                @media (min-width: 992px) {
+                    .contact-modal-overlay {
+                        overflow: hidden;
+                    }
+                    .contact-modal-body-container {
+                        padding: 10px 0;
+                    }
+                    .contact-modal-overlay .card.form-layout {
+                        padding: 0 !important;
+                        margin: 0 !important;
+                    }
+                    .contact-modal-overlay .card.form-layout .title-heading {
+                        margin-bottom: 4px !important;
+                        font-size: 1.6rem !important;
+                    }
+                    .contact-modal-overlay .card.form-layout h6 {
+                        margin-bottom: 10px !important;
+                        font-size: 0.8rem !important;
+                    }
+                    .contact-modal-overlay #contactForm .row {
+                        margin-bottom: 8px !important;
+                    }
+                    .contact-modal-overlay #contactForm input {
+                        padding: 6px 0 !important;
+                        font-size: 14px !important;
+                    }
+                    .contact-modal-overlay #contactForm textarea {
+                        padding: 6px 0 !important;
+                        min-height: 40px !important;
+                        height: 40px !important;
+                        font-size: 14px !important;
+                    }
+                    .contact-modal-overlay .services-group {
+                        margin-top: 4px !important;
+                        margin-bottom: 10px !important;
+                    }
+                    .contact-modal-overlay .services-title {
+                        font-size: 1.05rem !important;
+                        margin-bottom: 8px !important;
+                        padding-bottom: 6px !important;
+                    }
+                    .contact-modal-overlay .services-grid {
+                        grid-template-columns: repeat(5, 1fr) !important;
+                        gap: 8px 12px !important;
+                        margin-top: 8px !important;
+                    }
+                    .contact-modal-overlay .service-option {
+                        font-size: 12.5px !important;
+                        gap: 6px !important;
+                    }
+                    .contact-modal-overlay .checkmark {
+                        width: 13px !important;
+                        height: 13px !important;
+                    }
+                    .contact-modal-overlay .message-title {
+                        font-size: 1.05rem !important;
+                        margin-bottom: 4px !important;
+                    }
+                    .contact-modal-overlay #contactForm button[type="submit"] {
+                        padding: 8px 20px !important;
+                        font-size: 0.78rem !important;
+                        margin-top: 4px !important;
                     }
                 }
             ` }} />
