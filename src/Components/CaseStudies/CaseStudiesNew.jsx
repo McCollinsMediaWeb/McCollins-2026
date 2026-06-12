@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 const CaseStudiesSectionNew = ({ noPadding }) => {
@@ -9,7 +9,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Rebuilding the regional digital identity of Pioneer Gulf, optimizing the UX/UI for organic search reach, entity schema, and mobile Core Web Vitals.",
             image: "/case-studies-thumbs/pioneer.jpg",
             link: "/case_studies/pioneer",
-            imgHeight: "360px"
+            imgHeight: "360px",
+            categories: ["website-build"]
         },
         {
             title: "OAK BERRY",
@@ -17,7 +18,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Creating an entity-rich digital campaign and website build for Oakberry Açaí, driving brand awareness and local foot traffic across the UAE.",
             image: "/case-studies-thumbs/oakberry.jpg",
             link: "/case_studies/oakberry",
-            imgHeight: "260px"
+            imgHeight: "260px",
+            categories: ["creative-campaign"]
         },
         {
             title: "VOSS DUBAI",
@@ -25,7 +27,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Developing a premium editorial commerce experience for Voss water, focusing on minimal luxury aesthetics, payment optionality, and headless speed.",
             image: "/case-studies-thumbs/voss.jpg",
             link: "/case_studies/voss-dubai",
-            imgHeight: "420px"
+            imgHeight: "420px",
+            categories: ["digital-marketing", "luxury-ecommerce"]
         },
         {
             title: "BETTER LIFE",
@@ -33,7 +36,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Scaling the digital storefront for Better Life home appliances through high-intent search acquisition, localized UX flow, and optimized conversion funnels.",
             image: "/case-studies-thumbs/betterlife.jpg",
             link: "/case_studies/better-life",
-            imgHeight: "280px"
+            imgHeight: "280px",
+            categories: ["digital-marketing"]
         },
         {
             title: "MAPEI",
@@ -41,7 +45,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Building a robust B2B lead generation platform and custom brand world for Mapei Construction Chemicals across regional Middle East markets.",
             image: "/case-studies-thumbs/mapei.jpg",
             link: "/case_studies/mapei",
-            imgHeight: "380px"
+            imgHeight: "380px",
+            categories: ["digital-marketing"]
         },
         {
             title: "DOORS FREESTYLE GRILL",
@@ -49,7 +54,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Designing a mouth-watering interactive digital menu and reservation booking experience for the premier luxury steakhouse in Al Seef.",
             image: "/case-studies-thumbs/doors.jpg",
             link: "/case_studies/doors",
-            imgHeight: "460px"
+            imgHeight: "460px",
+            categories: ["website-build", "luxury-ecommerce"]
         },
         {
             title: "ZILLI DUBAI",
@@ -57,7 +63,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Crafting a mobile-first, editorial Shopify experience for French luxury maison ZILLI, tailored for elite regional clientele and single-tap checkout.",
             image: "/case-studies-thumbs/zilli-dubai.jpg",
             link: "/case_studies/zilli-dubai",
-            imgHeight: "320px"
+            imgHeight: "320px",
+            categories: ["luxury-ecommerce"]
         },
         {
             title: "CLEANING SUPERSTORE",
@@ -65,7 +72,8 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Scaling a COVID-era brand build into the largest cleaning chemicals, machinery, and consumables e-commerce superstore in the UAE.",
             image: "/case-studies-thumbs/cleaning-superstore.jpg",
             link: "/case_studies/cleaning-superstore",
-            imgHeight: "440px"
+            imgHeight: "440px",
+            categories: ["luxury-ecommerce"]
         },
         {
             title: "ARMOURED SOLUTIONS",
@@ -73,15 +81,64 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             description: "Engineering search engine dominance, high-fidelity defense UX, and custom CRM leads capture for custom tactical armored defense vehicle solutions.",
             image: "/case-studies-thumbs/armoured-solutions.jpg",
             link: "/case_studies/armoured-solutions",
-            imgHeight: "300px"
+            imgHeight: "300px",
+            categories: ["website-build"]
         }
     ];
+
+    const [activeFilter, setActiveFilter] = useState("all");
+
+    const filterButtons = [
+        { id: "all", label: "All Work" },
+        { id: "website-build", label: "Website Build" },
+        { id: "creative-campaign", label: "Creative Campaigns" },
+        { id: "digital-marketing", label: "Digital Marketing" },
+        { id: "luxury-ecommerce", label: "Luxury UX & E-Com" }
+    ];
+
+    const filteredStudies = activeFilter === "all"
+        ? studies
+        : studies.filter(study => study.categories.includes(activeFilter));
 
     return (
         <div className={`cs-masonry-container ${noPadding ? "p-0" : ""}`} style={{ backgroundColor: '#000000', color: '#ffffff', minHeight: '100vh' }}>
             <style dangerouslySetInnerHTML={{ __html: `
                 .cs-masonry-container {
                     padding: 80px 0;
+                }
+                .cs-filter-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+                .cs-filter-btn {
+                    font-family: 'Delight', sans-serif;
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 0.6);
+                    background: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 30px;
+                    padding: 10px 24px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .cs-filter-btn:hover {
+                    color: #3875fd;
+                    border-color: rgba(56, 117, 253, 0.4);
+                    background: rgba(56, 117, 253, 0.05);
+                }
+                .cs-filter-btn.active {
+                    color: #ffffff;
+                    background: #3875fd;
+                    border-color: #3875fd;
+                    box-shadow: 0 8px 20px rgba(56, 117, 253, 0.3);
                 }
                 .cs-masonry-grid {
                     column-count: 3;
@@ -196,9 +253,22 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             ` }} />
 
             <div className="hero-container">
+                {/* Filter buttons */}
+                <div className="cs-filter-wrapper">
+                    {filterButtons.map((btn) => (
+                        <button
+                            key={btn.id}
+                            className={`cs-filter-btn ${activeFilter === btn.id ? "active" : ""}`}
+                            onClick={() => setActiveFilter(btn.id)}
+                        >
+                            {btn.label}
+                        </button>
+                    ))}
+                </div>
+
                 <div className="cs-masonry-grid">
-                    {studies.map((study, index) => (
-                        <div key={index} className="cs-masonry-item">
+                    {filteredStudies.map((study, index) => (
+                        <div key={study.title} className="cs-masonry-item">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={index * 50}>
                                 <a href={study.link} style={{ textDecoration: 'none' }}>
                                     <div className="cs-masonry-card">
