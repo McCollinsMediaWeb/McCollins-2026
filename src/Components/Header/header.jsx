@@ -577,7 +577,7 @@ function Navbar() {
                 }
 
                 .contact-modal-close:hover {
-                    color: #a855f7;
+                    color: var(--accent-color);
                     transform: scale(1.1);
                 }
 
@@ -600,15 +600,16 @@ function Navbar() {
                     padding: 0 !important;
                 }
 
-                /* Rectangular White Inputs style overrides */
+                /* Black Inputs with White Border-Bottom style overrides */
                 .contact-modal-card #contactForm input[type="text"],
                 .contact-modal-card #contactForm input[type="email"],
                 .contact-modal-card #contactForm select {
-                    background-color: #ffffff !important;
-                    color: #000000 !important;
+                    background-color: #000000 !important;
+                    color: #ffffff !important;
                     border: none !important;
-                    border-radius: 8px !important;
-                    padding: 10px 14px !important;
+                    border-bottom: 1px solid #ffffff !important;
+                    border-radius: 0px !important;
+                    padding: 10px 0px !important;
                     font-size: 14px !important;
                     width: 100% !important;
                     box-shadow: none !important;
@@ -617,18 +618,25 @@ function Navbar() {
                     height: 42px !important;
                 }
 
+                .contact-modal-card #contactForm select option {
+                    background-color: #000000 !important;
+                    color: #ffffff !important;
+                }
+
                 .contact-modal-card #contactForm input::placeholder {
-                    color: #888888 !important;
+                    color: rgba(255, 255, 255, 0.6) !important;
                     font-size: 14px !important;
                 }
 
-                /* Phone Input wrapper styling to match white rectangles */
+                /* Phone Input wrapper styling to match black inputs */
                 .contact-modal-card .phone-input-wrapper {
                     display: flex;
                     align-items: center;
-                    background-color: #ffffff !important;
-                    border-radius: 8px !important;
-                    padding: 0px 14px !important;
+                    background-color: #000000 !important;
+                    border: none !important;
+                    border-bottom: 1px solid #ffffff !important;
+                    border-radius: 0px !important;
+                    padding: 0px !important;
                     margin-top: 4px !important;
                     height: 42px !important;
                     width: 100% !important;
@@ -636,7 +644,7 @@ function Navbar() {
 
                 .contact-modal-card .phone-input-wrapper input {
                     background-color: transparent !important;
-                    color: #000000 !important;
+                    color: #ffffff !important;
                     border: none !important;
                     font-size: 14px !important;
                     padding: 8px 0 !important;
@@ -647,6 +655,16 @@ function Navbar() {
 
                 .contact-modal-card .phone-input-wrapper .PhoneInputCountry {
                     margin-right: 8px !important;
+                }
+
+                .contact-modal-card .phone-input-wrapper .PhoneInputCountrySelect {
+                    color: #ffffff !important;
+                    background-color: #000000 !important;
+                }
+
+                .contact-modal-card .phone-input-wrapper .PhoneInputCountrySelect option {
+                    background-color: #000000 !important;
+                    color: #ffffff !important;
                 }
 
                 /* Fix spacing */

@@ -712,7 +712,7 @@ const ContactFormNew = (props) => {
                             type="submit"
                             className={isModal ? "btn btn-accent-modal" : "btn btn-accent"}
                             style={isModal ? {
-                                background: loading ? "#6b21a8" : "linear-gradient(135deg, #a855f7 0%, #7e22ce 100%)",
+                                background: loading ? "#1a4cf6" : "linear-gradient(135deg, rgb(56, 118, 252) 0%, rgb(26, 76, 246) 100%)",
                                 color: "#fff",
                                 cursor: loading ? "not-allowed" : "pointer",
                                 borderRadius: '50px',
@@ -720,7 +720,7 @@ const ContactFormNew = (props) => {
                                 border: 'none',
                                 fontSize: '15px',
                                 fontWeight: '600',
-                                boxShadow: '0 8px 20px rgba(126, 34, 206, 0.3)',
+                                boxShadow: '0 8px 20px rgba(56, 118, 252, 0.3)',
                                 transition: 'all 0.3s ease'
                             } : {
                                 backgroundColor: loading ? "#6a9bfc" : "#3876fc",
