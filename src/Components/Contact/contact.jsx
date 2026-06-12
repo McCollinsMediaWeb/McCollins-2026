@@ -69,74 +69,33 @@ const ContactSection = () => {
                                     Have an idea, project, or campaign you want to bring to life? Drop us a line, or visit our office in Dubai Media City.
                                 </p>
 
-                                <div className="contact-cards-grid">
-                                    {/* Card 1: Email */}
-                                    <div className="contact-glass-card" onClick={() => copyToClipboard("info@mccollinsmedia.com", "email")} style={{ cursor: "pointer" }}>
-                                        <div className="contact-card-icon-box">
-                                            <i className="fa-regular fa-envelope"></i>
-                                        </div>
-                                        <div className="contact-card-info">
-                                            <div className="contact-card-label">Email Us</div>
-                                            <h4 className="contact-card-value">info@mccollinsmedia.com</h4>
-                                            <button className="contact-card-action">
-                                                <i className={copiedEmail ? "fa-solid fa-check" : "fa-regular fa-copy"}></i>
-                                                {copiedEmail ? "Copied!" : "Copy Email"}
-                                            </button>
-                                        </div>
+                                <div className="contact-details-flat">
+                                    {/* Contact */}
+                                    <div className="detail-block">
+                                        <h3>Contact</h3>
+                                        <h5>Mobile: +971 55 956 4135</h5>
+                                        <h5>Email: info@mccollinsmedia.com</h5>
                                     </div>
 
-                                    {/* Card 2: Phone */}
-                                    <div className="contact-glass-card">
-                                        <div className="contact-card-icon-box">
-                                            <i className="fa-solid fa-phone-volume"></i>
-                                        </div>
-                                        <div className="contact-card-info">
-                                            <div className="contact-card-label">Call Our Office</div>
-                                            <h4 className="contact-card-value">+971 55 956 4135</h4>
-                                            <a href="tel:+971559564135" className="contact-card-action">
-                                                <i className="fa-solid fa-arrow-right"></i>
-                                                Call Now
-                                            </a>
-                                        </div>
+                                    {/* Our Address */}
+                                    <div className="detail-block">
+                                        <h3>Our Address</h3>
+                                        <h5>G04, Loft Office 2, Entrance C,</h5>
+                                        <h5>Dubai Media City, Dubai</h5>
                                     </div>
 
-                                    {/* Card 3: Address */}
-                                    <a 
-                                        href="https://maps.google.com/?q=Loft+Office+2,+Dubai+Media+City,+Dubai" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer" 
-                                        className="contact-glass-card"
-                                    >
-                                        <div className="contact-card-icon-box">
-                                            <i className="fa-solid fa-location-dot"></i>
-                                        </div>
-                                        <div className="contact-card-info">
-                                            <div className="contact-card-label">Visit Us</div>
-                                            <h4 className="contact-card-value">
-                                                G04, Loft Office 2, Entrance C,<br />
-                                                Dubai Media City, Dubai, UAE
-                                            </h4>
-                                            <span className="contact-card-action">
-                                                <i className="fa-solid fa-map"></i>
-                                                Get Directions
+                                    {/* Office Hours */}
+                                    <div className="detail-block">
+                                        <h3>Office Hours</h3>
+                                        <h5>Monday - Friday (9.00 AM to 6.00 PM)</h5>
+                                        <div className="d-flex align-items-center gap-2 mt-2">
+                                            <span style={{ fontFamily: 'monospace', fontSize: '13px', color: 'rgba(255, 255, 255, 0.65)', letterSpacing: '0.5px' }}>
+                                                Dubai Time: {dubaiTime || "--:--:-- --"}
                                             </span>
-                                        </div>
-                                    </a>
-
-                                    {/* Card 4: Clock */}
-                                    <div className="contact-glass-card">
-                                        <div className="contact-card-icon-box">
-                                            <i className="fa-regular fa-clock"></i>
-                                        </div>
-                                        <div className="contact-card-info">
-                                            <div className="contact-card-label">Local Dubai Time</div>
-                                            <div className="time-display-digital">{dubaiTime || "--:--:-- --"}</div>
-                                            <div>
-                                                <span className={`status-indicator-badge ${isOpen ? "open" : "closed"}`}>
-                                                    <span className="pulsing-status-dot"></span>
-                                                    {isOpen ? "Office Open" : "Office Closed"}
-                                                </span>
-                                            </div>
+                                            <span className={`status-indicator-badge ${isOpen ? "open" : "closed"}`} style={{ marginTop: '0', padding: '3px 8px', fontSize: '9px' }}>
+                                                <span className="pulsing-status-dot" style={{ width: '6px', height: '6px' }}></span>
+                                                {isOpen ? "Open" : "Closed"}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
