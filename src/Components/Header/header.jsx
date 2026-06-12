@@ -520,39 +520,12 @@ function Navbar() {
             </div>
 
             {showContactModal && (
-                <div className="contact-modal-overlay">
-                    <div className="contact-modal-header">
-                        <div className="container">
-                            <div className="HdMenuFlex">
-                                <div className="HdMenuLeft">
-                                    <a className="navbar-brand" href="/" onClick={() => setShowContactModal(false)}>
-                                        <img
-                                            src="/assets/images/mcmain.png"
-                                            className="img-fluid site-logo"
-                                            alt="Logo"
-                                        />
-                                    </a>
-                                </div>
-                                <div className="HdMenuMiddle d-none d-lg-block">
-                                    <div className="HdT1" style={{ fontSize: 'clamp(18px, 1.6vw, 24px)', color: '#fff', fontWeight: 600 }}>Ready to get started?</div>
-                                </div>
-                                <div className="HdMenuRight">
-                                    <div className="CloseBtn" onClick={() => setShowContactModal(false)}>
-                                        &nbsp;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="contact-modal-body-container">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10 col-12">
-                                    <ContactFormNew page="Header Modal" />
-                                </div>
-                            </div>
-                        </div>
+                <div className="contact-modal-overlay" onClick={() => setShowContactModal(false)}>
+                    <div className="contact-modal-card" onClick={(e) => e.stopPropagation()}>
+                        <button className="contact-modal-close" onClick={() => setShowContactModal(false)}>
+                            &times;
+                        </button>
+                        <ContactFormNew page="Header Modal" />
                     </div>
                 </div>
             )}
@@ -564,108 +537,129 @@ function Navbar() {
                     left: 0;
                     width: 100vw;
                     height: 100vh;
-                    background-color: var(--contact-card-color);
-                    backdrop-filter: blur(20px);
-                    -webkit-backdrop-filter: blur(20px);
+                    background: rgba(0, 0, 0, 0.75);
+                    backdrop-filter: blur(8px);
+                    -webkit-backdrop-filter: blur(8px);
                     z-index: 99999;
                     display: flex;
-                    flex-direction: column;
-                    overflow-y: auto;
-                    animation: fadeInModal 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-                }
-
-                .contact-modal-header {
-                    padding: 25px 0px;
-                    background-color: transparent;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-                    flex-shrink: 0;
-                }
-
-                .contact-modal-body-container {
-                    flex-grow: 1;
-                    padding: 60px 0;
-                    display: flex;
+                    justify-content: center;
                     align-items: center;
+                    padding: 20px;
+                    animation: fadeInOverlay 0.3s ease forwards;
                 }
 
-                .contact-modal-overlay .card.form-layout {
+                .contact-modal-card {
+                    background-color: var(--contact-card-color);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 24px;
+                    width: 100%;
+                    max-width: 700px;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    position: relative;
+                    padding: 40px;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+                    animation: scaleUpCard 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                }
+
+                .contact-modal-close {
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    background: transparent;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 2rem;
+                    cursor: pointer;
+                    transition: color 0.2s ease;
+                    line-height: 1;
+                    z-index: 10;
+                }
+
+                .contact-modal-close:hover {
+                    color: #3875fd;
+                }
+
+                .contact-modal-card .card.form-layout {
                     background-color: transparent !important;
                     border: none !important;
                     box-shadow: none !important;
                     padding: 0 !important;
                 }
 
-                @keyframes fadeInModal {
-                    from { opacity: 0; transform: translateY(-10px); }
-                    to { opacity: 1; transform: translateY(0); }
+                @keyframes fadeInOverlay {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
                 }
 
-                @media (max-width: 991px) {
-                    .contact-modal-body-container {
-                        padding: 40px 0;
-                        align-items: flex-start;
+                @keyframes scaleUpCard {
+                    from { transform: scale(0.95); opacity: 0; }
+                    to { transform: scale(1); opacity: 1; }
+                }
+
+                @media (max-width: 767px) {
+                    .contact-modal-card {
+                        padding: 30px 20px;
+                        border-radius: 16px;
                     }
                 }
 
                 @media (min-width: 992px) {
-                    .contact-modal-overlay {
+                    .contact-modal-card {
                         overflow: hidden;
                     }
-                    .contact-modal-body-container {
-                        padding: 10px 0;
-                    }
-                    .contact-modal-overlay .card.form-layout {
+                    .contact-modal-card .card.form-layout {
                         padding: 0 !important;
                         margin: 0 !important;
                     }
-                    .contact-modal-overlay .card.form-layout .title-heading {
+                    .contact-modal-card .card.form-layout .title-heading {
                         margin-bottom: 4px !important;
                         font-size: 1.6rem !important;
                     }
-                    .contact-modal-overlay .card.form-layout h6 {
+                    .contact-modal-card .card.form-layout h6 {
                         margin-bottom: 10px !important;
                         font-size: 0.8rem !important;
                     }
-                    .contact-modal-overlay #contactForm .row {
+                    .contact-modal-card #contactForm .row {
                         margin-bottom: 8px !important;
                     }
-                    .contact-modal-overlay #contactForm input {
+                    .contact-modal-card #contactForm input {
                         padding: 6px 0 !important;
                         font-size: 14px !important;
                     }
-                    .contact-modal-overlay #contactForm textarea {
+                    .contact-modal-card #contactForm textarea {
                         padding: 6px 0 !important;
                         min-height: 40px !important;
                         height: 40px !important;
                         font-size: 14px !important;
                     }
-                    .contact-modal-overlay .services-group {
+                    .contact-modal-card .services-group {
                         margin-top: 4px !important;
                         margin-bottom: 10px !important;
                     }
-                    .contact-modal-overlay .services-title {
+                    .contact-modal-card .services-title {
                         font-size: 1.05rem !important;
                         margin-bottom: 8px !important;
                         padding-bottom: 6px !important;
                     }
-                    .contact-modal-overlay .services-grid {
-                        grid-template-columns: repeat(5, 1fr) !important;
+                    .contact-modal-card .services-grid {
+                        grid-template-columns: repeat(4, 1fr) !important;
                         gap: 8px 12px !important;
                         margin-top: 8px !important;
                     }
-                    .contact-modal-overlay .service-option {
+                    .contact-modal-card .service-option {
                         font-size: 12.5px !important;
                         gap: 6px !important;
                     }
-                    .contact-modal-overlay .checkmark {
+                    .contact-modal-card .checkmark {
                         width: 13px !important;
                         height: 13px !important;
                     }
-                    .contact-modal-overlay .message-title {
+                    .contact-modal-card .message-title {
                         font-size: 1.05rem !important;
                         margin-bottom: 4px !important;
                     }
-                    .contact-modal-overlay #contactForm button[type="submit"] {
+                    .contact-modal-card #contactForm button[type="submit"] {
                         padding: 8px 20px !important;
                         font-size: 0.78rem !important;
                         margin-top: 4px !important;
