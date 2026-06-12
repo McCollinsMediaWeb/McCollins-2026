@@ -549,8 +549,8 @@ function Navbar() {
                 }
 
                 .contact-modal-card {
-                    background-color: var(--contact-card-color);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    background-color: #000000 !important;
+                    border: none !important;
                     border-radius: 24px;
                     width: 100%;
                     max-width: 700px;
