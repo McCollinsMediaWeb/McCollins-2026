@@ -42,13 +42,13 @@ const Counter = ({ target, decimals = 0, duration = 1500, prefix = "", suffix = 
     );
 };
 
-function CleaningSuperstoreCaseStudyPage() {
+function ArmouredSolutionsCaseStudyPage() {
     return (
-        <div className="css-page-wrapper">
-            <HeadTitle title="Cleaning Superstore Case Study - McCollins Media - Digital Marketing Agency" />
+        <div className="as-page-wrapper">
+            <HeadTitle title="Armoured Solutions Case Study - McCollins Media - Digital Marketing Agency" />
             
             <style dangerouslySetInnerHTML={{ __html: `
-                .css-page-wrapper {
+                .as-page-wrapper {
                     background-color: #000000;
                     color: #ffffff;
                     font-family: 'Delight', sans-serif;
@@ -56,7 +56,7 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Hero Section */
-                .css-hero {
+                .as-hero {
                     min-height: 95vh;
                     padding: 160px 0 100px 0;
                     display: flex;
@@ -65,14 +65,14 @@ function CleaningSuperstoreCaseStudyPage() {
                     background-color: #000000;
                 }
                 
-                .css-hero-content {
+                .as-hero-content {
                     max-width: 600px;
                     text-align: left;
                     z-index: 2;
                     position: relative;
                 }
                 
-                .css-hero-title-main {
+                .as-hero-title-main {
                     font-family: 'Delight', sans-serif;
                     font-size: 5.5rem;
                     font-weight: 900;
@@ -83,7 +83,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: uppercase;
                 }
                 
-                .css-serif-italic {
+                .as-serif-italic {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     text-transform: uppercase;
@@ -93,7 +93,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-top: -5px;
                 }
                 
-                .css-hero-subtitle {
+                .as-hero-subtitle {
                     font-family: 'Delight', sans-serif;
                     font-size: 1.25rem;
                     font-weight: 400;
@@ -105,7 +105,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: none;
                 }
                 
-                .css-hero-badge {
+                .as-hero-badge {
                     display: inline-block;
                     padding: 10px 28px;
                     border-radius: 50px;
@@ -120,14 +120,14 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: none;
                 }
                 
-                .css-hero-image-container {
+                .as-hero-image-container {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     z-index: 2;
                 }
                 
-                .css-hero-image {
+                .as-hero-image {
                     width: 100%;
                     max-width: 500px;
                     height: auto;
@@ -137,14 +137,14 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Blue Info Bar */
-                .css-blue-bar {
+                .as-blue-bar {
                     background-color: #1a4cf6;
                     padding: 24px 0;
                     position: relative;
                     z-index: 2;
                 }
                 
-                .css-blue-bar-content {
+                .as-blue-bar-content {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -154,19 +154,19 @@ function CleaningSuperstoreCaseStudyPage() {
                     letter-spacing: 2.5px;
                 }
                 
-                .css-blue-bar-content span {
+                .as-blue-bar-content span {
                     text-transform: uppercase;
                 }
                 
                 /* KPI Section */
-                .css-kpi-section {
+                .as-kpi-section {
                     padding: 100px 0;
                     background-color: #000000;
                     color: #ffffff;
                     position: relative;
                 }
                 
-                .css-section-header {
+                .as-section-header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -175,7 +175,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-bottom: 60px;
                 }
                 
-                .css-label-left, .css-label-right {
+                .as-label-left, .as-label-right {
                     font-size: 0.75rem;
                     letter-spacing: 2px;
                     text-transform: uppercase;
@@ -183,7 +183,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     font-weight: 600;
                 }
                 
-                .css-kpi-grid {
+                .as-kpi-grid {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -192,7 +192,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .css-kpi-col {
+                .as-kpi-col {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -201,13 +201,13 @@ function CleaningSuperstoreCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .css-kpi-col.center {
+                .as-kpi-col.center {
                     justify-content: center;
                     align-items: center;
                     width: 440px;
                 }
                 
-                .css-graphic-container {
+                .as-graphic-container {
                     width: 320px;
                     height: 400px;
                     display: flex;
@@ -216,14 +216,14 @@ function CleaningSuperstoreCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .css-graphic-image {
+                .as-graphic-image {
                     width: 100%;
                     height: 100%;
                     display: block;
                     object-fit: contain;
                 }
                 
-                .css-kpi-card {
+                .as-kpi-card {
                     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
                     backdrop-filter: blur(16px);
                     -webkit-backdrop-filter: blur(16px);
@@ -241,13 +241,13 @@ function CleaningSuperstoreCaseStudyPage() {
                     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
                 }
                 
-                .css-kpi-card:hover {
+                .as-kpi-card:hover {
                     transform: translateY(-4px);
                     border-color: rgba(56, 117, 253, 0.4);
                     background: rgba(255, 255, 255, 0.05);
                 }
                 
-                .css-kpi-badge {
+                .as-kpi-badge {
                     width: 44px;
                     height: 44px;
                     border-radius: 50%;
@@ -262,12 +262,12 @@ function CleaningSuperstoreCaseStudyPage() {
                     flex-shrink: 0;
                 }
                 
-                .css-kpi-content {
+                .as-kpi-content {
                     display: flex;
                     flex-direction: column;
                 }
                 
-                .css-kpi-stat {
+                .as-kpi-stat {
                     font-size: 2.8rem;
                     font-weight: 800;
                     line-height: 1.1;
@@ -275,7 +275,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     letter-spacing: -0.5px;
                 }
                 
-                .css-kpi-desc {
+                .as-kpi-desc {
                     font-size: 0.7rem;
                     font-weight: 700;
                     color: rgba(255, 255, 255, 0.5);
@@ -284,7 +284,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: uppercase;
                 }
                 
-                .css-kpi-lines {
+                .as-kpi-lines {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -295,29 +295,29 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Strategic Approach Section */
-                .css-approach-section {
+                .as-approach-section {
                     padding: 100px 0 50px 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                 }
                 
-                .css-approach-section .css-section-header {
+                .as-approach-section .as-section-header {
                     border-bottom: 1px solid rgba(15, 23, 42, 0.08);
                     margin-bottom: 40px;
                 }
                 
-                .css-approach-section .css-label-left,
-                .css-approach-section .css-label-right {
+                .as-approach-section .as-label-left,
+                .as-approach-section .as-label-right {
                     color: rgba(15, 23, 42, 0.45);
                 }
                 
-                .css-approach-col {
+                .as-approach-col {
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 30px;
                 }
                 
-                .css-approach-card {
+                .as-approach-card {
                     background: rgba(255, 255, 255, 0.5);
                     border: 1px solid rgba(255, 255, 255, 0.6);
                     border-radius: 20px;
@@ -328,27 +328,27 @@ function CleaningSuperstoreCaseStudyPage() {
                     transition: all 0.4s ease;
                 }
                 
-                .css-approach-card:hover {
+                .as-approach-card:hover {
                     transform: translateY(-4px);
                     background: rgba(255, 255, 255, 0.85);
                     border-color: rgba(255, 255, 255, 0.9);
                     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
                 }
                 
-                .css-approach-header {
+                .as-approach-header {
                     display: flex;
                     align-items: baseline;
                     margin-bottom: 20px;
                     min-height: 70px;
                 }
                 
-                .css-approach-header.flex-col {
+                .as-approach-header.flex-col {
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-end;
                 }
                 
-                .css-approach-the {
+                .as-approach-the {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     font-weight: 400;
@@ -357,7 +357,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-right: 8px;
                 }
                 
-                .css-approach-title {
+                .as-approach-title {
                     font-family: 'Delight', sans-serif;
                     font-weight: 900;
                     font-size: 1.7rem;
@@ -367,7 +367,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin: 0;
                 }
                 
-                .css-approach-title.accent-blue {
+                .as-approach-title.accent-blue {
                     color: #1a4cf6;
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
@@ -376,7 +376,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-top: -5px;
                 }
                 
-                .css-approach-text {
+                .as-approach-text {
                     font-size: 0.98rem;
                     line-height: 1.7;
                     color: rgba(15, 23, 42, 0.75);
@@ -385,14 +385,14 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Capabilities Section */
-                .css-capabilities-section {
+                .as-capabilities-section {
                     padding: 40px 0 0 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                     text-align: center;
                 }
                 
-                .css-capabilities-text {
+                .as-capabilities-text {
                     font-size: 0.82rem;
                     letter-spacing: 2.2px;
                     color: rgba(15, 23, 42, 0.7);
@@ -401,7 +401,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     line-height: 1.8;
                 }
                 
-                .css-bottles-banner {
+                .as-bottles-banner {
                     width: 100%;
                     height: 320px;
                     background-image: url('/case-studies/case-pyramid-image.jpg');
@@ -425,153 +425,153 @@ function CleaningSuperstoreCaseStudyPage() {
                 
                 /* Responsive styles */
                 @media (min-width: 992px) {
-                    .css-kpi-col {
+                    .as-kpi-col {
                         padding-top: 110px;
                         padding-bottom: 110px;
                     }
-                    .css-approach-col:not(:first-child) {
+                    .as-approach-col:not(:first-child) {
                         border-left: 1px solid rgba(15, 23, 42, 0.12);
                     }
-                    .css-approach-col {
+                    .as-approach-col {
                         padding-left: 30px;
                         padding-right: 30px;
                     }
-                    .css-approach-col:first-child {
+                    .as-approach-col:first-child {
                         padding-left: 0;
                     }
-                    .css-approach-col:last-child {
+                    .as-approach-col:last-child {
                         padding-right: 0;
                     }
                 }
                 
                 @media (max-width: 991px) {
-                    .css-hero {
+                    .as-hero {
                         padding: 120px 0 60px 0;
                     }
                     
-                    .css-hero-title-main {
+                    .as-hero-title-main {
                         font-size: 4rem;
                     }
                     
-                    .css-serif-italic {
+                    .as-serif-italic {
                         font-size: 4rem;
                     }
                     
-                    .css-hero-subtitle {
+                    .as-hero-subtitle {
                         font-size: 1.15rem;
                     }
                     
-                    .css-blue-bar-content {
+                    .as-blue-bar-content {
                         flex-direction: column;
                         gap: 12px;
                         text-align: center;
                         font-size: 0.75rem;
                     }
                     
-                    .css-kpi-section {
+                    .as-kpi-section {
                         padding: 70px 0;
                     }
                     
-                    .css-kpi-grid {
+                    .as-kpi-grid {
                         flex-direction: column;
                         gap: 30px;
                         height: auto;
                     }
                     
-                    .css-kpi-col {
+                    .as-kpi-col {
                         max-width: 100%;
                         width: 100%;
                         gap: 25px;
                         height: auto;
                     }
                     
-                    .css-graphic-container {
+                    .as-graphic-container {
                         margin: 20px 0;
                         width: 100%;
                         height: auto;
                     }
                     
-                    .css-kpi-card {
+                    .as-kpi-card {
                         width: 100%;
                         height: auto;
                         padding: 24px;
                     }
                     
-                    .css-approach-section {
+                    .as-approach-section {
                         padding: 70px 0 40px 0;
                     }
                     
-                    .css-approach-col {
+                    .as-approach-col {
                         border-left: none;
                         border-top: 1px solid rgba(15, 23, 42, 0.12);
                         padding-left: 0;
                         padding-top: 30px;
                     }
                     
-                    .css-approach-header {
+                    .as-approach-header {
                         min-height: auto;
                         margin-bottom: 15px;
                     }
                     
-                    .css-approach-card {
+                    .as-approach-card {
                         padding: 30px 20px;
                     }
                     
-                    .css-capabilities-section {
+                    .as-capabilities-section {
                         padding: 20px 0 0 0;
                     }
                     
-                    .css-bottles-banner {
+                    .as-bottles-banner {
                         height: 180px;
                         margin-top: 30px;
                     }
                 }
                 
                 @media (max-width: 575px) {
-                    .css-hero-title-main {
+                    .as-hero-title-main {
                         font-size: 2.8rem;
                     }
                     
-                    .css-serif-italic {
+                    .as-serif-italic {
                         font-size: 2.8rem;
                     }
                     
-                    .css-kpi-card {
+                    .as-kpi-card {
                         padding: 20px 18px;
                     }
                     
-                    .css-kpi-stat {
+                    .as-kpi-stat {
                         font-size: 2.5rem;
                     }
                 }
             ` }} />
             
             {/* 1. Hero Section */}
-            <div className="css-hero">
+            <div className="as-hero">
                 <div className="hero-container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pr-lg-5">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="css-hero-content">
-                                    <h1 className="css-hero-title-main">
-                                        CLEANING <span className="css-serif-italic">SUPERSTORE</span>
+                                <div className="as-hero-content">
+                                    <h1 className="as-hero-title-main">
+                                        ARMOURED <span className="as-serif-italic">SOLUTIONS</span>
                                     </h1>
-                                    <p className="css-hero-subtitle">
-                                        From a COVID-era brand build to the largest cleaning superstore in the UAE.
+                                    <p className="as-hero-subtitle">
+                                        Rebuilding the regional digital identity of UAE's premier custom tactical armoring firm.
                                     </p>
-                                    <div className="css-hero-badge">
+                                    <div className="as-hero-badge">
                                         Brand ➔ Scale
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         {/* Hero Image on Right */}
-                        <div className="col-lg-6 mt-5 mt-lg-0 css-hero-image-container">
+                        <div className="col-lg-6 mt-5 mt-lg-0 as-hero-image-container">
                             <AnimateOnScroll animation="fadeInRight" speed="normal">
                                 <img 
-                                    className="css-hero-image" 
-                                    src="/case-studies/css/hero.png" 
-                                    alt="Cleaning Superstore Refill Station and team photos montage"
+                                    className="as-hero-image" 
+                                    src="/case-studies-thumbs/armoured-solutions.jpg" 
+                                    alt="Armoured Solutions tactical defense vehicle mockup"
                                 />
                             </AnimateOnScroll>
                         </div>
@@ -580,10 +580,10 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 2. Blue Info Bar */}
-            <div className="css-blue-bar">
+            <div className="as-blue-bar">
                 <div className="hero-container">
-                    <div className="css-blue-bar-content">
-                        <span>CLEANING SUPERSTORE</span>
+                    <div className="as-blue-bar-content">
+                        <span>ARMOURED SOLUTIONS</span>
                         <span>CASE STUDY</span>
                         <span>BRAND ➔ SCALE</span>
                     </div>
@@ -591,15 +591,15 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 3. KPI Section */}
-            <div className="css-kpi-section">
+            <div className="as-kpi-section">
                 <div className="hero-container position-relative">
-                    <div className="css-section-header">
-                        <span className="css-label-left">01 / KEY METRICS</span>
-                        <span className="css-label-right">CLEANING SUPERSTORE</span>
+                    <div className="as-section-header">
+                        <span className="as-label-left">01 / KEY METRICS</span>
+                        <span className="as-label-right">ARMOURED SOLUTIONS</span>
                     </div>
                     
                     {/* SVG connection lines for desktop viewports */}
-                    <svg className="css-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
+                    <svg className="as-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
                         position: 'absolute',
                         top: 0,
                         left: 0,
@@ -625,41 +625,41 @@ function CleaningSuperstoreCaseStudyPage() {
                         <circle cx="860" cy="330" r="3" fill="#fff" />
                     </svg>
                     
-                    <div className="css-kpi-grid">
+                    <div className="as-kpi-grid">
                         {/* Left Column KPIs */}
-                        <div className="css-kpi-col">
+                        <div className="as-kpi-col">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={100}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">01</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={1500} suffix="+" />
+                                <div className="as-kpi-card">
+                                    <div className="as-kpi-badge">01</div>
+                                    <div className="as-kpi-content">
+                                        <span className="as-kpi-stat">
+                                            <Counter target={120} prefix="+" suffix="%" />
                                         </span>
-                                        <span className="css-kpi-desc">MONTHLY ONLINE ORDERS</span>
+                                        <span className="as-kpi-desc">ORGANIC CONVERSIONS</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={250}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">02</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            #<Counter target={1} />
+                                <div className="as-kpi-card">
+                                    <div className="as-kpi-badge">02</div>
+                                    <div className="as-kpi-content">
+                                        <span className="as-kpi-stat">
+                                            <Counter target={45} suffix="%" />
                                         </span>
-                                        <span className="css-kpi-desc">UAE CATEGORY LEADER</span>
+                                        <span className="as-kpi-desc">LOWER COST PER ACQUISITION</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Center Column - Graphic image */}
-                        <div className="css-kpi-col center">
+                        <div className="as-kpi-col center">
                             <AnimateOnScroll animation="zoomIn" speed="slow" delay={150}>
-                                <div className="css-graphic-container">
+                                <div className="as-graphic-container">
                                     <img 
-                                        className="css-graphic-image" 
-                                        src="/case-studies/css/elements.jpg" 
+                                        className="as-graphic-image" 
+                                        src="/case-studies/pioneer/voss-kpi-section.jpg" 
                                         alt="Translucent 3D plates with blue glow"
                                     />
                                 </div>
@@ -667,27 +667,27 @@ function CleaningSuperstoreCaseStudyPage() {
                         </div>
                         
                         {/* Right Column KPIs */}
-                        <div className="css-kpi-col">
+                        <div className="as-kpi-col">
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={100}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">03</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={4} suffix="+" />
+                                <div className="as-kpi-card">
+                                    <div className="as-kpi-badge">03</div>
+                                    <div className="as-kpi-content">
+                                        <span className="as-kpi-stat">
+                                            #<Counter target={1} />
                                         </span>
-                                        <span className="css-kpi-desc">PAID CHANNELS</span>
+                                        <span className="as-kpi-desc">SERP DEFENSE TERMS</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={250}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">04</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={7} suffix="x" />
+                                <div className="as-kpi-card">
+                                    <div className="as-kpi-badge">04</div>
+                                    <div className="as-kpi-content">
+                                        <span className="as-kpi-stat">
+                                            <Counter target={3} suffix="x" />
                                         </span>
-                                        <span className="css-kpi-desc">BLENDED ROAS</span>
+                                        <span className="as-kpi-desc">LEAD VELOCITY INCREASE</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
@@ -697,25 +697,25 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 4. Strategic Approach Section */}
-            <div className="css-approach-section">
+            <div className="as-approach-section">
                 <div className="hero-container">
-                    <div className="css-section-header">
-                        <span className="css-label-left">THE STRATEGIC APPROACH</span>
-                        <span className="css-label-right">CLEANING SUPERSTORE</span>
+                    <div className="as-section-header">
+                        <span className="as-label-left">THE STRATEGIC APPROACH</span>
+                        <span className="as-label-right">ARMOURED SOLUTIONS</span>
                     </div>
                     
                     <div className="row">
                         {/* Card 1: The Challenge */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 as-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header">
-                                        <span className="css-approach-the">THE</span>
-                                        <h3 className="css-approach-title">CHALLENGE</h3>
+                                    <div className="as-approach-header">
+                                        <span className="as-approach-the">THE</span>
+                                        <h3 className="as-approach-title">CHALLENGE</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            Brand built from inception during COVID. No identity, no audience, no behavioural precedent for selling chemicals/machinery online at scale. Effectively a new e-commerce vertical from zero.
+                                    <div className="as-approach-card">
+                                        <p className="as-approach-text">
+                                            Entering a highly restricted defense and armoring market with search constraints and confidential client profiles. The existing site functioned as a low-res catalog with zero SEO footprint and no direct lead capturing.
                                         </p>
                                     </div>
                                 </div>
@@ -723,19 +723,19 @@ function CleaningSuperstoreCaseStudyPage() {
                         </div>
                         
                         {/* Card 2: The Strategic Approach */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 as-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={250}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header flex-col">
+                                    <div className="as-approach-header flex-col">
                                         <div className="d-flex align-items-baseline">
-                                            <span className="css-approach-the">THE</span>
-                                            <h3 className="css-approach-title">STRATEGIC</h3>
+                                            <span className="as-approach-the">THE</span>
+                                            <h3 className="as-approach-title">STRATEGIC</h3>
                                         </div>
-                                        <h3 className="css-approach-title accent-blue">APPROACH</h3>
+                                        <h3 className="as-approach-title accent-blue">APPROACH</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            Brand & storefront. Quad-channel paid stack across META, Google, TikTok, Snapchat. Email & marketing automation as structural revenue. WhatsApp deployed as conversational commerce surface. Lifecycle calibrated to consumables.
+                                    <div className="as-approach-card">
+                                        <p className="as-approach-text">
+                                            Engineered an entity-first SEO architecture targeting global B2B procurement terms. Deployed a high-fidelity editorial portfolio highlighting vehicular ballistic ratings (CEN BR6/BR7) and technical specifications under strict privacy guidelines.
                                         </p>
                                     </div>
                                 </div>
@@ -743,16 +743,16 @@ function CleaningSuperstoreCaseStudyPage() {
                         </div>
                         
                         {/* Card 3: The Impact */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 as-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={400}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header">
-                                        <span className="css-approach-the">THE</span>
-                                        <h3 className="css-approach-title">IMPACT</h3>
+                                    <div className="as-approach-header">
+                                        <span className="as-approach-the">THE</span>
+                                        <h3 className="as-approach-title">IMPACT</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            1,500+ monthly online orders. Largest UAE cleaning superstore. ROAS held as operation scaled. Email and WhatsApp engineered as material structural revenue lines. CPO compressed materially.
+                                    <div className="as-approach-card">
+                                        <p className="as-approach-text">
+                                            Delivered a major lift in high-value global inquiries. Secured category leadership for key defense vehicle queries. Automated CRM routing for immediate tactical request dispatch.
                                         </p>
                                     </div>
                                 </div>
@@ -763,17 +763,17 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 5. Capabilities & Banner Section */}
-            <div className="css-capabilities-section">
+            <div className="as-capabilities-section">
                 <div className="hero-container text-center">
                     <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
-                        <div className="css-capabilities-text px-3 px-md-5">
-                            CAPABILITIES — BRAND • E-COM • META • GOOGLE • TIKTOK • SNAPCHAT • EMAIL • AUTOMATION • WHATSAPP • CRO
+                        <div className="as-capabilities-text px-3 px-md-5">
+                            CAPABILITIES — BRAND REBUILD • TECHNICAL SEO • DEFENSE UX • LEAD VELOCITY • BALLISTIC RATINGS • CUSTOM CRM • SITE MAINTENANCE
                         </div>
                     </AnimateOnScroll>
                 </div>
                 
                 {/* Bottom Banner */}
-                <div className="css-bottles-banner"></div>
+                <div className="as-bottles-banner"></div>
             </div>
             
             <CaseStudiesSection />
@@ -782,4 +782,4 @@ function CleaningSuperstoreCaseStudyPage() {
     );
 }
 
-export default CleaningSuperstoreCaseStudyPage;
+export default ArmouredSolutionsCaseStudyPage;

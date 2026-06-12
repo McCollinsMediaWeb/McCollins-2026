@@ -38,13 +38,13 @@ const Counter = ({ target, decimals = 0, duration = 1500, prefix = "", suffix = 
     );
 };
 
-function PioneerCaseStudyPage() {
+function MapeiCaseStudyPage() {
     return (
-        <div className="pioneer-page-wrapper">
-            <HeadTitle title="Pioneer Case Study - McCollins Media - Digital Marketing Agency" />
+        <div className="mapei-page-wrapper">
+            <HeadTitle title="Mapei Case Study - McCollins Media - Digital Marketing Agency" />
             
             <style dangerouslySetInnerHTML={{ __html: `
-                .pioneer-page-wrapper {
+                .mapei-page-wrapper {
                     background-color: #000000;
                     color: #ffffff;
                     font-family: 'Delight', sans-serif;
@@ -52,122 +52,129 @@ function PioneerCaseStudyPage() {
                 }
                 
                 /* Hero Section */
-                .pioneer-hero {
+                .mapei-hero {
                     min-height: 90vh;
-                    background-image: url('/case-studies/pioneer/herobanner.jpg');
+                    background-image: url('/case-studies/mapei/hero.jpg');
                     background-size: cover;
                     background-position: 85% center;
-                    padding: 120px 0 80px 0;
+                    padding: 140px 0 100px 0;
                     display: flex;
                     align-items: center;
                     position: relative;
-                    background-color: #e4e4e4;
+                    background-color: #000000;
                 }
                 
-                .pioneer-hero-content {
-                    max-width: 600px;
-                    text-align: left;
+                .mapei-hero::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.1) 100%),
+                                linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%);
+                    z-index: 1;
+                }
+                
+                .mapei-hero-content {
+                    width: 100%;
                     z-index: 2;
+                    position: relative;
                 }
                 
-                .pioneer-hero-title-main {
+                .mapei-hero-title-main {
                     font-family: 'Delight', sans-serif;
                     font-size: 5.5rem;
                     font-weight: 900;
-                    line-height: 0.85;
-                    letter-spacing: -2.5px;
+                    line-height: 0.9;
+                    letter-spacing: -2px;
                     margin: 0;
-                    color: #000000;
+                    color: #ffffff;
                     text-transform: uppercase;
                 }
                 
-                .pioneer-serif-blue {
+                .mapei-serif-italic {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     text-transform: none;
                     font-weight: 400;
-                    color: #3875FD;
-                    margin-left: 10px;
+                    color: #ffffff;
+                    margin-left: 15px;
                 }
                 
-                .pioneer-hero-subtitle {
-                    font-family: 'Playfair Display', serif;
-                    font-style: italic;
-                    font-size: 1.4rem;
+                .mapei-hero-subtitle {
+                    font-family: 'Delight', sans-serif;
+                    font-size: 1.25rem;
                     font-weight: 400;
-                    color: #333333;
+                    color: #e2e8f0;
                     line-height: 1.6;
                     margin-top: 25px;
                     margin-bottom: 0;
-                    max-width: 500px;
+                    max-width: 550px;
+                    text-transform: none;
                 }
                 
-                .pioneer-hero-badge {
-                    display: inline-block;
-                    padding: 10px 24px;
-                    border-radius: 50px;
-                    background: rgba(0, 0, 0, 0.05);
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    color: #333333;
-                    font-size: 0.85rem;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    margin-top: 30px;
-                    text-transform: uppercase;
+                .mapei-hero-badge-text {
+                    font-family: 'Playfair Display', serif;
+                    font-style: italic;
+                    font-size: 1.8rem;
+                    color: #ffffff;
+                    margin-top: 60px;
+                    font-weight: 400;
                 }
                 
                 /* Blue Info Bar */
-                .pioneer-blue-bar {
-                    background-color: #3875FD;
+                .mapei-blue-bar {
+                    background-color: #1a4cf6;
                     padding: 24px 0;
+                    position: relative;
+                    z-index: 2;
                 }
                 
-                .pioneer-blue-bar-content {
+                .mapei-blue-bar-content {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     color: #ffffff;
+                    font-family: 'Delight', sans-serif;
                     font-weight: 700;
                     font-size: 0.85rem;
                     letter-spacing: 2.5px;
                 }
                 
-                .pioneer-blue-bar-content span {
+                .mapei-blue-bar-content span {
                     text-transform: uppercase;
                 }
                 
-                .pioneer-blue-bar-content span span {
-                    font-family: 'Playfair Display', serif;
-                    font-style: italic;
-                    text-transform: none;
-                }
-                
-                /* KPI Section */
-                .pioneer-kpi-section {
+                /* KPI Section (Light Background) */
+                .mapei-kpi-section {
                     padding: 100px 0;
-                    background-color: #000000;
-                    color: #ffffff;
+                    background: url('/case-studies/mapei/bg1.png');
+                    background-size: cover;
+                    background-position: center;
+                    color: #0F172A;
                     position: relative;
                 }
                 
-                .pioneer-section-header {
+                .mapei-section-header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
                     padding-bottom: 15px;
                     margin-bottom: 60px;
                 }
                 
-                .pioneer-label-left, .pioneer-label-right {
+                .mapei-label-left, .mapei-label-right {
+                    font-family: 'Delight', sans-serif;
                     font-size: 0.75rem;
                     letter-spacing: 2px;
                     text-transform: uppercase;
-                    color: rgba(255, 255, 255, 0.4);
+                    color: rgba(15, 23, 42, 0.45);
                     font-weight: 600;
                 }
                 
-                .pioneer-kpi-grid {
+                .mapei-kpi-grid {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -176,7 +183,7 @@ function PioneerCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .pioneer-kpi-col {
+                .mapei-kpi-col {
                     flex: 1;
                     display: flex;
                     flex-direction: column;
@@ -185,7 +192,7 @@ function PioneerCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .pioneer-kpi-col.center {
+                .mapei-kpi-col.center {
                     flex: 1.5;
                     max-width: 440px;
                     display: flex;
@@ -194,7 +201,7 @@ function PioneerCaseStudyPage() {
                     position: relative;
                 }
                 
-                .pioneer-graphic-container {
+                .mapei-graphic-container {
                     width: 100%;
                     max-width: 380px;
                     height: auto;
@@ -204,73 +211,75 @@ function PioneerCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .pioneer-graphic-image {
+                .mapei-graphic-image {
                     width: 100%;
+                    max-width: 280px;
                     height: auto;
                     display: block;
                     object-fit: contain;
                 }
                 
-                .pioneer-kpi-card {
-                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
-                    backdrop-filter: blur(16px);
-                    -webkit-backdrop-filter: blur(16px);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
+                .mapei-kpi-card {
+                    background: rgba(255, 255, 255, 0.75);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    border: 1px solid rgba(255, 255, 255, 0.6);
                     border-radius: 20px;
-                    padding: 28px 24px;
+                    padding: 30px 25px;
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 25px;
                     position: relative;
                     z-index: 2;
-                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.04);
                     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
                 }
                 
-                .pioneer-kpi-card:hover {
+                .mapei-kpi-card:hover {
                     transform: translateY(-5px);
-                    border-color: rgba(56, 117, 253, 0.4);
-                    box-shadow: 0 15px 35px rgba(56, 117, 253, 0.2);
+                    border-color: rgba(26, 76, 246, 0.3);
+                    box-shadow: 0 15px 35px rgba(26, 76, 246, 0.08);
                 }
                 
-                .pioneer-kpi-badge {
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
+                .mapei-kpi-badge {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 12px;
+                    background: rgba(15, 23, 42, 0.03);
+                    border: 1px solid rgba(15, 23, 42, 0.08);
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 0.8rem;
+                    font-size: 0.85rem;
                     font-weight: 700;
-                    color: rgba(255, 255, 255, 0.7);
+                    color: #0F172A;
                     flex-shrink: 0;
                 }
                 
-                .pioneer-kpi-content {
+                .mapei-kpi-content {
                     display: flex;
                     flex-direction: column;
                 }
                 
-                .pioneer-kpi-stat {
-                    font-size: 2.6rem;
+                .mapei-kpi-stat {
+                    font-family: 'Delight', sans-serif;
+                    font-size: 2.8rem;
                     font-weight: 800;
-                    line-height: 1.1;
-                    color: #ffffff;
-                    letter-spacing: -0.5px;
+                    line-height: 1;
+                    color: #0F172A;
+                    letter-spacing: -1px;
                 }
                 
-                .pioneer-kpi-desc {
-                    font-size: 0.7rem;
+                .mapei-kpi-desc {
+                    font-size: 0.75rem;
                     font-weight: 700;
-                    color: rgba(255, 255, 255, 0.5);
+                    color: rgba(15, 23, 42, 0.6);
                     letter-spacing: 1.5px;
-                    margin-top: 6px;
+                    margin-top: 8px;
                     text-transform: uppercase;
                 }
                 
-                .pioneer-kpi-lines {
+                .mapei-kpi-lines {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -281,81 +290,98 @@ function PioneerCaseStudyPage() {
                 }
                 
                 /* Strategic Approach Section */
-                .pioneer-approach-section {
+                .mapei-approach-section {
                     padding: 100px 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                 }
                 
-                .pioneer-approach-section .pioneer-section-header {
+                .mapei-approach-section .mapei-section-header {
                     border-bottom: 1px solid rgba(15, 23, 42, 0.08);
                 }
                 
-                .pioneer-approach-section .pioneer-label-left,
-                .pioneer-approach-section .pioneer-label-right {
+                .mapei-approach-section .mapei-label-left,
+                .mapei-approach-section .mapei-label-right {
                     color: rgba(15, 23, 42, 0.45);
                 }
                 
-                .pioneer-approach-col {
+                .mapei-approach-col {
                     border-left: 1px solid rgba(15, 23, 42, 0.12);
                     padding-left: 30px;
                     margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
                 }
                 
-                .pioneer-approach-card {
-                    background: rgba(255, 255, 255, 0.4);
+                .mapei-approach-col:first-child {
+                    border-left: none;
+                    padding-left: 15px;
+                }
+                
+                .mapei-approach-card {
+                    flex-grow: 1;
+                    background: rgba(255, 255, 255, 0.6);
                     backdrop-filter: blur(8px);
                     -webkit-backdrop-filter: blur(8px);
-                    border-radius: 16px;
-                    padding: 35px 25px;
-                    height: 100%;
+                    border-radius: 20px;
+                    padding: 35px 30px;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
                     transition: all 0.4s ease;
                 }
                 
-                .pioneer-approach-card:hover {
+                .mapei-approach-card:hover {
                     transform: translateY(-4px);
-                    background: rgba(255, 255, 255, 0.75);
-                    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+                    background: rgba(255, 255, 255, 0.9);
+                    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
                 }
                 
-                .pioneer-approach-header {
+                .mapei-approach-header {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    margin-bottom: 25px;
+                    height: 85px;
+                }
+                
+                .mapei-approach-header-row {
                     display: flex;
                     align-items: baseline;
-                    margin-bottom: 25px;
                 }
                 
-                .pioneer-approach-header.flex-col {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                
-                .pioneer-approach-the {
+                .mapei-approach-the {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     font-weight: 400;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     color: rgba(15, 23, 42, 0.45);
                     margin-right: 8px;
+                    line-height: 1;
                 }
                 
-                .pioneer-approach-title {
+                .mapei-approach-title {
                     font-family: 'Delight', sans-serif;
-                    font-weight: 700;
-                    font-size: 1.5rem;
+                    font-weight: 800;
+                    font-size: 2rem;
                     text-transform: uppercase;
                     color: #0F172A;
-                    letter-spacing: 0.5px;
+                    letter-spacing: -0.5px;
+                    margin: 0;
+                    line-height: 1;
                 }
                 
-                .pioneer-approach-title.accent-blue {
-                    color: #3875FD;
+                .mapei-approach-title.accent-blue {
+                    color: #1a4cf6;
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     text-transform: none;
                     font-weight: 400;
+                    margin-top: 4px;
+                    font-size: 2.2rem;
                 }
                 
-                .pioneer-approach-text {
+                .mapei-approach-text {
                     font-size: 0.98rem;
                     line-height: 1.7;
                     color: rgba(15, 23, 42, 0.7);
@@ -364,15 +390,16 @@ function PioneerCaseStudyPage() {
                 }
                 
                 /* Capabilities Section */
-                .pioneer-capabilities-section {
+                .mapei-capabilities-section {
                     padding: 90px 0 0 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                     text-align: center;
                     border-top: 1px solid rgba(15, 23, 42, 0.08);
+                    position: relative;
                 }
                 
-                .pioneer-capabilities-text {
+                .mapei-capabilities-text {
                     font-size: 0.85rem;
                     letter-spacing: 2px;
                     color: rgba(15, 23, 42, 0.7);
@@ -381,7 +408,7 @@ function PioneerCaseStudyPage() {
                     line-height: 1.8;
                 }
                 
-                .pioneer-bottles-banner {
+                .mapei-bottles-banner {
                     width: 100%;
                     height: 280px;
                     background-image: url('/case-studies/case-pyramid-image.jpg');
@@ -405,212 +432,231 @@ function PioneerCaseStudyPage() {
                 
                 /* Responsive styles */
                 @media (max-width: 991px) {
-                    .pioneer-hero {
+                    .mapei-hero {
                         padding: 100px 0 60px 0;
-                        background-position: left center;
+                        background-position: center;
                     }
                     
-                    .pioneer-hero-title-main {
+                    .mapei-hero-title-main {
                         font-size: 4rem;
                     }
                     
-                    .pioneer-serif-blue {
+                    .mapei-serif-italic {
                         font-size: 4rem;
                     }
                     
-                    .pioneer-hero-subtitle {
+                    .mapei-hero-subtitle {
                         font-size: 1.2rem;
                     }
                     
-                    .pioneer-blue-bar-content {
+                    .mapei-blue-bar-content {
                         flex-direction: column;
                         gap: 12px;
                         text-align: center;
                         font-size: 0.75rem;
                     }
                     
-                    .pioneer-kpi-section {
+                    .mapei-kpi-section {
                         padding: 70px 0;
                     }
                     
-                    .pioneer-kpi-grid {
+                    .mapei-kpi-grid {
                         flex-direction: column;
                         gap: 30px;
                     }
                     
-                    .pioneer-kpi-col {
+                    .mapei-kpi-col {
                         max-width: 100%;
                         width: 100%;
                         gap: 25px;
                     }
                     
-                    .pioneer-graphic-container {
+                    .mapei-graphic-container {
                         max-width: 280px;
                     }
                     
-                    .pioneer-approach-section {
+                    .mapei-approach-section {
                         padding: 70px 0;
                     }
                     
-                    .pioneer-approach-col {
+                    .mapei-approach-col {
                         border-left: none;
                         border-top: 1px solid rgba(15, 23, 42, 0.12);
                         padding-left: 0;
                         padding-top: 30px;
                     }
                     
-                    .pioneer-approach-card {
+                    .mapei-approach-col:first-child {
+                        border-top: none;
+                        padding-top: 0;
+                    }
+                    
+                    .mapei-approach-header {
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .mapei-approach-card {
                         padding: 30px 20px;
                     }
                     
-                    .pioneer-capabilities-section {
+                    .mapei-capabilities-section {
                         padding: 60px 0 0 0;
                     }
                     
-                    .pioneer-bottles-banner {
+                    .mapei-bottles-banner {
                         height: 180px;
                     }
                 }
                 
                 @media (max-width: 575px) {
-                    .pioneer-hero-title-main {
+                    .mapei-hero-title-main {
                         font-size: 2.8rem;
                     }
                     
-                    .pioneer-serif-blue {
+                    .mapei-serif-italic {
                         font-size: 2.8rem;
                         margin-left: 5px;
                     }
                     
-                    .pioneer-kpi-card {
+                    .mapei-kpi-card {
                         padding: 20px 18px;
                     }
                     
-                    .pioneer-kpi-stat {
+                    .mapei-kpi-stat {
                         font-size: 2.2rem;
                     }
                 }
             ` }} />
             
             {/* 1. Hero Section */}
-            <div className="pioneer-hero">
+            <div className="mapei-hero">
                 <div className="hero-container">
                     <div className="row align-items-center">
-                        <div className="col-lg-6 pr-lg-5">
+                        <div className="col-12">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="pioneer-hero-content">
-                                    <h1 className="pioneer-hero-title-main">
-                                        pioneer <span className="pioneer-serif-blue">MEA</span>
+                                <div className="mapei-hero-content">
+                                    <h1 className="mapei-hero-title-main">
+                                        mapei <span className="mapei-serif-italic">Mena</span>
                                     </h1>
-                                    <p className="pioneer-hero-subtitle">
-                                        Engineering organic discoverability — a regional digital infrastructure built for the long compound.
+                                    <p className="mapei-hero-subtitle">
+                                        Engineering B2B authority on META & LinkedIn — for a specifier audience.
                                     </p>
-                                    <div className="pioneer-hero-badge">
-                                        Web • SEO • GEO
+                                    <div className="mapei-hero-badge-text">
+                                        B2B Social
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
-                        {/* Space for background focus on desktop */}
-                        <div className="col-lg-6 mt-4 mt-lg-0"></div>
                     </div>
                 </div>
             </div>
             
             {/* 2. Blue Info Bar */}
-            <div className="pioneer-blue-bar">
+            <div className="mapei-blue-bar">
                 <div className="hero-container">
-                    <div className="pioneer-blue-bar-content">
-                        <span>PIONEER <span>MEA</span></span>
+                    <div className="mapei-blue-bar-content">
+                        <span>MAPEI MENA</span>
                         <span>CASE STUDY</span>
-                        <span>WEB - SEO - GEO</span>
+                        <span>B2B SOCIAL</span>
                     </div>
                 </div>
             </div>
             
             {/* 3. KPI Section */}
-            <div className="pioneer-kpi-section">
+            <div className="mapei-kpi-section">
                 <div className="hero-container position-relative">
-                    <div className="pioneer-section-header">
-                        <span className="pioneer-label-left">01 / KEY METRICS</span>
-                        <span className="pioneer-label-right">PIONEER MEA</span>
+                    <div className="mapei-section-header">
+                        <span className="mapei-label-left">THE BRIEF</span>
+                        <span className="mapei-label-right">IMPACTFUL</span>
                     </div>
                     
                     {/* SVG connection lines for desktop viewports */}
-                    <svg className="pioneer-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none">
+                    <svg className="mapei-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        pointerEvents: 'none',
+                        zIndex: 1
+                    }}>
                         {/* Top-left card to waist */}
-                        <path d="M 320 125 C 450 125, 520 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="1.2" />
+                        <path d="M 320 125 C 450 125, 520 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.15)" strokeWidth="1.2" />
+                        <circle cx="320" cy="125" r="3" fill="rgba(15, 23, 42, 0.3)" />
+
                         {/* Bottom-left card to waist */}
-                        <path d="M 320 375 C 450 375, 520 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="1.2" />
+                        <path d="M 320 375 C 450 375, 520 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.15)" strokeWidth="1.2" />
+                        <circle cx="320" cy="375" r="3" fill="rgba(15, 23, 42, 0.3)" />
+
                         {/* Top-right card to waist */}
-                        <path d="M 860 125 C 730 125, 660 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="1.2" />
+                        <path d="M 860 125 C 730 125, 660 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.15)" strokeWidth="1.2" />
+                        <circle cx="860" cy="125" r="3" fill="rgba(15, 23, 42, 0.3)" />
+
                         {/* Bottom-right card to waist */}
-                        <path d="M 860 375 C 730 375, 660 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="1.2" />
+                        <path d="M 860 375 C 730 375, 660 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.15)" strokeWidth="1.2" />
+                        <circle cx="860" cy="375" r="3" fill="rgba(15, 23, 42, 0.3)" />
                     </svg>
                     
-                    <div className="pioneer-kpi-grid">
+                    <div className="mapei-kpi-grid">
                         {/* Left Column KPIs */}
-                        <div className="pioneer-kpi-col">
+                        <div className="mapei-kpi-col">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={100}>
-                                <div className="pioneer-kpi-card">
-                                    <div className="pioneer-kpi-badge">01</div>
-                                    <div className="pioneer-kpi-content">
-                                        <span className="pioneer-kpi-stat">
-                                            <Counter target={212} prefix="+" suffix="%" />
+                                <div className="mapei-kpi-card">
+                                    <div className="mapei-kpi-badge">01</div>
+                                    <div className="mapei-kpi-content">
+                                        <span className="mapei-kpi-stat">
+                                            0 &#10142; Launch
                                         </span>
-                                        <span className="pioneer-kpi-desc">ORGANIC SESSIONS YOY</span>
+                                        <span className="mapei-kpi-desc">CHANNELS BUILT FROM ZERO</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={250}>
-                                <div className="pioneer-kpi-card">
-                                    <div className="pioneer-kpi-badge">02</div>
-                                    <div className="pioneer-kpi-content">
-                                        <span className="pioneer-kpi-stat">
-                                            Top <Counter target={3} />
+                                <div className="mapei-kpi-card">
+                                    <div className="mapei-kpi-badge">02</div>
+                                    <div className="mapei-kpi-content">
+                                        <span className="mapei-kpi-stat">
+                                            <Counter target={2} />
                                         </span>
-                                        <span className="pioneer-kpi-desc">SERP CATEGORY TERMS</span>
+                                        <span className="mapei-kpi-desc">PRIMARY PLATFORMS</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
-                        {/* Center Column - Graphic image blended onto dark background */}
-                        <div className="pioneer-kpi-col center">
+                        {/* Center Column - hourglass */}
+                        <div className="mapei-kpi-col center">
                             <AnimateOnScroll animation="zoomIn" speed="slow" delay={150}>
-                                <div className="pioneer-graphic-container">
-                                    <img 
-                                        className="pioneer-graphic-image" 
-                                        src="/case-studies/pioneer/voss-kpi-section.jpg" 
-                                        alt="Stacked translucent plates showing system performance layers"
-                                    />
+                                <div className="mapei-graphic-container">
+                                    <img src="/case-studies/mapei/bb.png" className="mapei-graphic-image" alt="Hourglass" />
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Right Column KPIs */}
-                        <div className="pioneer-kpi-col">
+                        <div className="mapei-kpi-col">
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={100}>
-                                <div className="pioneer-kpi-card">
-                                    <div className="pioneer-kpi-badge">03</div>
-                                    <div className="pioneer-kpi-content">
-                                        <span className="pioneer-kpi-stat">
-                                            <Counter target={99.9} decimals={1} suffix="%" />
+                                <div className="mapei-kpi-card">
+                                    <div className="mapei-kpi-badge">03</div>
+                                    <div className="mapei-kpi-content">
+                                        <span className="mapei-kpi-stat">
+                                            <Counter target={680} prefix="+" suffix="%" />
                                         </span>
-                                        <span className="pioneer-kpi-desc">PRODUCTION UPTIME</span>
+                                        <span className="mapei-kpi-desc">TIME-TO-INTERACTIVE</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={250}>
-                                <div className="pioneer-kpi-card">
-                                    <div className="pioneer-kpi-badge">04</div>
-                                    <div className="pioneer-kpi-content">
-                                        <span className="pioneer-kpi-stat">
-                                            <Counter target={94} />
+                                <div className="mapei-kpi-card">
+                                    <div className="mapei-kpi-badge">04</div>
+                                    <div className="mapei-kpi-content">
+                                        <span className="mapei-kpi-stat">
+                                            <Counter target={185} prefix="+" suffix="%" />
                                         </span>
-                                        <span className="pioneer-kpi-desc">LIGHTHOUSE</span>
+                                        <span className="mapei-kpi-desc">SPECIFIER ENGAGEMENT</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
@@ -620,58 +666,68 @@ function PioneerCaseStudyPage() {
             </div>
             
             {/* 4. Strategic Approach Section */}
-            <div className="pioneer-approach-section">
+            <div className="mapei-approach-section">
                 <div className="hero-container">
-                    <div className="pioneer-section-header">
-                        <span className="pioneer-label-left">THE STRATEGIC APPROACH</span>
-                        <span className="pioneer-label-right">PIONEER MEA</span>
+                    <div className="mapei-section-header">
+                        <span className="mapei-label-left">THE STRATEGIC APPROACH</span>
+                        <span className="mapei-label-right">MAPEI MENA</span>
                     </div>
                     
                     <div className="row">
                         {/* Card 1: The Challenge */}
-                        <div className="col-lg-4 pioneer-approach-col">
+                        <div className="col-lg-4 mapei-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
-                                <div className="pioneer-approach-card">
-                                    <div className="pioneer-approach-header">
-                                        <span className="pioneer-approach-the">THE</span>
-                                        <h3 className="pioneer-approach-title">CHALLENGE</h3>
+                                <div className="w-100 h-100 d-flex flex-column">
+                                    <div className="mapei-approach-header">
+                                        <div className="mapei-approach-header-row">
+                                            <span className="mapei-approach-the">THE</span>
+                                            <h3 className="mapei-approach-title">CHALLENGE</h3>
+                                        </div>
                                     </div>
-                                    <p className="pioneer-approach-text">
-                                        Globally trusted audio brand with a regional website operating as a static brochure. Organic traffic leaking to .com properties. Architecture not engineered to surface in new generation of AI answer engines.
-                                    </p>
+                                    <div className="mapei-approach-card">
+                                        <p className="mapei-approach-text">
+                                            Global B2B leader with unbuilt MENA social presence. Audience is specifier, architect, contractor — buyers who decide on technical evidence and peer signals, not lifestyle hooks. Need credibility-grade channel architecture.
+                                        </p>
+                                    </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Card 2: The Strategic Approach */}
-                        <div className="col-lg-4 pioneer-approach-col">
+                        <div className="col-lg-4 mapei-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={250}>
-                                <div className="pioneer-approach-card">
-                                    <div className="pioneer-approach-header flex-col">
-                                        <div className="d-flex align-items-baseline">
-                                            <span className="pioneer-approach-the">THE</span>
-                                            <h3 className="pioneer-approach-title">STRATEGIC</h3>
+                                <div className="w-100 h-100 d-flex flex-column">
+                                    <div className="mapei-approach-header">
+                                        <div className="mapei-approach-header-row">
+                                            <span className="mapei-approach-the">THE</span>
+                                            <h3 className="mapei-approach-title">STRATEGIC</h3>
                                         </div>
-                                        <h3 className="pioneer-approach-title accent-blue">APPROACH</h3>
+                                        <h3 className="mapei-approach-title accent-blue">APPROACH</h3>
                                     </div>
-                                    <p className="pioneer-approach-text">
-                                        Regional flagship rebuilt. Technical SEO across schema, internal link logic, Core Web Vitals. GEO programme — entity-rich, answer-grade content for ChatGPT, Perplexity, Google AI. Retained maintenance practice.
-                                    </p>
+                                    <div className="mapei-approach-card">
+                                        <p className="mapei-approach-text">
+                                            META + LinkedIn channels architected from launch. B2B content programme: project case studies, technical explainers, executive thought leadership. SEO surface area engineered for technical search queries. Targeted distribution against specifier persona.
+                                        </p>
+                                    </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Card 3: The Impact */}
-                        <div className="col-lg-4 pioneer-approach-col">
+                        <div className="col-lg-4 mapei-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={400}>
-                                <div className="pioneer-approach-card">
-                                    <div className="pioneer-approach-header">
-                                        <span className="pioneer-approach-the">THE</span>
-                                        <h3 className="pioneer-approach-title">IMPACT</h3>
+                                <div className="w-100 h-100 d-flex flex-column">
+                                    <div className="mapei-approach-header">
+                                        <div className="mapei-approach-header-row">
+                                            <span className="mapei-approach-the">THE</span>
+                                            <h3 className="mapei-approach-title">IMPACT</h3>
+                                        </div>
                                     </div>
-                                    <p className="pioneer-approach-text">
-                                        Material organic traffic lift. Category SERP positions repatriated. AI-engine citations measurably up. Uptime maintained at production grade. Page load compressed.
-                                    </p>
+                                    <div className="mapei-approach-card">
+                                        <p className="mapei-approach-text">
+                                            Combined audience compounded from near-zero. Specifier engagement lifted measurably. Organic search visibility on technical queries materially up. Inbound project inquiries lifted as a function of the build.
+                                        </p>
+                                    </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
@@ -680,17 +736,17 @@ function PioneerCaseStudyPage() {
             </div>
             
             {/* 5. Capabilities Section */}
-            <div className="pioneer-capabilities-section">
+            <div className="mapei-capabilities-section">
                 <div className="hero-container text-center">
                     <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
-                        <div className="pioneer-capabilities-text px-3 px-md-5">
-                            CAPABILITIES — BRAND REBUILD • TECHNICAL SEO • CORE WEB VITALS • GEO ADS • SCHEMA MARKUP • GOOGLE AI • CHATGPT OPTIMIZATION
+                        <div className="mapei-capabilities-text px-3 px-md-5">
+                            CAPABILITIES — BRAND ARCHITECTURE • B2B SOCIAL ENGINE • B2B CONTENT PLAYBOOK • EXECUTIVE THOUGHT LEADERSHIP • SOCIAL SALES ORCHESTRATION
                         </div>
                     </AnimateOnScroll>
                 </div>
                 
                 {/* Voss Bottles Banner at bottom */}
-                <div className="pioneer-bottles-banner"></div>
+                <div className="mapei-bottles-banner"></div>
             </div>
             
             <CaseStudiesSection />
@@ -699,4 +755,4 @@ function PioneerCaseStudyPage() {
     );
 }
 
-export default PioneerCaseStudyPage;
+export default MapeiCaseStudyPage;

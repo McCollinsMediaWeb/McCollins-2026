@@ -147,6 +147,26 @@ export const caseStudiesData2 = [
 		size: "small",
 		url: "/case_studies/snaidero"
 	},
+	{
+		id: 12,
+		title: "Doors Freestyle Grill",
+		description: "200% increase in brand mentions & 60% higher engagement rates...",
+		tags: ["Website Design", "Website Development"],
+		category: "F&B",
+		className: "doors",
+		size: "small",
+		url: "/case_studies/doors"
+	},
+	{
+		id: 13,
+		title: "Armoured Solutions",
+		description: "Engineering digital visibility for armored defense systems.",
+		tags: ["Website Design", "Website Development"],
+		category: "Defense",
+		className: "armoured-solutions",
+		size: "small",
+		url: "/case_studies/armoured-solutions"
+	},
 ];
 
 

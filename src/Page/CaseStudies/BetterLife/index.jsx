@@ -38,10 +38,10 @@ const Counter = ({ target, decimals = 0, duration = 1500, prefix = "", suffix = 
     );
 };
 
-function SnaideroCaseStudyPage() {
+function BetterLifeCaseStudyPage() {
     return (
         <div className="voss-page-wrapper">
-            <HeadTitle title="Snaidero Case Study - McCollins Media - Digital Marketing Agency" />
+            <HeadTitle title="Better Life Case Study - McCollins Media - Digital Marketing Agency" />
             
             <style dangerouslySetInnerHTML={{ __html: `
                 .voss-page-wrapper {
@@ -54,7 +54,7 @@ function SnaideroCaseStudyPage() {
                 /* Hero Section */
                 .voss-hero {
                     min-height: 90vh;
-                    background-image: url('/case-studies/case-herobanner-voss.jpg');
+                    background-image: url('/case-studies/betterlife/heroimage.jpg');
                     background-size: cover;
                     background-position: center;
                     padding: 95px 0 50px 0;
@@ -154,7 +154,7 @@ function SnaideroCaseStudyPage() {
                 /* KPI Section (Light Background) */
                 .voss-kpi-section {
                     padding: 75px 0;
-                    background: url('/case-studies/bg1.png');
+                    background: url('/case-studies/betterlife/voss-kpi-section-bg.jpg') no-repeat;
                     background-size: cover;
                     background-position: center;
                     color: #0F172A;
@@ -170,58 +170,71 @@ function SnaideroCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .voss-kpi-col {
-                    flex: 1;
+                .betterlife-kpi-left-col {
                     display: flex;
                     flex-direction: column;
-                    gap: 50px;
-                    max-width: 320px;
-                    z-index: 2;
-                }
-                
-                .voss-kpi-col.center {
-                    flex: 1.5;
-                    max-width: 480px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                }
-                
-                /* Hourglass Cropped Container - never cuts at bottom */
-                .voss-hourglass-cropped {
-                    width: 100%;
-                    max-width: 320px;
+                    gap: 24px;
+                    width: 360px;
                     height: 480px;
-                    background-image: url('/case-studies/bb.png');
-                    background-size: auto 100%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    margin: 0 auto;
-                    position: relative;
+                    justify-content: space-between;
+                    flex-shrink: 0;
                     z-index: 2;
                 }
                 
-                .voss-kpi-card {
-                    background: rgba(255, 255, 255, 0.75);
-                    backdrop-filter: blur(12px);
-                    -webkit-backdrop-filter: blur(12px);
-                    border: 1px solid rgba(15, 23, 42, 0.08);
-                    border-radius: 20px;
-                    padding: 30px 25px;
+                .betterlife-kpi-connector {
+                    flex-grow: 1;
+                    height: 480px;
+                    max-width: 160px;
                     display: flex;
                     align-items: center;
-                    gap: 25px;
+                    justify-content: center;
+                    z-index: 2;
+                }
+                
+                .betterlife-kpi-right-col {
+                    flex: 1.5;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    z-index: 2;
+                }
+                
+                .betterlife-graphic-container {
+                    width: 100%;
+                    max-width: 540px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                
+                .betterlife-graphic-image {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                
+                .betterlife-kpi-card {
+                    background: rgba(255, 255, 255, 0.65) !important;
+                    backdrop-filter: blur(12px) !important;
+                    -webkit-backdrop-filter: blur(12px) !important;
+                    border: 1px solid rgba(15, 23, 42, 0.05) !important;
+                    border-radius: 16px !important;
+                    padding: 20px 20px !important;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
                     position: relative;
                     z-index: 2;
-                    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02);
+                    height: 90px;
+                    width: 100%;
+                    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02) !important;
                     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
                 }
                 
-                .voss-kpi-card:hover {
-                    transform: translateY(-5px);
-                    border-color: rgba(56, 117, 253, 0.3);
-                    box-shadow: 0 15px 35px rgba(56, 117, 253, 0.08);
+                .betterlife-kpi-card:hover {
+                    transform: translateY(-4px);
+                    border-color: rgba(56, 117, 253, 0.2) !important;
+                    box-shadow: 0 10px 25px rgba(56, 117, 253, 0.05) !important;
                 }
                 
                 .voss-kpi-badge {
@@ -407,14 +420,16 @@ function SnaideroCaseStudyPage() {
                         gap: 30px;
                     }
                     
-                    .voss-kpi-col {
+                    .betterlife-kpi-left-col {
                         max-width: 100%;
                         width: 100%;
-                        gap: 25px;
+                        height: auto;
+                        gap: 20px;
                     }
                     
-                    .voss-hourglass-cropped {
-                        height: 340px;
+                    .betterlife-kpi-right-col {
+                        justify-content: center;
+                        width: 100%;
                     }
                     
                     .voss-approach-section {
@@ -461,8 +476,8 @@ function SnaideroCaseStudyPage() {
                         <div className="col-lg-6 pr-lg-5">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div>
-                                    <h1 className="voss-hero-title-main">snaidero</h1>
-                                    <h2 className="voss-hero-title-sub">kitchens</h2>
+                                    <h1 className="voss-hero-title-main">better</h1>
+                                    <h2 className="voss-hero-title-sub">life</h2>
                                     <p className="voss-hero-subtitle">
                                         <span className="voss-serif-italic">Luxury</span> Commerce Rebuilt
                                     </p>
@@ -474,8 +489,8 @@ function SnaideroCaseStudyPage() {
                             <div className="d-block d-lg-none w-100">
                                 <img 
                                     className="voss-hero-mobile-image" 
-                                    src="/case-studies/case-herobanner-voss.jpg" 
-                                    alt="Voss website shown on a laptop screen, held by hands"
+                                    src="/case-studies/betterlife/heroimage.jpg" 
+                                    alt="Better Life website shown on a laptop screen"
                                 />
                             </div>
                         </div>
@@ -487,9 +502,9 @@ function SnaideroCaseStudyPage() {
             <div className="voss-blue-bar">
                 <div className="hero-container">
                     <div className="voss-blue-bar-content">
-                        <span>SNAIDERO</span>
+                        <span>BETTER LIFE</span>
                         <span>CASE STUDY</span>
-                        <span>E-COMMERCE REBUILT</span>
+                        <span>PERFORMANCE MARKETING REBUILT</span>
                     </div>
                 </div>
             </div>
@@ -499,87 +514,94 @@ function SnaideroCaseStudyPage() {
                 <div className="hero-container position-relative">
                     <div className="voss-section-header">
                         <span className="voss-label-left">THE BRIEF</span>
-                        <span className="voss-label-right">SNAIDERO</span>
+                        <span className="voss-label-right">BETTER LIFE</span>
                     </div>
                     
-                    {/* SVG connection lines for desktop viewports */}
-                    <svg className="voss-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        pointerEvents: 'none',
-                        zIndex: 1
-                    }}>
-                        {/* Top-left card to waist */}
-                        <path d="M 320 125 C 450 125, 520 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.12)" strokeWidth="1.2" />
-                        {/* Bottom-left card to waist */}
-                        <path d="M 320 375 C 450 375, 520 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.12)" strokeWidth="1.2" />
-                        {/* Top-right card to waist */}
-                        <path d="M 860 125 C 730 125, 660 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.12)" strokeWidth="1.2" />
-                        {/* Bottom-right card to waist */}
-                        <path d="M 860 375 C 730 375, 660 250, 590 250" fill="none" stroke="rgba(15, 23, 42, 0.12)" strokeWidth="1.2" />
-                    </svg>
-                    
                     <div className="voss-kpi-grid">
-                        {/* Left Column KPIs */}
-                        <div className="voss-kpi-col">
+                        {/* Left Column: 4 KPI Cards */}
+                        <div className="betterlife-kpi-left-col">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={100}>
-                                <div className="voss-kpi-card">
+                                <div className="betterlife-kpi-card">
                                     <div className="voss-kpi-badge">01</div>
                                     <div className="voss-kpi-content">
                                         <span className="voss-kpi-stat">
-                                            <Counter target={100} suffix="%" />
+                                            <Counter target={53} prefix="+" suffix="%" />
                                         </span>
-                                        <span className="voss-kpi-desc">Bespoke Shopify Build</span>
+                                        <span className="voss-kpi-desc">YoY Sales Growth</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={250}>
-                                <div className="voss-kpi-card">
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={200}>
+                                <div className="betterlife-kpi-card">
                                     <div className="voss-kpi-badge">02</div>
                                     <div className="voss-kpi-content">
                                         <span className="voss-kpi-stat">
-                                            <Counter target={4} suffix="+" />
+                                            <Counter target={4} suffix="X" />
                                         </span>
-                                        <span className="voss-kpi-desc">Payment Rails Integrated</span>
+                                        <span className="voss-kpi-desc">Channels Orchestrated</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
-                        </div>
-                        
-                        {/* Center Column - Contained cropped hourglass, never cuts at bottom */}
-                        <div className="voss-kpi-col center">
-                            <AnimateOnScroll animation="zoomIn" speed="slow" delay={150}>
-                                <div className="voss-hourglass-cropped"></div>
-                            </AnimateOnScroll>
-                        </div>
-                        
-                        {/* Right Column KPIs */}
-                        <div className="voss-kpi-col">
-                            <AnimateOnScroll animation="fadeInRight" speed="normal" delay={100}>
-                                <div className="voss-kpi-card">
+
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={300}>
+                                <div className="betterlife-kpi-card">
                                     <div className="voss-kpi-badge">03</div>
                                     <div className="voss-kpi-content">
                                         <span className="voss-kpi-stat">
-                                            <Counter target={1.4} decimals={1} prefix="&lt;" suffix="S" />
+                                            <Counter target={6.8} decimals={1} suffix="x" />
                                         </span>
-                                        <span className="voss-kpi-desc">Time-To-Interactive</span>
+                                        <span className="voss-kpi-desc">
+                                            Blended ROAS<br />
+                                            <span style={{ fontSize: '0.65rem', opacity: 0.8 }}>[Confirm]</span>
+                                        </span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
-                            
-                            <AnimateOnScroll animation="fadeInRight" speed="normal" delay={250}>
-                                <div className="voss-kpi-card">
+
+                            <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={400}>
+                                <div className="betterlife-kpi-card">
                                     <div className="voss-kpi-badge">04</div>
                                     <div className="voss-kpi-content">
                                         <span className="voss-kpi-stat">
-                                            <Counter target={96} />
+                                            <Counter target={34} prefix="-" suffix="%" />
                                         </span>
-                                        <span className="voss-kpi-desc">Lighthouse Score</span>
+                                        <span className="voss-kpi-desc">
+                                            CPA Compression<br />
+                                            <span style={{ fontSize: '0.65rem', opacity: 0.8 }}>[Confirm]</span>
+                                        </span>
                                     </div>
+                                </div>
+                            </AnimateOnScroll>
+                        </div>
+                        
+                        {/* Middle: SVG Connector */}
+                        <div className="betterlife-kpi-connector d-none d-lg-block">
+                            <svg viewBox="0 0 160 500" fill="none" stroke="rgba(15, 23, 42, 0.12)" strokeWidth="1.2" style={{ width: '100%', height: '100%', display: 'block' }}>
+                                {/* Curve matching card 1 (y=45) to vertical connector at x=40 */}
+                                <path d="M 0 45 C 40 45, 40 45, 40 70" />
+                                {/* Vertical line at x=40 */}
+                                <line x1="40" y1="70" x2="40" y2="410" />
+                                {/* Horizontal line from Card 2 (y=175) to x=40 */}
+                                <line x1="0" y1="175" x2="40" y2="175" />
+                                {/* Horizontal line from Card 3 (y=305) to x=40 */}
+                                <line x1="0" y1="305" x2="40" y2="305" />
+                                {/* Curve from card 4 (y=435) to vertical connector at x=40 */}
+                                <path d="M 0 435 C 40 435, 40 435, 40 410" />
+                                {/* Branch connector going right and curving up/down to point at the 3D graphic */}
+                                <path d="M 40 70 C 60 70, 80 50, 120 50" />
+                            </svg>
+                        </div>
+
+                        {/* Right Column: 3D Image */}
+                        <div className="betterlife-kpi-right-col">
+                            <AnimateOnScroll animation="zoomIn" speed="slow" delay={150}>
+                                <div className="betterlife-graphic-container">
+                                    <img 
+                                        className="betterlife-graphic-image" 
+                                        src="/case-studies/betterlife/voss-kpi-section.jpg" 
+                                        alt="3D render of a metallic sphere sitting on top of chrome blocks" 
+                                    />
                                 </div>
                             </AnimateOnScroll>
                         </div>
@@ -592,7 +614,7 @@ function SnaideroCaseStudyPage() {
                 <div className="hero-container">
                     <div className="voss-section-header">
                         <span className="voss-label-left">THE STRATEGIC APPROACH</span>
-                        <span className="voss-label-right">SNAIDERO</span>
+                        <span className="voss-label-right">BETTER LIFE</span>
                     </div>
                     
                     <div className="row">
@@ -605,10 +627,10 @@ function SnaideroCaseStudyPage() {
                                         <h3 className="voss-approach-title">CHALLENGE</h3>
                                     </div>
                                     <p className="voss-approach-text">
-                                        Heritage luxury water brand with a generic digital storefront. 
-                                        Over-articulated interface, friction at checkout, no payment optionality 
-                                        beyond conventional card rails. Brand world deserved a quieter, more 
-                                        deliberate digital expression.
+                                        Category leader trading on brand equity alone — digital storefront
+                                        under-monetised against physical footprint. Smeg, Dyson, Siemens
+                                        portfolio left on the table. Demand engine needed full architectural
+                                        rebuild.
                                     </p>
                                 </div>
                             </AnimateOnScroll>
@@ -626,9 +648,10 @@ function SnaideroCaseStudyPage() {
                                         <h3 className="voss-approach-title accent-blue">APPROACH</h3>
                                     </div>
                                     <p className="voss-approach-text">
-                                        Editorial commerce design restraint as the system. Performance-first 
-                                        engineering for sub-1.5s mobile TTI. Multi-rail transaction layer: Apple Pay, 
-                                        Google Pay, card, crypto. Headless-ready foundation for the next horizon.
+                                        Quad-channel funnel orchestrated across Google, META, TikTok,
+                                        Snapchat. Creative velocity engineered for marquee SKUs. Email
+                                        recommissioned as a revenue line. Attribution stack consolidated to one
+                                        source of commercial truth.
                                     </p>
                                 </div>
                             </AnimateOnScroll>
@@ -643,9 +666,10 @@ function SnaideroCaseStudyPage() {
                                         <h3 className="voss-approach-title">IMPACT</h3>
                                     </div>
                                     <p className="voss-approach-text">
-                                        Mobile conversion lifted materially. Checkout abandonment collapsed. 
-                                        Near-perfect Lighthouse. A storefront that disappears, leaving 
-                                        brand, bottle, transaction.
+                                        53% YoY sales acceleration confirmed against client P&L. ROAS
+                                        held across peak and shoulder seasons. Email-attributed
+                                        revenue up materially. Repeat purchase rate lifted via lifecycle
+                                        automation.
                                     </p>
                                 </div>
                             </AnimateOnScroll>
@@ -675,4 +699,4 @@ function SnaideroCaseStudyPage() {
     );
 }
 
-export default SnaideroCaseStudyPage;
+export default BetterLifeCaseStudyPage;

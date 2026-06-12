@@ -39,6 +39,11 @@ import DoorsDubaiCaseStudyPage from "./Page/CaseStudies/DoorsDubai";
 import MarsaAjmanMallCaseStudyPage from "./Page/CaseStudies/MarsaAjmanMall";
 import FelisKitchenCaseStudyPage from "./Page/CaseStudies/FelisKitchen";
 import CreamioCafeCaseStudyPage from "./Page/CaseStudies/CreamioCafe";
+import BetterLifeCaseStudyPage from "./Page/CaseStudies/BetterLife";
+import MapeiCaseStudyPage from "./Page/CaseStudies/Mapei";
+import DoorsCaseStudyPage from "./Page/CaseStudies/Doors";
+import ZilliDubaiCaseStudyPage from "./Page/CaseStudies/ZilliDubai";
+import ArmouredSolutionsCaseStudyPage from "./Page/CaseStudies/ArmouredSolutions";
 
 import CorporateMarketing from "./Page/Industries/CorporateMarketing";
 import FoodAndBeverage from "./Page/Industries/FoodAndBeverage";
@@ -83,6 +88,11 @@ function AppRouter() {
             <Route path="case_studies/marsa-ajman-mall" element={<MarsaAjmanMallCaseStudyPage />} />
             <Route path="case_studies/felis-kitchen" element={<FelisKitchenCaseStudyPage />} />
             <Route path="case_studies/creamio-cafe" element={<CreamioCafeCaseStudyPage />} />
+            <Route path="case_studies/better-life" element={<BetterLifeCaseStudyPage />} />
+            <Route path="case_studies/mapei" element={<MapeiCaseStudyPage />} />
+            <Route path="case_studies/doors" element={<DoorsCaseStudyPage />} />
+            <Route path="case_studies/zilli-dubai" element={<ZilliDubaiCaseStudyPage />} />
+            <Route path="case_studies/armoured-solutions" element={<ArmouredSolutionsCaseStudyPage />} />
             <Route path="team" element={<TeamPage />} />
             <Route path="partnership" element={<PartnershipPage />} />
             <Route path="pricing" element={<PricingPage />} />

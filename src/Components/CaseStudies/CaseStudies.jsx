@@ -32,22 +32,43 @@ const CaseStudiesSection = () => {
             title: "BETTER LIFE",
             subtitle: "Performance Marketing",
             image: "/case-studies-thumbs/betterlife.jpg",
-            link: "/case_studies",
+            link: "/case_studies/better-life",
             themeClass: "theme-dark-text"
-        },
-        {
-            title: "DUBAI AIRPORT FREEZONE",
-            subtitle: "App Design",
-            image: "/case-studies-thumbs/dubai-airport-freezone.jpg",
-            link: "/case_studies/dubai-airport-freezone",
-            themeClass: "theme-light-text"
         },
         {
             title: "MAPEI",
             subtitle: "Digital Marketing",
             image: "/case-studies-thumbs/mapei.jpg",
-            link: "/case_studies",
-            themeClass: "theme-dark-text"
+            link: "/case_studies/mapei",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "DOORS FREESTYLE GRILL",
+            subtitle: "Website",
+            image: "/case-studies-thumbs/doors.jpg",
+            link: "/case_studies/doors",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "ZILLI DUBAI",
+            subtitle: "Luxury Shopify",
+            image: "/case-studies-thumbs/zilli-dubai.jpg",
+            link: "/case_studies/zilli-dubai",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "CLEANING SUPERSTORE",
+            subtitle: "Brand ➔ Scale",
+            image: "/case-studies-thumbs/cleaning-superstore.jpg",
+            link: "/case_studies/cleaning-superstore",
+            themeClass: "theme-light-text"
+        },
+        {
+            title: "ARMOURED SOLUTIONS",
+            subtitle: "Brand ➔ Scale",
+            image: "/case-studies-thumbs/armoured-solutions.jpg",
+            link: "/case_studies/armoured-solutions",
+            themeClass: "theme-light-text"
         }
     ];
 

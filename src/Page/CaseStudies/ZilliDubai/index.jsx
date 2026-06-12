@@ -29,75 +29,98 @@ const Counter = ({ target, decimals = 0, duration = 1500, prefix = "", suffix = 
         window.requestAnimationFrame(step);
     }, [inView, target, duration]);
 
-    const formatted = decimals > 0 
-        ? count.toFixed(decimals) 
-        : Math.floor(count).toLocaleString();
-
     return (
         <span ref={ref}>
             {prefix}
-            {formatted}
+            {count.toFixed(decimals)}
             {suffix}
         </span>
     );
 };
 
-function CleaningSuperstoreCaseStudyPage() {
+function ZilliDubaiCaseStudyPage() {
+    useEffect(() => {
+        document.body.classList.add("zilli-page-active");
+        return () => {
+            document.body.classList.remove("zilli-page-active");
+        };
+    }, []);
+
     return (
-        <div className="css-page-wrapper">
-            <HeadTitle title="Cleaning Superstore Case Study - McCollins Media - Digital Marketing Agency" />
+        <div className="zilli-page-wrapper">
+            <HeadTitle title="Zilli Dubai Case Study - McCollins Media - Digital Marketing Agency" />
             
             <style dangerouslySetInnerHTML={{ __html: `
-                .css-page-wrapper {
+                .zilli-page-wrapper {
                     background-color: #000000;
                     color: #ffffff;
                     font-family: 'Delight', sans-serif;
                     overflow-x: hidden;
                 }
+
+                /* Custom Header Overrides when Zilli Page is Active (transparent header state) */
+                body.zilli-page-active .FixedHeader:not(.fixed) .site-logo {
+                    filter: invert(1) brightness(0) !important;
+                }
+                body.zilli-page-active .FixedHeader:not(.fixed) .HamberMenuLine {
+                    background-color: #3875FD !important;
+                }
+                body.zilli-page-active .FixedHeader:not(.fixed) .CallLink {
+                    background-color: #3875FD !important;
+                    color: #ffffff !important;
+                }
+                body.zilli-page-active .FixedHeader:not(.fixed) #themeSwitch {
+                    background-color: #3875FD !important;
+                }
+                body.zilli-page-active .FixedHeader:not(.fixed) #themeIcon {
+                    color: #ffffff !important;
+                }
                 
                 /* Hero Section */
-                .css-hero {
+                .zilli-hero {
                     min-height: 95vh;
+                    background-image: url('/case-studies/zilli/hero.jpg');
+                    background-size: cover;
+                    background-position: 75% center;
                     padding: 160px 0 100px 0;
                     display: flex;
                     align-items: center;
                     position: relative;
-                    background-color: #000000;
+                    background-color: #f3f4f6;
                 }
                 
-                .css-hero-content {
+                .zilli-hero-content {
                     max-width: 600px;
                     text-align: left;
                     z-index: 2;
                     position: relative;
                 }
                 
-                .css-hero-title-main {
+                .zilli-hero-title-main {
                     font-family: 'Delight', sans-serif;
                     font-size: 5.5rem;
                     font-weight: 900;
                     line-height: 0.95;
                     letter-spacing: -2.5px;
                     margin: 0;
-                    color: #ffffff;
+                    color: #0f172a;
                     text-transform: uppercase;
                 }
                 
-                .css-serif-italic {
+                .zilli-serif-italic {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     text-transform: uppercase;
                     font-weight: 400;
-                    color: #ffffff;
-                    display: block;
-                    margin-top: -5px;
+                    color: #0f172a;
+                    margin-left: 10px;
                 }
                 
-                .css-hero-subtitle {
+                .zilli-hero-subtitle {
                     font-family: 'Delight', sans-serif;
                     font-size: 1.25rem;
                     font-weight: 400;
-                    color: rgba(255, 255, 255, 0.7);
+                    color: #334155;
                     line-height: 1.6;
                     margin-top: 25px;
                     margin-bottom: 0;
@@ -105,13 +128,13 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: none;
                 }
                 
-                .css-hero-badge {
+                .zilli-hero-badge {
                     display: inline-block;
                     padding: 10px 28px;
                     border-radius: 50px;
                     background: transparent;
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    color: #ffffff;
+                    border: 1px solid rgba(15, 23, 42, 0.2);
+                    color: #0f172a;
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     font-size: 1.05rem;
@@ -120,31 +143,15 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: none;
                 }
                 
-                .css-hero-image-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 2;
-                }
-                
-                .css-hero-image {
-                    width: 100%;
-                    max-width: 500px;
-                    height: auto;
-                    border-radius: 24px;
-                    border: 1px solid rgba(255, 255, 255, 0.15);
-                    object-fit: cover;
-                }
-                
                 /* Blue Info Bar */
-                .css-blue-bar {
+                .zilli-blue-bar {
                     background-color: #1a4cf6;
                     padding: 24px 0;
                     position: relative;
                     z-index: 2;
                 }
                 
-                .css-blue-bar-content {
+                .zilli-blue-bar-content {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -154,19 +161,26 @@ function CleaningSuperstoreCaseStudyPage() {
                     letter-spacing: 2.5px;
                 }
                 
-                .css-blue-bar-content span {
+                .zilli-blue-bar-content span {
                     text-transform: uppercase;
                 }
                 
+                /* Alignment adjustments for SVG curves */
+                .zilli-kpi-lines circle {
+                    fill: #ffffff;
+                }
+                
                 /* KPI Section */
-                .css-kpi-section {
+                .zilli-kpi-section {
                     padding: 100px 0;
-                    background-color: #000000;
+                    background-image: url('/case-studies/zilli/zilli-kpi-section-bg.jpg');
+                    background-size: cover;
+                    background-position: center;
                     color: #ffffff;
                     position: relative;
                 }
                 
-                .css-section-header {
+                .zilli-section-header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -175,7 +189,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-bottom: 60px;
                 }
                 
-                .css-label-left, .css-label-right {
+                .zilli-label-left, .zilli-label-right {
                     font-size: 0.75rem;
                     letter-spacing: 2px;
                     text-transform: uppercase;
@@ -183,7 +197,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     font-weight: 600;
                 }
                 
-                .css-kpi-grid {
+                .zilli-kpi-grid {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -192,7 +206,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .css-kpi-col {
+                .zilli-kpi-col {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -201,82 +215,69 @@ function CleaningSuperstoreCaseStudyPage() {
                     z-index: 2;
                 }
                 
-                .css-kpi-col.center {
+                .zilli-kpi-col.center {
                     justify-content: center;
                     align-items: center;
                     width: 440px;
                 }
                 
-                .css-graphic-container {
-                    width: 320px;
-                    height: 400px;
+                .zilli-graphic-container {
+                    width: 174px;
+                    height: 250px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     z-index: 2;
                 }
                 
-                .css-graphic-image {
+                .zilli-graphic-image {
                     width: 100%;
                     height: 100%;
                     display: block;
-                    object-fit: contain;
+                    object-fit: cover;
+                    border-radius: 100px;
                 }
                 
-                .css-kpi-card {
-                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
-                    backdrop-filter: blur(16px);
-                    -webkit-backdrop-filter: blur(16px);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
-                    border-radius: 20px;
+                .zilli-kpi-card {
+                    background: rgba(255, 255, 255, 0.03);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 16px;
                     padding: 24px 30px;
                     display: flex;
-                    align-items: center;
-                    gap: 20px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
                     height: 120px;
                     width: 320px;
                     position: relative;
                     z-index: 2;
-                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
                     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
                 }
                 
-                .css-kpi-card:hover {
+                .zilli-kpi-card:hover {
                     transform: translateY(-4px);
-                    border-color: rgba(56, 117, 253, 0.4);
-                    background: rgba(255, 255, 255, 0.05);
+                    border-color: rgba(255, 255, 255, 0.25);
+                    background: rgba(255, 255, 255, 0.06);
                 }
                 
-                .css-kpi-badge {
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 0.8rem;
-                    font-weight: 700;
-                    color: rgba(255, 255, 255, 0.7);
-                    flex-shrink: 0;
-                }
-                
-                .css-kpi-content {
+                .zilli-kpi-content {
                     display: flex;
                     flex-direction: column;
                 }
                 
-                .css-kpi-stat {
-                    font-size: 2.8rem;
+                .zilli-kpi-stat {
+                    font-size: 3.2rem;
                     font-weight: 800;
                     line-height: 1.1;
                     color: #ffffff;
                     letter-spacing: -0.5px;
                 }
                 
-                .css-kpi-desc {
-                    font-size: 0.7rem;
+                .zilli-kpi-desc {
+                    font-size: 0.72rem;
                     font-weight: 700;
                     color: rgba(255, 255, 255, 0.5);
                     letter-spacing: 1.5px;
@@ -284,7 +285,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     text-transform: uppercase;
                 }
                 
-                .css-kpi-lines {
+                .zilli-kpi-lines {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -295,29 +296,29 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Strategic Approach Section */
-                .css-approach-section {
+                .zilli-approach-section {
                     padding: 100px 0 50px 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                 }
                 
-                .css-approach-section .css-section-header {
+                .zilli-approach-section .zilli-section-header {
                     border-bottom: 1px solid rgba(15, 23, 42, 0.08);
                     margin-bottom: 40px;
                 }
                 
-                .css-approach-section .css-label-left,
-                .css-approach-section .css-label-right {
+                .zilli-approach-section .zilli-label-left,
+                .zilli-approach-section .zilli-label-right {
                     color: rgba(15, 23, 42, 0.45);
                 }
                 
-                .css-approach-col {
+                .zilli-approach-col {
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 30px;
                 }
                 
-                .css-approach-card {
+                .zilli-approach-card {
                     background: rgba(255, 255, 255, 0.5);
                     border: 1px solid rgba(255, 255, 255, 0.6);
                     border-radius: 20px;
@@ -328,27 +329,27 @@ function CleaningSuperstoreCaseStudyPage() {
                     transition: all 0.4s ease;
                 }
                 
-                .css-approach-card:hover {
+                .zilli-approach-card:hover {
                     transform: translateY(-4px);
                     background: rgba(255, 255, 255, 0.85);
                     border-color: rgba(255, 255, 255, 0.9);
                     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
                 }
                 
-                .css-approach-header {
+                .zilli-approach-header {
                     display: flex;
                     align-items: baseline;
                     margin-bottom: 20px;
                     min-height: 70px;
                 }
                 
-                .css-approach-header.flex-col {
+                .zilli-approach-header.flex-col {
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-end;
                 }
                 
-                .css-approach-the {
+                .zilli-approach-the {
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
                     font-weight: 400;
@@ -357,7 +358,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-right: 8px;
                 }
                 
-                .css-approach-title {
+                .zilli-approach-title {
                     font-family: 'Delight', sans-serif;
                     font-weight: 900;
                     font-size: 1.7rem;
@@ -367,7 +368,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin: 0;
                 }
                 
-                .css-approach-title.accent-blue {
+                .zilli-approach-title.accent-blue {
                     color: #1a4cf6;
                     font-family: 'Playfair Display', serif;
                     font-style: italic;
@@ -376,7 +377,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     margin-top: -5px;
                 }
                 
-                .css-approach-text {
+                .zilli-approach-text {
                     font-size: 0.98rem;
                     line-height: 1.7;
                     color: rgba(15, 23, 42, 0.75);
@@ -385,14 +386,14 @@ function CleaningSuperstoreCaseStudyPage() {
                 }
                 
                 /* Capabilities Section */
-                .css-capabilities-section {
+                .zilli-capabilities-section {
                     padding: 40px 0 0 0;
                     background-color: #D8DFE4;
                     color: #0F172A;
                     text-align: center;
                 }
                 
-                .css-capabilities-text {
+                .zilli-capabilities-text {
                     font-size: 0.82rem;
                     letter-spacing: 2.2px;
                     color: rgba(15, 23, 42, 0.7);
@@ -401,7 +402,7 @@ function CleaningSuperstoreCaseStudyPage() {
                     line-height: 1.8;
                 }
                 
-                .css-bottles-banner {
+                .zilli-bottles-banner {
                     width: 100%;
                     height: 320px;
                     background-image: url('/case-studies/case-pyramid-image.jpg');
@@ -425,181 +426,179 @@ function CleaningSuperstoreCaseStudyPage() {
                 
                 /* Responsive styles */
                 @media (min-width: 992px) {
-                    .css-kpi-col {
+                    .zilli-kpi-col {
                         padding-top: 110px;
                         padding-bottom: 110px;
                     }
-                    .css-approach-col:not(:first-child) {
+                    .zilli-approach-col:not(:first-child) {
                         border-left: 1px solid rgba(15, 23, 42, 0.12);
                     }
-                    .css-approach-col {
+                    .zilli-approach-col {
                         padding-left: 30px;
                         padding-right: 30px;
                     }
-                    .css-approach-col:first-child {
+                    .zilli-approach-col:first-child {
                         padding-left: 0;
                     }
-                    .css-approach-col:last-child {
+                    .zilli-approach-col:last-child {
                         padding-right: 0;
                     }
                 }
                 
                 @media (max-width: 991px) {
-                    .css-hero {
+                    .zilli-hero {
                         padding: 120px 0 60px 0;
+                        background-position: 65% center;
                     }
                     
-                    .css-hero-title-main {
+                    .zilli-hero-title-main {
                         font-size: 4rem;
                     }
                     
-                    .css-serif-italic {
+                    .zilli-serif-italic {
                         font-size: 4rem;
                     }
                     
-                    .css-hero-subtitle {
+                    .zilli-hero-subtitle {
                         font-size: 1.15rem;
                     }
                     
-                    .css-blue-bar-content {
+                    .zilli-blue-bar-content {
                         flex-direction: column;
                         gap: 12px;
                         text-align: center;
                         font-size: 0.75rem;
                     }
                     
-                    .css-kpi-section {
+                    .zilli-kpi-section {
                         padding: 70px 0;
                     }
                     
-                    .css-kpi-grid {
+                    .zilli-kpi-grid {
                         flex-direction: column;
                         gap: 30px;
                         height: auto;
                     }
                     
-                    .css-kpi-col {
+                    .zilli-kpi-col {
                         max-width: 100%;
                         width: 100%;
                         gap: 25px;
                         height: auto;
                     }
                     
-                    .css-graphic-container {
+                    .zilli-graphic-container {
                         margin: 20px 0;
-                        width: 100%;
-                        height: auto;
                     }
                     
-                    .css-kpi-card {
+                    .zilli-kpi-card {
                         width: 100%;
                         height: auto;
                         padding: 24px;
+                        align-items: center;
+                        text-align: center;
                     }
                     
-                    .css-approach-section {
+                    .zilli-kpi-card .zilli-kpi-content {
+                        align-items: center;
+                    }
+                    
+                    .zilli-approach-section {
                         padding: 70px 0 40px 0;
                     }
                     
-                    .css-approach-col {
+                    .zilli-approach-col {
                         border-left: none;
                         border-top: 1px solid rgba(15, 23, 42, 0.12);
                         padding-left: 0;
                         padding-top: 30px;
                     }
                     
-                    .css-approach-header {
+                    .zilli-approach-header {
                         min-height: auto;
                         margin-bottom: 15px;
                     }
                     
-                    .css-approach-card {
+                    .zilli-approach-card {
                         padding: 30px 20px;
                     }
                     
-                    .css-capabilities-section {
+                    .zilli-capabilities-section {
                         padding: 20px 0 0 0;
                     }
                     
-                    .css-bottles-banner {
+                    .zilli-bottles-banner {
                         height: 180px;
                         margin-top: 30px;
                     }
                 }
                 
                 @media (max-width: 575px) {
-                    .css-hero-title-main {
+                    .zilli-hero-title-main {
                         font-size: 2.8rem;
                     }
                     
-                    .css-serif-italic {
+                    .zilli-serif-italic {
                         font-size: 2.8rem;
+                        margin-left: 5px;
                     }
                     
-                    .css-kpi-card {
+                    .zilli-kpi-card {
                         padding: 20px 18px;
                     }
                     
-                    .css-kpi-stat {
+                    .zilli-kpi-stat {
                         font-size: 2.5rem;
                     }
                 }
             ` }} />
             
             {/* 1. Hero Section */}
-            <div className="css-hero">
+            <div className="zilli-hero">
                 <div className="hero-container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 pr-lg-5">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="css-hero-content">
-                                    <h1 className="css-hero-title-main">
-                                        CLEANING <span className="css-serif-italic">SUPERSTORE</span>
+                                <div className="zilli-hero-content">
+                                    <h1 className="zilli-hero-title-main">
+                                        ZILLI <span className="zilli-serif-italic">DUBAI</span>
                                     </h1>
-                                    <p className="css-hero-subtitle">
-                                        From a COVID-era brand build to the largest cleaning superstore in the UAE.
+                                    <p className="zilli-hero-subtitle">
+                                        A mobile-first Shopify experience for French luxury — engineered for the device in their hand.
                                     </p>
-                                    <div className="css-hero-badge">
-                                        Brand ➔ Scale
+                                    <div className="zilli-hero-badge">
+                                        Luxury Shopify
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
-                        {/* Hero Image on Right */}
-                        <div className="col-lg-6 mt-5 mt-lg-0 css-hero-image-container">
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
-                                <img 
-                                    className="css-hero-image" 
-                                    src="/case-studies/css/hero.png" 
-                                    alt="Cleaning Superstore Refill Station and team photos montage"
-                                />
-                            </AnimateOnScroll>
-                        </div>
+                        {/* Space for background focus on desktop */}
+                        <div className="col-lg-6 mt-4 mt-lg-0"></div>
                     </div>
                 </div>
             </div>
             
             {/* 2. Blue Info Bar */}
-            <div className="css-blue-bar">
+            <div className="zilli-blue-bar">
                 <div className="hero-container">
-                    <div className="css-blue-bar-content">
-                        <span>CLEANING SUPERSTORE</span>
+                    <div className="zilli-blue-bar-content">
+                        <span>ZILLI DUBAI</span>
                         <span>CASE STUDY</span>
-                        <span>BRAND ➔ SCALE</span>
+                        <span>LUXURY SHOPIFY</span>
                     </div>
                 </div>
             </div>
             
             {/* 3. KPI Section */}
-            <div className="css-kpi-section">
+            <div className="zilli-kpi-section">
                 <div className="hero-container position-relative">
-                    <div className="css-section-header">
-                        <span className="css-label-left">01 / KEY METRICS</span>
-                        <span className="css-label-right">CLEANING SUPERSTORE</span>
+                    <div className="zilli-section-header">
+                        <span className="zilli-label-left">01 / KEY METRICS</span>
+                        <span className="zilli-label-right">ZILLI DUBAI</span>
                     </div>
                     
                     {/* SVG connection lines for desktop viewports */}
-                    <svg className="css-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
+                    <svg className="zilli-kpi-lines d-none d-lg-block" viewBox="0 0 1180 500" preserveAspectRatio="none" style={{
                         position: 'absolute',
                         top: 0,
                         left: 0,
@@ -609,85 +608,85 @@ function CleaningSuperstoreCaseStudyPage() {
                         zIndex: 1
                     }}>
                         {/* Left Top Line */}
-                        <path d="M 320 170 C 420 170, 480 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" strokeDasharray="3 3" />
+                        <line x1="320" y1="170" x2="503" y2="170" stroke="rgba(255, 255, 255, 0.3)" strokeWidth="1" strokeDasharray="3 3" />
                         <circle cx="320" cy="170" r="3" fill="#fff" />
+                        <circle cx="503" cy="170" r="3" fill="#fff" />
 
                         {/* Left Bottom Line */}
-                        <path d="M 320 330 C 420 330, 480 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" strokeDasharray="3 3" />
+                        <line x1="320" y1="330" x2="503" y2="330" stroke="rgba(255, 255, 255, 0.3)" strokeWidth="1" strokeDasharray="3 3" />
                         <circle cx="320" cy="330" r="3" fill="#fff" />
+                        <circle cx="503" cy="330" r="3" fill="#fff" />
 
                         {/* Right Top Line */}
-                        <path d="M 860 170 C 760 170, 700 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" strokeDasharray="3 3" />
+                        <line x1="860" y1="170" x2="677" y2="170" stroke="rgba(255, 255, 255, 0.3)" strokeWidth="1" strokeDasharray="3 3" />
                         <circle cx="860" cy="170" r="3" fill="#fff" />
+                        <circle cx="677" cy="170" r="3" fill="#fff" />
 
                         {/* Right Bottom Line */}
-                        <path d="M 860 330 C 760 330, 700 250, 590 250" fill="none" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" strokeDasharray="3 3" />
+                        <line x1="860" y1="330" x2="677" y2="330" stroke="rgba(255, 255, 255, 0.3)" strokeWidth="1" strokeDasharray="3 3" />
                         <circle cx="860" cy="330" r="3" fill="#fff" />
+                        <circle cx="677" cy="330" r="3" fill="#fff" />
                     </svg>
                     
-                    <div className="css-kpi-grid">
+                    <div className="zilli-kpi-grid">
                         {/* Left Column KPIs */}
-                        <div className="css-kpi-col">
+                        <div className="zilli-kpi-col">
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={100}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">01</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={1500} suffix="+" />
+                                <div className="zilli-kpi-card">
+                                    <div className="zilli-kpi-content">
+                                        <span className="zilli-kpi-stat">
+                                            <Counter target={100} suffix="%" />
                                         </span>
-                                        <span className="css-kpi-desc">MONTHLY ONLINE ORDERS</span>
+                                        <span className="zilli-kpi-desc">MOBILE-FIRST ARCHITECTURE</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInLeft" speed="normal" delay={250}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">02</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            #<Counter target={1} />
+                                <div className="zilli-kpi-card">
+                                    <div className="zilli-kpi-content">
+                                        <span className="zilli-kpi-stat">
+                                            <Counter target={82} prefix="+" suffix="%" />
                                         </span>
-                                        <span className="css-kpi-desc">UAE CATEGORY LEADER</span>
+                                        <span className="zilli-kpi-desc">MOBILE CONVERSION</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Center Column - Graphic image */}
-                        <div className="css-kpi-col center">
+                        <div className="zilli-kpi-col center">
                             <AnimateOnScroll animation="zoomIn" speed="slow" delay={150}>
-                                <div className="css-graphic-container">
+                                <div className="zilli-graphic-container">
                                     <img 
-                                        className="css-graphic-image" 
-                                        src="/case-studies/css/elements.jpg" 
-                                        alt="Translucent 3D plates with blue glow"
+                                        className="zilli-graphic-image" 
+                                        src="/case-studies/zilli/element.jpg" 
+                                        alt="Zilli Blue Capsule Element"
                                     />
                                 </div>
                             </AnimateOnScroll>
                         </div>
                         
                         {/* Right Column KPIs */}
-                        <div className="css-kpi-col">
+                        <div className="zilli-kpi-col">
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={100}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">03</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={4} suffix="+" />
+                                <div className="zilli-kpi-card">
+                                    <div className="zilli-kpi-content">
+                                        <span className="zilli-kpi-stat">
+                                            {"<"}<Counter target={1.6} decimals={1} suffix="s" />
                                         </span>
-                                        <span className="css-kpi-desc">PAID CHANNELS</span>
+                                        <span className="zilli-kpi-desc">MOBILE TTI</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInRight" speed="normal" delay={250}>
-                                <div className="css-kpi-card">
-                                    <div className="css-kpi-badge">04</div>
-                                    <div className="css-kpi-content">
-                                        <span className="css-kpi-stat">
-                                            <Counter target={7} suffix="x" />
+                                <div className="zilli-kpi-card">
+                                    <div className="zilli-kpi-content">
+                                        <span className="zilli-kpi-stat">
+                                            <Counter target={3} />
                                         </span>
-                                        <span className="css-kpi-desc">BLENDED ROAS</span>
+                                        <span className="zilli-kpi-desc">EXPRESS CHECKOUT RAILS</span>
                                     </div>
                                 </div>
                             </AnimateOnScroll>
@@ -697,25 +696,25 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 4. Strategic Approach Section */}
-            <div className="css-approach-section">
+            <div className="zilli-approach-section">
                 <div className="hero-container">
-                    <div className="css-section-header">
-                        <span className="css-label-left">THE STRATEGIC APPROACH</span>
-                        <span className="css-label-right">CLEANING SUPERSTORE</span>
+                    <div className="zilli-section-header">
+                        <span className="zilli-label-left">THE STRATEGIC APPROACH</span>
+                        <span className="zilli-label-right">ZILLI DUBAI</span>
                     </div>
                     
                     <div className="row">
                         {/* Card 1: The Challenge */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 zilli-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header">
-                                        <span className="css-approach-the">THE</span>
-                                        <h3 className="css-approach-title">CHALLENGE</h3>
+                                    <div className="zilli-approach-header">
+                                        <span className="zilli-approach-the">THE</span>
+                                        <h3 className="zilli-approach-title">CHALLENGE</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            Brand built from inception during COVID. No identity, no audience, no behavioural precedent for selling chemicals/machinery online at scale. Effectively a new e-commerce vertical from zero.
+                                    <div className="zilli-approach-card">
+                                        <p className="zilli-approach-text">
+                                            French maison entering Dubai digital market with a mobile-led, moment-shopping customer. Existing presence desktop-anchored. Product photography deserved larger stage. Checkout was friction layer, not gesture.
                                         </p>
                                     </div>
                                 </div>
@@ -723,19 +722,19 @@ function CleaningSuperstoreCaseStudyPage() {
                         </div>
                         
                         {/* Card 2: The Strategic Approach */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 zilli-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={250}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header flex-col">
+                                    <div className="zilli-approach-header flex-col">
                                         <div className="d-flex align-items-baseline">
-                                            <span className="css-approach-the">THE</span>
-                                            <h3 className="css-approach-title">STRATEGIC</h3>
+                                            <span className="zilli-approach-the">THE</span>
+                                            <h3 className="zilli-approach-title">STRATEGIC</h3>
                                         </div>
-                                        <h3 className="css-approach-title accent-blue">APPROACH</h3>
+                                        <h3 className="zilli-approach-title accent-blue">APPROACH</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            Brand & storefront. Quad-channel paid stack across META, Google, TikTok, Snapchat. Email & marketing automation as structural revenue. WhatsApp deployed as conversational commerce surface. Lifecycle calibrated to consumables.
+                                    <div className="zilli-approach-card">
+                                        <p className="zilli-approach-text">
+                                            Mobile-first UX engineered for portrait orientation and thumb-reach. Apple Pay, Google Pay, Shop Pay for single-tap conversion. Editorial product pages treating photography as primary sales asset. Performance engineering for sub-1.6s TTI.
                                         </p>
                                     </div>
                                 </div>
@@ -743,16 +742,16 @@ function CleaningSuperstoreCaseStudyPage() {
                         </div>
                         
                         {/* Card 3: The Impact */}
-                        <div className="col-lg-4 css-approach-col">
+                        <div className="col-lg-4 zilli-approach-col">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={400}>
                                 <div className="d-flex flex-column h-100 w-100">
-                                    <div className="css-approach-header">
-                                        <span className="css-approach-the">THE</span>
-                                        <h3 className="css-approach-title">IMPACT</h3>
+                                    <div className="zilli-approach-header">
+                                        <span className="zilli-approach-the">THE</span>
+                                        <h3 className="zilli-approach-title">IMPACT</h3>
                                     </div>
-                                    <div className="css-approach-card">
-                                        <p className="css-approach-text">
-                                            1,500+ monthly online orders. Largest UAE cleaning superstore. ROAS held as operation scaled. Email and WhatsApp engineered as material structural revenue lines. CPO compressed materially.
+                                    <div className="zilli-approach-card">
+                                        <p className="zilli-approach-text">
+                                            Mobile conversion lifted materially. Checkout abandonment collapsed via express rails. Session depth up. A storefront engineered for the screen the customer actually shops on.
                                         </p>
                                     </div>
                                 </div>
@@ -763,17 +762,17 @@ function CleaningSuperstoreCaseStudyPage() {
             </div>
             
             {/* 5. Capabilities & Banner Section */}
-            <div className="css-capabilities-section">
+            <div className="zilli-capabilities-section">
                 <div className="hero-container text-center">
                     <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
-                        <div className="css-capabilities-text px-3 px-md-5">
-                            CAPABILITIES — BRAND • E-COM • META • GOOGLE • TIKTOK • SNAPCHAT • EMAIL • AUTOMATION • WHATSAPP • CRO
+                        <div className="zilli-capabilities-text px-3 px-md-5">
+                            CAPABILITIES — SHOPIFY • MOBILE-FIRST • LUXURY UX • APPLE PAY • GOOGLE PAY • SHOP PAY • EDITORIAL PDPS • CRO
                         </div>
                     </AnimateOnScroll>
                 </div>
                 
                 {/* Bottom Banner */}
-                <div className="css-bottles-banner"></div>
+                <div className="zilli-bottles-banner"></div>
             </div>
             
             <CaseStudiesSection />
@@ -782,4 +781,4 @@ function CleaningSuperstoreCaseStudyPage() {
     );
 }
 
-export default CleaningSuperstoreCaseStudyPage;
+export default ZilliDubaiCaseStudyPage;

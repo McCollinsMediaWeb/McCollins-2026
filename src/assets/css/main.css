@@ -5812,6 +5812,10 @@ body.lightmode .ServiceSection {
     background-image: url(../../../public/assets/images/case-studies/snaidero.jpeg);
 }
 
+.MainWeb .case-studies-content.armoured-solutions {
+    background-image: url(../../../public/case-studies-thumbs/armoured-solutions.jpg);
+}
+
 .point-arrow-list-wrapper {
     display: flex;
     gap: 30px;
