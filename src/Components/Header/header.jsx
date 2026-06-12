@@ -520,20 +520,38 @@ function Navbar() {
             </div>
 
             {showContactModal && (
-                <div className="contact-modal-overlay" onClick={() => setShowContactModal(false)}>
-                    <div className="contact-modal-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="contact-modal-close" onClick={() => setShowContactModal(false)}>
-                            &times;
-                        </button>
-                        <div className="contact-modal-body">
-                            <div className="sub-heading justify-content-center" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '15px' }}>
-                                <i className="fa-regular fa-circle-dot"></i>
-                                <span>Contact Us</span>
+                <div className="contact-modal-overlay">
+                    <div className="contact-modal-header">
+                        <div className="container">
+                            <div className="HdMenuFlex">
+                                <div className="HdMenuLeft">
+                                    <a className="navbar-brand" href="/" onClick={() => setShowContactModal(false)}>
+                                        <img
+                                            src="/assets/images/mcmain.png"
+                                            className="img-fluid site-logo"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="HdMenuMiddle d-none d-lg-block">
+                                    <div className="HdT1" style={{ fontSize: 'clamp(18px, 1.6vw, 24px)', color: '#fff', fontWeight: 600 }}>Ready to get started?</div>
+                                </div>
+                                <div className="HdMenuRight">
+                                    <div className="CloseBtn" onClick={() => setShowContactModal(false)}>
+                                        &nbsp;
+                                    </div>
+                                </div>
                             </div>
-                            <h2 className="title-heading text-center" style={{ color: '#fff', marginBottom: '40px', WebkitTextFillColor: 'white' }}>
-                                Ready To Do Something Big?
-                            </h2>
-                            <ContactFormNew page="Header Modal" />
+                        </div>
+                    </div>
+                    
+                    <div className="contact-modal-body-container">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-10 col-12">
+                                    <ContactFormNew page="Header Modal" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -546,65 +564,39 @@ function Navbar() {
                     left: 0;
                     width: 100vw;
                     height: 100vh;
-                    background: rgba(0, 0, 0, 0.85);
-                    backdrop-filter: blur(10px);
+                    background-color: rgba(10, 10, 10, 0.98);
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
                     z-index: 99999;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px;
-                    animation: fadeInModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-                }
-
-                .contact-modal-content {
-                    background: #0d0d0d;
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    border-radius: 24px;
-                    width: 100%;
-                    max-width: 900px;
-                    max-height: 90vh;
+                    flex-direction: column;
                     overflow-y: auto;
-                    position: relative;
-                    padding: 50px 40px;
-                    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 117, 253, 0.1);
-                    animation: slideUpModal 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                    animation: fadeInModal 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
                 }
 
-                .contact-modal-close {
-                    position: absolute;
-                    top: 20px;
-                    right: 25px;
-                    background: transparent;
-                    border: none;
-                    color: rgba(255, 255, 255, 0.5);
-                    font-size: 2.2rem;
-                    cursor: pointer;
-                    transition: color 0.2s ease;
-                    line-height: 1;
-                    z-index: 10;
+                .contact-modal-header {
+                    padding: 25px 0px;
+                    background-color: transparent;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    flex-shrink: 0;
                 }
 
-                .contact-modal-close:hover {
-                    color: #3875fd;
-                }
-
-                .contact-modal-body {
-                    width: 100%;
+                .contact-modal-body-container {
+                    flex-grow: 1;
+                    padding: 60px 0;
+                    display: flex;
+                    align-items: center;
                 }
 
                 @keyframes fadeInModal {
-                    from { opacity: 0; }
-                    to { opacity: 1; }
+                    from { opacity: 0; transform: translateY(-10px); }
+                    to { opacity: 1; transform: translateY(0); }
                 }
 
-                @keyframes slideUpModal {
-                    from { transform: translateY(30px) scale(0.96); }
-                    to { transform: translateY(0) scale(1); }
-                }
-
-                @media (max-width: 767px) {
-                    .contact-modal-content {
-                        padding: 35px 20px;
+                @media (max-width: 991px) {
+                    .contact-modal-body-container {
+                        padding: 40px 0;
+                        align-items: flex-start;
                     }
                 }
             ` }} />
