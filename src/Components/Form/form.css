@@ -82,23 +82,28 @@
 
 /* GRID LAYOUT */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 26px 40px;
-    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 14px;
+    margin-top: 20px;
 }
 
 /* each option */
 .service-option {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 22px !important;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 50px !important;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: clamp(15px, 1.3vw, 18px) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: clamp(13px, 1.1vw, 15px) !important;
     user-select: none;
-    transition: color .2s ease;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 /* remove native checkbox */
@@ -107,52 +112,28 @@
     opacity: 0;
     width: 0;
     height: 0;
-
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    pointer-events: none;
 }
 
-/* square box */
+/* Hide checkmark completely */
 .checkmark {
-    width: clamp(16px, 1.2vw, 22px);
-    height: clamp(16px, 1.2vw, 22px);
-    border: 2px solid rgba(255, 255, 255, 0.45);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s ease;
-}
-
-/* inner indicator */
-.checkmark::after {
-    content: "";
-    width: clamp(5px, .6vw, 8px);
-    height: clamp(5px, .6vw, 8px);
-    background: #000;
-    transform: scale(0);
-    transition: transform .18s ease;
+    display: none !important;
 }
 
 /* hover */
-.service-option:hover .checkmark {
-    border-color: #3876fc;
+.service-option:hover {
+    border-color: rgba(56, 118, 252, 0.5) !important;
+    background: rgba(56, 118, 252, 0.06);
+    color: #fff !important;
 }
 
 /* checked */
-.service-option input:checked+.checkmark {
-    background: #3876fc;
-    border-color: #3876fc;
-    box-shadow: 0 0 0 4px rgba(56, 118, 252, .18);
-}
-
-.service-option input:checked+.checkmark::after {
-    transform: scale(1);
-}
-
-/* highlight text when selected */
 .service-option:has(input:checked) {
-    color: #ffffff;
+    background: #3876fc !important;
+    border-color: #3876fc !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(56, 118, 252, 0.35) !important;
+    transform: translateY(-2px);
 }
 
 
