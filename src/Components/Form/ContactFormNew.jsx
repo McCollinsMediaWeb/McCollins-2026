@@ -316,6 +316,7 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 const ContactFormNew = (props) => {
+    const isModal = props.isModal;
     // ── Field state ──────────────────────────────────────────────────────────
     const [firstName, setFirstName] = useState("");
     const [company, setCompany] = useState("");
@@ -523,23 +524,34 @@ const ContactFormNew = (props) => {
                 className="card form-layout"
                 style={{ backgroundImage: "none", backgroundColor: "var(--contact-card-color)" }}
             >
-                <h3 className="title-heading" style={{ WebkitTextFillColor: "#3876fc" }}>
-                    Ready to get started?
+                <h3 className="title-heading" style={isModal ? {
+                    textAlign: 'center',
+                    WebkitTextFillColor: '#ffffff',
+                    color: '#ffffff',
+                    fontSize: '1.8rem',
+                    fontWeight: '700',
+                    marginBottom: '25px',
+                    width: '100%'
+                } : { WebkitTextFillColor: "#3876fc" }}>
+                    {isModal ? "Request a quotation" : "Ready to get started?"}
                 </h3>
-                <h6 style={{ WebkitTextFillColor: "#8f8f8f" }}>
-                    Your email address will not be published. Required fields are marked *
-                </h6>
+                {!isModal && (
+                    <h6 style={{ WebkitTextFillColor: "#8f8f8f" }}>
+                        Your email address will not be published. Required fields are marked *
+                    </h6>
+                )}
 
                 <form onSubmit={handleSubmit} id="contactForm" className="form needs-validation">
 
                     {/* Full Name */}
                     <div className="row row-cols-md-12">
                         <div className="col">
+                            {isModal && <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>First Name<span style={{ color: '#ef4444' }}>*</span></label>}
                             <input
                                 type="text"
                                 name="full-name"
                                 id="full-name"
-                                placeholder="Full Name"
+                                placeholder={isModal ? "First Name" : "Full Name"}
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                                 required
@@ -550,17 +562,19 @@ const ContactFormNew = (props) => {
                     {/* Company + Job Title */}
                     <div className="row row-cols-md-2 row-cols-1 g-3">
                         <div className="col">
+                            {isModal && <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>Company Name<span style={{ color: '#ef4444' }}>*</span></label>}
                             <input
                                 type="text"
                                 name="company"
                                 id="company"
-                                placeholder="Company"
+                                placeholder={isModal ? "Company Name" : "Company"}
                                 value={company}
                                 onChange={(e) => setCompany(e.target.value)}
                                 required
                             />
                         </div>
                         <div className="col">
+                            {isModal && <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>Job Title<span style={{ color: '#ef4444' }}>*</span></label>}
                             <input
                                 type="text"
                                 name="job-title"
@@ -576,6 +590,7 @@ const ContactFormNew = (props) => {
                     {/* Phone + Email */}
                     <div className="row row-cols-md-2 row-cols-1 g-3">
                         <div className="col">
+                            {isModal && <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>Mobile Number<span style={{ color: '#ef4444' }}>*</span></label>}
                             <PhoneInput
                                 defaultCountry="AE"
                                 value={phone}
@@ -585,11 +600,12 @@ const ContactFormNew = (props) => {
                             />
                         </div>
                         <div className="col">
+                            {isModal && <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>Email<span style={{ color: '#ef4444' }}>*</span></label>}
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
-                                placeholder="Email Address"
+                                placeholder={isModal ? "Email" : "Email Address"}
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
@@ -597,52 +613,88 @@ const ContactFormNew = (props) => {
                         </div>
                     </div>
 
-                    {/* Services */}
-                    <div className="services-group">
-                        <h5 className="services-title">Select Services</h5>
-                        <div className="services-grid">
-                            {[
-                                "Advertising",
-                                "Film Production",
-                                "Social Media",
-                                "Branding",
-                                "Media Buying",
-                                "Strategy",
-                                "Design Services",
-                                "Web Design / Development",
-                                "Digital Marketing",
-                                "Search Engine Optimization",
-                                "Event Marketing",
-                                "Sitecore",
-                            ].map((service) => (
-                                <label key={service} className="service-option">
-                                    <input
-                                        type="checkbox"
-                                        name="services"
-                                        value={service}
-                                        checked={checkedItems.includes(service)}
-                                        onChange={() => handleCheckboxChange(service)}
-                                    />
-                                    <span className="checkmark"></span>
-                                    {service}
-                                </label>
-                            ))}
+                    {/* Services (Area of Interest dropdown for Modal, checkboxes for Main page) */}
+                    {isModal ? (
+                        <div className="row row-cols-md-12">
+                            <div className="col">
+                                <label style={{ display: 'block', color: '#fff', fontSize: '12.5px', fontWeight: 600, marginBottom: '6px', textAlign: 'left' }}>Area of Interest<span style={{ color: '#ef4444' }}>*</span></label>
+                                <select
+                                    name="services"
+                                    value={checkedItems[0] || ""}
+                                    onChange={(e) => setCheckedItems([e.target.value])}
+                                    required
+                                >
+                                    <option value="" disabled>Select area of interest</option>
+                                    {[
+                                        "Advertising",
+                                        "Film Production",
+                                        "Social Media",
+                                        "Branding",
+                                        "Media Buying",
+                                        "Strategy",
+                                        "Design Services",
+                                        "Web Design / Development",
+                                        "Digital Marketing",
+                                        "Search Engine Optimization",
+                                        "Event Marketing",
+                                        "Sitecore",
+                                    ].map((service) => (
+                                        <option key={service} value={service}>
+                                            {service}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
                         </div>
-                    </div>
+                    ) : (
+                        <div className="services-group">
+                            <h5 className="services-title">Select Services</h5>
+                            <div className="services-grid">
+                                {[
+                                    "Advertising",
+                                    "Film Production",
+                                    "Social Media",
+                                    "Branding",
+                                    "Media Buying",
+                                    "Strategy",
+                                    "Design Services",
+                                    "Web Design / Development",
+                                    "Digital Marketing",
+                                    "Search Engine Optimization",
+                                    "Event Marketing",
+                                    "Sitecore",
+                                ].map((service) => (
+                                    <label key={service} className="service-option">
+                                        <input
+                                            type="checkbox"
+                                            name="services"
+                                            value={service}
+                                            checked={checkedItems.includes(service)}
+                                            onChange={() => handleCheckboxChange(service)}
+                                        />
+                                        <span className="checkmark"></span>
+                                        {service}
+                                    </label>
+                                ))}
+                            </div>
+                        </div>
+                    )}
 
-                    {/* Message */}
-                    <div className="row row-cols-md-12">
-                        <div className="col">
-                            <h5 className="message-title">How can we help you?</h5>
-                            <input
-                                type="text"
-                                name="message"
-                                id="message"
-                                value={text}
-                                onChange={(e) => setText(e.target.value)}
-                            />
+                    {/* Message - only show if NOT modal */}
+                    {!isModal && (
+                        <div className="row row-cols-md-12">
+                            <div className="col">
+                                <h5 className="message-title">How can we help you?</h5>
+                                <input
+                                    type="text"
+                                    name="message"
+                                    id="message"
+                                    value={text}
+                                    onChange={(e) => setText(e.target.value)}
+                                />
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                     {/* Hidden GCLID field for Zoho */}
                     <input
@@ -655,26 +707,43 @@ const ContactFormNew = (props) => {
                     />
 
                     {/* Submit */}
-                    <div className="form-button-container">
+                    <div className="form-button-container" style={isModal ? { display: 'flex', justifyContent: 'center', marginTop: '20px' } : {}}>
                         <button
                             type="submit"
-                            className="btn btn-accent"
-                            style={{
+                            className={isModal ? "btn btn-accent-modal" : "btn btn-accent"}
+                            style={isModal ? {
+                                background: loading ? "#6b21a8" : "linear-gradient(135deg, #a855f7 0%, #7e22ce 100%)",
+                                color: "#fff",
+                                cursor: loading ? "not-allowed" : "pointer",
+                                borderRadius: '50px',
+                                padding: '12px 40px',
+                                border: 'none',
+                                fontSize: '15px',
+                                fontWeight: '600',
+                                boxShadow: '0 8px 20px rgba(126, 34, 206, 0.3)',
+                                transition: 'all 0.3s ease'
+                            } : {
                                 backgroundColor: loading ? "#6a9bfc" : "#3876fc",
                                 color: "#fff",
                                 cursor: loading ? "not-allowed" : "pointer",
                             }}
                             disabled={loading}
                         >
-                            <span className="btn-title">
-                                <span>{loading ? "Sending..." : "Submit Inquiry"}</span>
-                            </span>
-                            <span className="icon-circle" style={{ backgroundColor: "black", color: "#fff" }}>
-                                {loading
-                                    ? <i className="fa-solid fa-spinner fa-spin"></i>
-                                    : <i className="fa-solid fa-arrow-right"></i>
-                                }
-                            </span>
+                            {isModal ? (
+                                <span>{loading ? "Sending..." : "Send Enquiry"}</span>
+                            ) : (
+                                <>
+                                    <span className="btn-title">
+                                        <span>{loading ? "Sending..." : "Submit Inquiry"}</span>
+                                    </span>
+                                    <span className="icon-circle" style={{ backgroundColor: "black", color: "#fff" }}>
+                                        {loading
+                                            ? <i className="fa-solid fa-spinner fa-spin"></i>
+                                            : <i className="fa-solid fa-arrow-right"></i>
+                                        }
+                                    </span>
+                                </>
+                            )}
                         </button>
                     </div>
 

@@ -523,9 +523,9 @@ function Navbar() {
                 <div className="contact-modal-overlay" onClick={() => setShowContactModal(false)}>
                     <div className="contact-modal-card" onClick={(e) => e.stopPropagation()}>
                         <button className="contact-modal-close" onClick={() => setShowContactModal(false)}>
-                            &times;
+                            <i className="fa-solid fa-xmark"></i>
                         </button>
-                        <ContactFormNew page="Header Modal" />
+                        <ContactFormNew page="Header Modal" isModal={true} />
                     </div>
                 </div>
             )}
@@ -553,38 +553,105 @@ function Navbar() {
                     border: none !important;
                     border-radius: 24px;
                     width: 100%;
-                    max-width: 700px;
-                    max-height: 90vh;
+                    max-width: 650px;
+                    max-height: 95vh;
                     overflow-y: auto;
                     position: relative;
                     padding: 40px;
-                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+                    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
                     animation: scaleUpCard 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
                 }
 
                 .contact-modal-close {
                     position: absolute;
-                    top: 15px;
-                    right: 20px;
+                    top: 20px;
+                    right: 25px;
                     background: transparent;
                     border: none;
-                    color: rgba(255, 255, 255, 0.5);
-                    font-size: 2rem;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 1.6rem;
                     cursor: pointer;
-                    transition: color 0.2s ease;
+                    transition: all 0.2s ease;
                     line-height: 1;
-                    z-index: 10;
+                    z-index: 1000;
                 }
 
                 .contact-modal-close:hover {
-                    color: #3875fd;
+                    color: #a855f7;
+                    transform: scale(1.1);
                 }
 
+                /* Disable Form layout gradients and borders inside modal */
+                .contact-modal-card .form-layout-wrapper::before {
+                    content: none !important;
+                    background: none !important;
+                    display: none !important;
+                }
+                .contact-modal-card .form-layout-wrapper {
+                    background: transparent !important;
+                    border: none !important;
+                    padding: 0 !important;
+                }
                 .contact-modal-card .card.form-layout {
-                    background-color: transparent !important;
+                    background: transparent !important;
+                    background-image: none !important;
                     border: none !important;
                     box-shadow: none !important;
                     padding: 0 !important;
+                }
+
+                /* Rectangular White Inputs style overrides */
+                .contact-modal-card #contactForm input[type="text"],
+                .contact-modal-card #contactForm input[type="email"],
+                .contact-modal-card #contactForm select {
+                    background-color: #ffffff !important;
+                    color: #000000 !important;
+                    border: none !important;
+                    border-radius: 8px !important;
+                    padding: 10px 14px !important;
+                    font-size: 14px !important;
+                    width: 100% !important;
+                    box-shadow: none !important;
+                    outline: none !important;
+                    margin-top: 4px !important;
+                    height: 42px !important;
+                }
+
+                .contact-modal-card #contactForm input::placeholder {
+                    color: #888888 !important;
+                    font-size: 14px !important;
+                }
+
+                /* Phone Input wrapper styling to match white rectangles */
+                .contact-modal-card .phone-input-wrapper {
+                    display: flex;
+                    align-items: center;
+                    background-color: #ffffff !important;
+                    border-radius: 8px !important;
+                    padding: 0px 14px !important;
+                    margin-top: 4px !important;
+                    height: 42px !important;
+                    width: 100% !important;
+                }
+
+                .contact-modal-card .phone-input-wrapper input {
+                    background-color: transparent !important;
+                    color: #000000 !important;
+                    border: none !important;
+                    font-size: 14px !important;
+                    padding: 8px 0 !important;
+                    width: 100% !important;
+                    outline: none !important;
+                    height: auto !important;
+                }
+
+                .contact-modal-card .phone-input-wrapper .PhoneInputCountry {
+                    margin-right: 8px !important;
+                }
+
+                /* Fix spacing */
+                .contact-modal-card #contactForm .row {
+                    margin-bottom: 12px !important;
                 }
 
                 @keyframes fadeInOverlay {
@@ -613,56 +680,11 @@ function Navbar() {
                         margin: 0 !important;
                     }
                     .contact-modal-card .card.form-layout .title-heading {
-                        margin-bottom: 4px !important;
-                        font-size: 1.6rem !important;
-                    }
-                    .contact-modal-card .card.form-layout h6 {
-                        margin-bottom: 10px !important;
-                        font-size: 0.8rem !important;
+                        margin-bottom: 20px !important;
+                        font-size: 1.8rem !important;
                     }
                     .contact-modal-card #contactForm .row {
-                        margin-bottom: 8px !important;
-                    }
-                    .contact-modal-card #contactForm input {
-                        padding: 6px 0 !important;
-                        font-size: 14px !important;
-                    }
-                    .contact-modal-card #contactForm textarea {
-                        padding: 6px 0 !important;
-                        min-height: 40px !important;
-                        height: 40px !important;
-                        font-size: 14px !important;
-                    }
-                    .contact-modal-card .services-group {
-                        margin-top: 4px !important;
-                        margin-bottom: 10px !important;
-                    }
-                    .contact-modal-card .services-title {
-                        font-size: 1.05rem !important;
-                        margin-bottom: 8px !important;
-                        padding-bottom: 6px !important;
-                    }
-                    .contact-modal-card .services-grid {
-                        grid-template-columns: repeat(4, 1fr) !important;
-                        gap: 8px 12px !important;
-                        margin-top: 8px !important;
-                    }
-                    .contact-modal-card .service-option {
-                        font-size: 12.5px !important;
-                        gap: 6px !important;
-                    }
-                    .contact-modal-card .checkmark {
-                        width: 13px !important;
-                        height: 13px !important;
-                    }
-                    .contact-modal-card .message-title {
-                        font-size: 1.05rem !important;
-                        margin-bottom: 4px !important;
-                    }
-                    .contact-modal-card #contactForm button[type="submit"] {
-                        padding: 8px 20px !important;
-                        font-size: 0.78rem !important;
-                        margin-top: 4px !important;
+                        margin-bottom: 12px !important;
                     }
                 }
             ` }} />
