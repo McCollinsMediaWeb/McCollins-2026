@@ -18,14 +18,14 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
     }, []);
 
     return (
-        <div className="ServiceItemBox">
+        <div className="ServiceItemBox homepage-service-box">
 
             <div className="BannerImageBox">
-                <AnimateOnScroll animation="fadeInUp">
+                <AnimateOnScroll animation="revealImage" speed="slow">
                     {isMobile ? (
-                        <img src={mobileImage} alt="mobile view" />
+                        <img src={mobileImage} alt="mobile view" className="reveal-scroll-img" />
                     ) : (
-                        <img src={desktopImage} alt="desktop view" />
+                        <img src={desktopImage} alt="desktop view" className="reveal-scroll-img" />
                     )}
                 </AnimateOnScroll>
             </div>
