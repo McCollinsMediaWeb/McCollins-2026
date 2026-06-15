@@ -8,6 +8,7 @@ import SocialMediaMarketingImageWithText from "../../Components/MccollinsMedia/S
 import CaseStudiesSocialMediaMarketing from "../../Components/CaseStudies/CaseStudiesSocialMediaMarketing";
 import OurPartners from "../../Components/MccollinsMedia/OurPartners";
 import FullSizeBanner from "../../Components/Banner/FullSizeBanner";
+import SocialMediaRoute from "../../Components/MccollinsMedia/SocialMediaRoute";
 
 function SocialMediaMarketing() {
     return (
@@ -19,11 +20,7 @@ function SocialMediaMarketing() {
             <ClientPortfolio />
             <SocialMediaMarketingImageWithText />
             
-            <FullSizeBanner 
-                desktopImage="/services/social-media-marketing/McC_SocMedMark_Web_1-min.jpg" 
-                mobileImage="/services/social-media-marketing/McC_SocMedMark_Mob_1-min.jpg" 
-                altText="Social Media Marketing Showcase 1" 
-            />
+            <SocialMediaRoute />
             <FullSizeBanner 
                 desktopImage="/services/social-media-marketing/McC_SocMedMark_Web_2-min.jpg" 
                 mobileImage="/services/social-media-marketing/McC_SocMedMark_Mob_2-min.jpg" 
