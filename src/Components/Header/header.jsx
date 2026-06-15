@@ -215,15 +215,7 @@ function Navbar() {
                                         </a>
                                     </div>
 
-                                    <div className="LinkItem">
-                                        <a
-                                            className="MegLnkTp1"
-                                            href="/faq"
-                                            onClick={() => setMenuOpen(false)}
-                                        >
-                                            FAQs
-                                        </a>
-                                    </div>
+
 
                                     <div className="LinkItem">
                                         <a

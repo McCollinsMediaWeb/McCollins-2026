@@ -101,7 +101,7 @@ function Sidebar() {
                         <li><a href="partnership">Partnership</a></li>
                         <li><a href="pricing">Pricing Plan</a></li>
                         <li><a href="testimonial">Testimonial</a></li>
-                        <li><a href="faq">FAQs</a></li>
+
                         <li><a href="404_page">Error 404</a></li>
                     </ul>
                 </li>
