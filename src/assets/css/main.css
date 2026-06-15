@@ -8112,3 +8112,49 @@ body.lightmode .FixedHeader.fixed .HamberMenuLine {
     animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
     animation-fill-mode: both !important;
 }
+
+/* Client Portfolio Section Theme Colors (Dark/Black by default, White in Light Mode) */
+.client-portfolio-section {
+    background-color: #000000 !important;
+    transition: background-color 0.4s ease;
+}
+
+.client-portfolio-section .title-heading {
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.client-portfolio-section p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.client-portfolio-section .client-logo {
+    filter: brightness(0) invert(1) opacity(0.8) !important;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.client-portfolio-section .client-logo:hover {
+    filter: brightness(0) invert(1) opacity(1) !important;
+}
+
+/* Light Mode Overrides */
+body.lightmode .client-portfolio-section {
+    background-color: #ffffff !important;
+}
+
+body.lightmode .client-portfolio-section .title-heading {
+    -webkit-text-fill-color: #000000 !important;
+    color: #000000 !important;
+}
+
+body.lightmode .client-portfolio-section p {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.lightmode .client-portfolio-section .client-logo {
+    filter: brightness(0) opacity(0.5) !important;
+}
+
+body.lightmode .client-portfolio-section .client-logo:hover {
+    filter: brightness(0) opacity(1) !important;
+}

@@ -19,17 +19,16 @@ function ClientPortfolio() {
 
     return (
         <>
-            {/* <div className="section" style={{ backgroundColor: 'var(--precision-automation-bg)' }}> */}
-            <div className="section" style={{ backgroundColor: '#fff' }}>
+            <div className="section client-portfolio-section">
                 <div className="hero-container" style={{ maxWidth: '1400px' }}>
                     <div className="text-center">
                         <AnimateOnScroll animation="fadeInRight" speed="normal">
-                            <h2 className="title-heading" style={{ WebkitTextFillColor: '#000', marginBottom: '10px' }}>
+                            <h2 className="title-heading" style={{ marginBottom: '10px' }}>
                                 Client Portfolio
                             </h2>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <p style={{ color: '#000', fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
+                            <p style={{ fontWeight: 100, marginBottom: '5rem' }}>In an industry that emphasizes inputs, we promise to deliver outputs!</p>
                         </AnimateOnScroll>
                     </div>
                     {/* <div className="d-none d-md-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
