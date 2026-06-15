@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 function BehindTheScence() {
@@ -13,49 +13,37 @@ function BehindTheScence() {
     }, []);
 
     return (
-        <div className="section pb-0">
-            <div className="hero-container" style={{ maxWidth: "none" }} >
-                <div className="newsletter-wrapper">
-                    <style>
-                        {`
-                            .newsletter-wrapper::before{
-                                content:none !important;
-                                background:none !important;
-                            }
-                        `}
-                    </style>
-                    <div className="newsletter-layout" >
-                        <style>
-                            {`
-                                .newsletter-layout{
-                                    border:none !important;
-                                    background-image:none !important;
-                                    text-align:left !important;
-                                    align-items: normal !important;
-                                }
-                                .newsletter-layout::before {
-                                    background-image:none !important;
-                                }
-                            `}
-                        </style>
-                        <div className="d-flex flex-column gspace-5 position-relative z-2">
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                <div className="d-flex flex-column gspace-2 text-center">
-                                    <h2 className="title-heading text-align-left">#BehindTheScenes</h2>
-                                </div>
-                            </AnimateOnScroll>
-
-                            <AnimateOnScroll animation="fadeInUp" speed="normal">
-                                <div
-                                    className="taggbox"
-                                    style={{ width: "100%", height: "100%" }}
-                                    data-widget-id="124868"
-                                    data-tags="false"
-                                ></div>
-                            </AnimateOnScroll>
-
+        <div className="section behind-the-scenes-section">
+            <div className="container">
+                <div className="d-flex flex-column gspace-3 position-relative z-2">
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div className="sub-heading align-self-center" style={{ justifyContent: 'center', marginBottom: '10px' }}>
+                            <i className="fa-regular fa-circle-dot" style={{ color: '#3876fc' }}></i>
+                            <span>Social Feed</span>
                         </div>
-                    </div>
+                    </AnimateOnScroll>
+
+                    <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
+                        <div className="text-center mb-5">
+                            <h2 className="title-heading" style={{ marginBottom: '15px' }}>
+                                #BehindTheScenes
+                            </h2>
+                            <p style={{ fontWeight: 100, maxWidth: '600px', margin: '0 auto', opacity: 0.7 }}>
+                                Take a look at our daily agency life, creative processes, and the amazing team making the magic happen.
+                            </p>
+                        </div>
+                    </AnimateOnScroll>
+
+                    <AnimateOnScroll animation="fadeInUp" speed="normal" delay={300}>
+                        <div className="taggbox-wrapper">
+                            <div
+                                className="taggbox"
+                                style={{ width: "100%", height: "100%", border: "none" }}
+                                data-widget-id="124868"
+                                data-tags="false"
+                            ></div>
+                        </div>
+                    </AnimateOnScroll>
                 </div>
             </div>
         </div>

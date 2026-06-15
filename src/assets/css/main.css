@@ -8158,3 +8158,36 @@ body.lightmode .client-portfolio-section .client-logo {
 body.lightmode .client-portfolio-section .client-logo:hover {
     filter: brightness(0) opacity(1) !important;
 }
+
+/* Behind the Scenes Taggbox Section styling */
+.behind-the-scenes-section {
+    padding-bottom: 80px;
+}
+
+.behind-the-scenes-section .title-heading {
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+body.lightmode .behind-the-scenes-section .title-heading {
+    -webkit-text-fill-color: #000000 !important;
+    color: #000000 !important;
+}
+
+.taggbox-wrapper {
+    width: 100%;
+    min-height: 700px;
+    height: 700px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+body.lightmode .taggbox-wrapper {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
