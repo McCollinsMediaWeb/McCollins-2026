@@ -157,24 +157,26 @@ function WebDevHero() {
                     {/* Left Column: Title & Tech Stacks */}
                     <div className="col-lg-7 col-md-12 webdev-hero-content-left">
                         <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                            <h1 className="webdev-hero-title">
-                                Crafting Digital Experiences That<br />
-                                Inspire And Transform
-                            </h1>
-                            <p className="webdev-hero-desc">
-                                Cutting-edge websites designed to engage, captivate, and grow your business—where innovation meets creativity for every industry.
-                            </p>
+                            <div>
+                                <h1 className="webdev-hero-title">
+                                    Crafting Digital Experiences That<br />
+                                    Inspire And Transform
+                                </h1>
+                                <p className="webdev-hero-desc">
+                                    Cutting-edge websites designed to engage, captivate, and grow your business—where innovation meets creativity for every industry.
+                                </p>
 
-                            <div className="webdev-tech-stack-wrapper">
-                                <div className="webdev-tech-grid">
-                                    {techStacks.map((tech) => (
-                                        <div key={tech.name} className="webdev-tech-item">
-                                            <div className="webdev-tech-icon-box">
-                                                <i className={`${tech.iconClass} webdev-tech-icon`} />
+                                <div className="webdev-tech-stack-wrapper">
+                                    <div className="webdev-tech-grid">
+                                        {techStacks.map((tech) => (
+                                            <div key={tech.name} className="webdev-tech-item">
+                                                <div className="webdev-tech-icon-box">
+                                                    <i className={`${tech.iconClass} webdev-tech-icon`} />
+                                                </div>
+                                                <span className="webdev-tech-name">{tech.name}</span>
                                             </div>
-                                            <span className="webdev-tech-name">{tech.name}</span>
-                                        </div>
-                                    ))}
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </AnimateOnScroll>
