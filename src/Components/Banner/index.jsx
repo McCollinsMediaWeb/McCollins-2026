@@ -6,6 +6,28 @@ function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage })
 
     const playerRef = useRef(null);
     const videoContainerRef = useRef(null);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+            video.setAttribute("muted", "");
+            video.setAttribute("playsinline", "");
+            video.muted = true;
+            
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Autoplay prevented:", error);
+                    const playOnInteraction = () => {
+                        video.play();
+                        document.removeEventListener("touchstart", playOnInteraction);
+                    };
+                    document.addEventListener("touchstart", playOnInteraction);
+                });
+            }
+        }
+    }, []);
 
 
 
@@ -68,6 +90,7 @@ function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage })
                             }}
                         >
                             <video
+                                ref={videoRef}
                                 src="/herobannervideo.mp4"
                                 poster={desktopImage}
                                 autoPlay

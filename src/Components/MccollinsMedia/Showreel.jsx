@@ -212,6 +212,27 @@ export default function Showreel() {
     const [isMuted, setIsMuted] = useState(true);
 
     useEffect(() => {
+        const video = videoElement.current;
+        if (video) {
+            video.setAttribute("muted", "");
+            video.setAttribute("playsinline", "");
+            video.muted = true;
+            
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Autoplay prevented for Showreel:", error);
+                    const playOnInteraction = () => {
+                        video.play();
+                        document.removeEventListener("touchstart", playOnInteraction);
+                    };
+                    document.addEventListener("touchstart", playOnInteraction);
+                });
+            }
+        }
+    }, []);
+
+    useEffect(() => {
 
         const handleScroll = () => {
 
