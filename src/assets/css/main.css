@@ -8517,8 +8517,8 @@ body.lightmode .taggbox-wrapper {
 
 /* Submit Button styling */
 .webdev-submit-btn {
-    background: #FFD100 !important;
-    color: #000 !important;
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
     border: none !important;
     border-radius: 50px !important;
     padding: 13px 28px !important;
@@ -8533,8 +8533,8 @@ body.lightmode .taggbox-wrapper {
 }
 
 .webdev-submit-btn:hover:not(:disabled) {
-    background: #ffe033 !important;
-    box-shadow: 0 8px 25px rgba(255, 209, 0, 0.45) !important;
+    background: #5489ff !important;
+    box-shadow: 0 8px 25px rgba(56, 117, 253, 0.45) !important;
     transform: translateY(-2px) !important;
 }
 
