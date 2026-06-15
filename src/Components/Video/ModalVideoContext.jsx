@@ -9,7 +9,14 @@ export const ModalVideoProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const openModal = (url) => {
-        setVideoUrl(url);
+        let embedUrl = url;
+        if (url) {
+            const youtubeMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/);
+            if (youtubeMatch) {
+                embedUrl = `https://www.youtube.com/embed/${youtubeMatch[1]}?autoplay=1`;
+            }
+        }
+        setVideoUrl(embedUrl);
         setIsOpen(true);
     };
 

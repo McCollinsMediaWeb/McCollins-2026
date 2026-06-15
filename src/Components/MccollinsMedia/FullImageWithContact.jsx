@@ -36,7 +36,7 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
                         <div className="row align-items-center">
                             <div className="col-md-6 d-flex align-items-center d-none d-md-flex" >
                                 <div className="guide-video-container">
-                                    <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
+                                    <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=ekbgpMjVrkNW6MSz" />
                                     <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
                                         Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.
                                     </p>
                                     <div className="guide-video-container d-flex d-md-none mt-4">
-                                        <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=nn5Aenc7vEr9DcvT" />
+                                        <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=ekbgpMjVrkNW6MSz" />
                                         <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
                                     </div>
                                 </div>
