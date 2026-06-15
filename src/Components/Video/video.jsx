@@ -1,4 +1,5 @@
 import React from "react";
+import { createPortal } from "react-dom";
 import { useModalVideo } from "./ModalVideoContext";
 
 function ModalVideoSection() {
@@ -6,7 +7,7 @@ function ModalVideoSection() {
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div
       id="modal-overlay"
       className="modal-overlay"
@@ -26,7 +27,8 @@ function ModalVideoSection() {
             title="Video"
             ></iframe>
         </div>
-    </div>
+    </div>,
+    document.body
   );
 }
 
