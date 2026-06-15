@@ -5,7 +5,7 @@ import NewsletterSection from "../../Components/Form/Newsletter";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
 import FaqSection from "../../Components/FAQs/faq";
 import SingleServiceSection from "../../Components/Services/singleservice";
-import InnerNew from "../../Components/Banner/InnerNew";
+import WebDevHero from "../../Components/Banner/WebDevHero";
 import LargestBrands from "../../Components/MccollinsMedia/LargestBrands";
 import ClientPortfolio from "../../Components/MccollinsMedia/ClientPortfolio";
 import WebsiteAppDesign from "../../Components/MccollinsMedia/WebsiteAppDesign";
@@ -17,7 +17,7 @@ function WebsiteDevelopment() {
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Website Development - McCollins Media - Digital Marketing Agency" />
             {/* <BannerInnerSection title="Performance Marketing" currentPage="Services Details" /> */}
-            <InnerNew desktopImage="/assets/images/web-development-banner.jpg" mobileImage="/assets/images/web-development-banner-mobile.jpg" title="Website" title2="Development" />
+            <WebDevHero />
             <LargestBrands />
             <ClientPortfolio />
             <WebsiteAppDesign />
