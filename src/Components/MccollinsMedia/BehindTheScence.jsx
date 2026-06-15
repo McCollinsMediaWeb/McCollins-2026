@@ -45,12 +45,14 @@ function BehindTheScence() {
                                 </div>
                             </AnimateOnScroll>
 
-                            <div
-                                className="taggbox"
-                                style={{ width: "100%", height: "100%" }}
-                                data-widget-id="124868"
-                                data-tags="false"
-                            ></div>
+                            <AnimateOnScroll animation="fadeInUp" speed="normal">
+                                <div
+                                    className="taggbox"
+                                    style={{ width: "100%", height: "100%" }}
+                                    data-widget-id="124868"
+                                    data-tags="false"
+                                ></div>
+                            </AnimateOnScroll>
 
                         </div>
                     </div>
