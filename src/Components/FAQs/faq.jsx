@@ -1,7 +1,7 @@
 import React from "react";
-import { faqData } from "../../Data/FaqData";
+import { faqData as defaultFaqData } from "../../Data/FaqData";
 
-const FaqSection = () => {
+const FaqSection = ({ data = defaultFaqData, showNumbering = true }) => {
   return (
     <div className="section">
         <div className="hero-container">
@@ -18,7 +18,7 @@ const FaqSection = () => {
                 <div className="col col-lg-7">
                     <div className="d-flex flex-column">
                         <div className="accordion" id="faqAccordion">
-                            {faqData.map((item, index) => (
+                            {data.map((item, index) => (
                                 <div className="accordion-item" key={item.id}>
                                     <h2 className="accordion-header">
                                     <button
@@ -29,7 +29,14 @@ const FaqSection = () => {
                                         aria-expanded={index === 0 ? "true" : "false"}
                                         aria-controls={`faq${item.id}`}
                                     >
-                                        {item.question}
+                                        <div className="d-flex align-items-center w-100">
+                                            {showNumbering && (
+                                                <span className="me-3" style={{ fontWeight: '700', color: 'var(--accent-color)', minWidth: '28px' }}>
+                                                    {String(index + 1).padStart(2, '0')}
+                                                </span>
+                                            )}
+                                            <span>{item.question}</span>
+                                        </div>
                                     </button>
                                     </h2>
                                     <div
@@ -54,3 +61,4 @@ const FaqSection = () => {
 };
 
 export default FaqSection;
+

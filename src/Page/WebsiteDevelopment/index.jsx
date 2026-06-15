@@ -11,6 +11,7 @@ import ClientPortfolio from "../../Components/MccollinsMedia/ClientPortfolio";
 import WebsiteAppDesign from "../../Components/MccollinsMedia/WebsiteAppDesign";
 import CaseStudiesSectionNew from "../../Components/CaseStudies/CaseStudiesNew";
 import FullSizeBanner from "../../Components/Banner/FullSizeBanner";
+import { webDevFaqData } from "../../Data/FaqData";
 
 function WebsiteDevelopment() {
     return (
@@ -64,7 +65,7 @@ function WebsiteDevelopment() {
             <CaseStudiesSectionNew noPadding={false} />
             {/* <TestimonialSection /> */}
             <NewsletterSection />
-            {/* <FaqSection /> */}
+            <FaqSection data={webDevFaqData} />
         </div>
     );
 }
