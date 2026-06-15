@@ -25,7 +25,7 @@ const CaseStudiesSectionNew = ({ noPadding }) => {
             title: "VOSS DUBAI",
             subtitle: "Digital Marketing & UX",
             description: "Developing a premium editorial commerce experience for Voss water, focusing on minimal luxury aesthetics, payment optionality, and headless speed.",
-            image: "/case-studies-thumbs/voss.jpg",
+            image: "/case-studies-thumbs/voss.jpg?v=2",
             link: "/case_studies/voss-dubai",
             imgHeight: "420px",
             categories: ["digital-marketing", "luxury-ecommerce"]

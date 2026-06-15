@@ -24,7 +24,7 @@ const CaseStudiesSection = () => {
         {
             title: "VOSS DUBAI",
             subtitle: "Digital Marketing",
-            image: "/case-studies-thumbs/voss.jpg",
+            image: "/case-studies-thumbs/voss.jpg?v=2",
             link: "/case_studies/voss-dubai",
             themeClass: "theme-light-text"
         },
