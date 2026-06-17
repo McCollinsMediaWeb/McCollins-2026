@@ -87,12 +87,14 @@ function OurServices() {
                         </div>
 
                         <div className="col-md-4 text-center mt-4 mt-md-0">
-                            <img 
-                                className="img-fluid flower-animated" 
-                                src="/flower.png" 
-                                alt="Flower Shape"
-                                style={{ maxHeight: '300px', objectFit: 'contain' }}
-                            />
+                            <AnimateOnScroll animation="fadeInRight" speed="normal" delay={200}>
+                                <img 
+                                    className="img-fluid flower-animated" 
+                                    src="/flower.png" 
+                                    alt="Flower Shape"
+                                    style={{ maxHeight: '300px', objectFit: 'contain' }}
+                                />
+                            </AnimateOnScroll>
                         </div>
                     </div>
 
@@ -103,19 +105,20 @@ function OurServices() {
 
 
 
-                    <div class="partners-card">
-                        <div class="row align-items-center">
-                            <div class="col-md-5">
-                                <h3 class="text-white mb-2 mt-3">
-                                   <span class="sans-bold">Powering Success for</span> <span class="serif-italic"
-                                   >Top Brands</span> 
-                                </h3>
-                            </div>
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div className="partners-card">
+                            <div className="row align-items-center">
+                                <div className="col-md-5">
+                                    <h3 className="text-white mb-2 mt-3">
+                                       <span className="sans-bold">Powering Success for</span> <span className="serif-italic"
+                                       >Top Brands</span> 
+                                    </h3>
+                                </div>
 
-                            <div class="col-md-7 text-right">
-                                <p className="text-white pt-3 pt-md-0">Proudly serving clients who choose quality and consistency.</p>
+                                <div className="col-md-7 text-right">
+                                    <p className="text-white pt-3 pt-md-0">Proudly serving clients who choose quality and consistency.</p>
+                                </div>
                             </div>
-                        </div>
 
 
                         {/* Row 1 Slider */}
@@ -202,6 +205,7 @@ function OurServices() {
 
                         </div> */}
                     </div>
+                    </AnimateOnScroll>
 
 
 

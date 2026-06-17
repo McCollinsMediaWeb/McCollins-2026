@@ -255,45 +255,47 @@ const CaseStudiesSection = () => {
                         </div>
                     </div>
 
-                    <div 
-                        className="case-studies-track-container position-relative"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
-                        {/* Navigation buttons */}
-                        <button 
-                            className="case-studies-nav-btn prev-btn" 
-                            onClick={handleScrollPrev}
-                            aria-label="Previous Case Study"
+                    <AnimateOnScroll animation="fadeInUp" speed="normal">
+                        <div 
+                            className="case-studies-track-container position-relative"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
                         >
-                            <i className="fa-solid fa-chevron-left"></i>
-                        </button>
-                        
-                        <button 
-                            className="case-studies-nav-btn next-btn" 
-                            onClick={handleScrollNext}
-                            aria-label="Next Case Study"
-                        >
-                            <i className="fa-solid fa-chevron-right"></i>
-                        </button>
-
-                        <div className="case-studies-track" ref={trackRef}>
-                            {tripledStudies.map((study, idx) => (
-                                <a 
-                                    key={`${idx}-${study.title}`}
-                                    href={study.link} 
-                                    className={`case-study-card-new ${study.themeClass}`} 
-                                    style={{ backgroundImage: `url(${study.image})` }}
-                                >
-                                    <div className="card-image-overlay"></div>
-                                    <div className="card-content">
-                                        <h4 className="card-title">{study.title}</h4>
-                                        <p className="card-subtitle">{study.subtitle}</p>
-                                    </div>
-                                </a>
-                            ))}
+                            {/* Navigation buttons */}
+                            <button 
+                                className="case-studies-nav-btn prev-btn" 
+                                onClick={handleScrollPrev}
+                                aria-label="Previous Case Study"
+                            >
+                                <i className="fa-solid fa-chevron-left"></i>
+                            </button>
+                            
+                            <button 
+                                className="case-studies-nav-btn next-btn" 
+                                onClick={handleScrollNext}
+                                aria-label="Next Case Study"
+                            >
+                                <i className="fa-solid fa-chevron-right"></i>
+                            </button>
+    
+                            <div className="case-studies-track" ref={trackRef}>
+                                {tripledStudies.map((study, idx) => (
+                                    <a 
+                                        key={`${idx}-${study.title}`}
+                                        href={study.link} 
+                                        className={`case-study-card-new ${study.themeClass}`} 
+                                        style={{ backgroundImage: `url(${study.image})` }}
+                                    >
+                                        <div className="card-image-overlay"></div>
+                                        <div className="card-content">
+                                            <h4 className="card-title">{study.title}</h4>
+                                            <p className="card-subtitle">{study.subtitle}</p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
-                    </div>
+                    </AnimateOnScroll>
 
                     {/* Mobile only button display underneath */}
                     <div className="mt-4 d-block d-md-none text-center">
