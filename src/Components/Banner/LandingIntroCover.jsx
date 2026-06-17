@@ -5,7 +5,7 @@ const LandingIntroCover = () => {
     const contentRef = useRef(null);
     const [animated, setAnimated] = useState(false);
 
-    const fullText = "McCOLLINS MEDIA";
+    const fullText = "MCCOLLINS MEDIA";
 
     useEffect(() => {
         // Trigger animations immediately upon mount
