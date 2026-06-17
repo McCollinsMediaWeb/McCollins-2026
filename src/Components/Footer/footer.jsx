@@ -1,6 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Footer = () => {
+    const logoRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const logo = logoRef.current;
+            if (!logo) return;
+
+            const rect = logo.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            // Start animation when the top of the logo enters the viewport
+            // Finish animation after scrolling a comfortable range (e.g. 350px) to make it smooth and slow
+            const scrollRange = Math.min(350, viewportHeight * 0.45);
+            const entryPoint = viewportHeight;
+            const exitPoint = viewportHeight - scrollRange;
+
+            const totalDistance = entryPoint - exitPoint;
+            const currentDistance = viewportHeight - rect.top;
+
+            let progress = currentDistance / totalDistance;
+            progress = Math.max(0, Math.min(1, progress));
+
+            // Map progress: 0 (not in view / at entry) -> opacity 0.2, scale 0.94, translateY 40px
+            // 1 (fully in view / at exit) -> opacity 1.0, scale 1.0, translateY 0px
+            const opacity = 0.2 + progress * 0.8;
+            const scale = 0.94 + progress * 0.06;
+            const translateY = (1 - progress) * 40;
+
+            logo.style.opacity = opacity;
+            logo.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("resize", handleScroll);
+
+        // Initial trigger
+        const timer = setTimeout(handleScroll, 100);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleScroll);
+            clearTimeout(timer);
+        };
+    }, []);
     // Show more / show less states
     const [quickLinksShowMore, setQuickLinksShowMore] = useState(false);
     const [servicesShowMore, setServicesShowMore] = useState(false);
@@ -181,7 +225,12 @@ const Footer = () => {
 
                         {/* Giant Brand Text */}
                         <div className="footer-brand-name-wrapper">
-                            <h1 className="footer-brand-name">McCOLLINS MEDIA</h1>
+                            <img 
+                                ref={logoRef}
+                                src="/scrollrevealfooter.png" 
+                                alt="McCollins Media" 
+                                className="footer-brand-logo-img"
+                            />
                         </div>
                     </div>
                 </div>

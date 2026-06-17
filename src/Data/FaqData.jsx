@@ -84,4 +84,43 @@ export const webDevFaqData = [
     },
 ];
 
+export const socialMediaFaqData = [
+    {
+        id: 1,
+        question: "Is social media essential for my business?",
+        answer: "Yes, social media is essential for visibility and engagement.",
+    },
+    {
+        id: 2,
+        question: "When can I expect results from social media marketing?",
+        answer: "Results typically appear within 3-6 months.",
+    },
+    {
+        id: 3,
+        question: "How quickly do you respond to community management inquiries?",
+        answer: "We respond within 3/4 hours.",
+    },
+    {
+        id: 4,
+        question: "How can I determine the best social media platforms for my business?",
+        answer: "We analyze your target audience and business goals to recommend the platforms.",
+    },
+    {
+        id: 5,
+        question: "Do you handle all content creation for my social media, or do I need to supply materials?",
+        answer: "We create and curate all content for you.",
+    },
+    {
+        id: 6,
+        question: "Does your agency provide video production, and do you use in-house resources or external partners?",
+        answer: "We produce videos using our in-house team.",
+    },
+    {
+        id: 7,
+        question: "Why is hiring an agency more beneficial than an in-house employee?",
+        answer: "Agencies offer specialized skills and broader expertise.",
+    },
+];
+
+
   

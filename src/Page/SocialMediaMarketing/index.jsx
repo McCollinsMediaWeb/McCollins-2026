@@ -9,6 +9,9 @@ import CaseStudiesSocialMediaMarketing from "../../Components/CaseStudies/CaseSt
 import OurPartners from "../../Components/MccollinsMedia/OurPartners";
 import FullSizeBanner from "../../Components/Banner/FullSizeBanner";
 import SocialMediaRoute from "../../Components/MccollinsMedia/SocialMediaRoute";
+import SocialMetricsMap from "../../Components/MccollinsMedia/SocialMetricsMap";
+import FaqSection from "../../Components/FAQs/faq";
+import { socialMediaFaqData } from "../../Data/FaqData";
 
 function SocialMediaMarketing() {
     return (
@@ -21,11 +24,7 @@ function SocialMediaMarketing() {
             <SocialMediaMarketingImageWithText />
             
             <SocialMediaRoute />
-            <FullSizeBanner 
-                desktopImage="/services/social-media-marketing/McC_SocMedMark_Web_2-min.jpg" 
-                mobileImage="/services/social-media-marketing/McC_SocMedMark_Mob_2-min.jpg" 
-                altText="Social Media Marketing Showcase 2" 
-            />
+            <SocialMetricsMap />
             <FullSizeBanner 
                 desktopImage="/services/social-media-marketing/McC_SocMedMark_Web_3-min.jpg" 
                 mobileImage="/services/social-media-marketing/McC_SocMedMark_Mob_3-min.jpg" 
@@ -68,6 +67,7 @@ function SocialMediaMarketing() {
             <CaseStudiesSocialMediaMarketing noPadding={false} />
             <OurPartners />
             <NewsletterSection />
+            <FaqSection data={socialMediaFaqData} />
         </div>
     );
 }
