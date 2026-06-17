@@ -1,6 +1,18 @@
-import React, { cloneElement } from 'react';
-import { useInView } from 'react-intersection-observer';
-import 'animate.css';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
+// Helper to merge refs
+const mergeRefs = (...refs) => {
+    return (node) => {
+        refs.forEach((ref) => {
+            if (typeof ref === 'function') {
+                ref(node);
+            } else if (ref && typeof ref === 'object') {
+                ref.current = node;
+            }
+        });
+    };
+};
 
 const AnimateOnScroll = ({
     children,
@@ -9,32 +21,80 @@ const AnimateOnScroll = ({
     speed = 'normal',
     threshold = 0.15,
 }) => {
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-        threshold,
-    });
+    const localRef = useRef(null);
+    const inView = useInView(localRef, { once: true, amount: threshold });
 
-    const speedClass = {
-        normal: '',
-        fast: 'animate__fast',
-        slow: 'animate__slow',
-    }[speed];
+    // Map animation speed to duration in seconds
+    const duration = {
+        fast: 0.4,
+        normal: 0.8,
+        slow: 1.5,
+    }[speed] || 0.8;
 
-    // Pastikan children adalah elemen React tunggal
+    // Define motion variants for different animations
+    const variants = {
+        hidden: {
+            opacity: 0,
+            scale: animation === 'revealImage' ? 1.15 : 1,
+            y: animation === 'fadeInUp' ? 40 : animation === 'fadeInDown' ? -40 : 0,
+            x: animation === 'fadeInLeft' ? -40 : animation === 'fadeInRight' ? 40 : 0,
+        },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            x: 0,
+            transition: {
+                duration,
+                delay: delay / 1000,
+                ease: [0.16, 1, 0.3, 1], // Smooth premium ease-out curve
+            },
+        },
+    };
+
+    // Ensure children is a single React element
     const child = React.Children.only(children);
 
-    // Clone child, tambahkan ref, class, dan style opacity
-    return cloneElement(child, {
-        ref,
-        className: `${child.props.className || ''} animate__animated ${
-            inView ? `animate__${animation} ${speedClass}` : ''
-        }`.trim(),
-        style: {
-            ...child.props.style, // Pertahankan style asli anak (misal width: 60%)
-            opacity: inView ? 1 : 0, // Atur opacity berdasarkan inView
-            animationDelay: inView ? `${delay}ms` : undefined, // Hanya terapkan delay saat inView
-        },
-    });
+    // Merge child's ref (if any) with local ref
+    const mergedRef = mergeRefs(localRef, child.ref || child.props.ref);
+
+    // If it's a standard HTML tag (string type), create a motion component of that type.
+    // Otherwise, wrap in motion.div.
+    const MotionComponent = typeof child.type === 'string' ? motion[child.type] : motion.div;
+
+    if (typeof child.type === 'string') {
+        return (
+            <MotionComponent
+                {...child.props}
+                ref={mergedRef}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                variants={variants}
+                className={`${child.props.className || ''}`.trim()}
+                style={{
+                    ...child.props.style,
+                }}
+            >
+                {child.props.children}
+            </MotionComponent>
+        );
+    }
+
+    // For custom React components, wrap them in motion.div
+    return (
+        <motion.div
+            ref={mergedRef}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            className={`${child.props.className || ''}`.trim()}
+            style={{
+                ...child.props.style,
+            }}
+        >
+            {child}
+        </motion.div>
+    );
 };
 
 AnimateOnScroll.displayName = 'AnimateOnScroll';

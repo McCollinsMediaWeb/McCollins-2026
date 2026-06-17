@@ -1,6 +1,7 @@
 import React from "react";
 import HeadTitle from "../../Components/Head/HeadTitle";
 import BannerHomeSection from "../../Components/Banner";
+import LandingIntroCover from "../../Components/Banner/LandingIntroCover";
 import ExpertiseSection from "../../Components/Expertise/expertise";
 import ChooseUsSection from "../../Components/ChooseUs/choose";
 import GuideBannerSection from "../../Components/Banner/guide";
@@ -24,6 +25,7 @@ function HomePage() {
     return (
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="McCollins Media - Home" />
+            <LandingIntroCover />
             <BannerHomeSection desktopImage="/assets/images/home-banner.jpeg" mobileImage="/assets/images/home-banner-mob.jpeg" title="Brand" title2="Development" title3="" />
             <OurServices />
             {/* <ExpertiseSection /> */}
