@@ -6763,6 +6763,7 @@ body.lightmode .MegamenuHeader .HdT1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .homepage-hero__svg {
@@ -6771,35 +6772,35 @@ body.lightmode .MegamenuHeader .HdT1 {
     max-width: 100%;
     color: #fff;
     transform-origin: center center;
-    transform: scale(6);
+    transform: scale(1.15);
 }
 
 .homepage-hero__svg.start-anim {
-    animation: logo-scale-down 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: logo-scale-down 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .homepage-hero__letter {
     opacity: 0;
-    transform: translateX(1720px);
-    animation: svg-letter-slide-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transform: translateY(-115%);
+    animation: svg-letter-slide-down 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes logo-scale-down {
     0% {
-        transform: scale(6);
+        transform: scale(1.15);
     }
     100% {
         transform: scale(1);
     }
 }
 
-@keyframes svg-letter-slide-in {
+@keyframes svg-letter-slide-down {
     0% {
-        transform: translateX(1720px);
+        transform: translateY(-115%);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }

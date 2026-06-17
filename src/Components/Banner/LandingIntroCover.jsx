@@ -36,6 +36,22 @@ const LandingIntroCover = () => {
                 cover.style.visibility = "visible";
                 content.style.transform = "translateY(0px)";
                 content.style.opacity = "1";
+                
+                // Reset letters, SVG scale, and subtitles
+                const letters = content.querySelectorAll(".homepage-hero__letter");
+                letters.forEach(letter => {
+                    letter.style.transform = "";
+                });
+                
+                const svg = content.querySelector(".homepage-hero__svg");
+                if (svg) {
+                    svg.style.transform = "";
+                }
+                
+                const subtitleBar = content.querySelector(".hero-subtitle-bar");
+                if (subtitleBar) {
+                    subtitleBar.style.transform = "";
+                }
                 return;
             }
 
@@ -47,18 +63,40 @@ const LandingIntroCover = () => {
                 cover.style.visibility = "visible";
             }
 
+            // Calculate progress (from 0 to 1 over first 60% of viewport)
+            const progress = Math.min(1, scrollTop / (viewportHeight * 0.6));
+
+            // Scale down the SVG logo on scroll (from 1 to 0.85)
+            const svgScale = 1 - progress * 0.15;
+            const svg = content.querySelector(".homepage-hero__svg");
+            if (svg) {
+                svg.style.transform = `scale(${svgScale})`;
+                svg.style.transformOrigin = "center center";
+            }
+
+            // Staggered letter vertical translation on scroll (fluid disperse/drop effect)
+            const letters = content.querySelectorAll(".homepage-hero__letter");
+            letters.forEach((letter, index) => {
+                const letterY = progress * (50 + index * 15);
+                letter.style.transform = `translateY(${letterY}px)`;
+            });
+
+            // Subtitle bar slides down slightly on scroll (separation reveal)
+            const subtitleBar = content.querySelector(".hero-subtitle-bar");
+            if (subtitleBar) {
+                const subtitleY = progress * 25;
+                subtitleBar.style.transform = `translateY(${subtitleY}px)`;
+            }
+
             // Upward parallax translation: content glides up slightly faster than natural scroll
             const translateY = -scrollTop * 0.35;
             
-            // Fade out opacity over the first 70% scroll of the cover height (safe from division by zero)
+            // Fade out opacity over the first 70% scroll of the cover height
             const fadeDistance = viewportHeight * 0.7;
-            let opacity = 1;
-            if (fadeDistance > 0) {
-                opacity = 1 - (scrollTop / fadeDistance);
-            }
+            const opacity = Math.max(0, 1 - (scrollTop / fadeDistance));
             
             // Double check values are valid numbers
-            const safeOpacity = isNaN(opacity) ? 1 : Math.max(0, Math.min(1, opacity));
+            const safeOpacity = isNaN(opacity) ? 1 : opacity;
             const safeTranslateY = isNaN(translateY) ? 0 : translateY;
 
             content.style.transform = `translateY(${safeTranslateY}px)`;
