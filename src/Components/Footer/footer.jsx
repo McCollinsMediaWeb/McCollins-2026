@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import LogoSvg from "../Logo/LogoSvg";
 
 const Footer = () => {
     const logoRef = useRef(null);
@@ -225,10 +226,8 @@ const Footer = () => {
 
                         {/* Giant Brand Text */}
                         <div className="footer-brand-name-wrapper">
-                            <img 
+                            <LogoSvg 
                                 ref={logoRef}
-                                src="/scrollrevealfooter.png" 
-                                alt="McCollins Media" 
                                 className="footer-brand-logo-img"
                             />
                         </div>

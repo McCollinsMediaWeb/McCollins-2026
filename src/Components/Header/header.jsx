@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import ThemeSwitcher from "../Theme/themeswitch";
 import { useState, useEffect } from "react";
 import ContactFormNew from "../Form/ContactFormNew";
+import LogoSvg from "../Logo/LogoSvg";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -101,11 +102,7 @@ function Navbar() {
 
                             <div className="HeaderBoxMiddle">
                                 <a className="navbar-brand" href="/">
-                                    <img
-                                        src="/assets/images/mcmain.png"
-                                        className="site-logo img-fluid"
-                                        alt="Logo"
-                                    />
+                                    <LogoSvg className="site-logo img-fluid" />
                                 </a>
                             </div>
 
@@ -142,11 +139,7 @@ function Navbar() {
                                     className="navbar-brand"
                                     onClick={() => setMenuOpen(prev => !prev)}
                                 >
-                                    <img
-                                        src="/assets/images/mcmain.png"
-                                        className="img-fluid site-logo"
-                                        alt="Logo"
-                                    />
+                                    <LogoSvg className="img-fluid site-logo" />
                                 </NavLink>
                             </div>
 

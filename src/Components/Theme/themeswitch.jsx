@@ -22,7 +22,9 @@ export default function ThemeSwitcher() {
                 localStorage.setItem('lightmode', 'active');
 
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', '/assets/images/mcmain-dark.png');
+                    if (logo.tagName === 'IMG') {
+                        logo.setAttribute('src', '/assets/images/mcmain-dark.png');
+                    }
                 });
 
             } else {
@@ -30,7 +32,9 @@ export default function ThemeSwitcher() {
                 localStorage.removeItem('lightmode');
 
                 siteLogos.forEach((logo) => {
-                    logo.setAttribute('src', '/assets/images/mcmain.png');
+                    if (logo.tagName === 'IMG') {
+                        logo.setAttribute('src', '/assets/images/mcmain.png');
+                    }
                 });
             }
         };

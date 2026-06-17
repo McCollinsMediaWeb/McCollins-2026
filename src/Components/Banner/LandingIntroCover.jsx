@@ -99,7 +99,20 @@ const LandingIntroCover = () => {
                         ))}
                     </svg>
                 </div>
-
+                <div className={`hero-subtitle-bar ${animated ? "visible" : ""}`}>
+                    <div className="hero-subtitle-col left">
+                        <div>STRATEGY, PERFOMANCE</div>
+                        <div>GROWTH</div>
+                    </div>
+                    <div className="hero-subtitle-col center">
+                        <div>DIGITAL STRATEGY.</div>
+                        <div>GLOBAL SCALE.</div>
+                    </div>
+                    <div className="hero-subtitle-col right">
+                        <div>GET A FREE</div>
+                        <div>STRATEGY CALL</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
