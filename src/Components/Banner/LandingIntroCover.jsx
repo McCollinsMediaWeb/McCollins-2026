@@ -3,37 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 const LandingIntroCover = () => {
     const coverRef = useRef(null);
     const contentRef = useRef(null);
-    
-    const [visibleCount, setVisibleCount] = useState(0);
-    const [typingComplete, setTypingComplete] = useState(false);
+    const [animated, setAnimated] = useState(false);
 
     const fullText = "McCOLLINS MEDIA";
-    const typingSpeed = 75; // speed of typing (ms)
 
     useEffect(() => {
-        let timer;
-        const startDelay = 400; // delay before typing starts
-
-        const startTyping = () => {
-            let currentCount = 0;
-            const type = () => {
-                if (currentCount < fullText.length) {
-                    currentCount++;
-                    setVisibleCount(currentCount);
-                    timer = setTimeout(type, typingSpeed);
-                } else {
-                    setTypingComplete(true);
-                }
-            };
-            type();
-        };
-
-        const delayTimer = setTimeout(startTyping, startDelay);
-
-        return () => {
-            clearTimeout(delayTimer);
-            clearTimeout(timer);
-        };
+        // Trigger animations immediately upon mount
+        setAnimated(true);
     }, []);
 
     useEffect(() => {
@@ -93,33 +69,24 @@ const LandingIntroCover = () => {
         <div id="flexible-content" className="home-hero-landing" ref={coverRef}>
             <div className="hero-landing-content" ref={contentRef}>
                 <div className="hero-logo-text-wrapper">
-                    <span className="hero-landing-logo-text">
-                        {visibleCount === 0 && !typingComplete && (
-                            <span className="typing-cursor-initial">|</span>
-                        )}
+                    <span className={`hero-landing-logo-text mccan-style ${animated ? "start-anim" : ""}`}>
                         {fullText.split("").map((char, index) => {
                             const isSpace = char === " ";
-                            const isVisible = index < visibleCount;
-                            const showCursorHere = index === visibleCount - 1 && !typingComplete;
-                            
                             return (
-                                <span 
-                                    key={index} 
-                                    className="typing-char-wrapper"
-                                    style={{ position: 'relative', display: 'inline-block' }}
+                                <span
+                                    key={index}
+                                    className={`logo-letter ${isSpace ? "space" : ""}`}
+                                    style={{
+                                        animationDelay: `${0.1 + index * 0.08}s`
+                                    }}
                                 >
-                                    <span className={`typing-char ${isVisible ? "visible" : ""} ${isSpace ? "space" : ""}`}>
-                                        {isSpace ? "\u00A0" : char}
-                                    </span>
-                                    {showCursorHere && (
-                                        <span className="typing-cursor-absolute">|</span>
-                                    )}
+                                    {isSpace ? "\u00A0" : char}
                                 </span>
                             );
                         })}
                     </span>
                 </div>
-                <div className={`hero-tagline ${typingComplete ? "visible" : ""}`}>
+                <div className={`hero-tagline ${animated ? "visible" : ""}`}>
                     TRUTH WELL TOLD™
                 </div>
             </div>
