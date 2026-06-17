@@ -6755,15 +6755,15 @@ body.lightmode .MegamenuHeader .HdT1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 8rem;
+    min-height: 11vw;
 }
 
 .hero-landing-logo-text {
     font-family: 'Delight', sans-serif !important;
     font-weight: 800 !important;
-    font-size: 8rem !important;
+    font-size: 9.5vw !important;
     color: #fff;
-    letter-spacing: -4px;
+    letter-spacing: -0.05em;
     text-transform: uppercase;
     text-align: center;
     line-height: 0.95;
@@ -6818,21 +6818,21 @@ body.lightmode .MegamenuHeader .HdT1 {
 
 @media screen and (max-width: 1200px) {
     .hero-landing-logo-text {
-        font-size: 6.5rem !important;
-        letter-spacing: -3px;
+        font-size: 9.5vw !important;
+        letter-spacing: -0.05em;
     }
     .hero-logo-text-wrapper {
-        min-height: 6.5rem;
+        min-height: 11vw;
     }
 }
 
 @media screen and (max-width: 767px) {
     .hero-landing-logo-text {
-        font-size: 3.8rem !important;
-        letter-spacing: -1.5px;
+        font-size: 9.5vw !important;
+        letter-spacing: -0.05em;
     }
     .hero-logo-text-wrapper {
-        min-height: 4rem;
+        min-height: 11vw;
     }
 }
 
