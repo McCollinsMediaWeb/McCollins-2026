@@ -4980,6 +4980,7 @@ body.lightmode .cta-service-banner::before {
     pointer-events: none;
     margin-top: 50px;
     margin-bottom: 0px;
+    padding-bottom: 50px;
     position: relative;
     z-index: 1;
 }

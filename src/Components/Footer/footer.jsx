@@ -32,6 +32,25 @@ const Footer = () => {
 
             logo.style.opacity = opacity;
             logo.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+
+            // Staggered letter reveal within the SVG logo (rain drops reveal on scroll)
+            const paths = logo.querySelectorAll("path");
+            paths.forEach((path, index) => {
+                const staggerOffset = index * 0.06;
+                let letterProgress = (progress - staggerOffset) / (1 - staggerOffset);
+                letterProgress = Math.max(0, Math.min(1, letterProgress));
+
+                // Easing curve (easeOutCubic) for a smooth, natural raindrop fall
+                const easeProgress = 1 - Math.pow(1 - letterProgress, 3);
+
+                // Map letterProgress: translateY from -100px (top hidden) to 0px (final resting position)
+                const letterY = (1 - easeProgress) * -100;
+                const letterOpacity = easeProgress;
+
+                path.style.transform = `translateY(${letterY}px)`;
+                path.style.opacity = letterOpacity;
+                path.style.transition = "none"; // ensure responsive scroll-scrubbing
+            });
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
