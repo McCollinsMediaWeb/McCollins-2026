@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 const CaseStudiesSection = () => {
     const trackRef = useRef(null);
@@ -229,13 +230,13 @@ const CaseStudiesSection = () => {
                     <div className="row align-items-start mb-4">
                         <div className="col-md-8">
 
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                            <TextReveal>
                                 <h2 className="case-studies-heading">
                                     <span className="sans-bold">WITNESS THE IMPACT</span>
                                     <span className="serif-italic"> OF GLOBALLY FLUENT </span>
                                     <span className="sans-bold">Digital Strategies.</span>
                                 </h2>
-                            </AnimateOnScroll>
+                            </TextReveal>
 
                             <div className="mt-4 d-none d-md-block">
                                 <a href="/case_studies" className="btn-case-studies-more">

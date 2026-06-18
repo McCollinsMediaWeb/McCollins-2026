@@ -1,5 +1,6 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 function OurExpertise() {
     return (
@@ -15,12 +16,12 @@ function OurExpertise() {
                                 </div>
                             </AnimateOnScroll>
 
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                            <TextReveal>
                                 <h2 className="expertise-heading">
                                     <span className="sans-bold">PROVEN SUCCESS ACROSS THESE</span>
                                     <span className="serif-italic"> Key Sectors.</span>
                                 </h2>
-                            </AnimateOnScroll>
+                            </TextReveal>
                         </div>
                     </div>
 

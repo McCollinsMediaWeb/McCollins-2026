@@ -1,9 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const LandingIntroCover = () => {
     const coverRef = useRef(null);
     const contentRef = useRef(null);
-    const [animated, setAnimated] = useState(false);
+    const svgRef = useRef(null);
 
     const logoPaths = [
         "M183.042 70.2614C181.038 59.3462 170.848 52.2684 159.805 54.1019C151.021 55.5515 144.455 62.9277 143.944 72.0521V245.884H90.9881V69.7071C89.5384 62.9277 85.1467 57.4276 78.7511 54.9546C72.8672 52.7374 66.3437 53.5049 61.0567 57.3423C56.6224 60.5827 53.1688 65.6992 52.9982 72.0095V245.842H0L0.0852928 66.5093C1.2365 56.5321 3.62421 47.5783 8.57014 39.0935C18.6752 21.6548 36.0285 7.96827 56.0254 4.38674C77.7705 0.506741 101.264 4.85573 117.551 20.2904C126.761 12.4025 137.292 7.15819 149.06 4.81314C173.15 -0.00488067 195.449 4.68518 213.698 21.2285L219.71 27.283C230.668 39.5199 236.722 54.912 236.722 71.4979V186.107L236.85 245.842H183.042V70.2188V70.2614Z",
@@ -18,99 +22,89 @@ const LandingIntroCover = () => {
     ];
 
     useEffect(() => {
-        // Trigger animations immediately upon mount
-        setAnimated(true);
-    }, []);
+        const cover = coverRef.current;
+        const content = contentRef.current;
+        const svg = svgRef.current;
+        if (!cover || !content || !svg) return;
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const cover = coverRef.current;
-            const content = contentRef.current;
-            if (!cover || !content) return;
+        let ctx = gsap.context(() => {
+            const letters = svg.querySelectorAll(".homepage-hero__letter");
+            
+            // Set initial state
+            gsap.set(letters, { y: -280, opacity: 0 });
+            gsap.set(svg, { scale: 1.15 });
 
-            const scrollTop = window.scrollY || window.pageYOffset || 0;
-            const viewportHeight = window.innerHeight || 800;
+            // 1. Page Load Animation
+            const tl = gsap.timeline();
+            tl.to(letters, {
+                y: 0,
+                opacity: 1,
+                duration: 1.2,
+                stagger: 0.08,
+                ease: "expo.out"
+            })
+            .to(svg, {
+                scale: 1,
+                duration: 2,
+                ease: "expo.out"
+            }, "<");
 
-            // If we are at the top of the page, guarantee full visibility and zero translation
-            if (scrollTop <= 0) {
-                cover.style.visibility = "visible";
-                content.style.transform = "translateY(0px)";
-                content.style.opacity = "1";
-                
-                // Reset letters, SVG scale, and subtitles
-                const letters = content.querySelectorAll(".homepage-hero__letter");
-                letters.forEach(letter => {
-                    letter.style.transform = "";
-                });
-                
-                const svg = content.querySelector(".homepage-hero__svg");
-                if (svg) {
-                    svg.style.transform = "";
-                }
-                
-                const subtitleBar = content.querySelector(".hero-subtitle-bar");
-                if (subtitleBar) {
-                    subtitleBar.style.transform = "";
-                }
-                return;
-            }
-
-            if (scrollTop > viewportHeight) {
-                // Scrolled past the intro, hide it to save layout computing resources
-                cover.style.visibility = "hidden";
-                return;
-            } else {
-                cover.style.visibility = "visible";
-            }
-
-            // Calculate progress (from 0 to 1 over first 60% of viewport)
-            const progress = Math.min(1, scrollTop / (viewportHeight * 0.6));
-
-            // Scale down the SVG logo on scroll (from 1 to 0.85)
-            const svgScale = 1 - progress * 0.15;
-            const svg = content.querySelector(".homepage-hero__svg");
-            if (svg) {
-                svg.style.transform = `scale(${svgScale})`;
-                svg.style.transformOrigin = "center center";
-            }
-
-            // Staggered letter vertical translation on scroll (fluid disperse/drop effect)
-            const letters = content.querySelectorAll(".homepage-hero__letter");
-            letters.forEach((letter, index) => {
-                const letterY = progress * (50 + index * 15);
-                letter.style.transform = `translateY(${letterY}px)`;
-            });
-
-            // Subtitle bar slides down slightly on scroll (separation reveal)
+            // Subtitle bar reveal
             const subtitleBar = content.querySelector(".hero-subtitle-bar");
             if (subtitleBar) {
-                const subtitleY = progress * 25;
-                subtitleBar.style.transform = `translateY(${subtitleY}px)`;
+                gsap.set(subtitleBar, { opacity: 0, y: 15 });
+                tl.to(subtitleBar, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out"
+                }, "-=0.6");
             }
 
-            // Upward parallax translation: content glides up slightly faster than natural scroll
-            const translateY = -scrollTop * 0.35;
-            
-            // Fade out opacity over the first 70% scroll of the cover height
-            const fadeDistance = viewportHeight * 0.7;
-            const opacity = Math.max(0, 1 - (scrollTop / fadeDistance));
-            
-            // Double check values are valid numbers
-            const safeOpacity = isNaN(opacity) ? 1 : opacity;
-            const safeTranslateY = isNaN(translateY) ? 0 : translateY;
+            // 2. Scroll Animation
+            const scrollTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: cover,
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: 1.5,
+                    invalidateOnRefresh: true
+                }
+            });
 
-            content.style.transform = `translateY(${safeTranslateY}px)`;
-            content.style.opacity = safeOpacity;
-        };
+            // Scale down SVG logo on scroll
+            scrollTl.to(svg, {
+                scale: 0.85,
+                ease: "none"
+            }, 0);
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        
-        // Initial setup
-        handleScroll();
+            // Staggered letter vertical translation on scroll
+            letters.forEach((letter, index) => {
+                const targetY = 50 + index * 15;
+                scrollTl.to(letter, {
+                    y: targetY,
+                    ease: "none"
+                }, 0);
+            });
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+            // Subtitle bar slides down slightly on scroll
+            if (subtitleBar) {
+                scrollTl.to(subtitleBar, {
+                    y: 25,
+                    ease: "none"
+                }, 0);
+            }
+
+            // Upward parallax translation & fade out
+            scrollTl.to(content, {
+                yPercent: -35,
+                opacity: 0,
+                ease: "none"
+            }, 0);
+
+        }, coverRef);
+
+        return () => ctx.revert();
     }, []);
 
     return (
@@ -118,10 +112,11 @@ const LandingIntroCover = () => {
             <div className="hero-landing-content" ref={contentRef}>
                 <div className="hero-logo-text-wrapper">
                     <svg 
+                        ref={svgRef}
                         viewBox="0 0 1709 248" 
                         fill="none" 
                         xmlns="http://www.w3.org/2000/svg" 
-                        className={`homepage-hero__svg ${animated ? "start-anim" : ""}`}
+                        className="homepage-hero__svg"
                     >
                         {logoPaths.map((d, index) => (
                             <path 
@@ -130,14 +125,11 @@ const LandingIntroCover = () => {
                                 d={d} 
                                 fill="currentColor" 
                                 fillRule="evenodd" 
-                                style={{
-                                    animationDelay: `${0.1 + index * 0.08}s`
-                                }}
                             />
                         ))}
                     </svg>
                 </div>
-                <div className={`hero-subtitle-bar ${animated ? "visible" : ""}`}>
+                <div className="hero-subtitle-bar">
                     <div className="hero-subtitle-col left">
                         <div>STRATEGY, PERFOMANCE</div>
                         <div>GROWTH</div>

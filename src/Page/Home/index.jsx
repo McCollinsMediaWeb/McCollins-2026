@@ -26,32 +26,35 @@ function HomePage() {
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="McCollins Media - Home" />
             <LandingIntroCover />
-            <BannerHomeSection desktopImage="/assets/images/home-banner.jpeg" mobileImage="/assets/images/home-banner-mob.jpeg" title="Brand" title2="Development" title3="" />
-            <OurServices />
-            {/* <ExpertiseSection /> */}
-            {/* <PartnershipSection /> */}
-            <ServiceSection />
-            <CaseStudiesSection />
-            <OurExpertise />
+            
+            <div className="home-page-content-wrapper">
+                <BannerHomeSection desktopImage="/assets/images/home-banner.jpeg" mobileImage="/assets/images/home-banner-mob.jpeg" title="Brand" title2="Development" title3="" />
+                <OurServices />
+                {/* <ExpertiseSection /> */}
+                {/* <PartnershipSection /> */}
+                <ServiceSection />
+                <CaseStudiesSection />
+                <OurExpertise />
 
-            <Showreel />
+                <Showreel />
 
 
-            {/* <GuideBannerSection /> */}
-            <ModalVideoSection />
+                {/* <GuideBannerSection /> */}
+                <ModalVideoSection />
 
-            {/* <ChooseUsSection /> */}
-            <WhyChooseUs />
-            {/* <TestimonialSection /> */}
-            {/* <DigitalProcessSection /> */}
+                {/* <ChooseUsSection /> */}
+                <WhyChooseUs />
+                {/* <TestimonialSection /> */}
+                {/* <DigitalProcessSection /> */}
 
-            <HowWeWork />
-            <div className="container">
-                <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '0px', marginTop: '10px' }} />
+                <HowWeWork />
+                <div className="container">
+                    <div style={{ height: '1px', backgroundColor: 'grey', marginBottom: '0px', marginTop: '10px' }} />
+                </div>
+                <NewsletterSection />
+                <FullImageWithContact desktopImage="/assets/images/global.jpg" mobileImage="/assets/images/global-mob.jpg" title="Let's Start Your Project" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
+                {/* <BlogSection /> */}
             </div>
-            <NewsletterSection />
-            <FullImageWithContact desktopImage="/assets/images/global.jpg" mobileImage="/assets/images/global-mob.jpg" title="Let's Start Your Project" subtitle="Initiate your production journey by scheduling a session with our cinematic specialists to translate your brand vision into-high fidelity visual reality." Position="left" />
-            {/* <BlogSection /> */}
         </div>
     );
 }

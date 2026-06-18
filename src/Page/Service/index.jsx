@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import HeadTitle from "../../Components/Head/HeadTitle";
 import HowWeWork from "../../Components/MccollinsMedia/HowWeWork";
 import NewsletterSection from "../../Components/Form/Newsletter";
 import AnimateOnScroll from "../../Components/Hooks/AnimateOnScroll";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const serviceListData = [
     {
@@ -86,6 +90,66 @@ const serviceListData = [
 ];
 
 function ServicePage() {
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        const header = headerRef.current;
+        if (!header) return;
+
+        let ctx = gsap.context(() => {
+            const svg = header.querySelector(".services-massive-header-svg");
+            const chars = header.querySelectorAll(".services-header-char");
+
+            // Set initial state
+            gsap.set(chars, { yPercent: -115, opacity: 0 });
+            gsap.set(svg, { scale: 1.15 });
+
+            // 1. Page Load Animation
+            const tl = gsap.timeline();
+            tl.to(chars, {
+                yPercent: 0,
+                opacity: 1,
+                duration: 1.2,
+                stagger: 0.08,
+                ease: "expo.out"
+            })
+            .to(svg, {
+                scale: 1,
+                duration: 2,
+                ease: "expo.out"
+            }, "<");
+
+            // 2. Scroll Animation
+            const scrollTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: header,
+                    start: "top 180px",
+                    end: "bottom top",
+                    scrub: 1.5,
+                    invalidateOnRefresh: true
+                }
+            });
+
+            // Scale down logo text on scroll
+            scrollTl.to(svg, {
+                scale: 0.85,
+                ease: "none"
+            }, 0);
+
+            // Staggered character translation on scroll
+            chars.forEach((char, index) => {
+                const charY = 60 + index * 12;
+                scrollTl.to(char, {
+                    y: charY,
+                    ease: "none"
+                }, 0);
+            });
+
+        }, headerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div style={{ backgroundColor: 'var(--background-color)' }}>
             <HeadTitle title="Services - McCollins Media" />
@@ -94,12 +158,18 @@ function ServicePage() {
                 <div className="hero-container">
                     
                     {/* Header Area */}
-                    <div className="services-header-area">
-                        <AnimateOnScroll animation="fadeInUp" speed="normal">
-                            <h1 className="services-massive-header">
-                                Services
+                    <div className="services-header-area" ref={headerRef}>
+                        <div className="services-massive-header-wrapper">
+                            <h1 className="services-massive-header-svg">
+                                {Array.from("SERVICES").map((char, index) => (
+                                    <span key={index} className="services-header-char-wrapper">
+                                        <span className="services-header-char">
+                                            {char}
+                                        </span>
+                                    </span>
+                                ))}
                             </h1>
-                        </AnimateOnScroll>
+                        </div>
                         
                         <div className="services-header-desc-wrapper">
                             <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>

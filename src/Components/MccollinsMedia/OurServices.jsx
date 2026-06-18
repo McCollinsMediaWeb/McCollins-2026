@@ -1,6 +1,7 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import CounterOnScroll from "../Hooks/CounterOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -27,11 +28,11 @@ function OurServices() {
                     <div className="row align-items-center">
                         <div className="col-md-8 text-start">
 
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                            <TextReveal>
                                 <h2 className="our-services-title">
                                     <span className="sans-bold">LOCAL RESONANCE GLOBAL&nbsp;<span className="serif-italic">Performance</span></span>
                                 </h2>
-                            </AnimateOnScroll>
+                            </TextReveal>
 
                             <div className="mt-5 pt-3">
                                 <AnimateOnScroll animation="fadeInLeft" speed="normal">

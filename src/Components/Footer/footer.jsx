@@ -1,69 +1,53 @@
 import React, { useState, useEffect, useRef } from "react";
 import LogoSvg from "../Logo/LogoSvg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
     const logoRef = useRef(null);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const logo = logoRef.current;
-            if (!logo) return;
+        const logo = logoRef.current;
+        if (!logo) return;
 
-            const rect = logo.getBoundingClientRect();
-            const viewportHeight = window.innerHeight;
-
-            // Start animation when the top of the logo enters the viewport
-            // Finish animation after scrolling a comfortable range (e.g. 350px) to make it smooth and slow
-            const scrollRange = Math.min(350, viewportHeight * 0.45);
-            const entryPoint = viewportHeight;
-            const exitPoint = viewportHeight - scrollRange;
-
-            const totalDistance = entryPoint - exitPoint;
-            const currentDistance = viewportHeight - rect.top;
-
-            let progress = currentDistance / totalDistance;
-            progress = Math.max(0, Math.min(1, progress));
-
-            // Map progress: 0 (not in view / at entry) -> opacity 0.2, scale 0.94, translateY 40px
-            // 1 (fully in view / at exit) -> opacity 1.0, scale 1.0, translateY 0px
-            const opacity = 0.2 + progress * 0.8;
-            const scale = 0.94 + progress * 0.06;
-            const translateY = (1 - progress) * 40;
-
-            logo.style.opacity = opacity;
-            logo.style.transform = `scale(${scale}) translateY(${translateY}px)`;
-
-            // Staggered letter reveal within the SVG logo (rain drops reveal on scroll)
+        let ctx = gsap.context(() => {
             const paths = logo.querySelectorAll("path");
-            paths.forEach((path, index) => {
-                const staggerOffset = index * 0.06;
-                let letterProgress = (progress - staggerOffset) / (1 - staggerOffset);
-                letterProgress = Math.max(0, Math.min(1, letterProgress));
+            
+            // Set initial state
+            gsap.set(logo, { opacity: 0.2, scale: 0.94, y: 40 });
+            gsap.set(paths, { y: -100, opacity: 0 });
 
-                // Easing curve (easeOutCubic) for a smooth, natural raindrop fall
-                const easeProgress = 1 - Math.pow(1 - letterProgress, 3);
-
-                // Map letterProgress: translateY from -100px (top hidden) to 0px (final resting position)
-                const letterY = (1 - easeProgress) * -100;
-                const letterOpacity = easeProgress;
-
-                path.style.transform = `translateY(${letterY}px)`;
-                path.style.opacity = letterOpacity;
-                path.style.transition = "none"; // ensure responsive scroll-scrubbing
+            // Create timeline with scroll trigger
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: logo,
+                    start: "top bottom", // starts when top of logo enters viewport
+                    end: "top 60%", // ends when top of logo is 60% of viewport height (approx 350px scroll range)
+                    scrub: 1.5
+                }
             });
-        };
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        window.addEventListener("resize", handleScroll);
+            // Animate logo container opacity, scale, y translation
+            tl.to(logo, {
+                opacity: 1,
+                scale: 1,
+                y: 0,
+                ease: "power2.out"
+            }, 0);
 
-        // Initial trigger
-        const timer = setTimeout(handleScroll, 100);
+            // Staggered letters fall from -100px to 0px
+            tl.to(paths, {
+                y: 0,
+                opacity: 1,
+                stagger: 0.06,
+                ease: "power3.out"
+            }, 0);
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("resize", handleScroll);
-            clearTimeout(timer);
-        };
+        }, logoRef);
+
+        return () => ctx.revert();
     }, []);
     // Show more / show less states
     const [quickLinksShowMore, setQuickLinksShowMore] = useState(false);

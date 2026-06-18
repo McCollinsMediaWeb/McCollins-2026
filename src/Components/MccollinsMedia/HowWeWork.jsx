@@ -1,6 +1,7 @@
 import React from "react";
 import { digitalSteps } from "../../Data/DigitalProcessData";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 const HowWeWork = () => {
     return (
@@ -9,19 +10,21 @@ const HowWeWork = () => {
                 <div className="row text-center justify-content-center mb-5">
                     <div className="col-lg-10">
                         <AnimateOnScroll animation="fadeInDown" speed="normal">
-                            <div>
-                                <div className="sub-heading justify-content-center">
-                                    <i className="fa-regular fa-circle-dot case-study-dot"></i>
-                                    <span>How We Work</span>
-                                </div>
-                                <h2 className="how-we-work-heading mt-3">
-                                    <span className="sans-bold">THE MCCOLLINS ASCENSION </span>
-                                    <span className="serif-italic">Model</span>
-                                </h2>
-                                <p className="how-we-work-sub-desc mt-3">
-                                    A SYSTEMATIC ROADMAP DESIGNED TO ACCELERATE BRAND GROWTH AND SUSTAIN INTERNATIONAL LEADERSHIP.
-                                </p>
+                            <div className="sub-heading justify-content-center">
+                                <i className="fa-regular fa-circle-dot case-study-dot"></i>
+                                <span>How We Work</span>
                             </div>
+                        </AnimateOnScroll>
+                        <TextReveal>
+                            <h2 className="how-we-work-heading mt-3">
+                                <span className="sans-bold">THE MCCOLLINS ASCENSION </span>
+                                <span className="serif-italic">Model</span>
+                            </h2>
+                        </TextReveal>
+                        <AnimateOnScroll animation="fadeInUp" speed="normal" delay={100}>
+                            <p className="how-we-work-sub-desc mt-3">
+                                A SYSTEMATIC ROADMAP DESIGNED TO ACCELERATE BRAND GROWTH AND SUSTAIN INTERNATIONAL LEADERSHIP.
+                            </p>
                         </AnimateOnScroll>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage }) {
 
@@ -135,16 +136,18 @@ function BannerHomeSection({ title, title2, title3, desktopImage, mobileImage })
                     </div> */}
                     <div className="HeroBannerContent">
                         <div className="hero-container pb-5 align-self-center">
-                            <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="hero-title-container">
-                                    <div className="hero-subtitle">Navigate the Global</div>
-                                    <h1 className="hero-title-main">
-                                        <span className="sans-bold">MARKET WITH</span>
-                                        <br />
-                                        <span className="sans-bold">DIGITAL</span> <span className="serif-italic">Mastery</span>
-                                    </h1>
+                                    <AnimateOnScroll animation="fadeInLeft" speed="normal">
+                                        <div className="hero-subtitle">Navigate the Global</div>
+                                    </AnimateOnScroll>
+                                    <TextReveal>
+                                        <h1 className="hero-title-main">
+                                            <span className="sans-bold">MARKET WITH</span>
+                                            <br />
+                                            <span className="sans-bold">DIGITAL</span> <span className="serif-italic">Mastery</span>
+                                        </h1>
+                                    </TextReveal>
                                 </div>
-                            </AnimateOnScroll>
                             
                             <AnimateOnScroll animation="fadeInLeft" speed="normal">
                                 <div className="mt-4">

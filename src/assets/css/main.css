@@ -5026,7 +5026,9 @@ body.lightmode .cta-service-banner::before {
 }
 
 .FixedHeader.fixed {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .HeaderBoxFlex {
@@ -6726,38 +6728,25 @@ body.lightmode .MegamenuHeader .HdT1 {
 /* ================== McCann Style Landing Intro Cover ================== */
 .home-hero-landing {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    height: 100dvh;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     overflow: hidden;
     z-index: 100;
     pointer-events: none;
-    padding-top: 130px;
-    padding-bottom: 100px;
 }
 
-@media screen and (max-width: 1024px) {
-    .home-hero-landing {
-        padding-top: 90px;
-        padding-bottom: 70px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .home-hero-landing {
-        padding-top: 60px;
-        padding-bottom: 50px;
-    }
-}
-
-/* Push the hero banner down by 100vh when it follows the fixed landing cover */
-.home-hero-landing + .home-hero-banner {
+/* Push the home page content wrapper down when it follows the sticky landing cover */
+.home-page-content-wrapper {
     position: relative;
     z-index: 200;
-    background-color: #000;
+    background-color: var(--background-color);
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -6789,14 +6778,10 @@ body.lightmode .MegamenuHeader .HdT1 {
     transform: scale(1.15);
 }
 
-.homepage-hero__svg.start-anim {
-    animation: logo-scale-down 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
 .homepage-hero__letter {
     opacity: 0;
-    transform: translateY(-115%);
-    animation: svg-letter-slide-down 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transform: translateY(-280px);
+    will-change: transform, opacity;
 }
 
 @keyframes logo-scale-down {
@@ -8279,8 +8264,10 @@ body.lightmode .btn-accent:not(.CallLink):hover .btn-title a {
 }
 
 body.lightmode .FixedHeader.fixed {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.55) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 body.lightmode .FixedHeader.fixed .HamberMenuLine {
@@ -9133,7 +9120,8 @@ body.lightmode .metrics-table-wrapper::-webkit-scrollbar-thumb {
 .services-page-container {
     background-color: var(--secondary-background-color);
     color: var(--primary);
-    padding: 100px 0;
+    padding-top: 180px;
+    padding-bottom: 100px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -9141,7 +9129,16 @@ body.lightmode .metrics-table-wrapper::-webkit-scrollbar-thumb {
     margin-bottom: 80px;
 }
 
-.services-massive-header {
+.services-massive-header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.services-massive-header-svg {
     font-family: 'Delight', sans-serif;
     font-weight: 900;
     font-size: clamp(4rem, 11vw, 12rem);
@@ -9149,11 +9146,29 @@ body.lightmode .metrics-table-wrapper::-webkit-scrollbar-thumb {
     line-height: 0.9;
     letter-spacing: -0.04em;
     color: var(--text-color);
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform-origin: center center;
+    transform: scale(1.15);
 }
 
-body.lightmode .services-massive-header {
+body.lightmode .services-massive-header-svg {
     color: #141414; /* Extremely prominent dark color in light mode */
+}
+
+.services-header-char-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.services-header-char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-115%);
+    will-change: transform, opacity;
 }
 
 .services-header-desc-wrapper {
@@ -9300,7 +9315,8 @@ body.lightmode .service-tag-pill {
 
 @media (max-width: 768px) {
     .services-page-container {
-        padding: 50px 0;
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
     .services-massive-header {
         font-size: 4.5rem;

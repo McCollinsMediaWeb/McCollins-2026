@@ -1,5 +1,6 @@
 import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 function WhyChooseUs() {
     return (
@@ -19,13 +20,13 @@ function WhyChooseUs() {
                     <div className="row align-items-start mb-5">
                         <div className="col-md-8">
 
-                            <AnimateOnScroll animation="fadeInRight" speed="normal">
+                            <TextReveal>
                                 <h2 className="choose-us-heading">
                                     <span className="sans-bold">YOUR GLOBAL GROWTH IS </span>
                                     <span className="sans-bold">THE BENCHMARK OF <span className="line-playfair d-inline">Our</span></span>
                                     <span className="serif-italic"> Performance.</span>
                                 </h2>
-                            </AnimateOnScroll>
+                            </TextReveal>
 
                             <div className="mt-4">
                                 <a href="/contact" className="btn-case-studies-more">
@@ -37,11 +38,11 @@ function WhyChooseUs() {
                             </div>
                         </div>
                         <div className="col-md-4 pt-md-4 mt-md-5">
-                            <AnimateOnScroll animation="fadeInDown" speed="normal">
+                            <TextReveal>
                                 <p className="choose-us-desc-new">
                                     In a borderless digital landscape, the right partnership defines your trajectory. At McCollins, we go beyond standard campaigns to craft globally fluent strategies that drive measurable, long-term success.
                                 </p>
-                            </AnimateOnScroll>
+                            </TextReveal>
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { services } from "../../Data/ServiceData";
 import ServiceCard from "../Card/ServiceCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import TextReveal from "../Hooks/TextReveal";
 
 function ServiceSection() {
 
@@ -24,13 +25,13 @@ function ServiceSection() {
                         {/* Split Main Heading & Description */}
                         <div className="row align-items-end mb-5">
                             <div className="col-md-7 text-start">
-                                <AnimateOnScroll animation="fadeInLeft" speed="normal">
-                                    <h2 className="service-section-title">
-                                        <span className="sans-bold">DIGITAL </span> <span className="serif-italic">Solutions</span> <span className="sans-bold"> THAT</span>
-                                        <br />
-                                        <span className="sans-bold">DRIVE REAL RESULTS</span>
-                                    </h2>
-                                </AnimateOnScroll>
+                            <TextReveal>
+                                <h2 className="service-section-title">
+                                    <span className="sans-bold">DIGITAL </span> <span className="serif-italic">Solutions</span> <span className="sans-bold"> THAT</span>
+                                    <br />
+                                    <span className="sans-bold">DRIVE REAL RESULTS</span>
+                                </h2>
+                            </TextReveal>
                             </div>
                             <div className="col-md-5 text-start pt-3 pt-md-0">
                                 <AnimateOnScroll animation="fadeInRight" speed="normal">

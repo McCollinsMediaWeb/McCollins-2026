@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import VideoButtonNew from "../Video/VideoButtonNew";
+import TextReveal from "../Hooks/TextReveal";
 
 function FullImageWithContact({ desktopImage, mobileImage }) {
     const [isMobile, setIsMobile] = useState(false);
@@ -42,23 +43,25 @@ function FullImageWithContact({ desktopImage, mobileImage }) {
                                     </div>
                                 </div>
                             </AnimateOnScroll>
-                            <AnimateOnScroll animation="fadeInUp" speed="normal">
-                                <div className="col-md-6" >
+                            <div className="col-md-6" >
+                                <TextReveal>
                                     <h2 className="scale-vision-heading">
                                         <span className="text-playfair">Scale </span>
                                         <span className="text-delight">YOUR VISION</span><br />
                                         <span className="text-delight">GLOBALLY WITH</span><br />
                                         <span className="text-delight">MCCOLLINS MEDIA</span>
                                     </h2>
+                                </TextReveal>
+                                <AnimateOnScroll animation="fadeInUp" speed="normal" delay={150}>
                                     <p className="scale-vision-desc">
                                         Elevate your global trajectory through precision - engineered strategies and borderless creative innovation. Let’s build a legacy of measurable success together.
                                     </p>
-                                    <div className="guide-video-container d-flex d-md-none mt-4">
-                                        <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=ekbgpMjVrkNW6MSz" />
-                                        <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
-                                    </div>
+                                </AnimateOnScroll>
+                                <div className="guide-video-container d-flex d-md-none mt-4">
+                                    <VideoButtonNew videoUrl="https://youtu.be/eK6SzU776KY?si=ekbgpMjVrkNW6MSz" />
+                                    <p className="scale-vision-play-label">See How We Help<br /> Brands Grow</p>
                                 </div>
-                            </AnimateOnScroll>
+                            </div>
                         </div>
                     </div>
                 </div>
